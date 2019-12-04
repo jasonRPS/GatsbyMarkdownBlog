@@ -1,5 +1,5 @@
 ---
-title: "The Great Gatsby Bootcamp"
+title: "Test Blog 1"
 date: "2019-04-04"
 featuredImage: ./260-tan.png
 ---
