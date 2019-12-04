@@ -2,9 +2,9 @@ import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/Layout"
-import blogStyles from "./blog.module.scss"
+import blogStyles from "../pages/blog.module.scss"
 
-const BlogPage = () => {
+const LatestBlog = () => {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark {
@@ -14,6 +14,7 @@ const BlogPage = () => {
             excerpt
             frontmatter {
               title
+              category
               date
               featuredImage {
                 childImageSharp {
@@ -31,9 +32,6 @@ const BlogPage = () => {
       }
     }
   `)
-
-  console.log(data)
-
   return (
     <div>
       <Layout>
@@ -66,4 +64,4 @@ const BlogPage = () => {
   )
 }
 
-export default BlogPage
+export default LatestBlog

@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/Layout"
+import LatestBlog from "../components/LatestBlogs"
 
 const IndexPage = () => {
   return (
@@ -12,6 +13,7 @@ const IndexPage = () => {
         <p>
           Need a developer? <Link to="/contact"> Contact Me</Link>
         </p>
+        <LatestBlog />
       </Layout>
     </div>
   )
