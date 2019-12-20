@@ -3,29 +3,17 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/Layout"
 import blogStyles from "./blog.module.scss"
+import Head from "../components/Head"
 
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark {
+      allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
         edges {
           node {
-            timeToRead
-            excerpt
-            frontmatter {
-              title
-              date
-              featuredImage {
-                childImageSharp {
-                  fluid(maxWidth: 300) {
-                    src
-                  }
-                }
-              }
-            }
-            fields {
-              slug
-            }
+            title
+            slug
+            publishedDate(formatString: "MMMM Do, YYYY")
           }
         }
       }
@@ -37,29 +25,27 @@ const BlogPage = () => {
   return (
     <div>
       <Layout>
+        <Head title="blog" />
         <h1>Blog Page</h1>
-        <ol style={{ display: "flex" }} className={blogStyles.posts}>
-          {data.allMarkdownRemark.edges
-            .slice(Math.max(data.allMarkdownRemark.edges.length - 3, 0))
-            .reverse()
-            .map(edge => {
-              return (
-                <Link to={`/blog/${edge.node.fields.slug}`}>
-                  <li className={blogStyles.post}>
-                    <img
+        <ol className={blogStyles.posts}>
+          {data.allContentfulBlogPost.edges.map(edge => {
+            return (
+              <Link to={`/blog/${edge.node.slug}`}>
+                <li className={blogStyles.post}>
+                  {/* <img
                       src={
                         edge.node.frontmatter.featuredImage.childImageSharp
                           .fluid.src
                       }
-                    />
-                    <h2>{edge.node.frontmatter.title}</h2>
-                    <p>{edge.node.excerpt}</p>
-                    <p>{edge.node.frontmatter.date}</p>
-                    <p>Reading time {edge.node.timeToRead} minutes</p>
-                  </li>
-                </Link>
-              )
-            })}
+                    /> */}
+                  <h2>{edge.node.title}</h2>
+                  <p>{edge.node.publishedDate}</p>
+                  {/* <p>{edge.node.frontmatter.date}</p>
+                    <p>Reading time {edge.node.timeToRead} minutes</p> */}
+                </li>
+              </Link>
+            )
+          })}
         </ol>
       </Layout>
     </div>
