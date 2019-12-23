@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Full-Stack Bootcamp!",
+    title: "Factory Cat Floor Scrubbers",
     author: "Jason Sorenson",
   },
   plugins: [
