@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const IndexStyles = styled.div`
   #hero-image {
     background: gray;
-    height: 400px;
+    height: 600px;
   }
 
   #call-to-action {
