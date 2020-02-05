@@ -1,9 +1,11 @@
 import styled from "styled-components"
 
 export const IndexStyles = styled.div`
-  #hero-image {
+  #carousel {
+    position: relative;
     background: gray;
     height: 600px;
+    overflow: hidden;
   }
 
   #call-to-action {

@@ -3,7 +3,7 @@ import MainNavLinks from "./MainNavLinks"
 import styled from "styled-components"
 
 const MainNavStyles = styled.div`
-  background: #3e3e3b;
+  background: #c64247;
   /* height: 50px; */
   padding: 0.5rem 0;
   width: 100%;

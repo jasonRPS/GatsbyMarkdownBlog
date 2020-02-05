@@ -5,6 +5,7 @@ import Head from "../components/Head"
 import { IndexStyles } from "../components/styles/indexStyles"
 import CallToActionCard from "../components/CallToActionCard"
 import ProductSelector from "../components/productSelector/productSelector"
+import IndexPhotoCarousel from "../components/IndexPhotoCarousel"
 
 // import LatestBlog from "../components/LatestBlogs"
 
@@ -14,7 +15,9 @@ const IndexPage = () => {
       <Layout>
         <IndexStyles>
           <Head title="Home" />
-          <div id="hero-image">Hero Image and Hero Story</div>
+          <div id="carousel">
+            <IndexPhotoCarousel />
+          </div>
           <ProductSelector />
           <div id="call-to-action">
             <CallToActionCard
