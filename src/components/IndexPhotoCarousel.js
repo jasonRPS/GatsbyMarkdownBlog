@@ -6,14 +6,26 @@ import TestImage3 from "../images/fc-image3.jpg"
 import TestImage4 from "../images/fc-image4.jpg"
 import TestImage5 from "../images/fc-image5.jpg"
 
+let slideImages = {
+  slide1: TestImage,
+  slide2: TestImage2,
+  slide3: TestImage3,
+  slide4: TestImage4,
+  slide5: TestImage5,
+}
+
 class IndexPhotoCarousel extends Component {
   state = {
-    imageChange: this.props.TestImage,
+    imageChange: TestImage,
   }
 
   handleChange = e => {
     e.preventDefault()
     this.setState({ imageChange: e.target.dataset.image })
+  }
+
+  componentDidMount = () => {
+    console.log(slideImages.slide1)
   }
 
   render() {
