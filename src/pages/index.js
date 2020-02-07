@@ -6,6 +6,7 @@ import { IndexStyles } from "../components/styles/indexStyles"
 import CallToActionCard from "../components/CallToActionCard"
 import ProductSelector from "../components/productSelector/productSelector"
 import IndexPhotoCarousel from "../components/IndexPhotoCarousel"
+import CategorySection from "../components/CategorySection"
 
 // import LatestBlog from "../components/LatestBlogs"
 
@@ -19,6 +20,7 @@ const IndexPage = () => {
             <IndexPhotoCarousel />
           </div>
           <ProductSelector />
+          <CategorySection />
           <div id="call-to-action">
             <CallToActionCard
               title="Clean great stuff"
@@ -41,6 +43,7 @@ const IndexPage = () => {
               image="https://source.unsplash.com/random/1920x1080"
             />
           </div>
+
           <h1>Hello</h1>
           <h2>factory Cat</h2>
           {/* <p>
