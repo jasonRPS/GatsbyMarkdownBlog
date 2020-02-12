@@ -2,11 +2,12 @@ import React from "react"
 
 import Layout from "../components/Layout"
 import Head from "../components/Head"
-import { IndexStyles } from "../components/styles/indexStyles"
+// import { IndexStyles } from "../components/styles/indexStyles"
 import CallToActionCard from "../components/CallToActionCard"
-import ProductSelector from "../components/productSelector/productSelector"
+import ProductSelector from "../components/productSelector/ProductSelector"
 import IndexPhotoCarousel from "../components/IndexPhotoCarousel"
 import CategorySection from "../components/CategorySection"
+import { IndexStyles } from "../components/styles/IndexStyles"
 
 // import LatestBlog from "../components/LatestBlogs"
 
@@ -14,6 +15,7 @@ const IndexPage = () => {
   return (
     <div>
       <Layout>
+        {/* <IndexStyles> */}
         <IndexStyles>
           <Head title="Home" />
           <div id="carousel">
@@ -50,6 +52,7 @@ const IndexPage = () => {
           Need a developer? <Link to="/contact"> Contact Me</Link>
         </p> */}
           {/* <LatestBlog /> */}
+          {/* </IndexStyles> */}
         </IndexStyles>
       </Layout>
     </div>
