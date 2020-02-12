@@ -26,8 +26,9 @@ const Layout = props => {
       <LayoutStyles>
         <div>
           <MainNav />
-
-          {props.children}
+          <body style={{ margin: "0", paddingTop: "60px" }}>
+            {props.children}
+          </body>
         </div>
         <Footer />
       </LayoutStyles>
