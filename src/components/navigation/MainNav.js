@@ -16,9 +16,11 @@ const MainNavStyles = styled.div`
 class MainNav extends Component {
   render() {
     return (
-      <MainNavStyles>
-        <MainNavLinks />
-      </MainNavStyles>
+      <>
+        <MainNavStyles>
+          <MainNavLinks />
+        </MainNavStyles>
+      </>
     )
   }
 }

@@ -14,18 +14,19 @@ export const MainNavLinksStyles = styled.div`
       justify-self: center;
     }
 
-    ul {
+    .main-links {
       display: flex;
       color: white;
       list-style-type: none;
       margin: 0;
 
-      li {
+      .dropdown {
+        position: relative;
+        display: inline-block;
         padding: 0 2rem;
         &:hover {
-          color: #f7931e;
+          /* color: #f7931e; */
           cursor: pointer;
-          transition-duration: 0.5s;
         }
 
         i {
@@ -47,5 +48,37 @@ export const MainNavLinksStyles = styled.div`
     #shopping {
       justify-self: right;
     }
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 5px 8px 15px black;
+    padding: 12px 0;
+    z-index: 1;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        color: black;
+
+        font-size: 0.8em;
+        padding: 0.5rem 1rem;
+
+        &:hover {
+          color: red;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
 `
