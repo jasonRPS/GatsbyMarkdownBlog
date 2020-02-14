@@ -14,9 +14,9 @@ const MainNavLinks = () => {
             </Link>
           </div>
           <ul className="main-links">
-            <li className="dropdown">Home</li>
+            <li className="dropdown">HOME</li>
             <li className="dropdown">
-              Products <i className="fas fa-sort-down down-arrow"></i>
+              PRODUCTS <i className="fas fa-sort-down down-arrow"></i>
               <div className="dropdown-content">
                 <ul>
                   <Link
@@ -33,9 +33,9 @@ const MainNavLinks = () => {
               </div>
             </li>
             <li className="dropdown">
-              Support <i className="fas fa-sort-down down-arrow"></i>
+              SUPPORT <i className="fas fa-sort-down down-arrow"></i>
             </li>
-            <li className="dropdown">Innovations</li>
+            <li className="dropdown">INNOVATION</li>
             <li className="dropdown">
               <i className="fas fa-search"></i>
             </li>

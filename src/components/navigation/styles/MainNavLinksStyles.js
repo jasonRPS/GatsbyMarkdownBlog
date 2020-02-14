@@ -4,9 +4,7 @@ export const MainNavLinksStyles = styled.div`
   #nav-links-container {
     display: flex;
     justify-content: space-around;
-    /* grid-template-columns: 25% 25% 25% 25%; */
     color: white;
-    font-size: 1.2em;
     align-items: center;
     padding: 0 1rem;
 
@@ -23,6 +21,7 @@ export const MainNavLinksStyles = styled.div`
       .dropdown {
         position: relative;
         display: inline-block;
+
         padding: 0 2rem;
         &:hover {
           /* color: #f7931e; */
@@ -55,9 +54,10 @@ export const MainNavLinksStyles = styled.div`
     position: absolute;
     background-color: #f9f9f9;
     min-width: 200px;
+    /* top: 50px; */
     box-shadow: 5px 8px 15px black;
     padding: 12px 0;
-    z-index: 1;
+    /* z-index: -1; */
 
     ul {
       list-style-type: none;
