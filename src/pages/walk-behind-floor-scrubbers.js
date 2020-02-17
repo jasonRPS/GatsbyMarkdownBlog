@@ -4,6 +4,7 @@ import SEO from "../components/SEO"
 import HeroImage from "../images/walk-behind-scrubber-hero.jpg"
 import styled from "styled-components"
 import SeeMoreButton from "../components/controls/SeeMoreButton"
+import ProductCard from "../components/ProductCard"
 
 const WbfsPageStyles = styled.div`
   .hero-container {
@@ -32,6 +33,15 @@ const WbfsPageStyles = styled.div`
       margin: 0;
     }
   }
+
+  .product-layout {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 `
 
 const WalkBehindFloorScrubbers = () => {
@@ -46,6 +56,12 @@ const WalkBehindFloorScrubbers = () => {
           <div className="heading">
             <h1>Walk Behind Floor Scrubbers</h1>
             <SeeMoreButton title="See Machines" />
+          </div>
+          <div className="product-layout">
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
           </div>
         </WbfsPageStyles>
       </Layout>

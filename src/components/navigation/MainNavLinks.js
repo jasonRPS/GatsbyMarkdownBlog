@@ -14,7 +14,9 @@ const MainNavLinks = () => {
             </Link>
           </div>
           <ul className="main-links">
-            <li className="dropdown">HOME</li>
+            <Link style={{ color: "white", textDecoration: "none" }} to="/">
+              <li className="dropdown">HOME</li>
+            </Link>
             <li className="dropdown">
               PRODUCTS <i className="fas fa-sort-down down-arrow"></i>
               <div className="dropdown-content">
@@ -25,7 +27,12 @@ const MainNavLinks = () => {
                   >
                     <li>Walk Behind Sweepers</li>
                   </Link>
-                  <li>Walk Behind Scrubbers</li>
+                  <Link
+                    style={{ color: "black", textDecoration: "none" }}
+                    to="/walk-behind-floor-scrubbers"
+                  >
+                    <li>Walk Behind Scrubbers</li>
+                  </Link>
                   <li>Ride On Sweepers</li>
                   <li>Ride On Scrubbers</li>
                   <li>Sweeper-Scrubbers</li>
