@@ -3,45 +3,28 @@ import styled from "styled-components"
 
 const SeeMoreStyles = styled.div`
   #chevron {
+    border: 2px solid red;
+    /* background: red; */
+    display: inline-block;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 55px;
     position: relative;
-    text-align: center;
-    padding: 12px;
-    margin-bottom: 6px;
-    height: 50px;
     width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 0.8em;
-
-    &:hover {
-      cursor: pointer;
-    }
+    padding: 1rem;
+    font-size: 0.7em;
   }
   #chevron:before {
+    border-bottom: 10px solid red;
+    border-left: 115px solid transparent;
+    border-right: 115px solid transparent;
     content: "";
-    position: absolute;
-    top: 0;
+    height: 0;
     left: 0;
-    height: 100%;
-    width: 51%;
-    border-top: 2px solid red;
-    border-bottom: 2px solid red;
-    border-left: 2px solid red;
-    background: transparent;
-    transform: skew(0deg, 6deg);
-  }
-  #chevron:after {
-    content: "";
-    border-top: 2px solid red;
-    border-bottom: 2px solid red;
-    border-right: 2px solid red;
     position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 50%;
-    background: transparent;
-    transform: skew(0deg, -6deg);
+    bottom: -10px;
+    width: 0;
+    rotate: 180deg;
   }
 `
 

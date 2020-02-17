@@ -27,6 +27,10 @@ const WbfsPageStyles = styled.div`
     position: absolute;
     bottom: 30%;
     text-align: center;
+
+    h1 {
+      margin: 0;
+    }
   }
 `
 
