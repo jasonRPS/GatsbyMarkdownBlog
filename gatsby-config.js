@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Factory Cat Floor Scrubbers",
     author: "Jason Sorenson",
+    description: "Factory Cat",
   },
   plugins: [
     {

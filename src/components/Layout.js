@@ -23,6 +23,7 @@ const Layout = props => {
           crossOrigin="anonymous"
         />
       </Helmet>
+
       <LayoutStyles>
         <div>
           <MainNav />
