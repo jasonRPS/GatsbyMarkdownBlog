@@ -1,9 +1,6 @@
 import React from "react"
-import Header from "./Header"
 import Footer from "./Footer"
 import Helmet from "react-helmet"
-// import "../styles/index.scss"
-import layoutStyles from "./layouts.module.scss"
 import MainNav from "./navigation/MainNav"
 import { LayoutStyles } from "./styles/LayoutStyles"
 
