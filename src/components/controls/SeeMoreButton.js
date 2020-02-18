@@ -31,7 +31,9 @@ const SeeMoreStyles = styled.div`
 const SeeMoreButton = props => {
   return (
     <SeeMoreStyles>
-      <div id="chevron">{props.title}</div>
+      <a style={{ color: "white" }} href={props.goTo}>
+        <div id="chevron">{props.title}</div>
+      </a>
     </SeeMoreStyles>
   )
 }

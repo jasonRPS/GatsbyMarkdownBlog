@@ -5,6 +5,7 @@ import HeroImage from "../images/walk-behind-scrubber-hero.jpg"
 import styled from "styled-components"
 import SeeMoreButton from "../components/controls/SeeMoreButton"
 import ProductCard from "../components/ProductCard"
+import MiniHDImage from "../images/mini-hd-test.png"
 
 const WbfsPageStyles = styled.div`
   .hero-container {
@@ -35,6 +36,7 @@ const WbfsPageStyles = styled.div`
   }
 
   .product-layout {
+    margin-top: 150px;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -55,10 +57,16 @@ const WalkBehindFloorScrubbers = () => {
           </div>
           <div className="heading">
             <h1>Walk Behind Floor Scrubbers</h1>
-            <SeeMoreButton title="See Machines" />
+            <SeeMoreButton title="See Machines" goTo="#mydiv" />
           </div>
-          <div className="product-layout">
-            <ProductCard />
+          <div className="product-layout" id="mydiv">
+            <ProductCard
+              image={MiniHDImage}
+              name="Mini-HD"
+              tank="Sol: 11gal (42l) Rec: 12gal (45l)"
+              size="17 - 20in (43 - 51cm)"
+              time="Up to 2.5 hours"
+            />
             <ProductCard />
             <ProductCard />
             <ProductCard />
