@@ -24,4 +24,10 @@ export const ImageSelectorStyles = styled.div`
       height: 380px;
     }
   }
+
+  p {
+    &:hover {
+      cursor: pointer;
+    }
+  }
 `

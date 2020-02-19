@@ -10,11 +10,24 @@ class ProductInfo extends Component {
   state = {
     imageStart: TestImage1,
     imageChange: "",
+
+    showModal: "none",
+    modalOpacity: "0",
   }
 
   changeImage = e => {
     e.preventDefault()
     this.setState({ imageChange: e.target.dataset.image })
+  }
+
+  openModal = e => {
+    e.preventDefault()
+    this.setState({ showModal: "block", modalOpacity: "1" })
+  }
+
+  closeModal = e => {
+    e.preventDefault()
+    this.setState({ showModal: "none", modalOpacity: "0" })
   }
 
   render() {
@@ -23,6 +36,10 @@ class ProductInfo extends Component {
         <div id="product-container">
           <div id="image-selector">
             <ImageSelector
+              modalOpacity={this.modalOpacity}
+              openModal={this.openModal}
+              closeModal={this.closeModal}
+              showModal={this.state.showModal}
               imageStart={this.state.imageStart}
               imageChange={this.state.imageChange}
               changeImage={this.changeImage}
