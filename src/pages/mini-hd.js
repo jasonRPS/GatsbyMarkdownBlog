@@ -13,8 +13,11 @@ const MiniHDPageStyles = styled.div`
   }
 
   #spec-nav {
+    position: sticky;
+    top: 60px;
     width: 100%;
     height: 50px;
+    z-index: 2;
     background-color: #2d2d2d;
 
     ul {
@@ -68,7 +71,7 @@ const MiniHDPageStyles = styled.div`
 
   #product-spec-section {
     position: absolute;
-    top: 300px;
+    top: 350px;
     background-color: white;
     width: 70%;
     margin: 2rem auto;
@@ -108,7 +111,7 @@ const MiniHDPageStyles = styled.div`
   }
   .product-specs-cell__title {
     /* margin-left: 1.5rem; */
-    width: 200px;
+    min-width: 250px;
     background-color: lightgray;
     font-weight: bold;
     padding: 0.5rem 0.5rem;
@@ -121,7 +124,8 @@ const MiniHDPageStyles = styled.div`
 
   #options-section {
     position: absolute;
-    top: 780px;
+    top: 900px;
+    /* height: 800px; */
     background-color: white;
     width: 70%;
     margin: 2rem auto;
@@ -140,11 +144,33 @@ const MiniHDPage = () => {
         </div>
         <div id="spec-nav">
           <ul>
-            <li>Features</li>
-            <li>Specifications</li>
-            <li>Options</li>
+            <li>
+              <a
+                style={{ textDecoration: "none", color: "white" }}
+                href="#features-scroll"
+              >
+                Features
+              </a>
+            </li>
+            <li>
+              <a
+                style={{ textDecoration: "none", color: "white" }}
+                href="#product-spec-section"
+              >
+                Specifications
+              </a>
+            </li>
+            <li>
+              <a
+                style={{ textDecoration: "none", color: "white" }}
+                href="#options-section"
+              >
+                Options
+              </a>
+            </li>
           </ul>
         </div>
+        <div id="features-scroll"></div>
         <div id="spec-section">
           <div id="features">
             <ul>

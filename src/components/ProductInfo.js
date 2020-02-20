@@ -9,7 +9,7 @@ import TestImage4 from "../images/sweeper1.png"
 class ProductInfo extends Component {
   state = {
     imageStart: TestImage1,
-    imageChange: "",
+    imageChange: TestImage1,
 
     showModal: "none",
     modalOpacity: "0",
