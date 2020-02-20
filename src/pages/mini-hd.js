@@ -1,8 +1,10 @@
-import React from "react"
+import React, { useState } from "react"
 import Layout from "../components/Layout"
 import ProductInfo from "../components/ProductInfo"
 import styled from "styled-components"
 import SeeMoreButton from "../components/controls/SeeMoreButton"
+import MiniHDImage from "../images/mini-hd-test.png"
+import { If } from "rc-if-else"
 
 const MiniHDPageStyles = styled.div`
   #product-container {
@@ -23,13 +25,14 @@ const MiniHDPageStyles = styled.div`
     ul {
       display: flex;
       justify-content: space-around;
-      align-self: center;
+
       list-style-type: none;
       color: white;
       margin: 0;
 
       li {
-        font-size: 2em;
+        margin-top: 1.2rem;
+        font-size: 1.2em;
       }
     }
   }
@@ -38,7 +41,7 @@ const MiniHDPageStyles = styled.div`
     position: relative;
     background-color: whitesmoke;
     width: 100%;
-    height: 100vh;
+    height: 1000px;
 
     #features {
       position: absolute;
@@ -125,47 +128,96 @@ const MiniHDPageStyles = styled.div`
   #options-section {
     position: absolute;
     top: 900px;
-    /* height: 800px; */
     background-color: white;
     width: 70%;
     margin: 2rem auto;
     left: 50%;
     margin-left: -35%;
     padding-bottom: 2rem;
+
+    h3 {
+      margin-left: 1.5rem;
+    }
+
+    h5 {
+      margin-left: 1.5rem;
+    }
+  }
+
+  #product-scroll {
+    position: sticky;
+    background-color: white;
+    height: 190px;
+    top: 60px;
+    width: 100%;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: space-around;
+    display: none;
+
+    img {
+      width: 150px;
+    }
+
+    html:not([data-scroll="0"]) #product-scroll {
+      display: block;
+    }
   }
 `
 
 const MiniHDPage = () => {
+  const [display, setDisplay] = useState("none")
+  const [position, getPosition] = useState("")
+
+  function handleScroll() {
+    setDisplay("block")
+  }
+
   return (
     <Layout>
       <MiniHDPageStyles>
         <div id="product-container">
           <ProductInfo />
         </div>
+
+        <div
+          style={{ display: display }}
+          onScroll={handleScroll}
+          id="product-scroll"
+        >
+          <div id="small-image">
+            <img src={MiniHDImage} alt="" />
+          </div>
+          <div id="small-info">
+            <p>Mini HD Walk Behind Floor Scrubber</p>
+          </div>
+        </div>
+
         <div id="spec-nav">
           <ul>
             <li>
               <a
-                style={{ textDecoration: "none", color: "white" }}
+                style={{ textDecoration: "none", color: "lightgrey" }}
                 href="#features-scroll"
               >
-                Features
+                FEATURES
               </a>
             </li>
             <li>
               <a
-                style={{ textDecoration: "none", color: "white" }}
+                style={{ textDecoration: "none", color: "lightgrey" }}
                 href="#product-spec-section"
               >
-                Specifications
+                SPECIFICATIONS
               </a>
             </li>
             <li>
               <a
-                style={{ textDecoration: "none", color: "white" }}
+                style={{ textDecoration: "none", color: "lightgrey" }}
                 href="#options-section"
               >
-                Options
+                OPTIONS
               </a>
             </li>
           </ul>
@@ -378,7 +430,10 @@ const MiniHDPage = () => {
             </div>
           </div>
 
-          <div id="options-section">Hello Here are the options</div>
+          <div id="options-section">
+            <h3>Options</h3>
+            <h5> BATTERY ONLY OPTIONS </h5>
+          </div>
         </div>
       </MiniHDPageStyles>
     </Layout>
