@@ -156,8 +156,10 @@ const MiniHDPageStyles = styled.div`
 
   #product-small-data {
     display: flex;
-    /* width: 100%; */
+    width: 50%;
+    margin: auto;
     padding: 1rem;
+    font-size: 1.5em;
   }
 
   #scroll-up-arrow {
@@ -210,13 +212,13 @@ const MiniHDPageStyles = styled.div`
 
 const MiniHDPage = () => {
   const [display, setDisplay] = useState("none")
-  const [featureSelected, setFeatureSelect] = useState("")
+  const [featureSelected, setFeatureSelect] = useState("select-feature-link")
   const [specSelected, setSpecSelect] = useState("")
 
   React.useEffect(() => {
     const handleScroll = e => {
       let y = window.scrollY
-      if (y > 355) {
+      if (y > 380) {
         setDisplay("block")
       } else setDisplay("none")
       console.log(y)
@@ -248,11 +250,11 @@ const MiniHDPage = () => {
   }
 
   function scrollToSpecifications() {
-    window.scrollTo(0, 818)
+    window.scrollTo(0, 892)
   }
 
   function scrollToFeatures() {
-    window.scrollTo(0, 518)
+    window.scrollTo(0, 541)
   }
 
   function scrollToOptions() {
@@ -283,6 +285,7 @@ const MiniHDPage = () => {
               <p style={{ fontWeight: "bold" }}>
                 Mini HD Walk Behind Floor Scrubber
               </p>
+              <button>Find a Distributor</button>
             </div>
           </div>
         </div>
