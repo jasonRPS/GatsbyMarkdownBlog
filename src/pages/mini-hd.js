@@ -167,6 +167,7 @@ const MiniHDPageStyles = styled.div`
     font-size: 4em;
     z-index: 100;
     color: red;
+    transition-duration: 0.2s;
 
     &:hover {
       cursor: pointer;
@@ -219,10 +220,6 @@ const MiniHDPage = () => {
         setDisplay("block")
       } else setDisplay("none")
       console.log(y)
-
-      // if (y < 661) {
-      //   setSelect("selected-section")
-      // } else setSelect("unselected-links")
     }
     document.addEventListener("scroll", handleScroll, { passive: true })
     return () => {
