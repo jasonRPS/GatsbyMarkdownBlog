@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Layout from "../components/Layout"
 import ProductInfo from "../components/ProductInfo"
 import styled from "styled-components"
@@ -16,7 +16,7 @@ const MiniHDPageStyles = styled.div`
 
   #spec-nav {
     position: sticky;
-    top: 60px;
+    top: 220px;
     width: 100%;
     height: 50px;
     z-index: 2;
@@ -147,32 +147,41 @@ const MiniHDPageStyles = styled.div`
   #product-scroll {
     position: sticky;
     background-color: white;
-    height: 190px;
+    height: 160px;
     top: 60px;
     width: 100%;
-    display: flex;
     z-index: 2;
     align-items: center;
     justify-content: space-around;
-    display: none;
 
     img {
-      width: 150px;
+      width: 130px;
     }
+  }
 
-    html:not([data-scroll="0"]) #product-scroll {
-      display: block;
-    }
+  #product-small-data {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
   }
 `
 
 const MiniHDPage = () => {
   const [display, setDisplay] = useState("none")
-  const [position, getPosition] = useState("")
 
-  function handleScroll() {
-    setDisplay("block")
-  }
+  React.useEffect(() => {
+    const handleScroll = e => {
+      let y = window.scrollY
+      if (y > 355) {
+        setDisplay("block")
+      } else setDisplay("none")
+      console.log(y)
+    }
+    document.addEventListener("scroll", handleScroll, { passive: true })
+    return () => {
+      document.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
 
   return (
     <Layout>
@@ -181,16 +190,14 @@ const MiniHDPage = () => {
           <ProductInfo />
         </div>
 
-        <div
-          style={{ display: display }}
-          onScroll={handleScroll}
-          id="product-scroll"
-        >
-          <div id="small-image">
-            <img src={MiniHDImage} alt="" />
-          </div>
-          <div id="small-info">
-            <p>Mini HD Walk Behind Floor Scrubber</p>
+        <div style={{ display: display }} id="product-scroll">
+          <div id="product-small-data">
+            <div id="small-image">
+              <img src={MiniHDImage} alt="" />
+            </div>
+            <div id="small-info">
+              <p>Mini HD Walk Behind Floor Scrubber</p>
+            </div>
           </div>
         </div>
 
