@@ -16,23 +16,18 @@ const MiniHDPageStyles = styled.div`
 
   #spec-nav {
     position: sticky;
+    display: flex;
+    justify-content: space-evenly;
     top: 220px;
     width: 100%;
     height: 50px;
     z-index: 2;
     background-color: #2d2d2d;
 
-    ul {
-      display: flex;
-      justify-content: space-around;
-
-      list-style-type: none;
+    p {
       color: white;
-      margin: 0;
-
-      li {
-        margin-top: 1.2rem;
-        font-size: 1.2em;
+      &:hover {
+        cursor: pointer;
       }
     }
   }
@@ -146,7 +141,7 @@ const MiniHDPageStyles = styled.div`
 
   #product-scroll {
     position: sticky;
-    background-color: white;
+    background-color: whitesmoke;
     height: 160px;
     top: 60px;
     width: 100%;
@@ -161,13 +156,61 @@ const MiniHDPageStyles = styled.div`
 
   #product-small-data {
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     padding: 1rem;
+  }
+
+  #scroll-up-arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 4em;
+    z-index: 100;
+    color: red;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .select-feature-link {
+    border: 2px solid red;
+    background: red;
+    display: inline-block;
+    height: 20px;
+    /* margin-left: 20px;
+    margin-top: 55px; */
+    position: relative;
+    width: 160px;
+    padding: 0.3rem;
+    /* font-size: 0.7em; */
+    text-align: center;
+    transition-duration: 0.2s;
+  }
+
+  .select-feature-link:before {
+    border-bottom: 10px solid red;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    content: "";
+    height: 0;
+    left: 0;
+    margin-left: 20%;
+    position: absolute;
+    bottom: -10px;
+    width: 0;
+    rotate: 180deg;
+  }
+
+  .unselected-links {
+    color: white;
   }
 `
 
 const MiniHDPage = () => {
   const [display, setDisplay] = useState("none")
+  const [featureSelected, setFeatureSelect] = useState("")
+  const [specSelected, setSpecSelect] = useState("")
 
   React.useEffect(() => {
     const handleScroll = e => {
@@ -176,12 +219,48 @@ const MiniHDPage = () => {
         setDisplay("block")
       } else setDisplay("none")
       console.log(y)
+
+      // if (y < 661) {
+      //   setSelect("selected-section")
+      // } else setSelect("unselected-links")
     }
     document.addEventListener("scroll", handleScroll, { passive: true })
     return () => {
       document.removeEventListener("scroll", handleScroll)
     }
   }, [])
+
+  React.useEffect(() => {
+    const handleSelect = e => {
+      let y = window.scrollY
+      if (y < 661) {
+        setFeatureSelect("select-feature-link")
+      } else setFeatureSelect("unselected-links")
+      if (y > 661 && y < 1073) {
+        setSpecSelect("select-feature-link")
+      } else setSpecSelect("unselected-links")
+    }
+    document.addEventListener("scroll", handleSelect, { passive: true })
+    return () => {
+      document.removeEventListener("scroll", handleSelect)
+    }
+  }, [])
+
+  function scrollToTop() {
+    window.scrollTo(0, 0)
+  }
+
+  function scrollToSpecifications() {
+    window.scrollTo(0, 818)
+  }
+
+  function scrollToFeatures() {
+    window.scrollTo(0, 518)
+  }
+
+  function scrollToOptions() {
+    window.scrollTo(0, 1055)
+  }
 
   return (
     <Layout>
@@ -190,45 +269,37 @@ const MiniHDPage = () => {
           <ProductInfo />
         </div>
 
+        <div
+          onClick={scrollToTop}
+          id="scroll-up-arrow"
+          style={{ display: display }}
+        >
+          <i className="fas fa-arrow-circle-up"></i>
+        </div>
+
         <div style={{ display: display }} id="product-scroll">
           <div id="product-small-data">
             <div id="small-image">
               <img src={MiniHDImage} alt="" />
             </div>
             <div id="small-info">
-              <p>Mini HD Walk Behind Floor Scrubber</p>
+              <p style={{ fontWeight: "bold" }}>
+                Mini HD Walk Behind Floor Scrubber
+              </p>
             </div>
           </div>
         </div>
 
         <div id="spec-nav">
-          <ul>
-            <li>
-              <a
-                style={{ textDecoration: "none", color: "lightgrey" }}
-                href="#features-scroll"
-              >
-                FEATURES
-              </a>
-            </li>
-            <li>
-              <a
-                style={{ textDecoration: "none", color: "lightgrey" }}
-                href="#product-spec-section"
-              >
-                SPECIFICATIONS
-              </a>
-            </li>
-            <li>
-              <a
-                style={{ textDecoration: "none", color: "lightgrey" }}
-                href="#options-section"
-              >
-                OPTIONS
-              </a>
-            </li>
-          </ul>
+          <p className={featureSelected} onClick={scrollToFeatures}>
+            FEATURES
+          </p>
+          <p className={specSelected} onClick={scrollToSpecifications}>
+            SPECIFICATIONS
+          </p>
+          <p onClick={scrollToOptions}>OPTIONS</p>
         </div>
+
         <div id="features-scroll"></div>
         <div id="spec-section">
           <div id="features">
