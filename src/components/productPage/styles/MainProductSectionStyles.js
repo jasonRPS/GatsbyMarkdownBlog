@@ -22,6 +22,10 @@ export const MainProductSectionStyles = styled.div`
     height: 80px;
     border: 2px solid black;
     margin: 2rem;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .main-image {

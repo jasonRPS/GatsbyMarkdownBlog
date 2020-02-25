@@ -1,13 +1,25 @@
-import React from "react"
+import React, { useState } from "react"
 import { MainProductSectionStyles } from "./styles/MainProductSectionStyles"
+import ImageGalleryModal from "./ImageGalleryModal"
 
 const MainProductSection = props => {
+  const [modalDisplay, setModal] = useState("none")
+
+  function openModal() {
+    setModal("block")
+  }
+
+  function closeModal() {
+    setModal("none")
+  }
+
   return (
     <MainProductSectionStyles>
+      <ImageGalleryModal modalDisplay={modalDisplay} closeModal={closeModal} />
       <div id="container">
         <div id="thumbnail-image-container">
           <div id="thumbnails">
-            <div className="thumbnail-link"></div>
+            <div onClick={openModal} className="thumbnail-link"></div>
             <div className="thumbnail-link"></div>
             <div className="thumbnail-link"></div>
             <div className="thumbnail-link"></div>

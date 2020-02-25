@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { ProductPageStyles } from "../components/productPage/styles/ProductPageStyle"
 import ProductPageLayout from "../components/productPage/ProductPageLayout"
 
@@ -7,6 +7,10 @@ import ScrubImage from "../images/30-inch-cylindrical-spin.png"
 import ScrubImage2 from "../images/260-30-inch-deck.png"
 
 const MiniHDPage = () => {
+  const [selected, setSelected] = useState("unselected-link")
+
+  function selectLink() {}
+
   return (
     <ProductPageLayout
       mainImage={MainImage}
@@ -18,10 +22,10 @@ const MiniHDPage = () => {
       <ProductPageStyles>
         <div id="product-details-nav">
           <ul>
-            <li>Features</li>
-            <li>Specifications</li>
-            <li>Options</li>
-            <li>You be the Judge</li>
+            <li className={selected}>Features</li>
+            <li className={selected}>Specifications</li>
+            <li className={selected}>Options</li>
+            <li className={selected}>You be the Judge</li>
           </ul>
         </div>
       </ProductPageStyles>
