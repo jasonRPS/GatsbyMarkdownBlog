@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 const MainNavStyles = styled.div`
   position: fixed;
-  background: #c64247;
+  background: #ed2024;
   /* height: 50px; */
   padding: 0.5rem 0;
   width: 100%;

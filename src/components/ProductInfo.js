@@ -5,6 +5,8 @@ import TestImage1 from "../images/sweeper1.png"
 import TestImage2 from "../images/sweeper2.png"
 import TestImage3 from "../images/sweeper3.png"
 import TestImage4 from "../images/sweeper1.png"
+import CylindricalImage from "../images/30-inch-cylindrical-spin.png"
+import DeckImage from "../images/260-30-inch-deck.png"
 
 class ProductInfo extends Component {
   state = {
@@ -62,6 +64,11 @@ class ProductInfo extends Component {
               rotated or flipped without tools. Ensure complete cleaning in a
               variety of sized applications with a reliable scrubber.
             </p>
+            <h2>Two Scrub Systems to Choose From</h2>
+            <div id="disk-selection-images">
+              <img src={CylindricalImage} />
+              <img src={DeckImage} />
+            </div>
           </div>
         </div>
       </ProductInfoStyles>

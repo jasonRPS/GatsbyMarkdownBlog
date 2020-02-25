@@ -18,9 +18,9 @@ const MiniHDPageStyles = styled.div`
     position: sticky;
     display: flex;
     justify-content: space-evenly;
-    top: 220px;
+    top: 200px;
     width: 100%;
-    height: 50px;
+    height: 40px;
     z-index: 2;
     background-color: #2d2d2d;
 
@@ -142,7 +142,7 @@ const MiniHDPageStyles = styled.div`
   #product-scroll {
     position: sticky;
     background-color: whitesmoke;
-    height: 160px;
+    height: 140px;
     top: 60px;
     width: 100%;
     z-index: 2;
@@ -150,7 +150,8 @@ const MiniHDPageStyles = styled.div`
     justify-content: space-around;
 
     img {
-      width: 130px;
+      width: 100px;
+      margin: 0;
     }
   }
 
@@ -160,6 +161,12 @@ const MiniHDPageStyles = styled.div`
     margin: auto;
     padding: 1rem;
     font-size: 1.5em;
+    justify-content: space-around;
+    align-items: center;
+
+    button {
+      height: 50px;
+    }
   }
 
   #scroll-up-arrow {
@@ -180,14 +187,15 @@ const MiniHDPageStyles = styled.div`
     border: 2px solid red;
     background: red;
     display: inline-block;
-    height: 20px;
+    height: 30px;
     /* margin-left: 20px;
     margin-top: 55px; */
     position: relative;
     width: 160px;
-    padding: 0.3rem;
+    padding-bottom: 0.3rem;
     /* font-size: 0.7em; */
     text-align: center;
+    /* align-self: center; */
     transition-duration: 0.2s;
   }
 
@@ -207,6 +215,7 @@ const MiniHDPageStyles = styled.div`
 
   .unselected-links {
     color: white;
+    align-self: center;
   }
 `
 
@@ -215,7 +224,7 @@ const MiniHDPage = () => {
   const [featureSelected, setFeatureSelect] = useState("select-feature-link")
   const [specSelected, setSpecSelect] = useState("")
 
-  React.useEffect(() => {
+  useEffect(() => {
     const handleScroll = e => {
       let y = window.scrollY
       if (y > 380) {
@@ -229,7 +238,7 @@ const MiniHDPage = () => {
     }
   }, [])
 
-  React.useEffect(() => {
+  useEffect(() => {
     const handleSelect = e => {
       let y = window.scrollY
       if (y < 661) {
@@ -250,11 +259,11 @@ const MiniHDPage = () => {
   }
 
   function scrollToSpecifications() {
-    window.scrollTo(0, 892)
+    window.scrollTo(0, 970)
   }
 
   function scrollToFeatures() {
-    window.scrollTo(0, 541)
+    window.scrollTo(0, 600)
   }
 
   function scrollToOptions() {
@@ -285,8 +294,8 @@ const MiniHDPage = () => {
               <p style={{ fontWeight: "bold" }}>
                 Mini HD Walk Behind Floor Scrubber
               </p>
-              <button>Find a Distributor</button>
             </div>
+            <button>Find a Distributor</button>
           </div>
         </div>
 
