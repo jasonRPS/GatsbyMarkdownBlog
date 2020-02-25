@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 export const ProductPageStyles = styled.div`
+  background: whitesmoke;
   #product-details-nav {
     width: 100%;
     height: 40px;

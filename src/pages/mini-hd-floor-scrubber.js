@@ -5,9 +5,14 @@ import ProductPageLayout from "../components/productPage/ProductPageLayout"
 import MainImage from "../images/mini-hd-test2.png"
 import ScrubImage from "../images/30-inch-cylindrical-spin.png"
 import ScrubImage2 from "../images/260-30-inch-deck.png"
+import FeaturesSection from "../components/productPage/FeaturesSection"
+import SpecsSection from "../components/productPage/SpecsSection"
 
 const MiniHDPage = () => {
-  const [selected, setSelected] = useState("unselected-link")
+  const [featuresSelected, setFeaturesSelected] = useState("unselected-link")
+  const [specsSelected, setSpecsSelected] = useState("unselected-link")
+  const [optionsSelected, setOptionsSelected] = useState("unselected-link")
+  const [judgeSelected, setJudgeSelected] = useState("unselected-link")
 
   function selectLink() {}
 
@@ -22,12 +27,20 @@ const MiniHDPage = () => {
       <ProductPageStyles>
         <div id="product-details-nav">
           <ul>
-            <li className={selected}>Features</li>
-            <li className={selected}>Specifications</li>
-            <li className={selected}>Options</li>
-            <li className={selected}>You be the Judge</li>
+            <li className={featuresSelected}>Features</li>
+            <li className={specsSelected}>Specifications</li>
+            <li className={optionsSelected}>Options</li>
+            <li className={judgeSelected}>You be the Judge</li>
           </ul>
         </div>
+        <div className="product-sections" id="features-section">
+          <FeaturesSection />
+        </div>
+        <div className="product-sections" id="spec-section">
+          <SpecsSection />
+        </div>
+        <div className="product-sections" id="option-section"></div>
+        <div className="product-sections" id="judge-section"></div>
       </ProductPageStyles>
     </ProductPageLayout>
   )
