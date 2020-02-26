@@ -29,6 +29,7 @@ export const MainProductSectionStyles = styled.div`
   }
 
   .main-image {
+    position: relative;
     width: 100%;
     height: 500px;
     /* border: 2px solid black; */
@@ -37,6 +38,18 @@ export const MainProductSectionStyles = styled.div`
       width: 100%;
       height: 100%;
       object-fit: contain;
+    }
+
+    .handMade {
+      position: absolute;
+      width: 20%;
+      height: auto;
+      top: 0;
+      right: 80px;
+      z-index: -1;
+      img {
+        width: 150px;
+      }
     }
   }
 

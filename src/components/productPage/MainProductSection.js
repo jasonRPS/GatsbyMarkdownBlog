@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { MainProductSectionStyles } from "./styles/MainProductSectionStyles"
 import ImageGalleryModal from "./ImageGalleryModal"
+import MadeInUSAImage from "../../images/hand-made.jpg"
 
 const MainProductSection = props => {
   const [modalDisplay, setModal] = useState("none")
@@ -26,6 +27,11 @@ const MainProductSection = props => {
           </div>
           <div className="main-image">
             <img src={props.mainImage} alt={props.alt} />
+            <img
+              className="handMade"
+              src={MadeInUSAImage}
+              alt="hand made in usa"
+            />
           </div>
         </div>
         <div id="product-details">

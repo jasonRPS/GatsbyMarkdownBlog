@@ -5,7 +5,7 @@ const FeaturesStyles = styled.div`
   #features-container {
     background-color: white;
     display: flex;
-    width: 80%;
+    width: 90%;
     margin: 2rem auto;
     justify-content: space-evenly;
 

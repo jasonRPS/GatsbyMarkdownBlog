@@ -2,6 +2,11 @@ import styled from "styled-components"
 
 export const ProductPageStyles = styled.div`
   background: whitesmoke;
+  #scroll-description {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+  }
   #product-details-nav {
     width: 100%;
     height: 40px;
@@ -17,11 +22,30 @@ export const ProductPageStyles = styled.div`
 
       margin: 0;
       padding: 0;
+
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        display: -ms-flexbox;
+        width: 1200px;
+        margin: 0 auto;
+      }
+
+      @supports (-ms-ime-align: auto) {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
       li {
         align-self: center;
         font-size: 1.2em;
         margin: 0;
         /* padding: 0; */
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          margin: 0 3rem;
+        }
+
+        @supports (-ms-ime-align: auto) {
+          margin: 0 3rem;
+        }
       }
     }
   }
