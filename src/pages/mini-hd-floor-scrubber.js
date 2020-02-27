@@ -26,7 +26,7 @@ const MiniHDPage = () => {
 
   useEffect(() => {
     let y = window.scrollY
-    if (y > 615) {
+    if (y > 490) {
       setDisplay("block")
     } else setDisplay("none")
   })
@@ -35,10 +35,12 @@ const MiniHDPage = () => {
   useEffect(() => {
     const handleScroll = e => {
       let y = window.scrollY
+      //   let x = window.scrollX
       if (y > 495) {
         setTopMargin("0")
       } else setTopMargin("-100px")
       console.log(y)
+      //   console.log(x)
     }
     document.addEventListener("scroll", handleScroll, { passive: true })
     return () => {
@@ -49,6 +51,7 @@ const MiniHDPage = () => {
   useEffect(() => {
     const handleSelect = e => {
       let y = window.scrollY
+
       if (y < 615) {
         setFeaturesSelected("selected-link")
       } else setFeaturesSelected("unselected-link")

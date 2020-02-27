@@ -16,7 +16,7 @@ export const ProductPageStyles = styled.div`
       display: flex;
       align-items: center;
       justify-content: space-around;
-      z-index: 5;
+      z-index: 3;
 
       button {
         color: white;
@@ -35,7 +35,7 @@ export const ProductPageStyles = styled.div`
     top: 125px;
     width: 100%;
     height: 40px;
-    z-index: 5;
+    z-index: 3;
     background-color: black;
 
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
