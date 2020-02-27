@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { ProductPageStyles } from "../components/productPage/styles/ProductPageStyle"
 import ProductPageLayout from "../components/productPage/ProductPageLayout"
 
@@ -17,12 +17,69 @@ import SpecsSection from "../components/productPage/SpecsSection"
 import OptionsSection from "../components/productPage/OptionsSection"
 
 const MiniHDPage = () => {
-  const [featuresSelected, setFeaturesSelected] = useState("unselected-link")
+  const [featuresSelected, setFeaturesSelected] = useState("selected-link")
   const [specsSelected, setSpecsSelected] = useState("unselected-link")
   const [optionsSelected, setOptionsSelected] = useState("unselected-link")
   const [judgeSelected, setJudgeSelected] = useState("unselected-link")
+  const [display, setDisplay] = useState("none")
+  const [topMargin, setTopMargin] = useState("-100px")
 
-  function selectLink() {}
+  useEffect(() => {
+    let y = window.scrollY
+    if (y > 615) {
+      setDisplay("block")
+    } else setDisplay("none")
+  })
+
+  // Handles top dropdown
+  useEffect(() => {
+    const handleScroll = e => {
+      let y = window.scrollY
+      if (y > 495) {
+        setTopMargin("0")
+      } else setTopMargin("-100px")
+      console.log(y)
+    }
+    document.addEventListener("scroll", handleScroll, { passive: true })
+    return () => {
+      document.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
+
+  useEffect(() => {
+    const handleSelect = e => {
+      let y = window.scrollY
+      if (y < 615) {
+        setFeaturesSelected("selected-link")
+      } else setFeaturesSelected("unselected-link")
+      if (y > 614 && y < 1073) {
+        setSpecsSelected("selected-link")
+      } else setSpecsSelected("unselected-link")
+      if (y > 1072 && y < 2073) {
+        setOptionsSelected("selected-link")
+      } else setOptionsSelected("unselected-link")
+    }
+    document.addEventListener("scroll", handleSelect, { passive: true })
+    return () => {
+      document.removeEventListener("scroll", handleSelect)
+    }
+  }, [])
+
+  function scrollToTop() {
+    window.scrollTo(0, 0)
+  }
+
+  function scrollToFeatures() {
+    window.scrollTo(0, 505)
+  }
+
+  function scrollToSpecifications() {
+    window.scrollTo(0, 776)
+  }
+
+  function scrollToOptions() {
+    window.scrollTo(0, 1205)
+  }
 
   return (
     <ProductPageLayout
@@ -33,12 +90,40 @@ const MiniHDPage = () => {
       scrubImage2={ScrubImage2}
     >
       <ProductPageStyles>
-        {/* <div id="scroll-description"></div> */}
+        <div
+          onClick={scrollToTop}
+          id="scroll-up-arrow"
+          style={{ display: display }}
+        >
+          <i className="fas fa-arrow-circle-up"></i>
+        </div>
+        <div
+          style={{ marginTop: topMargin, transitionDuration: ".3s" }}
+          id="scroll-description"
+        >
+          <div id="scroll-description-data">
+            <div id="img">
+              <img style={{ width: "50px" }} src={MainImage} alt="main image" />
+            </div>
+            <div id="machine-title">
+              <h4 style={{ color: "white", margin: "0" }}>Mini-HD</h4>
+            </div>
+            <div id="local-disti-btn">
+              <button style={{ margin: "0" }}>Find a Local Distributor</button>
+            </div>
+          </div>
+        </div>
         <div id="product-details-nav">
           <ul>
-            <li className={featuresSelected}>Features</li>
-            <li className={specsSelected}>Specifications</li>
-            <li className={optionsSelected}>Options</li>
+            <li onClick={scrollToFeatures} className={featuresSelected}>
+              Features
+            </li>
+            <li onClick={scrollToSpecifications} className={specsSelected}>
+              Specifications
+            </li>
+            <li onClick={scrollToOptions} className={optionsSelected}>
+              Options
+            </li>
             <li className={judgeSelected}>You be the Judge</li>
           </ul>
         </div>

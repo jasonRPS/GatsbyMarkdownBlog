@@ -2,14 +2,29 @@ import styled from "styled-components"
 
 export const ProductPageStyles = styled.div`
   background: whitesmoke;
+  padding-bottom: 2rem;
   #scroll-description {
+    position: fixed;
+    top: 60px;
     width: 100%;
     height: 50px;
+    padding: 0.5rem;
     background-color: black;
+    z-index: 3;
+
+    #scroll-description-data {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      z-index: 5;
+    }
   }
   #product-details-nav {
+    position: sticky;
+    top: 125px;
     width: 100%;
     height: 40px;
+    z-index: 5;
     background-color: black;
 
     ul {
@@ -46,6 +61,10 @@ export const ProductPageStyles = styled.div`
         @supports (-ms-ime-align: auto) {
           margin: 0 3rem;
         }
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }
@@ -55,6 +74,7 @@ export const ProductPageStyles = styled.div`
     width: 160px;
     padding: 0.4rem;
     text-align: center;
+    transition-duration: 0.4s;
   }
   .selected-link {
     position: relative;
@@ -62,6 +82,7 @@ export const ProductPageStyles = styled.div`
     width: 160px;
     padding: 0.45rem;
     text-align: center;
+    transition-duration: 0.4s;
     /* border-bottom: 10px solid green;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent; */
@@ -79,5 +100,20 @@ export const ProductPageStyles = styled.div`
     bottom: -10px;
     width: 0;
     transform: rotate(180deg);
+    transition-duration: 0.4s;
+  }
+
+  #scroll-up-arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 4em;
+    z-index: 100;
+    color: red;
+    transition-duration: 0.2s;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 `
