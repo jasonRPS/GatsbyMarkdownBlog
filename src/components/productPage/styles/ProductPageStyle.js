@@ -17,6 +17,17 @@ export const ProductPageStyles = styled.div`
       align-items: center;
       justify-content: space-around;
       z-index: 5;
+
+      button {
+        color: white;
+        border: none;
+        background-color: red;
+        padding: 0.5rem;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
     }
   }
   #product-details-nav {
@@ -26,6 +37,11 @@ export const ProductPageStyles = styled.div`
     height: 40px;
     z-index: 5;
     background-color: black;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      position: fixed;
+      top: 60px;
+    }
 
     ul {
       width: 100%;

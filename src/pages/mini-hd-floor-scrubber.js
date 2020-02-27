@@ -106,10 +106,10 @@ const MiniHDPage = () => {
               <img style={{ width: "50px" }} src={MainImage} alt="main image" />
             </div>
             <div id="machine-title">
-              <h4 style={{ color: "white", margin: "0" }}>Mini-HD</h4>
+              <h3 style={{ color: "white", margin: "0" }}>Mini-HD</h3>
             </div>
             <div id="local-disti-btn">
-              <button style={{ margin: "0" }}>Find a Local Distributor</button>
+              <button>Find a Local Distributor</button>
             </div>
           </div>
         </div>
