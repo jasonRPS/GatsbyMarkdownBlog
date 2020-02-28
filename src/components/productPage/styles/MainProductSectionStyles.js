@@ -18,10 +18,27 @@ export const MainProductSectionStyles = styled.div`
   }
 
   .thumbnail-link {
-    width: 80px;
-    height: 80px;
-    border: 2px solid black;
+    display: flex;
+    align-items: center;
+
     margin: 2rem;
+
+    p {
+      text-align: center;
+      margin-left: 10px;
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    img {
+      width: 80px;
+      height: 80px;
+      border: 2px solid black;
+      /* width: 100%;
+      height: 100%; */
+      object-fit: cover;
+    }
 
     &:hover {
       cursor: pointer;

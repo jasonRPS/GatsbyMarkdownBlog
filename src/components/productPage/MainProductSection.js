@@ -3,6 +3,10 @@ import { MainProductSectionStyles } from "./styles/MainProductSectionStyles"
 import ImageGalleryModal from "./ImageGalleryModal"
 import MadeInUSAImage from "../../images/hand-made.jpg"
 
+import GalleryImage from "../../images/fc-image3.jpg"
+import UnderHoodImage from "../../images/under-the-hood.jpg"
+import CompareImage from "../../images/judge.jpg"
+
 const MainProductSection = props => {
   const [modalDisplay, setModal] = useState("none")
 
@@ -20,10 +24,21 @@ const MainProductSection = props => {
       <div id="container">
         <div id="thumbnail-image-container">
           <div id="thumbnails">
-            <div onClick={openModal} className="thumbnail-link"></div>
-            <div className="thumbnail-link"></div>
-            <div className="thumbnail-link"></div>
-            <div className="thumbnail-link"></div>
+            <div onClick={openModal} className="thumbnail-link">
+              <img src={GalleryImage} />
+              <p>Image Gallery</p>
+            </div>
+            <div className="thumbnail-link">
+              <img src={UnderHoodImage} />
+              <p>Under the Hood</p>
+            </div>
+            <div className="thumbnail-link">
+              <img src={CompareImage} />
+              <p>You be the Judge</p>
+            </div>
+            <div className="thumbnail-link">
+              <img src={GalleryImage} />
+            </div>
           </div>
           <div className="main-image">
             <img src={props.mainImage} alt={props.alt} />

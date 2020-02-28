@@ -56,12 +56,12 @@ export const ProductPageStyles = styled.div`
 
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         display: -ms-flexbox;
-        width: 1200px;
+        width: 800px;
         margin: 0 auto;
       }
 
       @supports (-ms-ime-align: auto) {
-        width: 1200px;
+        width: 800px;
         margin-left: auto;
         margin-right: auto;
       }

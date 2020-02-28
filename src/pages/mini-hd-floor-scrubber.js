@@ -127,7 +127,7 @@ const MiniHDPage = () => {
             <li onClick={scrollToOptions} className={optionsSelected}>
               Options
             </li>
-            <li className={judgeSelected}>You be the Judge</li>
+            {/* <li className={judgeSelected}>You be the Judge</li> */}
           </ul>
         </div>
         <div className="product-sections" id="features-section">
