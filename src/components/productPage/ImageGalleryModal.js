@@ -63,6 +63,19 @@ const GalleryStyles = styled.div`
       width: 80px;
       height: 80px;
 
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        margin: 0 1rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @supports (-ms-ime-align: auto) {
+        width: 90%;
+        margin: 0 1rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
       img {
         width: 100%;
         height: 100%;
@@ -70,14 +83,33 @@ const GalleryStyles = styled.div`
       }
     }
   }
+
+  #modal-title {
+    position: absolute;
+    color: white;
+    z-index: 5;
+    top: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+
+    h1 {
+      padding: 0;
+      margin: 0;
+    }
+  }
 `
+
+//#323232
 
 const ImageGalleryModal = props => {
   return (
     <GalleryStyles>
-      <div style={{ display: props.modalDisplay }} id="gallery-container">
+      <div style={{ display: props.modalImageDisplay }} id="gallery-container">
         <div id="x-close">
           <i onClick={props.closeModal} className="fas fa-times-circle"></i>
+        </div>
+        <div id="modal-title">
+          <h1>IMAGE GALLERY</h1>
         </div>
         <div className="main-image">
           <img src={Image1} alt="" />

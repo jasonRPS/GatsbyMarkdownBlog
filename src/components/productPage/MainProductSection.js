@@ -1,52 +1,70 @@
 import React, { useState } from "react"
 import { MainProductSectionStyles } from "./styles/MainProductSectionStyles"
 import ImageGalleryModal from "./ImageGalleryModal"
-import MadeInUSAImage from "../../images/hand-made.jpg"
+import YuoBeJudgeModal from "./YouBeJudgeModal"
 
+import MadeInUSAImage from "../../images/hand-made.jpg"
 import GalleryImage from "../../images/fc-image3.jpg"
 import UnderHoodImage from "../../images/under-the-hood.jpg"
 import CompareImage from "../../images/judge.jpg"
+import MainMachineImage from "../../images/mini-hd-test-usa.jpg"
 
 const MainProductSection = props => {
-  const [modalDisplay, setModal] = useState("none")
+  const [modalImageDisplay, setImageModal] = useState("none")
+  const [modalHoodDisplay, setHoodModal] = useState("none")
+  const [modalJudgeDisplay, setJudgeModal] = useState("none")
+  // const [modalImageDisplay, setImageModal] = useState("none")
 
-  function openModal() {
-    setModal("block")
+  function openImageModal() {
+    setImageModal("block")
+  }
+
+  function openHoodModal() {
+    setHoodModal("block")
+  }
+
+  function openJudgeModal() {
+    setJudgeModal("block")
   }
 
   function closeModal() {
-    setModal("none")
+    setImageModal("none")
+    setHoodModal("none")
+    setJudgeModal("none")
   }
 
   return (
     <MainProductSectionStyles>
-      <ImageGalleryModal modalDisplay={modalDisplay} closeModal={closeModal} />
+      <ImageGalleryModal
+        modalImageDisplay={modalImageDisplay}
+        closeModal={closeModal}
+      />
+      <YuoBeJudgeModal
+        modalHoodDisplay={modalHoodDisplay}
+        closeModal={closeModal}
+      />
       <div id="container">
         <div id="thumbnail-image-container">
           <div id="thumbnails">
-            <div onClick={openModal} className="thumbnail-link">
-              <img src={GalleryImage} />
-              <p>Image Gallery</p>
+            <div onClick={openImageModal} className="thumbnail-link">
+              <img src={CompareImage} />
+              <p>You be the judge</p>
             </div>
-            <div className="thumbnail-link">
+            <div onClick={openHoodModal} className="thumbnail-link">
               <img src={UnderHoodImage} />
-              <p>Under the Hood</p>
+              <p>Videos</p>
             </div>
             <div className="thumbnail-link">
               <img src={CompareImage} />
-              <p>You be the Judge</p>
+              <p>Machine images</p>
             </div>
             <div className="thumbnail-link">
               <img src={GalleryImage} />
+              <p>Application</p>
             </div>
           </div>
           <div className="main-image">
-            <img src={props.mainImage} alt={props.alt} />
-            <img
-              className="handMade"
-              src={MadeInUSAImage}
-              alt="hand made in usa"
-            />
+            <img src={MainMachineImage} alt={props.alt} />
           </div>
         </div>
         <div id="product-details">

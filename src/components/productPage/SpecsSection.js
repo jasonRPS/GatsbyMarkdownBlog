@@ -17,6 +17,7 @@ const SpecsStyles = styled.div`
 
       li {
         margin: 0.8rem 1rem;
+        color: red;
       }
     }
   }

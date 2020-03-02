@@ -1,16 +1,24 @@
 import React, { useState } from "react"
 import styled from "styled-components"
 import CommonOptions from "./CommonOptions"
-import bgImage from "../../images/fc-image3.jpg"
+import bgImage from "../../images/options-background.jpg"
 import Video from "../../images/factory-video.mp4"
 
 const OptionsStyles = styled.div`
   #options-section-container {
+    position: relative;
     width: 90%;
     margin: 2rem auto;
     justify-content: space-evenly;
     background-color: white;
     padding-bottom: 2rem;
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   .options-body {
@@ -77,6 +85,7 @@ const OptionsSection = props => {
         <i onClick={closeModal} className="far fa-times-circle"></i>
       </div>
       <div id="options-section-container">
+        <img src={bgImage} alt="" />
         <div className="options-body">
           <h3>Common Options</h3>
           <div className="options-data">

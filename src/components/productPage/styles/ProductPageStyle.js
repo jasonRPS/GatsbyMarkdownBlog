@@ -3,6 +3,24 @@ import styled from "styled-components"
 export const ProductPageStyles = styled.div`
   background: whitesmoke;
   padding-bottom: 2rem;
+
+  .download-links-top {
+    color: #ed2024;
+    ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around;
+
+      li {
+        margin: 0 1rem;
+        color: white;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
   #scroll-description {
     position: fixed;
     top: 60px;

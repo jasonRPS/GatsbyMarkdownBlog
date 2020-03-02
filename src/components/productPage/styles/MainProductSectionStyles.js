@@ -12,6 +12,10 @@ export const MainProductSectionStyles = styled.div`
     }
   }
 
+  #thumbnails {
+    width: 450px;
+  }
+
   #thumbnail-image-container {
     display: flex;
     justify-content: space-evenly;
@@ -20,15 +24,23 @@ export const MainProductSectionStyles = styled.div`
   .thumbnail-link {
     display: flex;
     align-items: center;
-
+    transition-duration: 0.5s;
     margin: 2rem;
+
+    &:hover > p {
+      background-color: rgba(237, 32, 36, 0.8);
+    }
 
     p {
       text-align: center;
-      margin-left: 10px;
+      /* margin-left: 10px; */
       font-weight: bold;
       margin-top: 0;
       margin-bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 0.5rem;
+      width: 130px;
     }
 
     img {

@@ -52,13 +52,13 @@ const MiniHDPage = () => {
     const handleSelect = e => {
       let y = window.scrollY
 
-      if (y < 615) {
+      if (y < 1631) {
         setFeaturesSelected("selected-link")
       } else setFeaturesSelected("unselected-link")
-      if (y > 614 && y < 1073) {
+      if (y > 1635 && y < 2000) {
         setSpecsSelected("selected-link")
       } else setSpecsSelected("unselected-link")
-      if (y > 1072 && y < 2073) {
+      if (y > 2000) {
         setOptionsSelected("selected-link")
       } else setOptionsSelected("unselected-link")
     }
@@ -73,15 +73,15 @@ const MiniHDPage = () => {
   }
 
   function scrollToFeatures() {
-    window.scrollTo(0, 505)
+    window.scrollTo(0, 542)
   }
 
   function scrollToSpecifications() {
-    window.scrollTo(0, 776)
+    window.scrollTo(0, 1735)
   }
 
   function scrollToOptions() {
-    window.scrollTo(0, 1205)
+    window.scrollTo(0, 2179)
   }
 
   return (
@@ -110,6 +110,23 @@ const MiniHDPage = () => {
             </div>
             <div id="machine-title">
               <h3 style={{ color: "white", margin: "0" }}>Mini-HD</h3>
+            </div>
+            <div className="download-links-top">
+              <ul>
+                <li>
+                  <i className="fas fa-download"></i> Download Brochure{" "}
+                </li>
+                <li>
+                  <i className="fas fa-download"></i> Download Technical
+                  Specifications{" "}
+                </li>
+                <li>
+                  <i className="fas fa-download"></i> Download Parts Manual{" "}
+                </li>
+                <li>
+                  <i className="fas fa-download"></i> Download Operator Manual
+                </li>
+              </ul>
             </div>
             <div id="local-disti-btn">
               <button>Find a Local Distributor</button>
