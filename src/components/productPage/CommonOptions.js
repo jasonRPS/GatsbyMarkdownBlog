@@ -1,11 +1,19 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { withTheme } from "styled-components"
 
 const CommonOptionsStyles = styled.div`
   #container {
     display: flex;
     align-items: center;
     margin: 2rem 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &:hover #container i {
+    color: red;
   }
 
   .img-container {
@@ -29,9 +37,10 @@ const CommonOptionsStyles = styled.div`
       font-size: 3em;
       top: 50%;
       left: 50%;
-      margin-top: -17%;
-      margin-left: -17%;
-      color: red;
+      margin-top: -16%;
+      margin-left: -16%;
+      color: lightslategray;
+      transition-duration: 0.3s;
     }
   }
 
@@ -43,7 +52,7 @@ const CommonOptionsStyles = styled.div`
   }
 
   .content-container {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
     height: 40px;
     width: 350px;
     padding: 0.4rem 1.5rem;
@@ -63,7 +72,14 @@ const CommonOptions = props => {
           <i className="far fa-play-circle"></i>
         </div>
         <div className="content-container">
-          <span style={{ fontWeight: "bold", textDecoration: "underline" }}>
+          <span
+            style={{
+              fontWeight: "bold",
+              textDecoration: "underline",
+              zIndex: "150",
+              color: "white",
+            }}
+          >
             {props.optionsTitle}
           </span>{" "}
           - {props.optionsDescription}

@@ -108,6 +108,10 @@ const FeaturesStyles = styled.div`
     grid-gap: 20px;
     justify-content: space-evenly;
     color: white;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      display: -ms-flexbox;
+    }
   }
 
   .up-arrow-container {
@@ -136,6 +140,10 @@ const FeaturesStyles = styled.div`
     height: 600px;
     display: flex;
     flex-direction: column;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      width: 33.3%;
+    }
 
     .feature-top {
       position: relative;

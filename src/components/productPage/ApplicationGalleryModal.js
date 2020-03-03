@@ -104,12 +104,15 @@ const GalleryStyles = styled.div`
 const ImageGalleryModal = props => {
   return (
     <GalleryStyles>
-      <div style={{ display: props.modalImageDisplay }} id="gallery-container">
+      <div
+        style={{ display: props.modalApplicationDisplay }}
+        id="gallery-container"
+      >
         <div id="x-close">
           <i onClick={props.closeModal} className="fas fa-times-circle"></i>
         </div>
         <div id="modal-title">
-          <h1>IMAGE GALLERY</h1>
+          <h1>APPLICATION GALLERY</h1>
         </div>
         <div className="main-image">
           <img src={Image1} alt="" />

@@ -28,6 +28,7 @@ const OptionsStyles = styled.div`
   .options-data {
     display: flex;
     justify-content: space-around;
+    margin-top: 2rem;
   }
 
   #video-modal {
@@ -85,9 +86,18 @@ const OptionsSection = props => {
         <i onClick={closeModal} className="far fa-times-circle"></i>
       </div>
       <div id="options-section-container">
-        <img src={bgImage} alt="" />
+        <img style={{ zIndex: "1" }} src={bgImage} alt="" />
         <div className="options-body">
-          <h3>Common Options</h3>
+          <h3
+            style={{
+              zIndex: "2",
+              position: "absolute",
+
+              color: "white",
+            }}
+          >
+            Common Options
+          </h3>
           <div className="options-data">
             <div className="left-column">
               <div className="open-modal" onClick={openModal}>
@@ -97,6 +107,7 @@ const OptionsSection = props => {
                   optionsDescription={props.optionsDescription1}
                 />
               </div>
+
               <CommonOptions
                 optionImage={props.optionImage2}
                 optionsTitle={props.optionsTitle2}

@@ -32,10 +32,11 @@ const JudgeStyles = styled.div`
 const YuoBeJudgeModal = props => {
   return (
     <JudgeStyles>
-      <div style={{ display: props.modalHoodDisplay }} id="judge-container">
+      <div style={{ display: props.modalJudgeDisplay }} id="judge-container">
         <div id="x-close">
           <i onClick={props.closeModal} className="fas fa-times-circle"></i>
         </div>
+        JUDGE
       </div>
     </JudgeStyles>
   )
