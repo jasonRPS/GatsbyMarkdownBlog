@@ -9,7 +9,7 @@ import Image5 from "../../images/fc-image5.jpg"
 import Image6 from "../../images/fc-image6.jpg"
 import Image7 from "../../images/fc-image7.jpg"
 import Image8 from "../../images/fc-image8.jpg"
-import Image9 from "../../images/fc-image9.jpg"
+import Image9 from "../../images/fc-image.jpg"
 import Image10 from "../../images/charger.jpg"
 
 const GalleryStyles = styled.div`
@@ -98,8 +98,6 @@ const GalleryStyles = styled.div`
     }
   }
 `
-
-//#323232
 
 const ImageGalleryModal = props => {
   return (
