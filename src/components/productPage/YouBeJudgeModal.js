@@ -8,9 +8,13 @@ import SteelThumbnailImage from "../../images/steel-thumbnail.png"
 import CommandThumbnailImage from "../../images/command-thumbnail.png"
 import SqueegeeThumbnailImage from "../../images/squugee-thumbnail.png"
 import TankYbtj from "./TankYbtj"
+import CommandYbtj from "./CommandYbtj"
+import SqueegeeYbtj from "./SqueegeeYbtj"
 
 import { If } from "rc-if-else"
 import RecoveryYbtj from "./RecoveryYbtj"
+import TiresYbtj from "./TiresYbtj"
+import SteelYbtj from "./SteelYbtj"
 
 const YuoBeJudgeModal = props => {
   const [isTanksVisible, setTanksVisibility] = useState(true)
@@ -26,11 +30,54 @@ const YuoBeJudgeModal = props => {
     if (sectionName === "tanks") {
       setTanksVisibility(true)
       setRecoveryVisibility(false)
+      setTiresVisibility(false)
+      setSteelVisibility(false)
+      setCommandVisibility(false)
+      setSqueegeeVisibility(false)
     }
 
     if (sectionName === "recovery") {
       setTanksVisibility(false)
       setRecoveryVisibility(true)
+      setTiresVisibility(false)
+      setSteelVisibility(false)
+      setCommandVisibility(false)
+      setSqueegeeVisibility(false)
+    }
+
+    if (sectionName === "tires") {
+      setTanksVisibility(false)
+      setRecoveryVisibility(false)
+      setTiresVisibility(true)
+      setSteelVisibility(false)
+      setCommandVisibility(false)
+      setSqueegeeVisibility(false)
+    }
+    if (sectionName === "steel") {
+      setTanksVisibility(false)
+      setRecoveryVisibility(false)
+      setTiresVisibility(false)
+      setSteelVisibility(true)
+      setCommandVisibility(false)
+      setSqueegeeVisibility(false)
+    }
+
+    if (sectionName === "command") {
+      setTanksVisibility(false)
+      setRecoveryVisibility(false)
+      setTiresVisibility(false)
+      setSteelVisibility(false)
+      setCommandVisibility(true)
+      setSqueegeeVisibility(false)
+    }
+
+    if (sectionName === "squeegee") {
+      setTanksVisibility(false)
+      setRecoveryVisibility(false)
+      setTiresVisibility(false)
+      setSteelVisibility(false)
+      setCommandVisibility(false)
+      setSqueegeeVisibility(true)
     }
     // switch (sectionName) {
     //   case 1:
@@ -153,22 +200,22 @@ const YuoBeJudgeModal = props => {
           </If>
           <If condition={isTiresVisible}>
             <div value="tires-section" className="ybtj-widget-position">
-              <TankYbtj />
+              <TiresYbtj />
             </div>
           </If>
           <If condition={isSteelVisible}>
             <div value="steel-section" className="ybtj-widget-position">
-              <TankYbtj />
+              <SteelYbtj />
             </div>
           </If>
           <If condition={isCommandVisible}>
             <div id="command-section" className="ybtj-widget-position">
-              <TankYbtj />
+              <CommandYbtj />
             </div>
           </If>
           <If condition={isSqueegeeVisible}>
             <div id="squeegee-section" className="ybtj-widget-position">
-              <TankYbtj />
+              <SqueegeeYbtj />
             </div>
           </If>
         </div>

@@ -103,11 +103,11 @@ const MainProductSection = props => {
           <div className="scrubber-thumbnails">
             <div onClick={openDiskModal} className="deck-link-container">
               <img src={props.scrubImage} alt={props.alt} />
-              <p>Disk Benefits</p>
+              <p>Cylindrical Benefits</p>
             </div>
             <div onClick={openCylModal} className="deck-link-container">
               <img src={props.scrubImage2} alt={props.alt} />
-              <p>Cylindrical Benefits</p>
+              <p>Disk Benefits</p>
             </div>
           </div>
         </div>
