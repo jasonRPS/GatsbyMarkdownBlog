@@ -22,8 +22,11 @@ export const MainProductSectionStyles = styled.div`
   }
 
   .thumbnail-link {
-    display: flex;
-    align-items: center;
+    position: relative;
+    width: 150px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
     transition-duration: 0.5s;
     margin: 2rem;
 
@@ -32,21 +35,21 @@ export const MainProductSectionStyles = styled.div`
     }
 
     p {
+      position: absolute;
       text-align: center;
-      /* margin-left: 10px; */
       font-weight: bold;
-      margin-top: 0;
-      margin-bottom: 0;
+      bottom: 0;
       background-color: rgba(0, 0, 0, 0.5);
       color: white;
-      padding: 0.5rem;
-      width: 130px;
+      margin: 0;
+      width: 100%;
     }
 
     img {
-      width: 80px;
-      height: 80px;
-      border: 2px solid black;
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+
       /* width: 100%;
       height: 100%; */
       object-fit: cover;
