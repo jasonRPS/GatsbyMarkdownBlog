@@ -36,7 +36,7 @@ const MiniHDPage = () => {
     const handleScroll = e => {
       let y = window.scrollY
       //   let x = window.scrollX
-      if (y > 495) {
+      if (y > 560) {
         setTopMargin("0")
       } else setTopMargin("-100px")
       console.log(y)
@@ -73,15 +73,15 @@ const MiniHDPage = () => {
   }
 
   function scrollToFeatures() {
-    window.scrollTo(0, 542)
+    window.scrollTo(0, 568)
   }
 
   function scrollToSpecifications() {
-    window.scrollTo(0, 1735)
+    window.scrollTo(0, 1811)
   }
 
   function scrollToOptions() {
-    window.scrollTo(0, 2179)
+    window.scrollTo(0, 2243)
   }
 
   return (

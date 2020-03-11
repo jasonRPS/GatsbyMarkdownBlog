@@ -39,7 +39,7 @@ export const MainProductSectionStyles = styled.div`
       text-align: center;
       font-weight: bold;
       bottom: 0;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.7);
       color: white;
       margin: 0;
       width: 100%;
