@@ -39,7 +39,7 @@ const CommonOptionsStyles = styled.div`
       left: 50%;
       margin-top: -16%;
       margin-left: -16%;
-      color: lightslategray;
+      color: white;
       transition-duration: 0.3s;
     }
   }

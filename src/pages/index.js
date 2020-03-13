@@ -1,5 +1,5 @@
 import React from "react"
-
+import SEO from "../components/SEO"
 import Layout from "../components/Layout"
 import Head from "../components/Head"
 // import { IndexStyles } from "../components/styles/indexStyles"
@@ -17,7 +17,8 @@ const IndexPage = () => {
       <Layout>
         {/* <IndexStyles> */}
         <IndexStyles>
-          <Head title="Home" />
+          <SEO title="Home" />
+          {/* <Head title="Home" /> */}
           <div id="carousel">
             <IndexPhotoCarousel />
           </div>
