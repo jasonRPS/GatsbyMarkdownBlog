@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const SliderCss = styled.div`
   .gallery {
     display: flex;
-    /* height: 70vh; */
+
     overflow: hidden;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
@@ -68,5 +68,14 @@ export const SliderCss = styled.div`
     a {
       text-decoration: none;
     }
+  }
+
+  /* Javascript Classes */
+
+  .nav-focused {
+    background-color: rgba(237, 32, 36, 0.7);
+  }
+  .nav-not-focused {
+    background-color: rgba(0, 0, 0, 0.8);
   }
 `
