@@ -1,12 +1,17 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import footerStyles from "./footer.module.scss"
+
+import styled from "styled-components"
+
+const FooterCSS = styled.footer`
+  position: absolute;
+  bottom: 0;
+`
 
 const Footer = () => {
   return (
-    <footer className={footerStyles.footer}>
+    <FooterCSS>
       <p>Here is the footer</p>
-    </footer>
+    </FooterCSS>
   )
 }
 
