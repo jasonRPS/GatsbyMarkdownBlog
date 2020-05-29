@@ -5,6 +5,10 @@ export default function HTML(props) {
   return (
     <html {...props.htmlAttributes} style={{ scrollBehavior: "smooth" }}>
       <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+          rel="stylesheet"
+        />
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta

@@ -15,8 +15,7 @@ const IndexPage = () => {
         <IndexStyles>
           <SEO title="Home" />
           <Head title="Home" />
-
-          {/* <CategorySection />
+          <CategorySection />
           <div id="call-to-action">
             <CallToActionCard
               title="Clean great stuff"
@@ -39,11 +38,10 @@ const IndexPage = () => {
               image="https://source.unsplash.com/random/1920x1080"
             />
           </div>
-
           <h1>Hello</h1>
           <h2>factory Cat</h2> */}
-          {/* <p>
-          Need a developer? <Link to="/contact"> Contact Me</Link>
+          {/* <p>  */}
+          {/* Need a developer? <Link to="/contact"> Contact Me</Link>
         </p> */}
           {/* <LatestBlog /> */}
           {/* </IndexStyles> */}

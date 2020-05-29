@@ -5,7 +5,6 @@ import SlideImage1 from "../../images/fc-image.jpg"
 import SlideImage2 from "../../images/fc-image2.jpg"
 import SlideImage3 from "../../images/fc-image3.jpg"
 import SlideImage4 from "../../images/fc-image4.jpg"
-import SlideImage5 from "../../images/fc-image5.jpg"
 
 const Slider = () => {
   const [navFocus, setNavFocus] = useState("nav-elm")
@@ -65,18 +64,6 @@ const Slider = () => {
             <button>Learn More</button>
           </div>
         </div>
-
-        <div id="slide-5" className="slide-container">
-          <img src={SlideImage5} alt="" />
-          <div className="slide-info" id="slide-info2">
-            <h2>Industrial Floor Scrubbers</h2>
-            <p>
-              Factory Cat is known World Wide for their industrial strength and
-              quality design when it comes to Walk Behind Scrubber Dryers.
-            </p>
-            <button>Learn More</button>
-          </div>
-        </div>
       </div>
 
       <div onClick={handleClick} id="slider-nav">
@@ -98,11 +85,6 @@ const Slider = () => {
         <a href="#slide-4">
           <div id="nav-4" className={navFocus}>
             <p>Here is Slide 4 This one might have even more</p>
-          </div>
-        </a>
-        <a href="#slide-5">
-          <div id="nav-5" className={navFocus}>
-            <p>Here is Slide 5</p>
           </div>
         </a>
       </div>

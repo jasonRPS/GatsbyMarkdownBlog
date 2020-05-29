@@ -8,8 +8,11 @@ const CategorySection = () => {
   return (
     <CategorySectionStyles>
       <div className="parallax">
+        <h1>
+          Outstanding<span style={{ fontSize: "50px" }}> QUALITY</span> and
+          <span style={{ fontSize: "50px" }}> DURABILITY</span>
+        </h1>
         <div id="machine-container">
-          <h1>View our Products</h1>
           <div id="product-container">
             <img src={Image1} />
             <img src={Image2} />

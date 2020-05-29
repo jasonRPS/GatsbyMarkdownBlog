@@ -61,7 +61,7 @@ export const SliderCss = styled.div`
     display: flex;
     position: absolute;
     left: 50%;
-    margin-left: -495px;
+    margin-left: -400px;
     bottom: 250px;
     z-index: 2;
 

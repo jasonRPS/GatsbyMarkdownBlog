@@ -11,6 +11,7 @@ module.exports = {
         displayName: false,
       },
     },
+
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-source-contentful",
