@@ -14,9 +14,22 @@ const CategorySection = () => {
         </h1>
         <div id="machine-container">
           <div id="product-container">
-            <img src={Image1} />
-            <img src={Image2} />
-            <img src={Image3} />
+            <div className="machine-selection">
+              <img src={Image1} />
+              <p>Walk Behind Scrubbers</p>
+            </div>
+            <div className="machine-selection">
+              <img src={Image2} />
+              <p>Walk Behind Sweepers</p>
+            </div>
+            <div className="machine-selection">
+              <img src={Image1} />
+              <p>Ride on Scrubbers</p>
+            </div>
+            <div className="machine-selection">
+              <img src={Image2} />
+              <p>Ride on Sweepers</p>
+            </div>
           </div>
         </div>
       </div>

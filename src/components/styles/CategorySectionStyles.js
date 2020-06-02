@@ -29,9 +29,20 @@ export const CategorySectionStyles = styled.div`
     /* margin-left: -295px; */
 
     #product-container {
+      margin-top: 4rem;
       width: 100%;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-evenly;
     }
+  }
+
+  .machine-selection {
+    text-align: center;
+    font-size: 1.3em;
+  }
+
+  .machine-selection + p {
+    background-color: red;
   }
 `

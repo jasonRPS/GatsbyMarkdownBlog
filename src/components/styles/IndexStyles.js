@@ -1,15 +1,14 @@
 import styled from "styled-components"
 
 export const IndexStyles = styled.div`
-  #carousel {
-    position: relative;
-    background: gray;
-    height: 600px;
-    overflow: hidden;
-  }
+  /* font-family: "Anton", sans-serif; */
 
-  #call-to-action {
+  #call-to-action-section {
+    height: 350px;
+    background-color: whitesmoke;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
   }
 `
