@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 
 const MobileNavStyles = styled.div`
   width: 350px;
@@ -41,19 +42,24 @@ const MobileNavStyles = styled.div`
 `
 
 const MobileNavigation = () => {
+  const handleSelect = e => {
+    window.location = e.target.value
+  }
   return (
     <MobileNavStyles>
       <ul>
         <li>Home</li>
         <li>
-          <select id="products">
+          <select onChange={handleSelect} id="products">
             <option disabled selected value="0">
               Products
             </option>
-            <option value="1">Walk behind scrubbers</option>
-            <option value="2">Walk behind sweepers</option>
-            <option value="3">Ride-on scrubbers</option>
-            <option value="4">Ride-on scrubbers</option>
+            <option value="/walk-behind-floor-scrubbers">
+              Walk Behind Scrubbers
+            </option>
+            <option value="2">Walk Behind Sweepers</option>
+            <option value="3">Ride On Scrubbers</option>
+            <option value="4">Ride On Sweepers</option>
             <option value="5">Sweeper-Scrubber</option>
           </select>
         </li>

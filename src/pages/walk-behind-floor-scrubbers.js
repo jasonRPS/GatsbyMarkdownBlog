@@ -52,6 +52,7 @@ const WalkBehindFloorScrubbers = () => {
       <SEO title="Walk Behind Floor Scrubbers" />
       <Layout>
         <WbfsPageStyles>
+          <div id="walk-behind-page"></div>
           <div className="hero-container">
             <img src={HeroImage} alt="" />
           </div>
