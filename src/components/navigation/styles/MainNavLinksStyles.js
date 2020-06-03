@@ -17,6 +17,9 @@ export const MainNavLinksStyles = styled.div`
       color: white;
       list-style-type: none;
       margin: 0;
+      @media (max-width: 1250px) {
+        display: none;
+      }
 
       .dropdown {
         position: relative;
@@ -39,13 +42,19 @@ export const MainNavLinksStyles = styled.div`
       display: flex;
       align-items: center;
       justify-self: right;
+      @media (max-width: 1250px) {
+        display: none;
+      }
       p {
         margin: 0 1rem;
       }
     }
 
-    #shopping {
+    #phone-number {
       justify-self: right;
+      @media (max-width: 1250px) {
+        display: none;
+      }
     }
   }
 
@@ -80,5 +89,15 @@ export const MainNavLinksStyles = styled.div`
 
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+
+  #mobile-button {
+    display: none;
+    @media (max-width: 1250px) {
+      display: block;
+    }
+    &:hover {
+      cursor: pointer;
+    }
   }
 `
