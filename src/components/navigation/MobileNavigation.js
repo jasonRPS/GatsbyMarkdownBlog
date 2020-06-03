@@ -48,7 +48,11 @@ const MobileNavigation = () => {
   return (
     <MobileNavStyles>
       <ul>
-        <li>Home</li>
+        <li>
+          <Link style={{ color: "white", textDecoration: "none" }} to="/">
+            Home
+          </Link>
+        </li>
         <li>
           <select onChange={handleSelect} id="products">
             <option disabled selected value="0">
@@ -57,22 +61,28 @@ const MobileNavigation = () => {
             <option value="/walk-behind-floor-scrubbers">
               Walk Behind Scrubbers
             </option>
-            <option value="2">Walk Behind Sweepers</option>
-            <option value="3">Ride On Scrubbers</option>
-            <option value="4">Ride On Sweepers</option>
-            <option value="5">Sweeper-Scrubber</option>
+            <option value="/walk-behind-floor-sweepers">
+              Walk Behind Sweepers
+            </option>
+            <option value="/ride-on-scrubbers">Ride On Scrubbers</option>
+            <option value="/ride-on-sweepers">Ride On Sweepers</option>
+            <option value="sweeper-scrubbers">Sweeper-Scrubber</option>
           </select>
         </li>
         <li>
-          <select name="support">
+          <select onChange={handleSelect} name="support">
             <option disabled selected value="0">
               Support
             </option>
-            <option value="1">Manual Downloads</option>
-            <option value="2">Contact</option>
+            <option value="/downloads">Manual Downloads</option>
+            <option value="/contact">Contact</option>
           </select>
         </li>
-        <li>Media</li>
+        <li>
+          <Link style={{ color: "white", textDecoration: "none" }} to="/media">
+            Media
+          </Link>
+        </li>
       </ul>
     </MobileNavStyles>
   )
