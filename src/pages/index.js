@@ -7,7 +7,7 @@ import CallToActionCard from "../components/CallToActionCard"
 import CategorySection from "../components/CategorySection"
 import Slider from "../components/slider/Slider"
 
-import Image1 from "../images/charger.jpg"
+import Image1 from "../images/judge.jpg"
 import Image2 from "../images/charger.jpg"
 import Image3 from "../images/fc-image8.jpg"
 import Image4 from "../images/fc-image7.jpg"
@@ -16,7 +16,7 @@ const IndexPage = () => {
   return (
     <div>
       <Layout>
-        <Slider />
+        {/* <Slider /> */}
         <IndexStyles>
           <SEO title="Home" />
           <Head title="Home" />

@@ -1,11 +1,16 @@
 import React from "react"
-import { MainNavLinksStyles } from "./styles/MainNavLinksStyles"
+import {
+  MainNavLinksStyles,
+  MobileNavLayout,
+} from "./styles/MainNavLinksStyles"
 import { Link } from "gatsby"
 import Logo from "../../images/factory-cat-nav-logo.png"
 import { useState } from "react"
+import MobileNavigation from "./MobileNavigation"
 
-const MainNavLinks = () => {
+const Navigation = () => {
   const [toggleBtn, setToggleBtn] = useState("fas fa-bars")
+  const [mobileMenu, setMobileMenu] = useState("-370px")
 
   function toggleMobileNav() {
     let bars = "fas fa-bars"
@@ -13,12 +18,19 @@ const MainNavLinks = () => {
 
     if (toggleBtn === bars) {
       setToggleBtn(x)
-    } else setToggleBtn(bars)
+      setMobileMenu("0")
+    } else {
+      setToggleBtn(bars)
+      setMobileMenu("-370px")
+    }
   }
   return (
     <>
       <MainNavLinksStyles>
         <div id="nav-links-container">
+          <div id="mobile-button">
+            <i onClick={toggleMobileNav} className={toggleBtn}></i>
+          </div>
           <div id="logo">
             <Link to="/">
               <img src={Logo} alt="" />
@@ -91,13 +103,13 @@ const MainNavLinks = () => {
               555-555-5555
             </a>
           </div>
-          <div id="mobile-button">
-            <i onClick={toggleMobileNav} className={toggleBtn}></i>
-          </div>
         </div>
       </MainNavLinksStyles>
+      <MobileNavLayout style={{ marginLeft: mobileMenu }}>
+        <MobileNavigation />
+      </MobileNavLayout>
     </>
   )
 }
 
-export default MainNavLinks
+export default Navigation

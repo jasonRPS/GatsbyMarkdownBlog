@@ -3,6 +3,7 @@ import Footer from "./Footer"
 import Helmet from "react-helmet"
 import MainNav from "./navigation/MainNav"
 import { LayoutStyles } from "./styles/LayoutStyles"
+import Navigation from "./navigation/Navigation"
 
 const Layout = props => {
   return (
@@ -23,10 +24,8 @@ const Layout = props => {
 
       <LayoutStyles>
         <div>
-          <MainNav />
-          <body style={{ margin: "0", paddingTop: "60px" }}>
-            {props.children}
-          </body>
+          <Navigation />
+          <body style={{ margin: "0" }}>{props.children}</body>
         </div>
         <Footer />
       </LayoutStyles>

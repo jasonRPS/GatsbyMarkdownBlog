@@ -2,15 +2,15 @@ import styled from "styled-components"
 
 export const MainNavLinksStyles = styled.div`
   #nav-links-container {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     color: white;
     align-items: center;
-    padding: 0 1rem;
-
-    #logo {
-      justify-self: center;
-    }
+    padding: 0.5rem;
+    background-color: #ed2024;
+    z-index: 10;
 
     .main-links {
       display: flex;
@@ -92,6 +92,7 @@ export const MainNavLinksStyles = styled.div`
   }
 
   #mobile-button {
+    font-size: 1.6em;
     display: none;
     @media (max-width: 1250px) {
       display: block;
@@ -100,4 +101,11 @@ export const MainNavLinksStyles = styled.div`
       cursor: pointer;
     }
   }
+`
+
+export const MobileNavLayout = styled.div`
+  position: fixed;
+  z-index: 5;
+  margin-top: 56px;
+  transition-duration: 0.3s;
 `

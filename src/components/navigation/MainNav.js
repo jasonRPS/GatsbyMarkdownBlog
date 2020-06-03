@@ -1,6 +1,7 @@
 import React, { Component } from "react"
-import MainNavLinks from "./MainNavLinks"
+import MainNavLinks from "./Navigation"
 import styled from "styled-components"
+import MobileNavigation from "./MobileNavigation"
 
 const MainNavStyles = styled.div`
   position: fixed;

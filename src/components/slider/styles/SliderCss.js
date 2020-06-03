@@ -62,7 +62,7 @@ export const SliderCss = styled.div`
     position: absolute;
     left: 50%;
     margin-left: -400px;
-    bottom: 250px;
+    bottom: 350px;
     z-index: 2;
 
     .nav-elm {
