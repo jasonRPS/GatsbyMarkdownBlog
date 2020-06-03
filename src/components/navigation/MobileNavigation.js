@@ -84,6 +84,17 @@ const MobileNavigation = () => {
           </Link>
         </li>
       </ul>
+      <div
+        style={{ padding: "1rem", marginLeft: "2.3rem" }}
+        className="mobile-login"
+      >
+        <i className="far fa-user" /> Sign Up / Login
+      </div>
+      <div className="mobile-call-button">
+        <button>
+          <i className="fas fa-phone"> Call Us</i>
+        </button>
+      </div>
     </MobileNavStyles>
   )
 }

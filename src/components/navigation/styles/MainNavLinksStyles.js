@@ -107,5 +107,20 @@ export const MobileNavLayout = styled.div`
   position: fixed;
   z-index: 5;
   margin-top: 56px;
-  transition-duration: 0.3s;
+  transition-duration: 0.4s;
+
+  .mobile-call-button {
+    width: 350px;
+
+    button {
+      margin: 2rem 3.5rem;
+      background-color: #ed2024;
+      border: none;
+      padding: 1.3rem;
+      text-align: center;
+      color: white;
+      font-size: 1.3em;
+      border-radius: 15px;
+    }
+  }
 `
