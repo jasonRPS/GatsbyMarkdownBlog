@@ -14,6 +14,20 @@ const Slider = () => {
     let slides = e.target.id
   }
 
+  // useEffect(() => {
+  //   let slides = document.getElementsByClassName("slide-container").length
+
+  //   for (let i = 1; i < slides; i++) {
+  //     window.location =
+  //       "#slide-" +
+  //       setInterval(function() {
+  //         i
+  //       }, 3000)
+  //   }
+
+  //   console.log(slides)
+  // })
+
   return (
     <SliderCss>
       <div className="gallery">
