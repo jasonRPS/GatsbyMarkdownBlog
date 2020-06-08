@@ -7,30 +7,52 @@ import SlideImage3 from "../../images/fc-image3.jpg"
 import SlideImage4 from "../../images/fc-image4.jpg"
 
 const Slider = () => {
-  const [navFocus, setNavFocus] = useState("nav-elm")
-  const [slideId, setSlideId] = useState("nav-1")
+  useEffect(() => {
+    let slideIndex = 0
+    showSlides()
 
-  function handleClick(e) {
-    let slides = e.target.id
-  }
-
-  // useEffect(() => {
-  //   let slides = document.getElementsByClassName("slide-container").length
-
-  //   for (let i = 1; i < slides; i++) {
-  //     window.location =
-  //       "#slide-" +
-  //       setInterval(function() {
-  //         i
-  //       }, 3000)
-  //   }
-
-  //   console.log(slides)
-  // })
-
+    function showSlides() {
+      let i
+      let slides = document.getElementsByClassName("card")
+      // var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.cssText = "opacity: 0; transition: 1s"
+      }
+      slideIndex++
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      // for (i = 0; i < dots.length; i++) {
+      //   dots[i].className = dots[i].className.replace(" active", "");
+      slides[slideIndex - 1].style.cssText = "opacity: 1; transition: 1s"
+      // dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 5000)
+    }
+  })
   return (
     <SliderCss>
-      <div className="gallery">
+      <div className="slider-container">
+        <div className="card">
+          <img src={SlideImage1} alt="" />
+        </div>
+        <div className="card">
+          <img src={SlideImage2} alt="" />
+        </div>
+        <div className="card">
+          <img src={SlideImage3} alt="" />
+        </div>
+        <div className="card">
+          <img src={SlideImage4} alt="" />
+        </div>
+      </div>
+
+      {/* <div className="link-container">
+        <div className="card-selector"></div>
+        <div className="card-selector"></div>
+        <div className="card-selector"></div>
+        <div className="card-selector"></div>
+      </div> */}
+      {/* <div className="gallery">
         <div id="slide-1" className="slide-container">
           <img src={SlideImage1} alt="" />
           <div className="slide-info" id="slide-info1">
@@ -101,7 +123,7 @@ const Slider = () => {
             <p>Here is Slide 4 This one might have even more</p>
           </div>
         </a>
-      </div>
+      </div> */}
     </SliderCss>
   )
 }

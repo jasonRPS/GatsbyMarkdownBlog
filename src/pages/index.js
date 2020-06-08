@@ -16,7 +16,7 @@ const IndexPage = () => {
   return (
     <div>
       <Layout>
-        {/* <Slider /> */}
+        <Slider />
         <IndexStyles>
           <SEO title="Home" />
           <Head title="Home" />

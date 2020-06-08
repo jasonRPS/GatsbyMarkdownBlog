@@ -1,10 +1,34 @@
 import styled from "styled-components"
 
 export const SliderCss = styled.div`
-  /* position: relative; */
+  .slider-container {
+    position: relative;
+    background: black;
+    width: 100%;
+    height: 70vh;
+    /* overflow: hidden; */
+
+    .card {
+      position: absolute;
+      width: 100%;
+      height: 70vh;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .card-selector {
+    width: 100px;
+    height: 80px;
+    background: black;
+  }
+
   .gallery {
     display: flex;
-
     overflow: hidden;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
