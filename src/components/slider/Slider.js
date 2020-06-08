@@ -26,7 +26,7 @@ const Slider = () => {
       //   dots[i].className = dots[i].className.replace(" active", "");
       slides[slideIndex - 1].style.cssText = "opacity: 1; transition: 1s"
       // dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 5000)
+      setTimeout(showSlides, 6000)
     }
   })
   return (
@@ -43,6 +43,21 @@ const Slider = () => {
         </div>
         <div className="card">
           <img src={SlideImage4} alt="" />
+        </div>
+      </div>
+
+      <div id="slider-nav-container">
+        <div className="slider-nav-elm">
+          <p>Something Great with some info about something</p>
+        </div>
+        <div className="slider-nav-elm">
+          <p>Here is Info about this slide</p>
+        </div>
+        <div className="slider-nav-elm">
+          <p>AWESOME</p>
+        </div>
+        <div className="slider-nav-elm">
+          <p>THIS IS THE LAST SLIDE</p>
         </div>
       </div>
 

@@ -21,6 +21,60 @@ export const SliderCss = styled.div`
     }
   }
 
+  #slider-nav-container {
+    display: flex;
+    position: absolute;
+    bottom: 35%;
+    left: 50%;
+    margin-left: -400px;
+    width: 800px;
+    height: 100px;
+    /* background-color: black; */
+    z-index: 2;
+
+    @media (max-width: 860px) {
+      width: 730px;
+      margin-left: -365px;
+    }
+    @media (max-width: 740px) {
+      width: 360px;
+      margin-left: -180px;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .slider-nav-elm {
+      width: 200px;
+      border: 1px solid black;
+      background-color: rgba(0, 0, 0, 0.7);
+
+      p {
+        color: white;
+        text-align: center;
+        padding: 0.3rem;
+
+        @media (max-width: 740px) {
+          display: none;
+        }
+      }
+
+      &:hover {
+        background-color: rgba(237, 32, 36, 0.7);
+        cursor: pointer;
+      }
+
+      @media (max-width: 860px) {
+        width: 180px;
+      }
+
+      @media (max-width: 740px) {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+      }
+    }
+  }
+
   .card-selector {
     width: 100px;
     height: 80px;
