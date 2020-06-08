@@ -91,7 +91,7 @@ const Navigation = () => {
 
           <div id="login">
             <i className="far fa-user" />
-            <p>Sign Up / Login</p>
+            <p>Login</p>
           </div>
           <div id="phone-number">
             <i className="fas fa-phone"> </i>

@@ -88,7 +88,7 @@ const MobileNavigation = () => {
         style={{ padding: "1rem", marginLeft: "2.3rem" }}
         className="mobile-login"
       >
-        <i className="far fa-user" /> Sign Up / Login
+        <i className="far fa-user" /> Login
       </div>
       <div className="mobile-call-button">
         <button>
