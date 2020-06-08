@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const SliderCss = styled.div`
-  .slider-container {
+  #slider-container {
     position: relative;
     background: black;
     width: 100%;
@@ -17,6 +17,46 @@ export const SliderCss = styled.div`
         width: 100%;
         height: 100%;
         object-fit: cover;
+      }
+
+      .slide-text {
+        position: absolute;
+        top: 100px;
+        right: 15%;
+        width: 550px;
+        height: 250px;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 2;
+        text-align: center;
+
+        @media (max-width: 770px) {
+          top: 30px;
+          width: 100%;
+          height: 200px;
+          right: 0;
+        }
+
+        p {
+          color: white;
+          padding: 1rem;
+          text-align: center;
+          font-size: large;
+          margin: 0;
+
+          @media (max-width: 770px) {
+            font-size: small;
+          }
+        }
+
+        button {
+          border: none;
+          color: white;
+          padding: 0.8rem;
+          font-size: 0.8em;
+          text-align: center;
+          background-color: #ed2024;
+          margin: 0;
+        }
       }
     }
   }

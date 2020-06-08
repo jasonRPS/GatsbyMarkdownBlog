@@ -31,18 +31,48 @@ const Slider = () => {
   })
   return (
     <SliderCss>
-      <div className="slider-container">
+      <div id="slider-container">
         <div className="card">
           <img src={SlideImage1} alt="" />
+          <div className="slide-text">
+            <p>
+              <h3>Hello World</h3>
+              Here is some great info about slide 1. It is the best info ever.
+            </p>
+            <button>LEARN MORE</button>
+          </div>
         </div>
         <div className="card">
           <img src={SlideImage2} alt="" />
+          <div className="slide-text">
+            <p>
+              <h3>Slide 2</h3>
+              Here is some great info about slide 1. It is the best info ever.
+            </p>
+            <button>LEARN MORE</button>
+          </div>
         </div>
         <div className="card">
           <img src={SlideImage3} alt="" />
+          <div className="slide-text">
+            <p>
+              <h3>Hello World Slide 3</h3>
+              Here is some great info about slide 1. It is the best info ever.
+            </p>
+            <button>LEARN MORE</button>
+          </div>
         </div>
         <div className="card">
           <img src={SlideImage4} alt="" />
+          <div className="slide-text">
+            <p>
+              <h3>Hello Everyone 4</h3>
+              Here is some great info about slide 1. It is the best info ever.
+              Here is some great info about slide 1. It is the best info ever.
+              Here is some great info about slide 1. It is the best info ever.
+            </p>
+            <button>LEARN MORE</button>
+          </div>
         </div>
       </div>
 
