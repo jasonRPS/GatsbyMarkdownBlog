@@ -145,8 +145,9 @@ const Slider = () => {
           <img src={SlideImage2} alt="" />
           <div className="slide-text">
             <p>
-              <h3>Slide 2</h3>
-              Here is some great info about slide 1. It is the best info ever.
+              <h2>Industrial Floor Scrubbers</h2>
+              Factory Cat is known World Wide for their industrial strength and
+              quality design when it comes to Walk Behind Scrubber Dryers.
             </p>
             <button>LEARN MORE</button>
           </div>
@@ -155,8 +156,8 @@ const Slider = () => {
           <img src={SlideImage3} alt="" />
           <div className="slide-text">
             <p>
-              <h3>Hello World Slide 3</h3>
-              Here is some great info about slide 1. It is the best info ever.
+              <h2>GTR</h2>
+              <h3>A new and powerful workhorse to the Industrial Market.</h3>
             </p>
             <button>LEARN MORE</button>
           </div>
@@ -165,9 +166,9 @@ const Slider = () => {
           <img src={SlideImage4} alt="" />
           <div className="slide-text">
             <p>
-              <h3>Hello Everyone 4</h3>
-              Here is some great info about slide 1. It is the best info ever.
-              Here is some great info about slide 1. It is the best info ever.
+              <h2>Industrial Floor Scrubbers</h2>
+              The Model 34 floor sweeper is the machine that founded our company
+              and has remained the same machine since inception 25 years ago.
             </p>
             <button>LEARN MORE</button>
           </div>
@@ -188,21 +189,21 @@ const Slider = () => {
           id="slide-nav-2"
           className="slider-nav-elm"
         >
-          <p>Here is Info about this slide</p>
+          <p>Industrial Floor Scrubbers</p>
         </div>
         <div
           onClick={handleSlide3Click}
           id="slide-nav-3"
           className="slider-nav-elm"
         >
-          <p>AWESOME</p>
+          <p>GTR</p>
         </div>
         <div
           onClick={handleSlide4Click}
           id="slide-nav-4"
           className="slider-nav-elm"
         >
-          <p>THIS IS THE LAST SLIDE</p>
+          <p>Industrial Floor Sweepers</p>
         </div>
       </div>
 
