@@ -30,6 +30,10 @@ const CategorySection = () => {
               <img src={Image2} />
               <p>Ride on Sweepers</p>
             </div>
+            <div className="machine-selection">
+              <img src={Image1} />
+              <p>Sweeper Scrubber</p>
+            </div>
           </div>
         </div>
       </div>

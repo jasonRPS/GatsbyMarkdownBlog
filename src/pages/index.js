@@ -14,13 +14,14 @@ import Image4 from "../images/fc-image7.jpg"
 
 const IndexPage = () => {
   return (
-    <div>
+    <>
+      <SEO title="Home" />
+      <Head title="Home" />
       <Layout>
         <Slider />
         <IndexStyles>
-          <SEO title="Home" />
-          <Head title="Home" />
           <CategorySection />
+
           <div id="call-to-action-section">
             <CallToActionCard
               title="Clean great stuff"
@@ -45,7 +46,7 @@ const IndexPage = () => {
           </div>
         </IndexStyles>
       </Layout>
-    </div>
+    </>
   )
 }
 

@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react"
 import { SliderCss } from "./styles/SliderCss"
 import { Link } from "gatsby"
-import SlideImage1 from "../../images/fc-image.jpg"
+import SlideImage1 from "../../images/Sanitation.jpg"
 import SlideImage2 from "../../images/fc-image2.jpg"
 import SlideImage3 from "../../images/fc-image3.jpg"
 import SlideImage4 from "../../images/fc-image4.jpg"
+import SanitationLogo from "../../images/sanitation-logo.jpg"
 
 const Slider = () => {
   let slideIndex = 0
@@ -126,8 +127,16 @@ const Slider = () => {
           <img src={SlideImage1} alt="" />
           <div className="slide-text">
             <p>
-              <h3>Hello World</h3>
-              Here is some great info about slide 1. It is the best info ever.
+              <img
+                style={{ borderRadius: "5px" }}
+                src={SanitationLogo}
+                alt="Sanitation Zero"
+              />
+              <h4 style={{ margin: "0" }}>
+                Make Unlimited Amounts Of Oxidizing Solution.
+              </h4>
+              Ordinary tap water in the solution tank is transformed into
+              aqueous ozone, which like chlorine is a powerful oxidizer.
             </p>
             <button>LEARN MORE</button>
           </div>
@@ -159,7 +168,6 @@ const Slider = () => {
               <h3>Hello Everyone 4</h3>
               Here is some great info about slide 1. It is the best info ever.
               Here is some great info about slide 1. It is the best info ever.
-              Here is some great info about slide 1. It is the best info ever.
             </p>
             <button>LEARN MORE</button>
           </div>
@@ -172,7 +180,7 @@ const Slider = () => {
           id="slide-nav-1"
           className="slider-nav-elm"
         >
-          <p>Something Great with some info about something</p>
+          <p>Sanitation</p>
         </div>
 
         <div

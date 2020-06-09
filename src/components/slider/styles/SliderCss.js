@@ -41,7 +41,7 @@ export const SliderCss = styled.div`
           padding: 1rem;
           text-align: center;
           font-size: large;
-          margin: 0;
+          margin: 0.6rem 0 0 0;
 
           @media (max-width: 770px) {
             font-size: small;
@@ -91,8 +91,10 @@ export const SliderCss = styled.div`
 
       p {
         color: white;
+        font-size: 1.3em;
         text-align: center;
-        padding: 0.3rem;
+        padding: 0.2rem;
+        font-family: "Anton", sans-serif;
 
         @media (max-width: 740px) {
           display: none;
@@ -201,6 +203,7 @@ export const SliderCss = styled.div`
     }
 
     button {
+      margin: 0;
       border: none;
       background-color: #ed2024;
       font-size: 1em;
