@@ -78,6 +78,7 @@ export const SliderCss = styled.div`
     }
     @media (max-width: 740px) {
       width: 360px;
+      bottom: 30%;
       margin-left: -180px;
       justify-content: space-around;
       align-items: center;
@@ -108,8 +109,34 @@ export const SliderCss = styled.div`
       }
 
       @media (max-width: 740px) {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+    }
+
+    .active {
+      width: 200px;
+      border: 1px solid black;
+      background-color: rgba(237, 32, 36, 0.7);
+
+      p {
+        color: white;
+        text-align: center;
+        padding: 0.3rem;
+
+        @media (max-width: 740px) {
+          display: none;
+        }
+      }
+
+      @media (max-width: 860px) {
+        width: 180px;
+      }
+
+      @media (max-width: 740px) {
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
       }
     }

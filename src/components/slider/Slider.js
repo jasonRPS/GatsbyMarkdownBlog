@@ -14,7 +14,7 @@ const Slider = () => {
     function showSlides() {
       let i
       let slides = document.getElementsByClassName("card")
-      // var dots = document.getElementsByClassName("dot");
+      let dots = document.getElementsByClassName("slider-nav-elm")
       for (i = 0; i < slides.length; i++) {
         slides[i].style.cssText = "opacity: 0; transition: 1s"
       }
@@ -22,10 +22,32 @@ const Slider = () => {
       if (slideIndex > slides.length) {
         slideIndex = 1
       }
-      // for (i = 0; i < dots.length; i++) {
-      //   dots[i].className = dots[i].className.replace(" active", "");
       slides[slideIndex - 1].style.cssText = "opacity: 1; transition: 1s"
-      // dots[slideIndex-1].className += " active";
+      if (slideIndex === 1) {
+        document.getElementById("slide1").style.backgroundColor =
+          "rgba(237, 32, 36, 0.7)"
+      } else {
+        document.getElementById("slide1").style.backgroundColor = ""
+      }
+      if (slideIndex === 2) {
+        document.getElementById("slide2").style.backgroundColor =
+          "rgba(237, 32, 36, 0.7)"
+      } else {
+        document.getElementById("slide2").style.backgroundColor = ""
+      }
+      if (slideIndex === 3) {
+        document.getElementById("slide3").style.backgroundColor =
+          "rgba(237, 32, 36, 0.7)"
+      } else {
+        document.getElementById("slide3").style.backgroundColor = ""
+      }
+      if (slideIndex === 4) {
+        document.getElementById("slide4").style.backgroundColor =
+          "rgba(237, 32, 36, 0.7)"
+      } else {
+        document.getElementById("slide4").style.backgroundColor = ""
+      }
+      console.log(slideIndex)
       setTimeout(showSlides, 6000)
     }
   })
@@ -67,9 +89,11 @@ const Slider = () => {
           <div className="slide-text">
             <p>
               <h3>Hello Everyone 4</h3>
-              Here is some great info about slide 1. It is the best info ever.
-              Here is some great info about slide 1. It is the best info ever.
-              Here is some great info about slide 1. It is the best info ever.
+              <p>
+                Here is some great info about slide 1. It is the best info ever.
+                Here is some great info about slide 1. It is the best info ever.
+                Here is some great info about slide 1. It is the best info ever.
+              </p>
             </p>
             <button>LEARN MORE</button>
           </div>
@@ -77,16 +101,16 @@ const Slider = () => {
       </div>
 
       <div id="slider-nav-container">
-        <div className="slider-nav-elm">
+        <div id="slide1" className="slider-nav-elm">
           <p>Something Great with some info about something</p>
         </div>
-        <div className="slider-nav-elm">
+        <div id="slide2" className="slider-nav-elm">
           <p>Here is Info about this slide</p>
         </div>
-        <div className="slider-nav-elm">
+        <div id="slide3" className="slider-nav-elm">
           <p>AWESOME</p>
         </div>
-        <div className="slider-nav-elm">
+        <div id="slide4" className="slider-nav-elm">
           <p>THIS IS THE LAST SLIDE</p>
         </div>
       </div>
