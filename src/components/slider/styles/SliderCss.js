@@ -104,6 +104,12 @@ export const SliderCss = styled.div`
         cursor: pointer;
       }
 
+      @media (max-width: 1030px) {
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.7);
+        }
+      }
+
       @media (max-width: 860px) {
         width: 180px;
       }
