@@ -7,8 +7,65 @@ import SlideImage3 from "../../images/fc-image3.jpg"
 import SlideImage4 from "../../images/fc-image4.jpg"
 
 const Slider = () => {
+  let slideIndex = 0
+
+  function handleSlide1Click() {
+    document.getElementById("slide1").style.opacity = "1"
+    document.getElementById("slide2").style.opacity = "0"
+    document.getElementById("slide3").style.opacity = "0"
+    document.getElementById("slide4").style.opacity = "0"
+
+    document.getElementById("slide-nav-1").style.backgroundColor =
+      "rgba(237, 32, 36, 0.7)"
+    document.getElementById("slide-nav-2").style.backgroundColor = ""
+    document.getElementById("slide-nav-3").style.backgroundColor = ""
+    document.getElementById("slide-nav-4").style.backgroundColor = ""
+    slideIndex = 0
+  }
+
+  function handleSlide2Click() {
+    document.getElementById("slide1").style.opacity = "0"
+    document.getElementById("slide2").style.opacity = "1"
+    document.getElementById("slide3").style.opacity = "0"
+    document.getElementById("slide4").style.opacity = "0"
+
+    document.getElementById("slide-nav-1").style.backgroundColor = ""
+    document.getElementById("slide-nav-2").style.backgroundColor =
+      "rgba(237, 32, 36, 0.7)"
+    document.getElementById("slide-nav-3").style.backgroundColor = ""
+    document.getElementById("slide-nav-4").style.backgroundColor = ""
+    slideIndex = 1
+  }
+
+  function handleSlide3Click() {
+    document.getElementById("slide1").style.opacity = "0"
+    document.getElementById("slide2").style.opacity = "0"
+    document.getElementById("slide3").style.opacity = "1"
+    document.getElementById("slide4").style.opacity = "0"
+
+    document.getElementById("slide-nav-1").style.backgroundColor = ""
+    document.getElementById("slide-nav-2").style.backgroundColor = ""
+    document.getElementById("slide-nav-3").style.backgroundColor =
+      "rgba(237, 32, 36, 0.7)"
+    document.getElementById("slide-nav-4").style.backgroundColor = ""
+    slideIndex = 2
+  }
+
+  function handleSlide4Click() {
+    document.getElementById("slide1").style.opacity = "0"
+    document.getElementById("slide2").style.opacity = "0"
+    document.getElementById("slide3").style.opacity = "0"
+    document.getElementById("slide4").style.opacity = "1"
+
+    document.getElementById("slide-nav-1").style.backgroundColor = ""
+    document.getElementById("slide-nav-2").style.backgroundColor = ""
+    document.getElementById("slide-nav-3").style.backgroundColor = ""
+    document.getElementById("slide-nav-4").style.backgroundColor =
+      "rgba(237, 32, 36, 0.7)"
+    slideIndex = 3
+  }
+
   useEffect(() => {
-    let slideIndex = 0
     showSlides()
 
     function showSlides() {
@@ -19,42 +76,53 @@ const Slider = () => {
         slides[i].style.cssText = "opacity: 0; transition: 1s"
       }
       slideIndex++
+      console.log(`slideIndex ${slideIndex}`)
       if (slideIndex > slides.length) {
         slideIndex = 1
       }
       slides[slideIndex - 1].style.cssText = "opacity: 1; transition: 1s"
+
       if (slideIndex === 1) {
-        document.getElementById("slide1").style.backgroundColor =
+        document.getElementById("slide-nav-1").style.backgroundColor =
           "rgba(237, 32, 36, 0.7)"
+        document.getElementById("slide1").style.opacity = "1"
       } else {
-        document.getElementById("slide1").style.backgroundColor = ""
+        document.getElementById("slide-nav-1").style.backgroundColor = ""
+        document.getElementById("slide1").style.opacity = "0"
       }
       if (slideIndex === 2) {
-        document.getElementById("slide2").style.backgroundColor =
+        document.getElementById("slide-nav-2").style.backgroundColor =
           "rgba(237, 32, 36, 0.7)"
+        document.getElementById("slide2").style.opacity = "1"
       } else {
-        document.getElementById("slide2").style.backgroundColor = ""
+        document.getElementById("slide-nav-2").style.backgroundColor = ""
+        document.getElementById("slide2").style.opacity = "0"
       }
       if (slideIndex === 3) {
-        document.getElementById("slide3").style.backgroundColor =
+        document.getElementById("slide-nav-3").style.backgroundColor =
           "rgba(237, 32, 36, 0.7)"
+        document.getElementById("slide3").style.opacity = "1"
       } else {
-        document.getElementById("slide3").style.backgroundColor = ""
+        document.getElementById("slide-nav-3").style.backgroundColor = ""
+        document.getElementById("slide3").style.opacity = "0"
       }
       if (slideIndex === 4) {
-        document.getElementById("slide4").style.backgroundColor =
+        document.getElementById("slide-nav-4").style.backgroundColor =
           "rgba(237, 32, 36, 0.7)"
+        document.getElementById("slide4").style.opacity = "1"
       } else {
-        document.getElementById("slide4").style.backgroundColor = ""
+        document.getElementById("slide-nav-4").style.backgroundColor = ""
+        document.getElementById("slide4").style.opacity = "0"
       }
-      console.log(slideIndex)
+      // console.log(slideIndex)
       setTimeout(showSlides, 6000)
     }
   })
+
   return (
     <SliderCss>
       <div id="slider-container">
-        <div className="card">
+        <div id="slide1" className="card">
           <img src={SlideImage1} alt="" />
           <div className="slide-text">
             <p>
@@ -64,7 +132,7 @@ const Slider = () => {
             <button>LEARN MORE</button>
           </div>
         </div>
-        <div className="card">
+        <div id="slide2" className="card">
           <img src={SlideImage2} alt="" />
           <div className="slide-text">
             <p>
@@ -74,7 +142,7 @@ const Slider = () => {
             <button>LEARN MORE</button>
           </div>
         </div>
-        <div className="card">
+        <div id="slide3" className="card">
           <img src={SlideImage3} alt="" />
           <div className="slide-text">
             <p>
@@ -84,7 +152,7 @@ const Slider = () => {
             <button>LEARN MORE</button>
           </div>
         </div>
-        <div className="card">
+        <div id="slide4" className="card">
           <img src={SlideImage4} alt="" />
           <div className="slide-text">
             <p>
@@ -99,16 +167,33 @@ const Slider = () => {
       </div>
 
       <div id="slider-nav-container">
-        <div id="slide1" className="slider-nav-elm">
+        <div
+          onClick={handleSlide1Click}
+          id="slide-nav-1"
+          className="slider-nav-elm"
+        >
           <p>Something Great with some info about something</p>
         </div>
-        <div id="slide2" className="slider-nav-elm">
+
+        <div
+          onClick={handleSlide2Click}
+          id="slide-nav-2"
+          className="slider-nav-elm"
+        >
           <p>Here is Info about this slide</p>
         </div>
-        <div id="slide3" className="slider-nav-elm">
+        <div
+          onClick={handleSlide3Click}
+          id="slide-nav-3"
+          className="slider-nav-elm"
+        >
           <p>AWESOME</p>
         </div>
-        <div id="slide4" className="slider-nav-elm">
+        <div
+          onClick={handleSlide4Click}
+          id="slide-nav-4"
+          className="slider-nav-elm"
+        >
           <p>THIS IS THE LAST SLIDE</p>
         </div>
       </div>
