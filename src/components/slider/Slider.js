@@ -89,11 +89,9 @@ const Slider = () => {
           <div className="slide-text">
             <p>
               <h3>Hello Everyone 4</h3>
-              <p>
-                Here is some great info about slide 1. It is the best info ever.
-                Here is some great info about slide 1. It is the best info ever.
-                Here is some great info about slide 1. It is the best info ever.
-              </p>
+              Here is some great info about slide 1. It is the best info ever.
+              Here is some great info about slide 1. It is the best info ever.
+              Here is some great info about slide 1. It is the best info ever.
             </p>
             <button>LEARN MORE</button>
           </div>

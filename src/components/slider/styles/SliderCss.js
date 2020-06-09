@@ -78,9 +78,9 @@ export const SliderCss = styled.div`
     }
     @media (max-width: 740px) {
       width: 360px;
-      bottom: 30%;
+      bottom: 27%;
       margin-left: -180px;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
     }
 
@@ -109,8 +109,9 @@ export const SliderCss = styled.div`
       }
 
       @media (max-width: 740px) {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
+        margin: 0 0.5rem;
         border-radius: 50%;
       }
     }
