@@ -57,9 +57,24 @@ const Navigation = () => {
                     >
                       <li>Walk Behind Scrubbers</li>
                     </Link>
-                    <li>Ride On Sweepers</li>
-                    <li>Ride On Scrubbers</li>
-                    <li>Sweeper-Scrubbers</li>
+                    <Link
+                      style={{ color: "white", textDecoration: "none" }}
+                      to="/ride-on-sweepers"
+                    >
+                      <li>Ride On Sweepers</li>
+                    </Link>
+                    <Link
+                      style={{ color: "white", textDecoration: "none" }}
+                      to="/ride-on-scrubbers"
+                    >
+                      <li>Ride On Scrubbers</li>
+                    </Link>
+                    <Link
+                      style={{ color: "white", textDecoration: "none" }}
+                      to="/sweeper-scrubbers"
+                    >
+                      <li>Sweeper-Scrubbers</li>
+                    </Link>
                   </ul>
                 </div>
               </li>
@@ -69,13 +84,13 @@ const Navigation = () => {
                   <ul>
                     <Link
                       style={{ color: "black", textDecoration: "none" }}
-                      to="/walk-behind-floor-sweepers"
+                      to="/downloads"
                     >
                       <li>Download Manuals</li>
                     </Link>
                     <Link
                       style={{ color: "black", textDecoration: "none" }}
-                      to="/walk-behind-floor-scrubbers"
+                      to="/contact"
                     >
                       <li>Contact Us</li>
                     </Link>
@@ -85,7 +100,12 @@ const Navigation = () => {
                   </ul>
                 </div>
               </li>
-              <li className="dropdown">MEDIA</li>
+              <Link
+                style={{ color: "white", textDecoration: "none" }}
+                to="/media"
+              >
+                <li className="dropdown">MEDIA</li>
+              </Link>
             </ul>
           </div>
 
