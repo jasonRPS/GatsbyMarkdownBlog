@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import { CategorySectionStyles } from "./styles/CategorySectionStyles"
 import Image1 from "../images/sweeper1.png"
 import Image2 from "../images/sweeper2.png"
@@ -14,26 +15,51 @@ const CategorySection = () => {
         </h1>
         <div id="machine-container">
           <div id="product-container">
-            <div className="machine-selection">
-              <img src={Image1} />
-              <p>Walk Behind Scrubbers</p>
-            </div>
-            <div className="machine-selection">
-              <img src={Image1} />
-              <p>Walk Behind Sweepers</p>
-            </div>
-            <div className="machine-selection">
-              <img src={Image1} />
-              <p>Ride on Scrubbers</p>
-            </div>
-            <div className="machine-selection">
-              <img src={Image1} />
-              <p>Ride on Sweepers</p>
-            </div>
-            <div className="machine-selection">
-              <img src={Image1} />
-              <p>Sweeper Scrubber</p>
-            </div>
+            <Link
+              style={{ color: "black", textDecoration: "none" }}
+              to="/walk-behind-floor-scrubbers"
+            >
+              <div className="machine-selection">
+                <img src={Image1} />
+                <p>Walk Behind Scrubbers</p>
+              </div>
+            </Link>
+            <Link
+              style={{ color: "black", textDecoration: "none" }}
+              to="/walk-behind-floor-sweepers"
+            >
+              <div className="machine-selection">
+                <img src={Image1} />
+                <p>Walk Behind Sweepers</p>
+              </div>
+            </Link>
+            <Link
+              style={{ color: "black", textDecoration: "none" }}
+              to="/ride-on-scrubbers"
+            >
+              <div className="machine-selection">
+                <img src={Image1} />
+                <p>Ride on Scrubbers</p>
+              </div>
+            </Link>
+            <Link
+              style={{ color: "black", textDecoration: "none" }}
+              to="/ride-on-sweepers"
+            >
+              <div className="machine-selection">
+                <img src={Image1} />
+                <p>Ride on Sweepers</p>
+              </div>
+            </Link>
+            <Link
+              style={{ color: "black", textDecoration: "none" }}
+              to="/sweeper-scrubbers"
+            >
+              <div className="machine-selection">
+                <img src={Image1} />
+                <p>Sweeper Scrubber</p>
+              </div>
+            </Link>
           </div>
         </div>
       </div>

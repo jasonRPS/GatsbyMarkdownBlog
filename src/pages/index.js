@@ -24,22 +24,25 @@ const IndexPage = () => {
 
           <div id="call-to-action-section">
             <CallToActionCard
-              title="Clean great stuff"
-              callToAction="Integrate your tools and teams for deeper insights and faster threat response"
+              title="You Be the Judge"
+              buttonText="Learn More"
               image={Image1}
             />
             <CallToActionCard
-              title="Clean great stuff"
+              title="Contact"
+              buttonText="Contact Us"
               callToAction="Integrate your tools and teams for deeper insights and faster threat response"
               image={Image2}
             />
             <CallToActionCard
-              title="Clean great stuff"
+              title="Applications"
+              buttonText="View Applications"
               callToAction="Integrate your tools and teams for deeper insights and faster threat response"
               image={Image3}
             />
             <CallToActionCard
-              title="Clean great stuff"
+              title="Green Clean"
+              buttonText="Learn More"
               callToAction="Integrate your tools and teams for deeper insights and faster threat response"
               image={Image4}
             />

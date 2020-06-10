@@ -53,6 +53,7 @@ export const CategorySectionStyles = styled.div`
 
       @media (max-width: 880px) {
         grid-template-columns: 33.3% 33.3% 33.3%;
+        margin-top: 2.5rem;
       }
       @media (max-width: 520px) {
         grid-template-columns: 50% 50%;
@@ -76,12 +77,18 @@ export const CategorySectionStyles = styled.div`
     text-align: center;
     font-size: 1em;
 
+    p {
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    &:hover p {
+      background-color: red;
+      color: white;
+    }
+
     @media (max-width: 520px) {
       width: 85px;
     }
-  }
-
-  .machine-selection + p {
-    background-color: red;
   }
 `
