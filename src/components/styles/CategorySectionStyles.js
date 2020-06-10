@@ -18,6 +18,18 @@ export const CategorySectionStyles = styled.div`
     padding: 2rem;
     color: #4c5155;
     font-family: "Anton", sans-serif;
+    font-size: 3em;
+
+    @media (max-width: 880px) {
+      font-size: 2.5em;
+    }
+    @media (max-width: 435px) {
+      font-size: 2em;
+    }
+
+    span {
+      font-size: 1.3em;
+    }
   }
 
   #machine-container {
@@ -34,6 +46,12 @@ export const CategorySectionStyles = styled.div`
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
+
+      img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+      }
     }
   }
 

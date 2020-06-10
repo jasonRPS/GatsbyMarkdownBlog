@@ -5,13 +5,13 @@ export const SliderCss = styled.div`
     position: relative;
     background: black;
     width: 100%;
-    height: 70vh;
+    height: 75vh;
     /* overflow: hidden; */
 
     .card {
       position: absolute;
       width: 100%;
-      height: 70vh;
+      height: 75vh;
 
       img {
         width: 100%;
