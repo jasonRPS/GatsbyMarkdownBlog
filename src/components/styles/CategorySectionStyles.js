@@ -10,6 +10,10 @@ export const CategorySectionStyles = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (max-width: 520px) {
+      height: 850px;
+    }
   }
 
   h1 {
@@ -41,23 +45,40 @@ export const CategorySectionStyles = styled.div`
     /* margin-left: -295px; */
 
     #product-container {
-      margin-top: 4rem;
+      margin-top: 4.5rem;
       width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
+      display: grid;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+      justify-items: center;
+
+      @media (max-width: 880px) {
+        grid-template-columns: 33.3% 33.3% 33.3%;
+      }
+      @media (max-width: 520px) {
+        grid-template-columns: 50% 50%;
+      }
 
       img {
-        max-width: 100%;
-        width: auto;
-        height: auto;
+        @media (max-width: 1030px) {
+          width: 150px;
+        }
+        @media (max-width: 880px) {
+          width: 120px;
+        }
+        @media (max-width: 520px) {
+          width: 100px;
+        }
       }
     }
   }
 
   .machine-selection {
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1em;
+
+    @media (max-width: 520px) {
+      width: 85px;
+    }
   }
 
   .machine-selection + p {

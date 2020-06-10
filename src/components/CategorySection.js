@@ -19,7 +19,7 @@ const CategorySection = () => {
               <p>Walk Behind Scrubbers</p>
             </div>
             <div className="machine-selection">
-              <img src={Image2} />
+              <img src={Image1} />
               <p>Walk Behind Sweepers</p>
             </div>
             <div className="machine-selection">
@@ -27,7 +27,7 @@ const CategorySection = () => {
               <p>Ride on Scrubbers</p>
             </div>
             <div className="machine-selection">
-              <img src={Image2} />
+              <img src={Image1} />
               <p>Ride on Sweepers</p>
             </div>
             <div className="machine-selection">
