@@ -5,6 +5,7 @@ import Head from "../components/Head"
 import { IndexStyles } from "../components/styles/IndexStyles"
 import CallToActionCard from "../components/CallToActionCard"
 import CategorySection from "../components/CategorySection"
+import StorySection from "../components/StorySection"
 import Slider from "../components/slider/Slider"
 
 import Image1 from "../images/judge.jpg"
@@ -51,6 +52,7 @@ const IndexPage = () => {
               link="/green-clean"
             />
           </div>
+          <StorySection />
         </IndexStyles>
       </Layout>
     </>
