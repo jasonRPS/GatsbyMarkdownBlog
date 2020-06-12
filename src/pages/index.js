@@ -27,24 +27,28 @@ const IndexPage = () => {
               title="You Be the Judge"
               buttonText="Learn More"
               image={Image1}
+              link="/you-be-the-judge"
             />
             <CallToActionCard
               title="Contact"
               buttonText="Contact Us"
               callToAction="Integrate your tools and teams for deeper insights and faster threat response"
               image={Image2}
+              link="/contact"
             />
             <CallToActionCard
               title="Applications"
               buttonText="View Applications"
               callToAction="Integrate your tools and teams for deeper insights and faster threat response"
               image={Image3}
+              link="/applications"
             />
             <CallToActionCard
               title="Green Clean"
               buttonText="Learn More"
               callToAction="Integrate your tools and teams for deeper insights and faster threat response"
               image={Image4}
+              link="/green-clean"
             />
           </div>
         </IndexStyles>

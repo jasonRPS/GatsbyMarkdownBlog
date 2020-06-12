@@ -23,10 +23,9 @@ const Layout = props => {
       </Helmet>
 
       <LayoutStyles>
-        <div>
-          <Navigation />
-          <body style={{ margin: "0" }}>{props.children}</body>
-        </div>
+        <Navigation />
+        <body style={{ margin: "0" }}>{props.children}</body>
+
         <Footer />
       </LayoutStyles>
     </>

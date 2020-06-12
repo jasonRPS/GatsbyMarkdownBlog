@@ -1,11 +1,13 @@
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 
 const CallToActionCardStyles = styled.div`
   #image-container {
     position: relative;
     width: 350px;
     height: 200px;
+    margin: 0.5rem;
 
     img {
       width: 100%;
@@ -32,6 +34,12 @@ const CallToActionCardStyles = styled.div`
       z-index: 3;
       text-align: center;
       left: 5%;
+
+      &:hover {
+        background-color: #333;
+        color: white;
+        cursor: pointer;
+      }
     }
 
     #layer {
@@ -47,12 +55,14 @@ const CallToActionCardStyles = styled.div`
 const CallToActionCard = props => {
   return (
     <CallToActionCardStyles>
-      <div id="image-container">
-        <div id="layer"></div>
-        <h1>{props.title}</h1>
-        <img src={props.image} />
-        <button>{props.buttonText}</button>
-      </div>
+      <Link to={props.link}>
+        <div id="image-container">
+          <div id="layer"></div>
+          <h1>{props.title}</h1>
+          <img src={props.image} />
+          <button>{props.buttonText}</button>
+        </div>
+      </Link>
     </CallToActionCardStyles>
   )
 }

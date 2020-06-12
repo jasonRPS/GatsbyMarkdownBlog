@@ -10,11 +10,11 @@ import SanitationLogo from "../../images/sanitation-logo.jpg"
 const Slider = () => {
   let slideIndex = 0
 
-  function handleClick(e) {
-    e.preventDefault()
-    let slide = e.target.id
-    console.log(slide)
-  }
+  // function handleClick(e) {
+  //   e.preventDefault()
+  //   let slide = e.target.id
+  //   console.log(slide)
+  // }
 
   function handleSlide1Click() {
     document.getElementById("slide1").style.opacity = "1"
@@ -121,10 +121,10 @@ const Slider = () => {
         document.getElementById("slide-nav-4").style.backgroundColor = ""
         document.getElementById("slide4").style.opacity = "0"
       }
-      // console.log(slideIndex)
+
       setTimeout(showSlides, 10000)
     }
-  })
+  }, [])
 
   return (
     <SliderCss>
