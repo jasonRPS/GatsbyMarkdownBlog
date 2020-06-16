@@ -20,7 +20,7 @@ const BlogPage = () => {
     }
   `)
 
-  console.log(data)
+  // console.log(data)
 
   return (
     <div>

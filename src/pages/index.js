@@ -12,6 +12,7 @@ import Image1 from "../images/judge.jpg"
 import Image2 from "../images/charger.jpg"
 import Image3 from "../images/fc-image8.jpg"
 import Image4 from "../images/fc-image7.jpg"
+import BlogCard from "../components/BlogCard"
 
 const IndexPage = () => {
   return (
@@ -53,6 +54,7 @@ const IndexPage = () => {
             />
           </div>
           <StorySection />
+          <BlogCard />
         </IndexStyles>
       </Layout>
     </>
