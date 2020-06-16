@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import { ProductPageStyles } from "../components/productPage/styles/ProductPageStyle"
 import ProductPageLayout from "../components/productPage/ProductPageLayout"
 
-import MainImage from "../images/mini-hd-test2.png"
+import MainImage from "../images/mini-hd-26D-1-small.png"
 import ScrubImage from "../images/30-inch-cylindrical-spin.png"
 import ScrubImage2 from "../images/260-30-inch-deck.png"
 import OptionImage1 from "../images/suds.png"
