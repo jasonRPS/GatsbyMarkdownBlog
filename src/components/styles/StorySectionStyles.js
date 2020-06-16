@@ -12,7 +12,7 @@ export const StorySectionStyles = styled.div`
     background-size: cover;
 
     @media (max-width: 520px) {
-      height: 850px;
+      height: 650px;
     }
   }
 
@@ -115,6 +115,11 @@ export const StorySectionStyles = styled.div`
         @media (max-width: 1360px) {
           display: block;
         }
+
+        @media (max-width: 520px) {
+          display: block;
+          top: 290px;
+        }
       }
     }
   }
@@ -132,12 +137,24 @@ export const StorySectionStyles = styled.div`
 
   h1 {
     position: absolute;
+    left: 50%;
+    width: 500px;
+    margin-left: -250px;
     bottom: 20px;
     text-align: center;
-    margin: 0;
+    /* margin: 0; */
     padding: 2rem;
-    color: #4c5155;
+    color: #c6c7c8;
     font-family: "Anton", sans-serif;
     font-size: 3em;
+
+    @media (max-width: 500px) {
+      font-size: 30px;
+      bottom: 150px;
+      padding: 0;
+      width: 350px;
+      left: 50%;
+      margin-left: -175px;
+    }
   }
 `

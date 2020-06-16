@@ -52,10 +52,7 @@ const StorySection = () => {
           </footer>
         </div>
         <img src={USAImage} alt="made in usa" />
-        <h1>
-          Outstanding<span> QUALITY</span> and
-          <span> DURABILITY</span>
-        </h1>
+        <h1>Innovation. Heavy Duty.</h1>
       </div>
     </StorySectionStyles>
   )
