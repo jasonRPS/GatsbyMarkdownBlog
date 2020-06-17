@@ -117,34 +117,56 @@ const Footer = () => {
         <ul>
           <h3>Connect with Us</h3>
           <li>
-            <i style={{ color: "#4267B2" }} className="fab fa-facebook-square">
-              {" "}
-              <span style={{ color: "white" }}> Facebook</span>
-            </i>
+            <a href="https://www.facebook.com/FactoryCatEquip" target="_blank">
+              <i
+                style={{ color: "#4267B2" }}
+                className="fab fa-facebook-square"
+              >
+                {" "}
+                <span style={{ color: "white" }}> Facebook</span>
+              </i>
+            </a>
           </li>
           <li>
-            <i style={{ color: "#833AB4" }} className="fab fa-instagram">
-              {" "}
-              <span style={{ color: "white" }}> Instagram</span>
-            </i>
+            <a
+              href="https://www.instagram.com/factorycat.equipment/"
+              target="_blank"
+            >
+              <i style={{ color: "#833AB4" }} className="fab fa-instagram">
+                {" "}
+                <span style={{ color: "white" }}> Instagram</span>
+              </i>
+            </a>
           </li>
           <li>
-            <i style={{ color: "#2867b2" }} className="fab fa-linkedin">
-              {" "}
-              <span style={{ color: "white" }}> LinkedIn</span>
-            </i>
+            <a
+              href="https://www.linkedin.com/company/factorycat/"
+              target="_blank"
+            >
+              <i style={{ color: "#2867b2" }} className="fab fa-linkedin">
+                {" "}
+                <span style={{ color: "white" }}> LinkedIn</span>
+              </i>
+            </a>
           </li>
           <li>
-            <i style={{ color: "#1DA1F2" }} className="fab fa-twitter-square">
-              {" "}
-              <span style={{ color: "white" }}> Twitter</span>
-            </i>
+            <a href="https://twitter.com/FactoryCatEquip" target="_blank">
+              <i style={{ color: "#1DA1F2" }} className="fab fa-twitter-square">
+                {" "}
+                <span style={{ color: "white" }}> Twitter</span>
+              </i>
+            </a>
           </li>
           <li>
-            <i style={{ color: "#FF0000" }} className="fab fa-youtube-square">
-              {" "}
-              <span style={{ color: "white" }}> You Tube</span>
-            </i>
+            <a
+              href="https://www.youtube.com/channel/UCazDAPmSElXUXy-5RV-vt1g"
+              target="_blank"
+            >
+              <i style={{ color: "#FF0000" }} className="fab fa-youtube-square">
+                {" "}
+                <span style={{ color: "white" }}> You Tube</span>
+              </i>
+            </a>
           </li>
         </ul>
       </div>
