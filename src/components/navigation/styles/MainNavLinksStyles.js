@@ -11,6 +11,7 @@ export const MainNavLinksStyles = styled.div`
     padding: 0.5rem;
     background-color: #ed2024;
     z-index: 10;
+    margin: 0;
 
     .main-links {
       display: flex;

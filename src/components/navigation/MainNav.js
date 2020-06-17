@@ -6,7 +6,7 @@ import MobileNavigation from "./MobileNavigation"
 const MainNavStyles = styled.div`
   position: fixed;
   background: #ed2024;
-  /* height: 50px; */
+  height: 50px;
   padding: 0.5rem 0;
   width: 100%;
   z-index: 5;

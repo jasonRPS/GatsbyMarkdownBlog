@@ -4,6 +4,15 @@ import Layout from "../components/Layout"
 // import Img from "gatsby-image"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Head from "../components/Head"
+import styled from "styled-components"
+
+const BlogStyles = styled.div`
+  main {
+    width: 80%;
+    margin: auto;
+    padding: 5rem 1rem;
+  }
+`
 
 export const query = graphql`
   query($slug: String!) {
@@ -29,47 +38,24 @@ const Blog = props => {
   }
   return (
     <Layout>
-      <Head title={props.data.contentfulBlogPost.title} />
-      <h1>{props.data.contentfulBlogPost.title}</h1>
-      <p>{props.data.contentfulBlogPost.publishedDate}</p>
-      {documentToReactComponents(
-        props.data.contentfulBlogPost.body.json,
-        options
-      )}
+      <>
+        <Head title={props.data.contentfulBlogPost.title} />
+
+        <BlogStyles>
+          <main>
+            <h1 style={{ margin: "0" }}>
+              {props.data.contentfulBlogPost.title}
+            </h1>
+            <p>{props.data.contentfulBlogPost.publishedDate}</p>
+            {documentToReactComponents(
+              props.data.contentfulBlogPost.body.json,
+              options
+            )}
+          </main>
+        </BlogStyles>
+      </>
     </Layout>
   )
 }
 
 export default Blog
-
-// export default ({ data }) => {
-//   let post = data.markdownRemark
-//   let featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
-//   return (
-//     <Layout>
-//       <div>
-//         <h1>{post.frontmatter.title}</h1>
-//         <Img fluid={featuredImgFluid} />
-//         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-//       </div>
-//     </Layout>
-//   )
-// }
-
-// export const query = graphql`
-//   query PostQuery($slug: String!) {
-//     markdownRemark(fields: { slug: { eq: $slug } }) {
-//       html
-//       frontmatter {
-//         title
-//         featuredImage {
-//           childImageSharp {
-//             fluid(maxWidth: 800) {
-//               ...GatsbyImageSharpFluid
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// `
