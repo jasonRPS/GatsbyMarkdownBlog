@@ -23,7 +23,7 @@ const ProductLayoutStyled = styled.div`
     }
 
     img {
-      width: 170px;
+      width: 190px;
       margin: 0.5rem;
       @media (max-width: 900px) {
         width: 100px;

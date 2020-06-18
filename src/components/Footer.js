@@ -70,7 +70,7 @@ const Footer = () => {
           <li>Download Manuals</li>
         </ul>
         <ul>
-          <h3>About FactorCat</h3>
+          <h3>About FactoryCat</h3>
           <li>About Us</li>
           <li>Blog</li>
         </ul>
@@ -123,7 +123,16 @@ const Footer = () => {
                 className="fab fa-facebook-square"
               >
                 {" "}
-                <span style={{ color: "white" }}> Facebook</span>
+                <span
+                  style={{
+                    color: "white",
+                    fontFamily: "Sans-Serif",
+                    fontSize: ".8em",
+                  }}
+                >
+                  {" "}
+                  Facebook
+                </span>
               </i>
             </a>
           </li>
@@ -134,7 +143,16 @@ const Footer = () => {
             >
               <i style={{ color: "#833AB4" }} className="fab fa-instagram">
                 {" "}
-                <span style={{ color: "white" }}> Instagram</span>
+                <span
+                  style={{
+                    color: "white",
+                    fontFamily: "Sans-Serif",
+                    fontSize: ".8em",
+                  }}
+                >
+                  {" "}
+                  Instagram
+                </span>
               </i>
             </a>
           </li>
@@ -145,7 +163,16 @@ const Footer = () => {
             >
               <i style={{ color: "#2867b2" }} className="fab fa-linkedin">
                 {" "}
-                <span style={{ color: "white" }}> LinkedIn</span>
+                <span
+                  style={{
+                    color: "white",
+                    fontFamily: "Sans-Serif",
+                    fontSize: ".8em",
+                  }}
+                >
+                  {" "}
+                  LinkedIn
+                </span>
               </i>
             </a>
           </li>
@@ -153,7 +180,16 @@ const Footer = () => {
             <a href="https://twitter.com/FactoryCatEquip" target="_blank">
               <i style={{ color: "#1DA1F2" }} className="fab fa-twitter-square">
                 {" "}
-                <span style={{ color: "white" }}> Twitter</span>
+                <span
+                  style={{
+                    color: "white",
+                    fontFamily: "Sans-Serif",
+                    fontSize: ".8em",
+                  }}
+                >
+                  {" "}
+                  Twitter
+                </span>
               </i>
             </a>
           </li>
@@ -164,7 +200,16 @@ const Footer = () => {
             >
               <i style={{ color: "#FF0000" }} className="fab fa-youtube-square">
                 {" "}
-                <span style={{ color: "white" }}> You Tube</span>
+                <span
+                  style={{
+                    color: "white",
+                    fontFamily: "Sans-Serif",
+                    fontSize: ".8em",
+                  }}
+                >
+                  {" "}
+                  You Tube
+                </span>
               </i>
             </a>
           </li>

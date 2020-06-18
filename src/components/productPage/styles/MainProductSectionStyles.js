@@ -5,8 +5,7 @@ export const MainProductSectionStyles = styled.div`
     display: grid;
     grid-template-columns: 50% 50%;
     grid-gap: 2rem;
-    padding: 2rem;
-
+    padding: 5rem 2rem 2rem 2rem;
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
       display: -ms-flexbox;
     }
