@@ -5,6 +5,7 @@ import HeroImage from "../images/mini-hd-walk-behind-header.jpg"
 import styled from "styled-components"
 import SeeMoreButton from "../components/controls/SeeMoreButton"
 import ProductLayout from "../components/ProductLayout"
+import { Link } from "gatsby"
 
 import MicroMagImage from "../images/micromag-17-traction-1.png"
 import MiniHDImage from "../images/mini-hd-26D-1.jpg"
@@ -70,6 +71,18 @@ const WbfsPageStyles = styled.div`
       grid-template-columns: 100%;
     }
   }
+
+  button {
+    background-color: orange;
+    text-align: center;
+    height: 40px;
+    padding: 0.5rem;
+    border: none;
+    color: white;
+    margin: 3rem 0;
+    /* margin: 4rem 0 0 12rem; */
+    /* border-radius: 5px; */
+  }
 `
 
 const WalkBehindFloorScrubbers = () => {
@@ -91,6 +104,9 @@ const WalkBehindFloorScrubbers = () => {
           </div>
           <div className="heading">
             <h1>Walk Behind Floor Scrubbers</h1>
+            <p style={{ margin: "0", fontSize: ".6em", padding: ".5rem" }}>
+              Providing outstanding quality and durability to last years.
+            </p>
             <SeeMoreButton
               title="See Machines"
               goTo="#walk-behind-floor-scrubber-products"
@@ -103,6 +119,7 @@ const WalkBehindFloorScrubbers = () => {
               height: "30px",
             }}
           ></div>
+
           <div
             className="product-layout"
             id="walk-behind-floor-scrubber-products"
@@ -125,18 +142,24 @@ const WalkBehindFloorScrubbers = () => {
               link="Download Micro-HD Brochure"
               content="Micro-HD Floor Scrubber Dryer is known for its simple design and durable construction, offering unmatched value for the customer. Comes equipped with a Traction drive which includes a powerful all-gear transaxle for climbing ramps and max operator ease or a Pad Assist version."
             />
-            <ProductLayout
-              image={MiniHDImage}
-              title="Mini-HD"
-              link="Download Mini-HD Brochure"
-              content="Mini-HD Floor Scrubber is known for its simple design and durable construction, offering unmatched value for the customer. The Mini-HD comes equipped with a Traction drive which includes a powerful all-gear transaxle for climbing ramps and max operator ease."
-            />
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              to="/mini-hd-floor-scrubber"
+            >
+              <ProductLayout
+                image={MiniHDImage}
+                title="Mini-HD"
+                link="Download Mini-HD Brochure"
+                content="Mini-HD Floor Scrubber is known for its simple design and durable construction, offering unmatched value for the customer. The Mini-HD comes equipped with a Traction drive which includes a powerful all-gear transaxle for climbing ramps and max operator ease."
+              />
+            </Link>
             <ProductLayout
               image={MiniHDImage}
               title="Mag-HD"
               link="Download Mag-HD Brochure"
               content="Mag-HD Floor Scrubber Dryer is known for its simple design and durable construction, offering unmatched value for the customer. Comes equipped with a Traction drive which includes a powerful all-gear transaxle for climbing ramps and max operator ease."
             />
+            <button>Download FactoryCat's Full Line Brochure</button>
             {/* <ProductLayout />
             <ProductLayout />
             <ProductLayout />

@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 
 const ProductLayoutStyled = styled.div`
   .container {
@@ -39,6 +40,9 @@ const ProductLayoutStyled = styled.div`
       padding: 0.5rem;
       color: white;
       margin: 0.5rem;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 `
@@ -63,7 +67,12 @@ const ProductLayout = props => {
             {props.link} <i className="fas fa-download"></i>
           </a>
           <p>{props.content}</p>
-          <button>Learn More</button>
+          <Link
+            style={{ textDecoration: "none", color: "black" }}
+            to="/mini-hd-floor-scrubber"
+          >
+            <button>Learn More</button>
+          </Link>
         </div>
       </div>
     </ProductLayoutStyled>
