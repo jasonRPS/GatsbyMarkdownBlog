@@ -17,7 +17,7 @@ const ProductLayoutStyled = styled.div`
     }
 
     @media (max-width: 700px) {
-      width: 350px;
+      width: 100%;
       margin: 2rem 0;
     }
 
