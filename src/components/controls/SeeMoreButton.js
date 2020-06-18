@@ -24,7 +24,7 @@ const SeeMoreStyles = styled.div`
     position: absolute;
     bottom: -10px;
     width: 0;
-    rotate: 180deg;
+    transform: rotate(180deg);
   }
 `
 

@@ -91,7 +91,10 @@ const WalkBehindFloorScrubbers = () => {
           </div>
           <div className="heading">
             <h1>Walk Behind Floor Scrubbers</h1>
-            <SeeMoreButton title="See Machines" goTo="#mydiv" />
+            <SeeMoreButton
+              title="See Machines"
+              goTo="#walk-behind-floor-scrubber-products"
+            />
           </div>
           <div
             style={{
@@ -100,7 +103,10 @@ const WalkBehindFloorScrubbers = () => {
               height: "30px",
             }}
           ></div>
-          <div className="product-layout" id="mydiv">
+          <div
+            className="product-layout"
+            id="walk-behind-floor-scrubber-products"
+          >
             <ProductLayout
               image={MicroMagImage}
               title="MicroMag"
