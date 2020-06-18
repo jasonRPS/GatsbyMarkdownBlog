@@ -4,7 +4,8 @@ import styled from "styled-components"
 const ProductLayoutStyled = styled.div`
   .container {
     display: flex;
-    width: 400px;
+    width: 500px;
+    margin: 2rem;
 
     img {
       width: 170px;

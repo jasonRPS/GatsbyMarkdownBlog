@@ -5,6 +5,8 @@ import HeroImage from "../images/mini-hd-walk-behind-header.jpg"
 import styled from "styled-components"
 import SeeMoreButton from "../components/controls/SeeMoreButton"
 import ProductLayout from "../components/ProductLayout"
+
+import MicroMagImage from "../images/micromag-17-traction-1.png"
 import MiniHDImage from "../images/mini-hd-26D-1.jpg"
 
 const WbfsPageStyles = styled.div`
@@ -21,14 +23,16 @@ const WbfsPageStyles = styled.div`
   }
 
   .heading {
+    position: absolute;
+    top: 50%;
+    margin-top: -160px;
     width: 100%;
     /* background: rgba(0, 0, 0, 0.7); */
     padding: 3rem 0;
     font-size: 2em;
     font-weight: bold;
     color: white;
-    position: absolute;
-    bottom: 45%;
+
     text-align: center;
     font-family: "Titillium Web", sans-serif;
 
@@ -44,9 +48,9 @@ const WbfsPageStyles = styled.div`
     margin-left: auto;
     margin-right: auto;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 50% 50%;
     grid-gap: 1rem;
-    /* justify-content: space-around; */
+    justify-items: center;
   }
 `
 
@@ -80,34 +84,34 @@ const WalkBehindFloorScrubbers = () => {
           ></div>
           <div className="product-layout" id="mydiv">
             <ProductLayout
+              image={MicroMagImage}
+              title="MicroMag"
+              link="Download MicroMag Brochure"
+              content="MicroMag Walk Behind Floor Scrubber Dryer was designed based on our already well known Magnum and MiniMag. Our goal is to have the smallest Walk Behind available without sacrificing on solution tank space or productivity in terms of scrubbing performance."
+            />
+            <ProductLayout
               image={MiniHDImage}
-              title="Mini-HD"
-              link="Download Mini-HD Brochure"
-              content="The K10 Standard small walk behind floor scrubber is available with disk and orbital scrub deck options. Its maneuverable design provides versatility on a durable platform."
+              title="MicroMini"
+              link="Download MicroMini Brochure"
+              content="MicroMini Floor Scrubber Dryer is known for its simple design and durable construction, offering unmatched value for the customer. It comes equipped with a Traction drive which includes a powerful all-gear transaxle for climbing ramps and max operator ease or a Pad Assist version."
+            />
+            <ProductLayout
+              image={MiniHDImage}
+              title="Micro-HD"
+              link="Download Micro-HD Brochure"
+              content="Micro-HD Floor Scrubber Dryer is known for its simple design and durable construction, offering unmatched value for the customer. Comes equipped with a Traction drive which includes a powerful all-gear transaxle for climbing ramps and max operator ease or a Pad Assist version."
             />
             <ProductLayout
               image={MiniHDImage}
               title="Mini-HD"
               link="Download Mini-HD Brochure"
-              content="The K10 Standard small walk behind floor scrubber is available with disk and orbital scrub deck options. Its maneuverable design provides versatility on a durable platform."
+              content="Mini-HD Floor Scrubber is known for its simple design and durable construction, offering unmatched value for the customer. The Mini-HD comes equipped with a Traction drive which includes a powerful all-gear transaxle for climbing ramps and max operator ease."
             />
             <ProductLayout
               image={MiniHDImage}
-              title="Mini-HD"
-              link="Download Mini-HD Brochure"
-              content="The K10 Standard small walk behind floor scrubber is available with disk and orbital scrub deck options. Its maneuverable design provides versatility on a durable platform."
-            />
-            <ProductLayout
-              image={MiniHDImage}
-              title="Mini-HD"
-              link="Download Mini-HD Brochure"
-              content="The K10 Standard small walk behind floor scrubber is available with disk and orbital scrub deck options. Its maneuverable design provides versatility on a durable platform."
-            />
-            <ProductLayout
-              image={MiniHDImage}
-              title="Mini-HD"
-              link="Download Mini-HD Brochure"
-              content="The K10 Standard small walk behind floor scrubber is available with disk and orbital scrub deck options. Its maneuverable design provides versatility on a durable platform."
+              title="Mag-HD"
+              link="Download Mag-HD Brochure"
+              content="Mag-HD Floor Scrubber Dryer is known for its simple design and durable construction, offering unmatched value for the customer. Comes equipped with a Traction drive which includes a powerful all-gear transaxle for climbing ramps and max operator ease."
             />
             {/* <ProductLayout />
             <ProductLayout />
