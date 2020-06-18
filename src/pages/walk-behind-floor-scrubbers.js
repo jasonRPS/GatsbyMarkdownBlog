@@ -25,7 +25,7 @@ const WbfsPageStyles = styled.div`
   .heading {
     position: absolute;
     top: 50%;
-    margin-top: -160px;
+    margin-top: -170px;
     width: 100%;
     /* background: rgba(0, 0, 0, 0.7); */
     padding: 3rem 0;
@@ -35,6 +35,9 @@ const WbfsPageStyles = styled.div`
 
     text-align: center;
     font-family: "Titillium Web", sans-serif;
+    @media (max-width: 840px) {
+      margin-top: -250px;
+    }
 
     h1 {
       margin: 0;
@@ -51,6 +54,21 @@ const WbfsPageStyles = styled.div`
     grid-template-columns: 50% 50%;
     grid-gap: 1rem;
     justify-items: center;
+
+    @media (max-width: 1420px) {
+      width: 95%;
+      /* margin: 0; */
+      grid-gap: 0;
+    }
+    @media (max-width: 900px) {
+      padding: 1rem;
+      grid-gap: 0;
+    }
+    @media (max-width: 700px) {
+      padding: 0.5rem;
+      grid-gap: 0;
+      grid-template-columns: 100%;
+    }
   }
 `
 

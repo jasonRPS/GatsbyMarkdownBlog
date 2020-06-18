@@ -6,10 +6,27 @@ const ProductLayoutStyled = styled.div`
     display: flex;
     width: 500px;
     margin: 2rem;
+    @media (max-width: 1420px) {
+      width: 400px;
+      margin: 2rem 0;
+    }
+
+    @media (max-width: 900px) {
+      width: 350px;
+      margin: 2rem 0;
+    }
+
+    @media (max-width: 700px) {
+      width: 350px;
+      margin: 2rem 0;
+    }
 
     img {
       width: 170px;
       margin: 0.5rem;
+      @media (max-width: 900px) {
+        width: 100px;
+      }
     }
 
     h3 {
