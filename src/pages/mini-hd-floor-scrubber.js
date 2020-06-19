@@ -11,6 +11,9 @@ import OptionImage3 from "../images/vac.jpg"
 import OptionImage4 from "../images/sprayJet.jpg"
 import OptionImage5 from "../images/charger.jpg"
 import OptionImage6 from "../images/fc-image2.jpg"
+import Feature1 from "../images/mini-hd-specs-static.png"
+import Feature2 from "../images/mini-hd-handmade-usa-static.png"
+import Feature3 from "../images/mini-hd-heavy-duty-cleaning.png"
 
 import FeaturesSection from "../components/productPage/FeaturesSection"
 import SpecsSection from "../components/productPage/SpecsSection"
@@ -148,7 +151,22 @@ const MiniHDPage = () => {
           </ul>
         </div>
         <div className="product-sections" id="features-section">
-          <FeaturesSection />
+          <img
+            style={{ width: "1200px", margin: "1.5rem 0" }}
+            src={Feature1}
+            alt=""
+          />
+          <img
+            style={{ width: "1200px", margin: "1.5rem 0" }}
+            src={Feature2}
+            alt=""
+          />
+          <img
+            style={{ width: "1200px", margin: "1.5rem 0" }}
+            src={Feature3}
+            alt=""
+          />
+          {/* <FeaturesSection /> */}
         </div>
         <div className="product-sections" id="spec-section">
           <SpecsSection />

@@ -117,12 +117,20 @@ export const MainProductSectionStyles = styled.div`
 
   .media-container {
     display: flex;
-    margin: 0 auto;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
     .media-card {
       width: 300px;
       height: 150px;
       background: black;
       margin: 1rem 0;
     }
+  }
+
+  #features-section {
+    width: 100%;
+    /* margin-right: auto; */
+    margin-left: 800px;
   }
 `
