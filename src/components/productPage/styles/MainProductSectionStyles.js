@@ -115,7 +115,7 @@ export const MainProductSectionStyles = styled.div`
     }
   }
 
-  /* .media-container {
+  .media-container {
     display: flex;
     margin: 0 auto;
     .media-card {
@@ -124,5 +124,5 @@ export const MainProductSectionStyles = styled.div`
       background: black;
       margin: 1rem 0;
     }
-  } */
+  }
 `
