@@ -4,15 +4,22 @@ import styled from "styled-components"
 const ImageGalleryStyles = styled.div`
   .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
   }
 
   .thumbnails {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+
+    /* justify-content: space-between; */
 
     img {
       width: 80px;
+      height: 100px;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 `

@@ -114,4 +114,15 @@ export const MainProductSectionStyles = styled.div`
       }
     }
   }
+
+  /* .media-container {
+    display: flex;
+    margin: 0 auto;
+    .media-card {
+      width: 300px;
+      height: 150px;
+      background: black;
+      margin: 1rem 0;
+    }
+  } */
 `

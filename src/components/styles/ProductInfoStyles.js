@@ -10,7 +10,11 @@ export const ProductInfoStyles = styled.div`
     display: flex;
     justify-content: space-evenly;
     img {
-      width: 300px;
+      width: 200px;
+    }
+
+    h1 {
+      font-family: "Titillium Web", sans-serif;
     }
   }
 `

@@ -129,7 +129,7 @@ const MainProductSection = props => {
 
       <div id="container">
         <div id="thumbnail-image-container">
-          <div id="thumbnails">
+          {/* <div id="thumbnails">
             <div onClick={openJudgeModal} className="thumbnail-link">
               <img src={CompareImage} />
               <p>You be the judge</p>
@@ -146,7 +146,7 @@ const MainProductSection = props => {
               <img src={GalleryImage} />
               <p>Application</p>
             </div>
-          </div>
+          </div> */}
           <div className="main-image">
             <ProductImageGallery
               setMainImage={setMainImage}
@@ -161,7 +161,9 @@ const MainProductSection = props => {
           </div>
         </div>
         <div id="product-details">
-          <h1>{props.title}</h1>
+          <h1 style={{ fontFamily: '"Titillium Web", sans-serif' }}>
+            {props.title}
+          </h1>
           <p>{props.details}</p>
           <h2>Two Scrub Systems to Choose From</h2>
           <div className="scrubber-thumbnails">
@@ -170,14 +172,20 @@ const MainProductSection = props => {
               className="deck-link-container"
             >
               <img src={props.scrubImage} alt={props.alt} />
-              <p>Cylindrical Benefits</p>
+              <p>Cylindrical</p>
             </div>
             <div onClick={setDiskGallery} className="deck-link-container">
               <img src={props.scrubImage2} alt={props.alt} />
-              <p>Disk Benefits</p>
+              <p>Disk</p>
             </div>
           </div>
         </div>
+      </div>
+      <div className="media-container">
+        <div className="media-card you-b-the-judge"></div>
+        <div className="media-card videos"></div>
+        <div className="media-card images"></div>
+        <div className="media-card application"></div>
       </div>
     </MainProductSectionStyles>
   )
