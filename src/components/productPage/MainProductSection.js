@@ -107,7 +107,7 @@ const MainProductSection = props => {
 
   return (
     <MainProductSectionStyles>
-      <YuoBeJudgeModal
+      {/* <YuoBeJudgeModal
         modalJudgeDisplay={modalJudgeDisplay}
         closeModal={closeModal}
       />
@@ -122,7 +122,7 @@ const MainProductSection = props => {
       <ApplicationGalleryModal
         modalApplicationDisplay={modalApplicationDisplay}
         closeModal={closeModal}
-      />
+      /> */}
 
       {/* <DiskModal modalDiskDisplay={modalDiskDisplay} closeModal={closeModal} />
       <CylModal modalCylDisplay={modalCylDisplay} closeModal={closeModal} /> */}

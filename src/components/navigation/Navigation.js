@@ -47,21 +47,15 @@ const Navigation = () => {
                   <ul>
                     <Link
                       style={{ color: "black", textDecoration: "none" }}
-                      to="/walk-behind-floor-sweepers"
-                    >
-                      <li>Walk Behind Sweepers</li>
-                    </Link>
-                    <Link
-                      style={{ color: "black", textDecoration: "none" }}
                       to="/walk-behind-floor-scrubbers"
                     >
                       <li>Walk Behind Scrubbers</li>
                     </Link>
                     <Link
-                      style={{ color: "white", textDecoration: "none" }}
-                      to="/ride-on-sweepers"
+                      style={{ color: "black", textDecoration: "none" }}
+                      to="/walk-behind-floor-sweepers"
                     >
-                      <li>Ride On Sweepers</li>
+                      <li>Walk Behind Sweepers</li>
                     </Link>
                     <Link
                       style={{ color: "white", textDecoration: "none" }}
@@ -69,6 +63,13 @@ const Navigation = () => {
                     >
                       <li>Ride On Scrubbers</li>
                     </Link>
+                    <Link
+                      style={{ color: "white", textDecoration: "none" }}
+                      to="/ride-on-sweepers"
+                    >
+                      <li>Ride On Sweepers</li>
+                    </Link>
+
                     <Link
                       style={{ color: "white", textDecoration: "none" }}
                       to="/sweeper-scrubbers"

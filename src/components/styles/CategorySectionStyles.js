@@ -60,6 +60,7 @@ export const CategorySectionStyles = styled.div`
       }
 
       img {
+        width: 200px;
         @media (max-width: 1030px) {
           width: 150px;
         }

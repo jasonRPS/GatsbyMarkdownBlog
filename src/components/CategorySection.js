@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import { CategorySectionStyles } from "./styles/CategorySectionStyles"
-import Image1 from "../images/sweeper1.png"
-import Image2 from "../images/sweeper2.png"
+import Image1 from "../images/mini-hd-26d-1.png"
+import Image2 from "../images/34-1.png"
 import Image3 from "../images/sweeper3.png"
 
 const CategorySection = () => {
@@ -29,7 +29,7 @@ const CategorySection = () => {
               to="/walk-behind-floor-sweepers"
             >
               <div className="machine-selection">
-                <img src={Image1} />
+                <img src={Image2} />
                 <p>Walk Behind Sweepers</p>
               </div>
             </Link>
