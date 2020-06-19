@@ -13,7 +13,7 @@ import VideoModal from "./VideoModal"
 import MachineModal from "./MachineModal"
 import DiskModal from "./DiskModal"
 import CylModal from "./CylModal"
-import ProductImageGallery from "./productImageGallery"
+import ProductImageGallery from "./ProductImageGallery"
 
 import MiniCHDImage1 from "../../images/mini-hd-25c_0000_mini-hd-25c-1.5.png"
 import MiniCHDImage2 from "../../images/mini-hd-25c_0001_mini-hd-25c-1.6.png"
