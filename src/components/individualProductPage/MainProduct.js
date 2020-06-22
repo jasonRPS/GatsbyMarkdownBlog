@@ -5,18 +5,30 @@ import CylindricalImage from "./images/green_0004_Hue_Saturation-1.png"
 import DiskImage from "./images/green_0002_Hue_Saturation-1-copy-2.png"
 
 const MainProductStyles = styled.div`
-  display: grid;
+  display: flex;
   grid-template-columns: 50% 50%;
   padding-top: 5rem;
   /* justify-items: center; */
+
+  /* @media (max-width: 900px) {
+    grid-template-columns: 100%;
+  } */
+  @media (max-width: 900px) {
+    flex-direction: column-reverse;
+  }
 `
 
 const ImageCarousel = styled.div`
+  width: 50%;
   display: flex;
   justify-content: space-around;
 
   @media (max-width: 1300px) {
     flex-direction: column-reverse;
+  }
+
+  @media (max-width: 900px) {
+    width: 100%;
   }
 
   .thumbnail-container {
@@ -27,6 +39,11 @@ const ImageCarousel = styled.div`
     @media (max-width: 1300px) {
       flex-direction: row;
     }
+
+    @media (max-width: 900px) {
+      display: none;
+    }
+
     img {
       width: 100px;
       @media (max-width: 1300px) {
@@ -48,9 +65,13 @@ const ImageCarousel = styled.div`
 `
 
 const MainContent = styled.div`
+width: 50%;
   font-family: "Titillium Web", sans-serif;
   justify-self: center;
   padding: 0 2.5rem;
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 
   h1 {
     @media (max-width: 1300px) {
@@ -62,6 +83,9 @@ const MainContent = styled.div`
     @media (max-width: 1300px) {
       width: 400px;
       font-size: 0.9em;
+    }
+    @media (max-width: 900px) {
+      width: 100%;
     }
   }
 
@@ -78,6 +102,10 @@ const MainContent = styled.div`
       @media (max-width: 1300px) {
         width: 150px;
       }
+
+      @media (max-width: 900px) {
+    width: 100px;
+    
     }
 
     h3 {
@@ -116,6 +144,19 @@ const MediaTiles = styled.div`
       margin: 0 auto;
       font-size: 1em;
     }
+  }
+`
+
+const MobileThumbNails = styled.div`
+  justify-content: space-around;
+  display: none;
+
+  @media (max-width: 900px) {
+    display: flex;
+  }
+
+  img {
+    width: 100px;
   }
 `
 
@@ -179,6 +220,13 @@ const MainProduct = props => {
           </div>
         </MainContent>
       </MainProductStyles>
+      <MobileThumbNails>
+        <img onClick={props.setMainImage} src={props.thumb1} atl={props.alt} />
+        <img onClick={props.setMainImage} src={props.thumb2} atl={props.alt} />
+        <img onClick={props.setMainImage} src={props.thumb3} atl={props.alt} />
+        <img onClick={props.setMainImage} src={props.thumb4} atl={props.alt} />
+        <img onClick={props.setMainImage} src={props.thumb5} atl={props.alt} />
+      </MobileThumbNails>
       <MediaTiles>
         <div className="media-tile">
           <div className="center">
