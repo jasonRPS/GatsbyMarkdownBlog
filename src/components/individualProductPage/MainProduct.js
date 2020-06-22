@@ -13,9 +13,6 @@ const MainProductStyles = styled.div`
   /* @media (max-width: 900px) {
     grid-template-columns: 100%;
   } */
-  @media (max-width: 900px) {
-    flex-direction: column-reverse;
-  }
 `
 
 const ImageCarousel = styled.div`
@@ -25,10 +22,6 @@ const ImageCarousel = styled.div`
 
   @media (max-width: 1300px) {
     flex-direction: column-reverse;
-  }
-
-  @media (max-width: 900px) {
-    width: 100%;
   }
 
   .thumbnail-container {
@@ -60,6 +53,10 @@ const ImageCarousel = styled.div`
         width: 400px;
         margin-left: 50px;
       }
+      @media (max-width: 900px) {
+        width: 300px;
+        margin-left: 30px;
+      }
     }
   }
 `
@@ -69,13 +66,13 @@ width: 50%;
   font-family: "Titillium Web", sans-serif;
   justify-self: center;
   padding: 0 2.5rem;
-  @media (max-width: 900px) {
-    width: 100%;
-  }
 
   h1 {
     @media (max-width: 1300px) {
       margin: 0;
+    }
+    @media (max-width: 1300px) {
+      font-size: 1.5rem;
     }
   }
 
@@ -85,7 +82,7 @@ width: 50%;
       font-size: 0.9em;
     }
     @media (max-width: 900px) {
-      width: 100%;
+      width: 350px;
     }
   }
 
