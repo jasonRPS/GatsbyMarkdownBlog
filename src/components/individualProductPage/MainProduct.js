@@ -153,7 +153,8 @@ const MobileThumbNails = styled.div`
   }
 
   img {
-    width: 100px;
+    width: 80px;
+    height: 85px;
   }
 `
 
