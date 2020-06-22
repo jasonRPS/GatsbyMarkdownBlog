@@ -16,7 +16,7 @@ const ImageCarousel = styled.div`
   justify-content: space-around;
 
   @media (max-width: 1300px) {
-    display: block;
+    flex-direction: column-reverse;
   }
 
   .thumbnail-container {
@@ -40,7 +40,8 @@ const ImageCarousel = styled.div`
     img {
       width: 500px;
       @media (max-width: 1300px) {
-        width: 500px;
+        width: 400px;
+        margin-left: 50px;
       }
     }
   }
