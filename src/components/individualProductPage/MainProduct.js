@@ -31,6 +31,7 @@ const ImageCarousel = styled.div`
       width: 100px;
       @media (max-width: 1300px) {
         width: 80px;
+        height: 85px;
       }
     }
   }
