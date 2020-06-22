@@ -7,7 +7,7 @@ import DiskImage from "../../images/260-30-inch-deck.png"
 const MainProductStyles = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
-  padding: 5rem 0;
+  padding-top: 5rem;
   /* justify-items: center; */
 `
 
@@ -46,14 +46,34 @@ const MainContent = styled.div`
 `
 
 const MediaTiles = styled.div`
-  width: 100%;
+  width: 1200px;
+  margin: 1rem auto;
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 
   .media-tile {
     width: 300px;
     height: 150px;
+    margin: 0 0.2rem;
     background-color: black;
+    color: white;
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+
+    .center {
+      padding: 35px 0;
+      height: 100%;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin: auto;
+    }
+
+    p {
+      margin: 0 auto;
+      font-size: 1em;
+    }
   }
 `
 
@@ -94,10 +114,30 @@ const MainProduct = props => {
         </MainContent>
       </MainProductStyles>
       <MediaTiles>
-        <div className="media-tile"></div>
-        <div className="media-tile"></div>
-        <div className="media-tile"></div>
-        <div className="media-tile"></div>
+        <div className="media-tile">
+          <div className="center">
+            <h2>You Be The Judge</h2>
+            <p>Walk Behind Scrubbers</p>
+          </div>
+        </div>
+        <div className="media-tile">
+          <div className="center">
+            <h2>Videos</h2>
+            <p>Walk Behind Scrubbers</p>
+          </div>
+        </div>
+        <div className="media-tile">
+          <div className="center">
+            <h2>Images</h2>
+            <p>Walk Behind Scrubbers</p>
+          </div>
+        </div>
+        <div className="media-tile">
+          <div className="center">
+            <h2>Applications</h2>
+            <p>Walk Behind Scrubbers</p>
+          </div>
+        </div>
       </MediaTiles>
     </>
   )

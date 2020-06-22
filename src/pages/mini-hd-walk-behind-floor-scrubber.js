@@ -1,6 +1,8 @@
 import React from "react"
 import Layout from "../components/Layout"
 import MainProduct from "../components/individualProductPage/MainProduct"
+import PageSubNav from "../components/individualProductPage/PageSubNav"
+import Features from "../components/individualProductPage/Features"
 
 import MiniCHDImage1 from "../images/mini-hd-25c_0000_mini-hd-25c-1.5.png"
 import MiniCHDImage2 from "../images/mini-hd-25c_0001_mini-hd-25c-1.6.png"
@@ -12,6 +14,8 @@ import MiniHDDImage2 from "../images/mini-hd-26d-2.png"
 import MiniHDDImage3 from "../images/mini-hd-26d-3.png"
 import MiniHDDImage4 from "../images/mini-hd-26d-4.png"
 import MiniHDDImage5 from "../images/mini-hd-26d-5.png"
+
+import ProfileImage from "../components/individualProductPage/images/mini-hd-25c-cylindrical-profile.56.png"
 
 const MiniHDProductPage = () => {
   return (
@@ -25,6 +29,11 @@ const MiniHDProductPage = () => {
         thumb5={MiniCHDImage5}
         title="Mini-HD Walk Behind Floor Scrubber"
         textContent="Reduce the cost to clean with the Mini-HD Floor Scrubber. We’ve made consistent cleaning and being budget conscious our top priorities while delivering a durable floor scrubber that will last for years. Maintain cleanliness in Warehouses, Fitness Facilities, Fabrication Shops, and other applications. The scrub brushes are installed and removed without tools to allow ease when switching between application’s needs. The squeegee blades can be rotated or flipped without tools. Ensure complete cleaning in a variety of sized applications with a reliable scrubber."
+      />
+      <PageSubNav />
+      <Features
+        profileImage={ProfileImage}
+        profileAlt="Mini-HD-Walk-Behind-Floor-Scrubber"
       />
     </Layout>
   )
