@@ -72,14 +72,14 @@ width: 50%;
       margin: 0;
     }
     @media (max-width: 1300px) {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
   }
 
   p {
     @media (max-width: 1300px) {
       width: 400px;
-      font-size: 0.9em;
+      font-size: 1em;
     }
     @media (max-width: 900px) {
       width: 350px;
