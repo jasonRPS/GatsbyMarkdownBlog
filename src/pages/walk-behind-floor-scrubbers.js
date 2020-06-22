@@ -144,7 +144,7 @@ const WalkBehindFloorScrubbers = () => {
             />
             <Link
               style={{ textDecoration: "none", color: "black" }}
-              to="/mini-hd-floor-scrubber"
+              to="/mini-hd-walk-behind-floor-scrubber"
             >
               <ProductLayout
                 image={MiniHDImage}

@@ -62,7 +62,7 @@ const ImageCarousel = styled.div`
 `
 
 const MainContent = styled.div`
-width: 50%;
+  width: 50%;
   font-family: "Titillium Web", sans-serif;
   justify-self: center;
   padding: 0 2.5rem;
@@ -101,12 +101,12 @@ width: 50%;
       }
 
       @media (max-width: 900px) {
-    width: 100px;
-    
-    }
+        width: 100px;
+      }
 
-    h3 {
-      font-size: 1.5em;
+      h3 {
+        font-size: 1.5em;
+      }
     }
   }
 `
