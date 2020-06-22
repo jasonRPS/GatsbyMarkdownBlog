@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 
 import CylindricalImage from "../../images/30-inch-cylindrical-spin.png"
@@ -37,6 +37,9 @@ const MainContent = styled.div`
 
     img {
       width: 250px;
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     h3 {
@@ -83,11 +86,31 @@ const MainProduct = props => {
       <MainProductStyles>
         <ImageCarousel>
           <div className="thumbnail-container">
-            <img src={props.thumb1} atl={props.alt} />
-            <img src={props.thumb2} atl={props.alt} />
-            <img src={props.thumb3} atl={props.alt} />
-            <img src={props.thumb4} atl={props.alt} />
-            <img src={props.thumb5} atl={props.alt} />
+            <img
+              onClick={props.setMainImage}
+              src={props.thumb1}
+              atl={props.alt}
+            />
+            <img
+              onClick={props.setMainImage}
+              src={props.thumb2}
+              atl={props.alt}
+            />
+            <img
+              onClick={props.setMainImage}
+              src={props.thumb3}
+              atl={props.alt}
+            />
+            <img
+              onClick={props.setMainImage}
+              src={props.thumb4}
+              atl={props.alt}
+            />
+            <img
+              onClick={props.setMainImage}
+              src={props.thumb5}
+              atl={props.alt}
+            />
           </div>
           <div className="main-image">
             <img
@@ -103,11 +126,19 @@ const MainProduct = props => {
           <h2>Choose from two scrub systems</h2>
           <div className="deck-image-container">
             <div>
-              <img src={CylindricalImage} alt="cylindrical deck" />
+              <img
+                onClick={props.setCylImages}
+                src={CylindricalImage}
+                alt="cylindrical deck"
+              />
               <h3>Cylindrical</h3>
             </div>
             <div>
-              <img src={DiskImage} alt="cylindrical deck" />
+              <img
+                onClick={props.setDiskImages}
+                src={DiskImage}
+                alt="Disk deck"
+              />
               <h3>Disk</h3>
             </div>
           </div>

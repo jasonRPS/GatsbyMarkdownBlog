@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Layout from "../components/Layout"
 import MainProduct from "../components/individualProductPage/MainProduct"
 import PageSubNav from "../components/individualProductPage/PageSubNav"
@@ -18,15 +18,59 @@ import MiniHDDImage5 from "../images/mini-hd-26d-5.png"
 import ProfileImage from "../components/individualProductPage/images/mini-hd-25c-cylindrical-profile.56.png"
 
 const MiniHDProductPage = () => {
+  const [galleryImages, setGalleryImages] = useState({
+    mainImage: MiniCHDImage1,
+    thumb1: MiniCHDImage1,
+    thumb2: MiniCHDImage2,
+    thumb3: MiniCHDImage3,
+    thumb4: MiniCHDImage4,
+    thumb5: MiniCHDImage5,
+  })
+
+  function setDiskImages() {
+    setGalleryImages({
+      mainImage: MiniHDDImage1,
+      thumb1: MiniHDDImage1,
+      thumb2: MiniHDDImage2,
+      thumb3: MiniHDDImage3,
+      thumb4: MiniHDDImage4,
+      thumb5: MiniHDDImage5,
+    })
+  }
+
+  function setCylImages() {
+    setGalleryImages({
+      mainImage: MiniCHDImage2,
+      thumb1: MiniCHDImage2,
+      thumb2: MiniCHDImage3,
+      thumb3: MiniCHDImage4,
+      thumb4: MiniCHDImage5,
+      thumb5: MiniCHDImage1,
+    })
+  }
+
+  function setMainImage(e) {
+    setGalleryImages({
+      mainImage: e.target.src,
+      thumb1: galleryImages.thumb1,
+      thumb2: galleryImages.thumb2,
+      thumb3: galleryImages.thumb3,
+      thumb4: galleryImages.thumb4,
+      thumb5: galleryImages.thumb5,
+    })
+  }
   return (
     <Layout>
       <MainProduct
-        mainImage={MiniCHDImage1}
-        thumb1={MiniCHDImage1}
-        thumb2={MiniCHDImage2}
-        thumb3={MiniCHDImage3}
-        thumb4={MiniCHDImage4}
-        thumb5={MiniCHDImage5}
+        setMainImage={setMainImage}
+        setCylImages={setCylImages}
+        setDiskImages={setDiskImages}
+        mainImage={galleryImages.mainImage}
+        thumb1={galleryImages.thumb1}
+        thumb2={galleryImages.thumb2}
+        thumb3={galleryImages.thumb3}
+        thumb4={galleryImages.thumb4}
+        thumb5={galleryImages.thumb5}
         title="Mini-HD Walk Behind Floor Scrubber"
         textContent="Reduce the cost to clean with the Mini-HD Floor Scrubber. We’ve made consistent cleaning and being budget conscious our top priorities while delivering a durable floor scrubber that will last for years. Maintain cleanliness in Warehouses, Fitness Facilities, Fabrication Shops, and other applications. The scrub brushes are installed and removed without tools to allow ease when switching between application’s needs. The squeegee blades can be rotated or flipped without tools. Ensure complete cleaning in a variety of sized applications with a reliable scrubber."
       />
