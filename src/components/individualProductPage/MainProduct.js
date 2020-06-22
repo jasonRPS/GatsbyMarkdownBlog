@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 import styled from "styled-components"
 
-import CylindricalImage from "../../images/30-inch-cylindrical-spin.png"
-import DiskImage from "../../images/260-30-inch-deck.png"
+import CylindricalImage from "./images/green_0004_Hue_Saturation-1.png"
+import DiskImage from "./images/green_0002_Hue_Saturation-1-copy-2.png"
 
 const MainProductStyles = styled.div`
   display: grid;
@@ -15,12 +15,32 @@ const ImageCarousel = styled.div`
   display: flex;
   justify-content: space-around;
 
+  @media (max-width: 1300px) {
+    display: block;
+  }
+
   .thumbnail-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    @media (max-width: 1300px) {
+      flex-direction: row;
+    }
     img {
       width: 100px;
+      @media (max-width: 1300px) {
+        width: 80px;
+      }
+    }
+  }
+
+  .main-image {
+    img {
+      width: 500px;
+      @media (max-width: 1300px) {
+        width: 500px;
+      }
     }
   }
 `
@@ -29,6 +49,19 @@ const MainContent = styled.div`
   font-family: "Titillium Web", sans-serif;
   justify-self: center;
   padding: 0 2.5rem;
+
+  h1 {
+    @media (max-width: 1300px) {
+      margin: 0;
+    }
+  }
+
+  p {
+    @media (max-width: 1300px) {
+      width: 400px;
+      font-size: 0.9em;
+    }
+  }
 
   .deck-image-container {
     display: flex;
@@ -40,6 +73,9 @@ const MainContent = styled.div`
       &:hover {
         cursor: pointer;
       }
+      @media (max-width: 1300px) {
+        width: 150px;
+      }
     }
 
     h3 {
@@ -49,15 +85,16 @@ const MainContent = styled.div`
 `
 
 const MediaTiles = styled.div`
-  width: 1200px;
+  width: 1230px;
   margin: 1rem auto;
   display: flex;
+  flex-wrap: wrap;
   /* justify-content: space-around; */
 
   .media-tile {
     width: 300px;
     height: 150px;
-    margin: 0 0.2rem;
+    margin: 0.4rem 0.2rem;
     background-color: black;
     color: white;
     text-align: center;
@@ -113,11 +150,7 @@ const MainProduct = props => {
             />
           </div>
           <div className="main-image">
-            <img
-              style={{ width: "500px" }}
-              src={props.mainImage}
-              alt={props.alt}
-            />
+            <img src={props.mainImage} alt={props.alt} />
           </div>
         </ImageCarousel>
         <MainContent>
