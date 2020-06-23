@@ -233,7 +233,8 @@ const HeavyDutySection = styled.div`
     line-height: 100px;
 
     @media (max-width: 1030px) {
-      font-size: 5.5em;
+      font-size: 4.5em;
+      right: 20px;
       line-height: 80px;
       top: 60%;
     }
