@@ -19,6 +19,13 @@ const FeaturesContainer = styled.div`
     @media (max-width: 1430px) {
       height: 33vh;
     }
+    @media (max-width: 1000px) {
+      height: 25vh;
+    }
+    @media (max-width: 700px) {
+      height: 50vh;
+      margin: 3rem 0;
+    }
   }
 `
 
@@ -39,6 +46,40 @@ const Section1 = styled.div`
       top: 0;
       left: 30px;
     }
+
+    @media (max-width: 1000px) {
+      top: 0;
+      left: 10px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 3em;
+      @media (max-width: 1000px) {
+        font-size: 2em;
+      }
+    }
+
+    h3 {
+      border-bottom: 5px solid red;
+      padding: 0 4rem;
+      margin: 0;
+      font-size: 2em;
+
+      @media (max-width: 1000px) {
+        font-size: 1.5em;
+        padding: 0;
+        /* border-bottom: none; */
+      }
+    }
+
+    ul {
+      @media (max-width: 1000px) {
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 0.5rem;
+      }
+    }
   }
 
   .machine-image {
@@ -46,6 +87,10 @@ const Section1 = styled.div`
     right: 2%;
     @media (max-width: 1430px) {
       top: 50px;
+    }
+
+    @media (max-width: 700px) {
+      top: 180px;
     }
 
     img {
@@ -135,17 +180,8 @@ const Features = props => {
     <FeaturesContainer>
       <Section1 className="section-sizing">
         <div className="info-text">
-          <h1 style={{ margin: "0", fontSize: "3em" }}>Mini-HD</h1>
-          <h3
-            style={{
-              borderBottom: "5px solid red",
-              padding: "0 4rem",
-              margin: "0",
-              fontSize: "2em",
-            }}
-          >
-            Walk Behind Floor Scrubber
-          </h3>
+          <h1>Mini-HD</h1>
+          <h3>Walk Behind Floor Scrubber</h3>
           <div className="spec-container">
             <ul>
               <li style={{ fontWeight: "bold", fontSize: "1.3em" }}>
@@ -200,7 +236,7 @@ const Features = props => {
           <img src={props.profileImage} alt={props.profileAlt} height="340px" />
         </div>
       </Section1>
-      {/* <VideoSection className="section-sizing">
+      <VideoSection className="section-sizing">
         <div className="video-text">
           <h1 style={{ fontSize: "3.5em" }}>Key Benefits</h1>
           <ul>
@@ -226,7 +262,7 @@ const Features = props => {
       </USASection>
       <HeavyDutySection className="section-sizing">
         <h2>Heavy Duty Cleaning</h2>
-      </HeavyDutySection> */}
+      </HeavyDutySection>
     </FeaturesContainer>
   )
 }
