@@ -122,12 +122,28 @@ const VideoSection = styled.div`
     font-family: "Titillium Web", sans-serif;
     color: white;
 
+    @media (max-width: 1430px) {
+      top: 20px;
+      left: 5%;
+    }
+
+    @media (max-width: 720px) {
+      display: none;
+    }
+
     h1 {
+      font-size: 3.5em;
       margin: 0;
+      @media (max-width: 1430px) {
+        font-size: 2em;
+      }
     }
 
     ul {
       font-size: 1.5em;
+      @media (max-width: 1430px) {
+        font-size: 1.3em;
+      }
     }
   }
   .video-container {
@@ -136,6 +152,35 @@ const VideoSection = styled.div`
     margin-top: -157.5px;
     right: 50px;
     color: white;
+    @media (max-width: 1430px) {
+      margin: 0;
+      top: 0;
+      right: 10px;
+    }
+    @media (max-width: 720px) {
+      /* position: relative; */
+      width: 100%;
+      height: 100%;
+      right: 0;
+    }
+
+    iframe {
+      width: 560px;
+      height: 315px;
+      @media (max-width: 1430px) {
+        width: 460px;
+        height: 250px;
+      }
+      @media (max-width: 1000px) {
+        width: 360px;
+        height: 250px;
+      }
+      @media (max-width: 720px) {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 `
 
@@ -238,7 +283,7 @@ const Features = props => {
       </Section1>
       <VideoSection className="section-sizing">
         <div className="video-text">
-          <h1 style={{ fontSize: "3.5em" }}>Key Benefits</h1>
+          <h1>Key Benefits</h1>
           <ul>
             <li>High Performance Motors</li>
             <li>Vacuum Muffler</li>
@@ -248,8 +293,6 @@ const Features = props => {
         </div>
         <div className="video-container">
           <iframe
-            width="560"
-            height="315"
             src="https://www.youtube.com/embed/MGY_5uGwfs0"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
