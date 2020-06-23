@@ -198,6 +198,21 @@ const USASection = styled.div`
     margin: 0;
     font-size: 7em;
     line-height: 100px;
+
+    @media (max-width: 1030px) {
+      top: 20px;
+    }
+    @media (max-width: 1000px) {
+      /* top: 0; */
+      font-size: 5em;
+    }
+    @media (max-width: 720px) {
+      /* top: 0; */
+      font-size: 4em;
+      text-align: center;
+      top: 40px;
+      left: 0;
+    }
   }
 `
 
@@ -214,9 +229,22 @@ const HeavyDutySection = styled.div`
     margin-top: -157px;
     right: 100px;
     color: white;
-
     font-size: 7em;
     line-height: 100px;
+
+    @media (max-width: 1030px) {
+      font-size: 5.5em;
+      line-height: 80px;
+      top: 60%;
+    }
+    @media (max-width: 720px) {
+      width: 100%;
+      right: 0;
+      left: 0;
+      font-size: 5em;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.4);
+    }
   }
 `
 
