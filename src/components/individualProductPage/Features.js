@@ -17,7 +17,7 @@ const FeaturesContainer = styled.div`
     margin: 0.3rem 0;
 
     @media (max-width: 1430px) {
-      height: 30vh;
+      height: 33vh;
     }
   }
 `
@@ -36,7 +36,7 @@ const Section1 = styled.div`
     font-family: "Titillium Web", sans-serif;
 
     @media (max-width: 1430px) {
-      top: 20px;
+      top: 0;
       left: 30px;
     }
   }
