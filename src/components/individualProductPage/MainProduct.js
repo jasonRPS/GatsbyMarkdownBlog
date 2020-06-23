@@ -6,13 +6,17 @@ import DiskImage from "./images/green_0002_Hue_Saturation-1-copy-2.png"
 
 const MainProductStyles = styled.div`
   display: flex;
-  grid-template-columns: 50% 50%;
+  /* grid-template-columns: 50% 50%; */
   padding-top: 5rem;
   /* justify-items: center; */
 
   /* @media (max-width: 900px) {
     grid-template-columns: 100%;
   } */
+
+  @media (max-width: 720px) {
+    flex-direction: column-reverse;
+  }
 `
 
 const ImageCarousel = styled.div`
@@ -67,12 +71,22 @@ const MainContent = styled.div`
   justify-self: center;
   padding: 0 2.5rem;
 
+  @media (max-width: 720px) {
+    width: 100%;
+    padding: 0;
+  }
+
   h1 {
     @media (max-width: 1300px) {
       margin: 0;
     }
     @media (max-width: 1300px) {
       font-size: 1.8rem;
+    }
+
+    @media (max-width: 720px) {
+      font-size: 1.8rem;
+      padding: 0 1rem;
     }
   }
 
@@ -83,6 +97,17 @@ const MainContent = styled.div`
     }
     @media (max-width: 900px) {
       width: 350px;
+    }
+
+    @media (max-width: 720px) {
+      padding-left: 1rem;
+      font-size: 0.9em;
+    }
+  }
+
+  h2 {
+    @media (max-width: 720px) {
+      padding: 0 0.5rem;
     }
   }
 
@@ -103,19 +128,22 @@ const MainContent = styled.div`
       @media (max-width: 900px) {
         width: 100px;
       }
-
-      h3 {
-        font-size: 1.5em;
+    }
+    h3 {
+      font-size: 1.5em;
+      @media (max-width: 720px) {
+        font-size: 1em;
       }
     }
   }
 `
 
 const MediaTiles = styled.div`
-  width: 1230px;
+  /* width: 1230px; */
   margin: 1rem auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   /* justify-content: space-around; */
 
   .media-tile {
@@ -126,6 +154,17 @@ const MediaTiles = styled.div`
     color: white;
     text-align: center;
     font-family: "Titillium Web", sans-serif;
+    @media (max-width: 1220px) {
+      width: 230px;
+      height: 130px;
+      padding: 0.5rem;
+    }
+
+    @media (max-width: 1020px) {
+      width: 300px;
+      height: 150px;
+      padding: 0;
+    }
 
     .center {
       padding: 35px 0;
@@ -135,6 +174,14 @@ const MediaTiles = styled.div`
     h2 {
       font-size: 2em;
       margin: auto;
+
+      @media (max-width: 1220px) {
+        font-size: 1.5em;
+      }
+
+      @media (max-width: 1020px) {
+        font-size: 2em;
+      }
     }
 
     p {
@@ -155,6 +202,11 @@ const MobileThumbNails = styled.div`
   img {
     width: 80px;
     height: 85px;
+
+    @media (max-width: 720px) {
+      width: 70px;
+      height: 75px;
+    }
   }
 `
 
