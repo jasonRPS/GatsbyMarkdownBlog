@@ -6,13 +6,7 @@ import DiskImage from "./images/green_0002_Hue_Saturation-1-copy-2.png"
 
 const MainProductStyles = styled.div`
   display: flex;
-  /* grid-template-columns: 50% 50%; */
   padding-top: 5rem;
-  /* justify-items: center; */
-
-  /* @media (max-width: 900px) {
-    grid-template-columns: 100%;
-  } */
 
   @media (max-width: 720px) {
     flex-direction: column-reverse;
@@ -100,6 +94,7 @@ const MainContent = styled.div`
     }
 
     @media (max-width: 720px) {
+      width: 90%;
       padding-left: 1rem;
       font-size: 0.9em;
     }
@@ -139,12 +134,10 @@ const MainContent = styled.div`
 `
 
 const MediaTiles = styled.div`
-  /* width: 1230px; */
   margin: 1rem auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* justify-content: space-around; */
 
   .media-tile {
     width: 300px;

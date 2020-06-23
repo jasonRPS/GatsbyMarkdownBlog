@@ -15,12 +15,15 @@ const FeaturesContainer = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0.3rem 0;
+
+    @media (max-width: 1430px) {
+      height: 30vh;
+    }
   }
 `
 
 const Section1 = styled.div`
   position: relative;
-  /* display: flex; */
   justify-content: space-between;
   background-image: url(${Section1background});
 
@@ -31,11 +34,26 @@ const Section1 = styled.div`
     color: white;
     text-align: center;
     font-family: "Titillium Web", sans-serif;
+
+    @media (max-width: 1430px) {
+      top: 20px;
+      left: 30px;
+    }
   }
 
   .machine-image {
     position: absolute;
     right: 2%;
+    @media (max-width: 1430px) {
+      top: 50px;
+    }
+
+    img {
+      @media (max-width: 1430px) {
+        width: 300px;
+        height: auto;
+      }
+    }
   }
 
   .spec-container {
@@ -182,7 +200,7 @@ const Features = props => {
           <img src={props.profileImage} alt={props.profileAlt} height="340px" />
         </div>
       </Section1>
-      <VideoSection className="section-sizing">
+      {/* <VideoSection className="section-sizing">
         <div className="video-text">
           <h1 style={{ fontSize: "3.5em" }}>Key Benefits</h1>
           <ul>
@@ -208,7 +226,7 @@ const Features = props => {
       </USASection>
       <HeavyDutySection className="section-sizing">
         <h2>Heavy Duty Cleaning</h2>
-      </HeavyDutySection>
+      </HeavyDutySection> */}
     </FeaturesContainer>
   )
 }
