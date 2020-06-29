@@ -101,12 +101,37 @@ const Navigation = () => {
                   </ul>
                 </div>
               </li>
-              <Link
+              <li className="dropdown">
+                MEDIA <i className="fas fa-sort-down down-arrow"></i>
+                <div className="dropdown-content">
+                  <ul>
+                    <Link
+                      style={{ color: "black", textDecoration: "none" }}
+                      to="/images"
+                    >
+                      <li>Images</li>
+                    </Link>
+                    <Link
+                      style={{ color: "black", textDecoration: "none" }}
+                      to="/videos"
+                    >
+                      <li>Videos</li>
+                    </Link>
+                    <Link
+                      style={{ color: "white", textDecoration: "none" }}
+                      to="/applications"
+                    >
+                      <li>Applications</li>
+                    </Link>
+                  </ul>
+                </div>
+              </li>
+              {/* <Link
                 style={{ color: "white", textDecoration: "none" }}
                 to="/media"
               >
                 <li className="dropdown">MEDIA</li>
-              </Link>
+              </Link> */}
             </ul>
           </div>
 
