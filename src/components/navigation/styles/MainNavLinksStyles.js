@@ -1,8 +1,12 @@
 import styled from "styled-components"
 
 export const MainNavLinksStyles = styled.div`
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 11;
+  /* margin-bottom: 50px; */
   #nav-links-container {
-    position: fixed;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -11,7 +15,9 @@ export const MainNavLinksStyles = styled.div`
     padding: 0.5rem;
     background-color: #ed2024;
     z-index: 10;
-    margin: 0;
+    /* margin-bottom: 50px; */
+
+    /* margin-bottom: 100px; */
 
     .main-links {
       display: flex;

@@ -75,10 +75,14 @@ const MiniHDProductPage = () => {
         textContent="Reduce the cost to clean with the Mini-HD Floor Scrubber. We’ve made consistent cleaning and being budget conscious our top priorities while delivering a durable floor scrubber that will last for years. Maintain cleanliness in Warehouses, Fitness Facilities, Fabrication Shops, and other applications. The scrub brushes are installed and removed without tools to allow ease when switching between application’s needs. The squeegee blades can be rotated or flipped without tools. Ensure complete cleaning in a variety of sized applications with a reliable scrubber."
       />
       <PageSubNav />
-      <Features
-        profileImage={ProfileImage}
-        profileAlt="Mini-HD-Walk-Behind-Floor-Scrubber"
-      />
+      <div id="features">
+        <Features
+          profileImage={ProfileImage}
+          profileAlt="Mini-HD-Walk-Behind-Floor-Scrubber"
+        />
+      </div>
+      <div id="specifications"></div>
+      <div id="options"></div>
     </Layout>
   )
 }

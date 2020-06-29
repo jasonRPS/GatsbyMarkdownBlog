@@ -13,7 +13,7 @@ import MiniHDImage from "../images/mini-hd-26D-1.jpg"
 const WbfsPageStyles = styled.div`
   .hero-container {
     position: relative;
-    /* padding-top: 57px; */
+
     width: 100%;
     height: 600px;
     img {
@@ -96,7 +96,6 @@ const WalkBehindFloorScrubbers = () => {
               backgroundColor: "black",
               width: "100%",
               height: "30px",
-              paddingTop: "60px",
             }}
           ></div>
           <div className="hero-container">

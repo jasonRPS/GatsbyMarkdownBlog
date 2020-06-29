@@ -11,7 +11,7 @@ const MainNavStyles = styled.div`
   width: 100%;
   z-index: 5;
   box-shadow: 0 10px 20px black;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 `
 
 class MainNav extends Component {
