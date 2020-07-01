@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 
 import CylindricalImage from "./images/green_0004_Hue_Saturation-1.png"
 import DiskImage from "./images/green_0002_Hue_Saturation-1-copy-2.png"
@@ -271,30 +272,44 @@ const MainProduct = props => {
         <img onClick={props.setMainImage} src={props.thumb5} atl={props.alt} />
       </MobileThumbNails>
       <MediaTiles>
-        <div className="media-tile">
-          <div className="center">
-            <h2>You Be The Judge</h2>
-            <p>Walk Behind Scrubbers</p>
+        <Link
+          style={{ textDecoration: "none", color: "white" }}
+          to="/you-be-the-judge"
+        >
+          <div className="media-tile">
+            <div className="center">
+              <h2>You Be The Judge</h2>
+              <p>Walk Behind Scrubbers</p>
+            </div>
           </div>
-        </div>
-        <div className="media-tile">
-          <div className="center">
-            <h2>Videos</h2>
-            <p>Walk Behind Scrubbers</p>
+        </Link>
+        <Link style={{ textDecoration: "none", color: "white" }} to="videos">
+          <div className="media-tile">
+            <div className="center">
+              <h2>Videos</h2>
+              <p>Walk Behind Scrubbers</p>
+            </div>
           </div>
-        </div>
-        <div className="media-tile">
-          <div className="center">
-            <h2>Images</h2>
-            <p>Walk Behind Scrubbers</p>
+        </Link>
+        <Link style={{ textDecoration: "none", color: "white" }} to="/images">
+          <div className="media-tile">
+            <div className="center">
+              <h2>Images</h2>
+              <p>Walk Behind Scrubbers</p>
+            </div>
           </div>
-        </div>
-        <div className="media-tile">
-          <div className="center">
-            <h2>Applications</h2>
-            <p>Walk Behind Scrubbers</p>
+        </Link>
+        <Link
+          style={{ textDecoration: "none", color: "white" }}
+          to="/applications"
+        >
+          <div className="media-tile">
+            <div className="center">
+              <h2>Applications</h2>
+              <p>Walk Behind Scrubbers</p>
+            </div>
           </div>
-        </div>
+        </Link>
       </MediaTiles>
     </>
   )

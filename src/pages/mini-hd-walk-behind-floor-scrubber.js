@@ -16,6 +16,7 @@ import MiniHDDImage4 from "../images/mini-hd-26d-4.png"
 import MiniHDDImage5 from "../images/mini-hd-26d-5.png"
 
 import ProfileImage from "../components/individualProductPage/images/mini-hd-25c-cylindrical-profile.56.png"
+import Specifications from "../components/individualProductPage/Specifications"
 
 const MiniHDProductPage = () => {
   const [galleryImages, setGalleryImages] = useState({
@@ -81,7 +82,9 @@ const MiniHDProductPage = () => {
           profileAlt="Mini-HD-Walk-Behind-Floor-Scrubber"
         />
       </div>
-      <div id="specifications"></div>
+      <div id="specifications">
+        <Specifications />
+      </div>
       <div id="options"></div>
     </Layout>
   )
