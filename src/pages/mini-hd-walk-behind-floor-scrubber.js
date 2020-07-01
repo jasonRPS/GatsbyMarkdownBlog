@@ -82,9 +82,9 @@ const MiniHDProductPage = () => {
           profileAlt="Mini-HD-Walk-Behind-Floor-Scrubber"
         />
       </div>
-      <div id="specifications">
+      {/* <div id="specifications">
         <Specifications />
-      </div>
+      </div> */}
       <div id="options"></div>
     </Layout>
   )

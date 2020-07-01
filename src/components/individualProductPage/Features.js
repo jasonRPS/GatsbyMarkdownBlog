@@ -4,6 +4,7 @@ import styled from "styled-components"
 import Section1background from "./images/mini-hd-specs-static-no-text-no-machine.png"
 import USASectionBackground from "./images/mini-hd-handmade-usa-static-no-text.png"
 import HeavyDutyBackground from "./images/mini-hd-heavy-duty-cleaning-no-text.png"
+import Specifications from "./Specifications"
 
 const FeaturesContainer = styled.div`
   width: 90%;
@@ -332,6 +333,7 @@ const Features = props => {
       <USASection className="section-sizing">
         <h2>Handmade In USA</h2>
       </USASection>
+      <Specifications />
       <HeavyDutySection className="section-sizing">
         <h2>Heavy Duty Cleaning</h2>
       </HeavyDutySection>
