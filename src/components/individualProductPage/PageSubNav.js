@@ -11,7 +11,7 @@ const PageSubNavContainer = styled.div`
   background-color: black;
   height: 40px;
   margin: 1rem 0;
-  z-index: 11;
+  z-index: 2;
   font-family: "Titillium Web", sans-serif;
 
   a {
