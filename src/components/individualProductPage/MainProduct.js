@@ -86,6 +86,7 @@ const MainContent = styled.div`
   }
 
   p {
+    padding-right: 1rem;
     @media (max-width: 1300px) {
       width: 400px;
       font-size: 1em;
@@ -129,6 +130,20 @@ const MainContent = styled.div`
       font-size: 1.5em;
       @media (max-width: 720px) {
         font-size: 1em;
+      }
+    }
+  }
+
+  #download-container {
+    padding-right: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+
+    i {
+      margin-right: 1.5rem;
+      span {
+        font-family: "Titillium Web", sans-serif;
       }
     }
   }
@@ -243,6 +258,28 @@ const MainProduct = props => {
         <MainContent>
           <h1>{props.title}</h1>
           <p style={{ fontWeight: "normal" }}>{props.textContent}</p>
+          <div id="download-container">
+            <Link style={{ color: "#ED2024", textDecoration: "none" }} to="#">
+              <i className="fas fa-download">
+                <span> Brochure</span>
+              </i>
+            </Link>
+            <Link style={{ color: "#ED2024", textDecoration: "none" }} to="#">
+              <i className="fas fa-download">
+                <span> Technical Specifications</span>
+              </i>
+            </Link>
+            <Link style={{ color: "#ED2024", textDecoration: "none" }} to="#">
+              <i className="fas fa-download">
+                <span> Parts Manual</span>
+              </i>
+            </Link>
+            <Link style={{ color: "#ED2024", textDecoration: "none" }} to="#">
+              <i className="fas fa-download">
+                <span> Operator Manual</span>
+              </i>
+            </Link>
+          </div>
           <h2>Choose from two scrub systems</h2>
           <div className="deck-image-container">
             <div>

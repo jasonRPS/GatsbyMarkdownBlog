@@ -311,7 +311,7 @@ const Features = props => {
           <img src={props.profileImage} alt={props.profileAlt} height="340px" />
         </div>
       </Section1>
-      <VideoSection className="section-sizing">
+      {/* <VideoSection className="section-sizing">
         <div className="video-text">
           <h1>Key Benefits</h1>
           <ul>
@@ -329,7 +329,7 @@ const Features = props => {
             allowfullscreen
           ></iframe>
         </div>
-      </VideoSection>
+      </VideoSection> */}
       <USASection className="section-sizing">
         <h2>Handmade In USA</h2>
       </USASection>
