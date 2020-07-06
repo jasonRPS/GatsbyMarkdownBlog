@@ -31,13 +31,21 @@ const OptionsSelect = () => {
         <Option />
         <Option />
         <Option />
+        {/* <Option />
         <Option />
         <Option />
         <Option />
         <Option />
-        <Option />
-        <Option />
+        <Option /> */}
       </StyledOptionsBody>
+      <h2
+        style={{
+          textAlign: "center",
+          fontFamily: '"Titillium Web", sans-serif',
+        }}
+      >
+        View More <i className="fas fa-caret-down" />
+      </h2>
     </>
   )
 }

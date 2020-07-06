@@ -93,6 +93,7 @@ const MiniHDProductPage = () => {
       <div id="options"></div>
       <Specs />
       <OptionsSelect />
+      <div id="request-demo"></div>
       <RequestDemoForm />
     </Layout>
   )

@@ -95,6 +95,14 @@ const MainContent = styled.div`
     }
   }
 
+  button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    margin: -1rem 0 0 3rem;
+  }
+
   p {
     padding-right: 1rem;
     @media (max-width: 1300px) {
@@ -159,7 +167,7 @@ const MainContent = styled.div`
   }
 
   .social-container {
-    width: 400px;
+    width: 500px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -274,7 +282,13 @@ const MainProduct = props => {
           </div>
         </ImageCarousel>
         <MainContent>
-          <h1>{props.title}</h1>
+          <h1>
+            {props.title}
+            <a href="#request-demo">
+              <button>Request a Demo</button>
+            </a>
+          </h1>
+
           <p style={{ fontWeight: "normal" }}>{props.textContent}</p>
           <div id="download-container">
             <Link style={{ color: "#ED2024", textDecoration: "none" }} to="#">
@@ -297,25 +311,6 @@ const MainProduct = props => {
                 <span> Operator Manual</span>
               </i>
             </Link>
-          </div>
-          <h2>Choose from two scrub systems</h2>
-          <div className="deck-image-container">
-            <div>
-              <img
-                onClick={props.setCylImages}
-                src={CylindricalImage}
-                alt="cylindrical deck"
-              />
-              <h3>Cylindrical</h3>
-            </div>
-            <div>
-              <img
-                onClick={props.setDiskImages}
-                src={DiskImage}
-                alt="Disk deck"
-              />
-              <h3>Disk</h3>
-            </div>
           </div>
           <div className="social-container">
             <h2 style={{ color: "lightgrey" }}>SHARE THIS</h2>
@@ -340,6 +335,25 @@ const MainProduct = props => {
             <EmailShareButton url={props.pageUrl} title={props.pageTitle}>
               <EmailIcon size={32} round="yes" />
             </EmailShareButton>
+          </div>
+          <h2>Choose from two scrub systems</h2>
+          <div className="deck-image-container">
+            <div>
+              <img
+                onClick={props.setCylImages}
+                src={CylindricalImage}
+                alt="cylindrical deck"
+              />
+              <h3>Cylindrical</h3>
+            </div>
+            <div>
+              <img
+                onClick={props.setDiskImages}
+                src={DiskImage}
+                alt="Disk deck"
+              />
+              <h3>Disk</h3>
+            </div>
           </div>
         </MainContent>
       </MainProductStyles>

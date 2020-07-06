@@ -143,10 +143,10 @@ const Navigation = () => {
             <i className="fas fa-phone"> </i>
             <a
               style={{ textDecoration: "none", color: "white" }}
-              href="tel:555-555-5555"
+              href="tel:1.800.634.4060"
             >
               {" "}
-              555-555-5555
+              1.800.634.4060
             </a>
           </div>
         </div>
