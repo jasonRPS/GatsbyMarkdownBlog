@@ -74,6 +74,8 @@ const MiniHDProductPage = () => {
         thumb5={galleryImages.thumb5}
         title="Mini-HD Walk Behind Floor Scrubber"
         textContent="Reduce the cost to clean with the Mini-HD Floor Scrubber. We’ve made consistent cleaning and being budget conscious our top priorities while delivering a durable floor scrubber that will last for years. Maintain cleanliness in Warehouses, Fitness Facilities, Fabrication Shops, and other applications. The scrub brushes are installed and removed without tools to allow ease when switching between application’s needs. The squeegee blades can be rotated or flipped without tools. Ensure complete cleaning in a variety of sized applications with a reliable scrubber."
+        pageUrl="https://factory-cat.netlify.app/mini-hd-walk-behind-floor-scrubber"
+        pageTitle="Take a look at the Mini HD Walk Behind Floor Scrubber"
       />
       {/* <PageSubNav /> */}
       <div id="features">

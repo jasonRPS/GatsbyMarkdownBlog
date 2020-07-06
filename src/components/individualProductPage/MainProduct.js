@@ -1,6 +1,14 @@
 import React, { useState } from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import {
+  EmailShareButton,
+  FacebookShareButton,
+  TwitterShareButton,
+  LinkedinShareButton,
+} from "react-share"
+
+import { FacebookIcon, TwitterIcon, LinkedinIcon, EmailIcon } from "react-share"
 
 import CylindricalImage from "./images/green_0004_Hue_Saturation-1.png"
 import DiskImage from "./images/green_0002_Hue_Saturation-1-copy-2.png"
@@ -146,6 +154,13 @@ const MainContent = styled.div`
         font-family: "Titillium Web", sans-serif;
       }
     }
+  }
+
+  .social-container {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
   }
 `
 
@@ -298,6 +313,30 @@ const MainProduct = props => {
               />
               <h3>Disk</h3>
             </div>
+          </div>
+          <div className="social-container">
+            <h2 style={{ color: "lightgrey" }}>SHARE THIS</h2>
+            <TwitterShareButton
+              url={props.pageUrl}
+              title={props.pageTitle}
+              children="click here"
+            >
+              <TwitterIcon size={32} round="yes" />
+            </TwitterShareButton>
+
+            <FacebookShareButton url={props.pageUrl} title={props.pageTitle}>
+              <FacebookIcon size={32} round="yes" />
+            </FacebookShareButton>
+            <LinkedinShareButton
+              url={props.pageUrl}
+              title={props.pageTitle}
+              source="Geek Life Development"
+            >
+              <LinkedinIcon size={32} round="yes" />
+            </LinkedinShareButton>
+            <EmailShareButton url={props.pageUrl} title={props.pageTitle}>
+              <EmailIcon size={32} round="yes" />
+            </EmailShareButton>
           </div>
         </MainContent>
       </MainProductStyles>
