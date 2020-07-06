@@ -151,27 +151,25 @@ import MiniCHDImage1 from "../../images/mini-hd-25c_0001_mini-hd-25c-1.6.png"
 // `
 
 const SpecContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
 
-  .machine-overview {
-    width: 50%;
-  }
-  .machine-options {
-    width: 50%;
+  .image-container {
+    width: 1200px;
+    margin: 0 auto;
+
+    img {
+      width: 1200px;
+    }
   }
 `
 
 const Specifications = () => {
   return (
     <SpecContainer>
-      <div className="machine-overview">
-        <SectionTitle title="Machine Overview" />
-        <img src={OverviewImage} width="100%" />
-      </div>
-      <div className="machine-options">
-        <SectionTitle title="Common Options" />
-        <img src={OptionsImage} width="100%" />
+      <SectionTitle title="Machine Overview" />
+      <div className="image-container">
+        <img src={OverviewImage} />
       </div>
     </SpecContainer>
   )

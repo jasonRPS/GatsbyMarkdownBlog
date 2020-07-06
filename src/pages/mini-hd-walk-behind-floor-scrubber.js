@@ -17,6 +17,9 @@ import MiniHDDImage5 from "../images/mini-hd-26d-5.png"
 
 import ProfileImage from "../components/individualProductPage/images/mini-hd-25c-cylindrical-profile.56.png"
 import Specifications from "../components/individualProductPage/Specifications"
+import Specs from "../components/individualProductPage/Specs"
+import OptionsSelect from "../components/individualProductPage/OptionsSelect"
+import RequestDemoForm from "../components/individualProductPage/RequestDemoForm"
 
 const MiniHDProductPage = () => {
   const [galleryImages, setGalleryImages] = useState({
@@ -88,6 +91,9 @@ const MiniHDProductPage = () => {
         <Specifications />
       </div> */}
       <div id="options"></div>
+      <Specs />
+      <OptionsSelect />
+      <RequestDemoForm />
     </Layout>
   )
 }
