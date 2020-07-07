@@ -10,8 +10,8 @@ const StyledContainer = styled.div`
 
   img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 450px;
+    /* height: 150px; */
     margin: 0 0.5rem;
   }
 
