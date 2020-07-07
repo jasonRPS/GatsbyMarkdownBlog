@@ -291,26 +291,42 @@ const MainProduct = props => {
 
           <p style={{ fontWeight: "normal" }}>{props.textContent}</p>
           <div id="download-container">
-            <Link style={{ color: "#ED2024", textDecoration: "none" }} to="#">
+            <a
+              style={{ color: "#ED2024", textDecoration: "none" }}
+              href="https://www.factorycat.com/docs/brochures/FC-MINI-HD-BROCHURE.pdf"
+              target="_blank"
+            >
               <i className="fas fa-download">
                 <span> Brochure</span>
               </i>
-            </Link>
-            <Link style={{ color: "#ED2024", textDecoration: "none" }} to="#">
+            </a>
+            <a
+              style={{ color: "#ED2024", textDecoration: "none" }}
+              href="https://www.factorycat.com/docs/techSpecs/FC-MINI-HD-SALESSHEET.pdf"
+              target="_blank"
+            >
               <i className="fas fa-download">
                 <span> Technical Specifications</span>
               </i>
-            </Link>
-            <Link style={{ color: "#ED2024", textDecoration: "none" }} to="#">
+            </a>
+            <a
+              style={{ color: "#ED2024", textDecoration: "none" }}
+              href="https://www.factorycat.com/docs/manualsParts/FC-MINI-HD-P-EN.pdf"
+              target="_blank"
+            >
               <i className="fas fa-download">
                 <span> Parts Manual</span>
               </i>
-            </Link>
-            <Link style={{ color: "#ED2024", textDecoration: "none" }} to="#">
+            </a>
+            <a
+              style={{ color: "#ED2024", textDecoration: "none" }}
+              href="https://www.factorycat.com/docs/manualsOp/FC-MINI-HD-OP-EN.pdf"
+              target="_blank"
+            >
               <i className="fas fa-download">
                 <span> Operator Manual</span>
               </i>
-            </Link>
+            </a>
           </div>
           <div className="social-container">
             <h2 style={{ color: "lightgrey" }}>SHARE THIS</h2>
