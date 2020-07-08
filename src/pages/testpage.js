@@ -2,11 +2,15 @@ import React from "react"
 import ProductPageTemplate from "../components/individualProductPage/ProductPageTemplate"
 import SocialShare from "../components/SocialShare"
 import { Button } from "../components/common"
+import FeaturedProduct from "../components/individualProductPage/FeaturedProduct"
+import Layout from "../components/Layout"
 
 const TestPage = props => {
   return (
     <>
-      <ProductPageTemplate />
+      <Layout>
+        <FeaturedProduct />
+      </Layout>
     </>
   )
 }
