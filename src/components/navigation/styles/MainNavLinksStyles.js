@@ -12,7 +12,7 @@ export const MainNavLinksStyles = styled.div`
     justify-content: space-around;
     color: white;
     align-items: center;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
     background-color: #ed2024;
     z-index: 10;
     /* margin-bottom: 50px; */

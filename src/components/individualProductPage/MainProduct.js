@@ -14,7 +14,7 @@ import CylindricalImage from "./images/green_0004_Hue_Saturation-1.png"
 import DiskImage from "./images/green_0002_Hue_Saturation-1-copy-2.png"
 
 const MainProductStyles = styled.div`
-  /* max-width: 1400px; */
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   padding-top: 5rem;

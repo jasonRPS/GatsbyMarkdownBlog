@@ -1,10 +1,14 @@
 import React from "react"
-import Layout from "../components/Layout"
-import SectionTitle from "../components/common/SectionTitle"
-import ProductPage from "../templates/ProductPage"
+import ProductPageTemplate from "../components/individualProductPage/ProductPageTemplate"
+import SocialShare from "../components/SocialShare"
+import { Button } from "../components/common"
 
-const TestPage = () => {
-  return <ProductPage />
+const TestPage = props => {
+  return (
+    <>
+      <ProductPageTemplate />
+    </>
+  )
 }
 
 export default TestPage
