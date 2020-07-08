@@ -8,6 +8,7 @@ const StyledTile = styled.div`
   color: white;
   background: black;
   margin: 12px 4px;
+  cursor: pointer;
   h1 {
     margin-top: 10%;
   }
