@@ -28,10 +28,22 @@ const FeaturedContent = props => {
       <h2>Choose from two scrub systems</h2>
       <div className="deck-container">
         <div className="deck-image-container">
-          <img onClick={props.cylindricalSelect} src={CylindricalDeck} alt="" />
+          <img
+            style={{ filter: props.deckColor.cylindrical }}
+            onClick={props.cylindricalSelect}
+            src={CylindricalDeck}
+            alt=""
+          />
+          <h3 style={{ textAlign: "center", margin: "0" }}>Cylindrical</h3>
         </div>
         <div className="deck-image-container">
-          <img onClick={props.diskSelect} src={DiskDeck} alt="" />
+          <img
+            style={{ filter: props.deckColor.disk }}
+            onClick={props.diskSelect}
+            src={DiskDeck}
+            alt=""
+          />
+          <h3 style={{ textAlign: "center", margin: "0" }}>Disk</h3>
         </div>
       </div>
     </StyledFeatureContent>

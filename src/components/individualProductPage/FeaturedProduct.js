@@ -26,6 +26,11 @@ const FeaturedProduct = props => {
     displayVideo: "none",
   })
 
+  const [deckColor, setDeckColor] = useState({
+    cylindrical: "",
+    disk: "grayscale(100%)",
+  })
+
   function handleClick(e) {
     setMainImageRender(e.target.dataset.main)
     setToggleMedia({
@@ -44,6 +49,10 @@ const FeaturedProduct = props => {
   }
 
   function cylindricalSelect() {
+    setDeckColor({
+      cylindrical: "",
+      disk: "grayscale(100%)",
+    })
     setMainImageRender(props.cylindricalMain1)
     setToggleMedia({
       displayImages: "block",
@@ -66,6 +75,10 @@ const FeaturedProduct = props => {
   }
 
   function diskSelect() {
+    setDeckColor({
+      cylindrical: "grayscale(100%)",
+      disk: "",
+    })
     setMainImageRender(props.diskMain1)
     setToggleMedia({
       displayImages: "block",
@@ -118,6 +131,7 @@ const FeaturedProduct = props => {
         handleVideoToggle={handleVideoToggle}
       />
       <FeaturedContent
+        deckColor={deckColor}
         diskSelect={diskSelect}
         cylindricalSelect={cylindricalSelect}
       />

@@ -16,11 +16,15 @@ export const StyledFeatureContent = styled.div`
     display: flex;
 
     .deck-image-container {
-      width: 250px;
+      width: 150px;
       height: 150px;
-      /* border: 2px solid black; */
       margin-top: 1rem;
-      margin-right: 1rem;
+      margin-right: 2rem;
+      cursor: pointer;
+
+      img {
+        width: 180px;
+      }
     }
   }
 `
