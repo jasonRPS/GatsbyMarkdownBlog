@@ -1,6 +1,7 @@
 import React from "react"
 import FeaturedProduct from "../components/individualProductPage/FeaturedProduct"
 import Layout from "../components/Layout"
+import styled from "styled-components"
 
 //Thumbnail Images
 import CylindricalThumb1Image from "../components/individualProductPage/images/mini-hd-cylindrical-thumb1.jpg"
@@ -26,7 +27,15 @@ import DiskMain2Image from "../components/individualProductPage/images/mini-hd-d
 import DiskMain3Image from "../components/individualProductPage/images/mini-hd-disk-main3.jpg"
 import DiskMain4Image from "../components/individualProductPage/images/mini-hd-disk-main4.jpg"
 import DiskMain5Image from "../components/individualProductPage/images/mini-hd-disk-main5.jpg"
+import MediaTile from "../components/individualProductPage/MediaTile"
 //End Main Images
+
+const MediaTiles = styled.div`
+  display: flex;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
+`
 
 const TestPage = props => {
   return (
@@ -63,6 +72,15 @@ const TestPage = props => {
           squeegee blades can be rotated or flipped without tools. Ensure complete
           cleaning in a variety of sized applications with a reliable scrubber."
         />
+        <MediaTiles>
+          <MediaTile
+            title="You be the Judge"
+            subTitle="Walk Behind Scrubbers"
+          />
+          <MediaTile title="Videos" subTitle="Walk Behind Scrubbers" />
+          <MediaTile title="Images" subTitle="Walk Behind Scrubbers" />
+          <MediaTile title="Applications" subTitle="Walk Behind Scrubbers" />
+        </MediaTiles>
       </Layout>
     </>
   )
