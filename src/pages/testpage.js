@@ -8,6 +8,11 @@ import CylindricalThumb2Image from "../components/individualProductPage/images/m
 import CylindricalThumb3Image from "../components/individualProductPage/images/mini-hd-cylindrical-thumb3.jpg"
 import CylindricalThumb4Image from "../components/individualProductPage/images/mini-hd-cylindrical-thumb4.jpg"
 import CylindricalThumb5Image from "../components/individualProductPage/images/mini-hd-cylindrical-thumb5.jpg"
+import DiskThumb1 from "../components/individualProductPage/images/mini-hd-disk-thumb1.jpg"
+import DiskThumb2 from "../components/individualProductPage/images/mini-hd-disk-thumb2.jpg"
+import DiskThumb3 from "../components/individualProductPage/images/mini-hd-disk-thumb3.jpg"
+import DiskThumb4 from "../components/individualProductPage/images/mini-hd-disk-thumb4.jpg"
+import DiskThumb5 from "../components/individualProductPage/images/mini-hd-disk-thumb5.jpg"
 //End Thumbnail Images
 
 //Main Images
@@ -16,6 +21,11 @@ import CylindricalMain2Image from "../components/individualProductPage/images/mi
 import CylindricalMain3Image from "../components/individualProductPage/images/mini-hd-cylindrical-main3.jpg"
 import CylindricalMain4Image from "../components/individualProductPage/images/mini-hd-cylindrical-main4.jpg"
 import CylindricalMain5Image from "../components/individualProductPage/images/mini-hd-cylindrical-main5.jpg"
+import DiskMain1Image from "../components/individualProductPage/images/mini-hd-disk-main1.jpg"
+import DiskMain2Image from "../components/individualProductPage/images/mini-hd-disk-main2.jpg"
+import DiskMain3Image from "../components/individualProductPage/images/mini-hd-disk-main3.jpg"
+import DiskMain4Image from "../components/individualProductPage/images/mini-hd-disk-main4.jpg"
+import DiskMain5Image from "../components/individualProductPage/images/mini-hd-disk-main5.jpg"
 //End Main Images
 
 const TestPage = props => {
@@ -33,6 +43,16 @@ const TestPage = props => {
           cylindricalMain3={CylindricalMain3Image}
           cylindricalMain4={CylindricalMain4Image}
           cylindricalMain5={CylindricalMain5Image}
+          diskThumb1={DiskThumb1}
+          diskThumb2={DiskThumb2}
+          diskThumb3={DiskThumb3}
+          diskThumb4={DiskThumb4}
+          diskThumb5={DiskThumb5}
+          diskMain1={DiskMain1Image}
+          diskMain2={DiskMain2Image}
+          diskMain3={DiskMain3Image}
+          diskMain4={DiskMain4Image}
+          diskMain5={DiskMain5Image}
         />
       </Layout>
     </>

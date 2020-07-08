@@ -6,7 +6,7 @@ import SocialShare from "../../SocialShare"
 import CylindricalDeck from "../images/cylindrical-deck.png"
 import DiskDeck from "../images/disk-deck.png"
 
-const FeaturedContent = () => {
+const FeaturedContent = props => {
   return (
     <StyledFeatureContent>
       <div className="title-container">
@@ -28,10 +28,10 @@ const FeaturedContent = () => {
       <h2>Choose from two scrub systems</h2>
       <div className="deck-container">
         <div className="deck-image-container">
-          <img src={CylindricalDeck} alt="" />
+          <img onClick={props.cylindricalSelect} src={CylindricalDeck} alt="" />
         </div>
         <div className="deck-image-container">
-          <img src={DiskDeck} alt="" />
+          <img onClick={props.diskSelect} src={DiskDeck} alt="" />
         </div>
       </div>
     </StyledFeatureContent>
