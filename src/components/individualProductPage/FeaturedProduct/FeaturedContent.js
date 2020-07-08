@@ -10,19 +10,10 @@ const FeaturedContent = props => {
   return (
     <StyledFeatureContent>
       <div className="title-container">
-        <h1>Mini-HD Walk Behind Floor Scrubber</h1>
+        <h1>{props.title}</h1>
         <Button>Request a Demo</Button>
       </div>
-      <p>
-        Reduce the cost to clean with the Mini-HD Floor Scrubber. We’ve made
-        consistent cleaning and being budget conscious our top priorities while
-        delivering a durable floor scrubber that will last for years. Maintain
-        cleanliness in Warehouses, Fitness Facilities, Fabrication Shops, and
-        other applications. The scrub brushes are installed and removed without
-        tools to allow ease when switching between application’s needs. The
-        squeegee blades can be rotated or flipped without tools. Ensure complete
-        cleaning in a variety of sized applications with a reliable scrubber.
-      </p>
+      <p>{props.textContent}</p>
       <DownloadsBar />
       <SocialShare />
       <h2>Choose from two scrub systems</h2>

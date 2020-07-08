@@ -131,6 +131,8 @@ const FeaturedProduct = props => {
         handleVideoToggle={handleVideoToggle}
       />
       <FeaturedContent
+        title={props.title}
+        textContent={props.textContent}
         deckColor={deckColor}
         diskSelect={diskSelect}
         cylindricalSelect={cylindricalSelect}
