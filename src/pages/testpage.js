@@ -73,7 +73,7 @@ const TestPage = props => {
           cleaning in a variety of sized applications with a reliable scrubber."
           mobileTitle="Mini-HD Walk Behind Floor Scrubber"
         />
-        <MediaTiles>
+        {/* <MediaTiles>
           <MediaTile
             title="You be the Judge"
             subTitle="Walk Behind Scrubbers"
@@ -81,7 +81,7 @@ const TestPage = props => {
           <MediaTile title="Videos" subTitle="Walk Behind Scrubbers" />
           <MediaTile title="Images" subTitle="Walk Behind Scrubbers" />
           <MediaTile title="Applications" subTitle="Walk Behind Scrubbers" />
-        </MediaTiles>
+        </MediaTiles> */}
       </Layout>
     </>
   )

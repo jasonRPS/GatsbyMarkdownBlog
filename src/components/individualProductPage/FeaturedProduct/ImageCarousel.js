@@ -12,6 +12,10 @@ const ImageContainer = styled.div`
   @media (max-width: 1030px) {
     flex-direction: row;
   }
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
 `
 
 const ImageCarousel = props => {

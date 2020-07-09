@@ -20,6 +20,11 @@ const StyledDownloadsBar = styled.div`
     margin: 0 auto;
   }
 
+  @media (max-width: 650px) {
+    width: 300px;
+    margin: 0 auto;
+  }
+
   a {
     display: flex;
     align-items: center;

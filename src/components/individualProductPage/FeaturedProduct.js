@@ -118,6 +118,10 @@ const FeaturedProduct = props => {
 
     h1 {
       margin-right: 20px;
+
+      @media (max-width: 650px) {
+        margin-bottom: 0;
+      }
     }
 
     button {
@@ -126,6 +130,14 @@ const FeaturedProduct = props => {
       color: white;
       border: none;
       cursor: pointer;
+      @media (max-width: 650px) {
+        margin-bottom: 10px;
+        width: 90%;
+      }
+    }
+
+    @media (max-width: 650px) {
+      display: block;
     }
   `
 

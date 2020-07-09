@@ -28,10 +28,16 @@ export const StyledFeatureContent = styled.div`
 
   h2 {
     margin: 0;
+    @media (max-width: 380px) {
+      text-align: center;
+    }
   }
 
   .deck-container {
     display: flex;
+    @media (max-width: 380px) {
+      justify-content: space-around;
+    }
 
     .deck-image-container {
       width: 150px;
@@ -39,15 +45,15 @@ export const StyledFeatureContent = styled.div`
       margin-top: 1rem;
       margin-right: 2rem;
       cursor: pointer;
-      /* @media (max-width: 900px) {
-        width: 130px;
-      } */
+      @media (max-width: 380px) {
+        margin-top: 10px;
+      }
 
       img {
         width: 180px;
-        /* @media (max-width: 900px) {
+        @media (max-width: 380px) {
           width: 130px;
-        } */
+        }
       }
     }
   }
