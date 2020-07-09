@@ -3,7 +3,13 @@ import styled from "styled-components"
 export const StyledFeatureContent = styled.div`
   .title-container {
     display: flex;
-    /* justify-content: space-between; */
+    @media (max-width: 1440px) {
+      display: block;
+    }
+    @media (max-width: 1200px) {
+      display: none;
+    }
+
     h1 {
       margin: 0 20px 0 0;
     }

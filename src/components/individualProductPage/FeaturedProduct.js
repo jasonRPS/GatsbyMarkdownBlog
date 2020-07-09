@@ -2,6 +2,8 @@ import React, { useState } from "react"
 import { StyledFeaturedProducts } from "./FeaturedProduct/FeaturedProductStyles"
 import ImageCarousel from "./FeaturedProduct/ImageCarousel"
 import FeaturedContent from "./FeaturedProduct/FeaturedContent"
+import { Button } from "../common/Button"
+import styled from "styled-components"
 
 const FeaturedProduct = props => {
   const [thumbnail, setThumbnail] = useState({
@@ -100,44 +102,77 @@ const FeaturedProduct = props => {
     })
   }
 
+  const MobileHeader = styled.div`
+    max-width: 700px;
+    margin: 0 auto;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+    @media (max-width: 1200px) {
+      display: flex;
+    }
+
+    h1 {
+      margin-right: 20px;
+    }
+
+    button {
+      height: 50px;
+      background: #ed2024;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  `
+
   return (
-    <StyledFeaturedProducts>
-      <ImageCarousel
-        cylindricalThumb1={props.cylindricalThumb1}
-        cylindricalThumb2={props.cylindricalThumb2}
-        cylindricalThumb3={props.cylindricalThumb3}
-        cylindricalThumb4={props.cylindricalThumb4}
-        cylindricalThumb5={props.cylindricalThumb5}
-        cylindricalMain1={props.cylindricalMain1}
-        cylindricalMain2={props.cylindricalMain2}
-        cylindricalMain3={props.cylindricalMain3}
-        cylindricalMain4={props.cylindricalMain4}
-        cylindricalMain5={props.cylindricalMain5}
-        diskThumb1={props.diskThumb1}
-        diskThumb1={props.diskThumb1}
-        diskThumb1={props.diskThumb1}
-        diskThumb1={props.diskThumb1}
-        diskThumb1={props.diskThumb1}
-        diskMain1={props.diskMain1}
-        diskMain2={props.diskMain2}
-        diskMain3={props.diskMain3}
-        diskMain4={props.diskMain4}
-        diskMain5={props.diskMain5}
-        thumbnail={thumbnail}
-        mainImage={mainImage}
-        mainImageRender={mainImageRender}
-        toggleMedia={toggleMedia}
-        handleClick={handleClick}
-        handleVideoToggle={handleVideoToggle}
-      />
-      <FeaturedContent
-        title={props.title}
-        textContent={props.textContent}
-        deckColor={deckColor}
-        diskSelect={diskSelect}
-        cylindricalSelect={cylindricalSelect}
-      />
-    </StyledFeaturedProducts>
+    <>
+      <MobileHeader>
+        <h1>{props.mobileTitle}</h1>
+        <a style={{ textDecoration: "none", color: "white" }} href="#demo-form">
+          <button>Request a Demo</button>
+        </a>
+      </MobileHeader>
+      <StyledFeaturedProducts>
+        <ImageCarousel
+          cylindricalThumb1={props.cylindricalThumb1}
+          cylindricalThumb2={props.cylindricalThumb2}
+          cylindricalThumb3={props.cylindricalThumb3}
+          cylindricalThumb4={props.cylindricalThumb4}
+          cylindricalThumb5={props.cylindricalThumb5}
+          cylindricalMain1={props.cylindricalMain1}
+          cylindricalMain2={props.cylindricalMain2}
+          cylindricalMain3={props.cylindricalMain3}
+          cylindricalMain4={props.cylindricalMain4}
+          cylindricalMain5={props.cylindricalMain5}
+          diskThumb1={props.diskThumb1}
+          diskThumb1={props.diskThumb1}
+          diskThumb1={props.diskThumb1}
+          diskThumb1={props.diskThumb1}
+          diskThumb1={props.diskThumb1}
+          diskMain1={props.diskMain1}
+          diskMain2={props.diskMain2}
+          diskMain3={props.diskMain3}
+          diskMain4={props.diskMain4}
+          diskMain5={props.diskMain5}
+          thumbnail={thumbnail}
+          mainImage={mainImage}
+          mainImageRender={mainImageRender}
+          toggleMedia={toggleMedia}
+          handleClick={handleClick}
+          handleVideoToggle={handleVideoToggle}
+        />
+        <FeaturedContent
+          title={props.title}
+          textContent={props.textContent}
+          deckColor={deckColor}
+          diskSelect={diskSelect}
+          cylindricalSelect={cylindricalSelect}
+        />
+      </StyledFeaturedProducts>
+    </>
   )
 }
 

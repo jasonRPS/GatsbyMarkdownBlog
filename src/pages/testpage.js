@@ -71,6 +71,7 @@ const TestPage = props => {
           tools to allow ease when switching between application’s needs. The
           squeegee blades can be rotated or flipped without tools. Ensure complete
           cleaning in a variety of sized applications with a reliable scrubber."
+          mobileTitle="Mini-HD Walk Behind Floor Scrubber"
         />
         <MediaTiles>
           <MediaTile

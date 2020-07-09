@@ -7,7 +7,7 @@ export const Button = styled.button`
   cursor: pointer;
   border: none;
   font-size: 1em;
-  /* padding: 0 0.5rem; */
+  padding: 0.5rem 0.5rem;
   /* text-align: center; */
   ${props => (props.block ? "display: block; width: 100%;" : "")}
 `
