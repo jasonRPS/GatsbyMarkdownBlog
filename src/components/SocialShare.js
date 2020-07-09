@@ -21,6 +21,13 @@ const StyledSocialShare = styled.div`
   margin: 1rem 0;
   h2 {
     margin-top: 0;
+    @media (max-width: 900px) {
+      margin-top: 14px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    padding: 0.5rem;
   }
 `
 

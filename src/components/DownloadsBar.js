@@ -15,6 +15,10 @@ const StyledDownloadsBar = styled.div`
   @media (max-width: 1350px) {
     width: 300px;
   }
+  @media (max-width: 900px) {
+    width: 600px;
+    margin: 0 auto;
+  }
 
   a {
     display: flex;

@@ -8,6 +8,10 @@ const ImageContainer = styled.div`
   @media (max-width: 1350px) {
     flex-direction: column-reverse;
   }
+
+  @media (max-width: 1030px) {
+    flex-direction: row;
+  }
 `
 
 const ImageCarousel = props => {
@@ -69,10 +73,7 @@ const ImageCarousel = props => {
             <iframe
               style={{
                 display: props.toggleMedia.displayVideo,
-                paddingTop: "5rem",
               }}
-              width="500"
-              height="280"
               src="https://www.youtube.com/embed/nr0SX8xviSk"
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

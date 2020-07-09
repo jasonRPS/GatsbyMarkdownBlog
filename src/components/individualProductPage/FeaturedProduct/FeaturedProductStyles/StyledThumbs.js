@@ -7,6 +7,12 @@ export const StyledThumbs = styled.div`
     flex-direction: row;
     justify-content: center;
   }
+  @media (max-width: 1030px) {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 300px;
+    margin-right: 80px;
+  }
 
   .thumbnail {
     width: 70px;

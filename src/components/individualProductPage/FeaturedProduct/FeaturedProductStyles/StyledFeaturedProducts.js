@@ -16,11 +16,19 @@ export const StyledFeaturedProducts = styled.div`
 
   @media (max-width: 1200px) {
     max-width: 1000px;
-    margin: 0.5rem auto;
+    margin: 0 auto;
   }
 
   @media (max-width: 1030px) {
-    /* max-width: 800px; */
-    /* flex-direction: column-reverse; */
+    max-width: 1000px;
+    margin: 20px auto;
+    justify-content: space-around;
+    /* flex-direction: row-reverse; */
+  }
+
+  @media (max-width: 900px) {
+    max-width: 850px;
+    flex-direction: column-reverse;
+    align-items: center;
   }
 `

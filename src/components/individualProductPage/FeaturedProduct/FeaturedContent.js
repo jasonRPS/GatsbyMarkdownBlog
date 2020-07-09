@@ -14,8 +14,10 @@ const FeaturedContent = props => {
         <Button>Request a Demo</Button>
       </div>
       <p>{props.textContent}</p>
-      <DownloadsBar />
-      <SocialShare />
+      <div className="download-share">
+        <DownloadsBar />
+        <SocialShare />
+      </div>
       <h2>Choose from two scrub systems</h2>
       <div className="deck-container">
         <div className="deck-image-container">

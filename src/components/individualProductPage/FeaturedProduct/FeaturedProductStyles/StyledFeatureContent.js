@@ -14,6 +14,18 @@ export const StyledFeatureContent = styled.div`
       margin: 0 20px 0 0;
     }
   }
+  p {
+    @media (max-width: 1030px) {
+      display: none;
+    }
+  }
+
+  .download-share {
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+
   h2 {
     margin: 0;
   }
@@ -27,9 +39,15 @@ export const StyledFeatureContent = styled.div`
       margin-top: 1rem;
       margin-right: 2rem;
       cursor: pointer;
+      /* @media (max-width: 900px) {
+        width: 130px;
+      } */
 
       img {
         width: 180px;
+        /* @media (max-width: 900px) {
+          width: 130px;
+        } */
       }
     }
   }

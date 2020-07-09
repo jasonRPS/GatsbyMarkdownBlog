@@ -4,6 +4,8 @@ import ImageCarousel from "./FeaturedProduct/ImageCarousel"
 import FeaturedContent from "./FeaturedProduct/FeaturedContent"
 import { Button } from "../common/Button"
 import styled from "styled-components"
+import DownloadsBar from "../DownloadsBar"
+import SocialShare from "../SocialShare"
 
 const FeaturedProduct = props => {
   const [thumbnail, setThumbnail] = useState({
@@ -127,6 +129,29 @@ const FeaturedProduct = props => {
     }
   `
 
+  const MobileParagraph = styled.p`
+    width: 90%;
+    margin: 0 auto;
+    display: none;
+    @media (max-width: 1030px) {
+      display: block;
+    }
+  `
+
+  const MobileDownloads = styled.div`
+    display: none;
+    @media (max-width: 900px) {
+      display: block;
+    }
+  `
+
+  const ShareContainer = styled.div`
+    display: none;
+    @media (max-width: 900px) {
+      display: block;
+    }
+  `
+
   return (
     <>
       <MobileHeader>
@@ -135,6 +160,19 @@ const FeaturedProduct = props => {
           <button>Request a Demo</button>
         </a>
       </MobileHeader>
+      <MobileDownloads>
+        <DownloadsBar />
+      </MobileDownloads>
+      <MobileParagraph>
+        Reduce the cost to clean with the Mini-HD Floor Scrubber. We’ve made
+        consistent cleaning and being budget conscious our top priorities while
+        delivering a durable floor scrubber that will last for years. Maintain
+        cleanliness in Warehouses, Fitness Facilities, Fabrication Shops, and
+        other applications. The scrub brushes are installed and removed without
+        tools to allow ease when switching between application’s needs. The
+        squeegee blades can be rotated or flipped without tools. Ensure complete
+        cleaning in a variety of sized applications with a reliable scrubber.
+      </MobileParagraph>
       <StyledFeaturedProducts>
         <ImageCarousel
           cylindricalThumb1={props.cylindricalThumb1}
@@ -172,6 +210,9 @@ const FeaturedProduct = props => {
           cylindricalSelect={cylindricalSelect}
         />
       </StyledFeaturedProducts>
+      <ShareContainer>
+        <SocialShare />
+      </ShareContainer>
     </>
   )
 }
