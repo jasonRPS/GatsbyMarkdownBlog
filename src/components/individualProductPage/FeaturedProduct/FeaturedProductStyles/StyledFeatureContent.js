@@ -1,6 +1,9 @@
 import styled from "styled-components"
 
 export const StyledFeatureContent = styled.div`
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    width: 700px;
+  }
   .title-container {
     display: flex;
     @media (max-width: 1440px) {

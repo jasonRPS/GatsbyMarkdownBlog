@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 
 const StyledTile = styled.div`
   text-align: center;
@@ -20,10 +21,12 @@ const StyledTile = styled.div`
 
 const MediaTile = props => {
   return (
-    <StyledTile>
-      <h1>{props.title}</h1>
-      <p>{props.subTitle}</p>
-    </StyledTile>
+    <Link to={props.link}>
+      <StyledTile>
+        <h1>{props.title}</h1>
+        <p>{props.subTitle}</p>
+      </StyledTile>
+    </Link>
   )
 }
 

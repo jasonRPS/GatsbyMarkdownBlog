@@ -30,7 +30,7 @@ import DiskMain5Image from "../components/individualProductPage/images/mini-hd-d
 import MediaTile from "../components/individualProductPage/MediaTile"
 //End Main Images
 
-const MediaTiles = styled.div`
+const MediaTilesContainer = styled.div`
   display: flex;
   justify-content: center;
   max-width: 1400px;
@@ -73,15 +73,12 @@ const TestPage = props => {
           cleaning in a variety of sized applications with a reliable scrubber."
           mobileTitle="Mini-HD Walk Behind Floor Scrubber"
         />
-        {/* <MediaTiles>
-          <MediaTile
-            title="You be the Judge"
-            subTitle="Walk Behind Scrubbers"
-          />
-          <MediaTile title="Videos" subTitle="Walk Behind Scrubbers" />
-          <MediaTile title="Images" subTitle="Walk Behind Scrubbers" />
-          <MediaTile title="Applications" subTitle="Walk Behind Scrubbers" />
-        </MediaTiles> */}
+        <MediaTilesContainer>
+          <MediaTile />
+          <MediaTile />
+          <MediaTile />
+          <MediaTile />
+        </MediaTilesContainer>
       </Layout>
     </>
   )
