@@ -66,7 +66,7 @@ export const StyledThumbs = styled.div`
       font-size: 2.8em;
     }
     @media (max-width: 380px) {
-      font-size: 2.3em;
+      font-size: 2.2em;
       margin-top: 0;
     }
   }

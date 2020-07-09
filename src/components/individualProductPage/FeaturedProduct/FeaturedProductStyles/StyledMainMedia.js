@@ -31,20 +31,20 @@ export const StyledMainMedia = styled.div`
 
       @media (max-width: 650px) {
         width: 500px;
-        height: 250px;
+        height: 450px;
         padding: 0;
         /* padding-top: 50px; */
       }
       @media (max-width: 530px) {
         width: 450px;
-        height: 250px;
+        height: 400px;
         padding: 0;
         /* padding-top: 50px; */
       }
 
       @media (max-width: 380px) {
-        width: 350px;
-        height: 220px;
+        width: 330px;
+        height: 300px;
         padding: 0;
         /* padding-top: 50px; */
       }
