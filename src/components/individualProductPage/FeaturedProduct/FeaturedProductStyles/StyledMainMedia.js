@@ -28,6 +28,13 @@ export const StyledMainMedia = styled.div`
         padding: 70px 0 0 20px;
         /* padding-top: 50px; */
       }
+
+      @media (max-width: 650px) {
+        width: 500px;
+        height: 250px;
+        padding: 0;
+        /* padding-top: 50px; */
+      }
       @media (max-width: 530px) {
         width: 450px;
         height: 250px;
