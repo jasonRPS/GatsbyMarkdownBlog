@@ -62,8 +62,8 @@ export const StyledMainMedia = styled.div`
     }
 
     @media (max-width: 380px) {
-      width: 350px;
-      height: 350px;
+      width: 320px;
+      height: 320px;
       margin: 0;
     }
   }
