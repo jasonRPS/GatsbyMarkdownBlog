@@ -16,5 +16,11 @@ export const StyledFeaturedProducts = styled.div`
 
   @media (max-width: 1200px) {
     max-width: 1000px;
+    margin: 0.5rem auto;
+  }
+
+  @media (max-width: 1030px) {
+    /* max-width: 800px; */
+    /* flex-direction: column-reverse; */
   }
 `

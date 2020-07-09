@@ -22,7 +22,7 @@ const StyledDownloadsBar = styled.div`
     text-decoration: none;
     color: #ed2024;
     @media (max-width: 1350px) {
-      /* margin-bottom: 5px; */
+      margin-bottom: 5px;
     }
   }
 `
