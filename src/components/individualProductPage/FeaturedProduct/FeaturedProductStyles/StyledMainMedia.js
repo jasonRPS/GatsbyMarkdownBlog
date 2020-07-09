@@ -25,7 +25,8 @@ export const StyledMainMedia = styled.div`
       @media (max-width: 900px) {
         width: 450px;
         height: 250px;
-        padding: 1rem;
+        padding: 70px 0 0 20px;
+        /* padding-top: 50px; */
       }
     }
 

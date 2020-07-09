@@ -14,6 +14,10 @@ export const StyledThumbs = styled.div`
     margin-right: 80px;
   }
 
+  @media (max-width: 900px) {
+    margin-top: 50px;
+  }
+
   .thumbnail {
     width: 70px;
     height: 70px;
