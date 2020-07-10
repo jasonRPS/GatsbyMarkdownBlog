@@ -6,6 +6,7 @@ import { Button } from "../common/Button"
 import styled from "styled-components"
 import DownloadsBar from "../DownloadsBar"
 import SocialShare from "../SocialShare"
+import HeaderImage from "./images/mini-hd-cylindrical-thumb1.jpg"
 
 const FeaturedProduct = props => {
   const [thumbnail, setThumbnail] = useState({
@@ -139,6 +140,10 @@ const FeaturedProduct = props => {
     @media (max-width: 650px) {
       display: block;
     }
+
+    @media (max-width: 400px) {
+      display: none;
+    }
   `
 
   const MobileParagraph = styled.p`
@@ -164,6 +169,55 @@ const FeaturedProduct = props => {
     }
   `
 
+  const StyledMobilImageHeader = styled.div`
+    max-width: 700px;
+    margin: 0 auto;
+    display: none;
+
+    @media (max-width: 400px) {
+      display: block;
+      max-width: 380px;
+      margin: 0 auto;
+    }
+    .image-header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      h1 {
+        font-size: 1.5em;
+        text-align: center;
+      }
+
+      .mobile-image-container {
+        width: 70px;
+        height: 70px;
+
+        img {
+          padding-left: 15px;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    button {
+      height: 50px;
+
+      background: #ed2024;
+      color: white;
+      border: none;
+      cursor: pointer;
+      @media (max-width: 650px) {
+        margin-bottom: 10px;
+        width: 90%;
+
+        margin-left: 20px;
+      }
+    }
+  `
+
   return (
     <>
       <MobileHeader>
@@ -172,6 +226,17 @@ const FeaturedProduct = props => {
           <button>Request a Demo</button>
         </a>
       </MobileHeader>
+      <StyledMobilImageHeader>
+        <div className="image-header-container">
+          <div className="mobile-image-container">
+            <img src={HeaderImage} alt="" />
+          </div>
+          <h1>{props.mobileTitle}</h1>
+        </div>
+        <a style={{ textDecoration: "none", color: "white" }} href="#demo-form">
+          <button>Request a Demo</button>
+        </a>
+      </StyledMobilImageHeader>
       <MobileDownloads>
         <DownloadsBar />
       </MobileDownloads>

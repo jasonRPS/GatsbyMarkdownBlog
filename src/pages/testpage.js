@@ -73,12 +73,12 @@ const TestPage = props => {
           cleaning in a variety of sized applications with a reliable scrubber."
           mobileTitle="Mini-HD Walk Behind Floor Scrubber"
         />
-        <MediaTilesContainer>
+        {/* <MediaTilesContainer>
           <MediaTile />
           <MediaTile />
           <MediaTile />
           <MediaTile />
-        </MediaTilesContainer>
+        </MediaTilesContainer> */}
       </Layout>
     </>
   )
