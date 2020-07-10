@@ -7,7 +7,7 @@ const StyledSectionTitle = styled.div`
   #background {
     position: relative;
     width: 300px;
-    height: 120px;
+    height: 80px;
     background-color: #ed2024;
     -webkit-transform: perspective(300px) rotateX(-30deg);
     -o-transform: perspective(300px) rotateX(-30deg);
@@ -20,9 +20,10 @@ const StyledSectionTitle = styled.div`
   }
 
   h1 {
+    margin: 0;
     position: absolute;
     z-index: 2;
-    top: 0;
+    top: 10px;
     padding: 0 0.6rem;
     color: white;
   }
