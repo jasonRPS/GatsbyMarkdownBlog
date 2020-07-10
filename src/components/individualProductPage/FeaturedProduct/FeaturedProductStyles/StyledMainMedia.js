@@ -13,40 +13,50 @@ export const StyledMainMedia = styled.div`
       object-fit: cover;
     }
     iframe {
-      width: 500px;
+      width: 100%;
       height: 280px;
       padding-top: 5rem;
+      margin: 0 auto;
 
       @media (max-width: 1030px) {
-        width: 350px;
-        height: 200px;
-        padding: 2rem;
+        padding: 2.5rem 0 0 1rem;
+        height: 190px;
+      }
+      @media (max-width: 930px) {
+        padding: 2.5rem 0 0 0;
+        height: 190px;
       }
       @media (max-width: 900px) {
-        width: 450px;
         height: 250px;
         padding: 70px 0 0 20px;
-        /* padding-top: 50px; */
       }
 
       @media (max-width: 650px) {
-        width: 500px;
-        height: 450px;
-        padding: 0;
-        /* padding-top: 50px; */
+        width: 470px;
       }
       @media (max-width: 530px) {
-        width: 450px;
-        height: 400px;
+        width: 100%;
+        margin: 0;
         padding: 0;
-        /* padding-top: 50px; */
       }
 
+      @media (max-width: 470px) {
+        width: 400px;
+        padding-left: 25px;
+      }
       @media (max-width: 450px) {
-        width: 330px;
-        height: 300px;
+        width: 400px;
         padding: 0;
-        /* padding-top: 50px; */
+      }
+      @media (max-width: 420px) {
+        width: 350px;
+        padding: 1.3rem;
+      }
+
+      @media (max-width: 380px) {
+        width: 330px;
+        height: 200px;
+        padding: 0;
       }
     }
 
