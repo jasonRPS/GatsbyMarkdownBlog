@@ -28,6 +28,7 @@ import DiskMain3Image from "../components/individualProductPage/images/mini-hd-d
 import DiskMain4Image from "../components/individualProductPage/images/mini-hd-disk-main4.jpg"
 import DiskMain5Image from "../components/individualProductPage/images/mini-hd-disk-main5.jpg"
 import MediaTile from "../components/individualProductPage/MediaTile"
+import MainSpecBar from "../components/individualProductPage/FeaturedProduct/MainSpecBar"
 //End Main Images
 
 const MediaTilesContainer = styled.div`
@@ -90,6 +91,7 @@ const TestPage = props => {
             subTitle="Walk Behind Floor Scrubbers"
           />
         </MediaTilesContainer>
+        <MainSpecBar />
       </Layout>
     </>
   )
