@@ -7,7 +7,7 @@ const StyledSectionTitle = styled.div`
   #background {
     position: relative;
     width: 300px;
-    height: 100px;
+    height: 120px;
     background-color: #ed2024;
     -webkit-transform: perspective(300px) rotateX(-30deg);
     -o-transform: perspective(300px) rotateX(-30deg);
