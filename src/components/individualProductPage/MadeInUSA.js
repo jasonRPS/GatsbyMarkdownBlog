@@ -35,7 +35,7 @@ const StyledUsaContainer = styled.div`
     }
 
     @media (max-width: 460px) {
-      font-size: 5em;
+      font-size: 4em;
       width: 350px;
       left: 50%;
       margin-left: -175px;
