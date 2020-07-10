@@ -29,6 +29,7 @@ import DiskMain4Image from "../components/individualProductPage/images/mini-hd-d
 import DiskMain5Image from "../components/individualProductPage/images/mini-hd-disk-main5.jpg"
 import MediaTile from "../components/individualProductPage/MediaTile"
 import MainSpecBar from "../components/individualProductPage/FeaturedProduct/MainSpecBar"
+import MadeInUSA from "../components/individualProductPage/MadeInUSA"
 //End Main Images
 
 const MediaTilesContainer = styled.div`
@@ -92,6 +93,7 @@ const TestPage = props => {
           />
         </MediaTilesContainer>
         <MainSpecBar />
+        <MadeInUSA />
       </Layout>
     </>
   )

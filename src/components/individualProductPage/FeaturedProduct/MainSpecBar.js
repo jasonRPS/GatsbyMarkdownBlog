@@ -6,7 +6,7 @@ import MachineImage from "../images/mini-hd-25c-cylindrical-profile.56.png"
 const StyledMainSpecBar = styled.div`
   position: relative;
   max-width: 1400px;
-  border: 2px solid black;
+
   height: 270px;
   margin: 1rem auto;
   background-image: url(${StealBackground});
