@@ -27,9 +27,9 @@ const StyledSectionTitle = styled.div`
     margin: 0;
     position: absolute;
     z-index: 2;
-    top: 50%;
-    margin-top: -25px;
-    padding: 0 0.6rem;
+    top: 10%;
+    /* margin-top: -25px; */
+    left: 15px;
     color: white;
   }
 `
