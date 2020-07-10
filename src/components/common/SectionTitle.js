@@ -9,12 +9,13 @@ const StyledSectionTitle = styled.div`
     width: 300px;
     height: 80px;
     background-color: #ed2024;
-    -webkit-transform: perspective(300px) rotateX(-30deg);
+    /* -webkit-transform: perspective(300px) rotateX(-30deg);
     -o-transform: perspective(300px) rotateX(-30deg);
     -moz-transform: perspective(300px) rotateX(-30deg);
     -webkit-transform-origin: 0% 50%;
     -moz-transform-origin: 0% 50%;
-    -o-transform-origin: 0% 50%;
+    -o-transform-origin: 0% 50%; */
+    transform: perspective(300px) rotateX(-30deg);
     transform-origin: 0% 50%;
     /* margin: 10px 90px; */
   }
