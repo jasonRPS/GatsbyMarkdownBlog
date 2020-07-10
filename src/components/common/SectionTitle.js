@@ -24,7 +24,7 @@ const StyledSectionTitle = styled.div`
     margin: 0;
     position: absolute;
     z-index: 2;
-    top: 10px;
+    top: 30px;
     padding: 0 0.6rem;
     color: white;
   }
