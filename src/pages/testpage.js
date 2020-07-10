@@ -34,10 +34,10 @@ const MediaTilesContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
 
-  @media (max-width: 1245px) {
+  @media (max-width: 840px) {
     max-width: 650px;
   }
 `

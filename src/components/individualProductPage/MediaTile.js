@@ -5,18 +5,39 @@ import { Link } from "gatsby"
 const StyledTile = styled.div`
   text-align: center;
   width: 300px;
-  height: 160px;
+  height: 150px;
   color: white;
   background: black;
-  margin: 12px 4px;
+  margin: 4px 4px;
   cursor: pointer;
 
   h1 {
     padding-top: 10%;
+    @media (max-width: 1030px) {
+      font-size: 1.5em;
+    }
+    @media (max-width: 840px) {
+      font-size: 2em;
+    }
   }
 
   p {
     margin: 0;
+    @media (max-width: 1030px) {
+      font-size: 0.8em;
+    }
+    @media (max-width: 840px) {
+      font-size: 1em;
+    }
+  }
+
+  @media (max-width: 1030px) {
+    width: 200px;
+    height: 100px;
+  }
+  @media (max-width: 840px) {
+    width: 300px;
+    height: 150px;
   }
 `
 
