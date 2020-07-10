@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 const StyledSectionTitle = styled.div`
   position: relative;
+  z-index: 1;
 
   #background {
     /* position: relative; */
@@ -10,6 +11,7 @@ const StyledSectionTitle = styled.div`
     height: 50px;
     padding: 0.5rem 0;
     background-color: #ed2024;
+    z-index: 1;
     /* -webkit-transform: perspective(300px) rotateX(-30deg);
     -o-transform: perspective(300px) rotateX(-30deg);
     -moz-transform: perspective(300px) rotateX(-30deg);
