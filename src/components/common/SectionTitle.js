@@ -21,6 +21,7 @@ const StyledSectionTitle = styled.div`
 
   h1 {
     position: absolute;
+    z-index: 2;
     top: 0;
     padding: 0 0.6rem;
     color: white;
