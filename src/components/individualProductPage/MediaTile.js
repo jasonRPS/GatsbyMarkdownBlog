@@ -10,8 +10,9 @@ const StyledTile = styled.div`
   background: black;
   margin: 12px 4px;
   cursor: pointer;
+
   h1 {
-    margin-top: 10%;
+    padding-top: 10%;
   }
 
   p {
@@ -21,7 +22,7 @@ const StyledTile = styled.div`
 
 const MediaTile = props => {
   return (
-    <Link to={props.link}>
+    <Link style={{ textDecoration: "none", color: "white" }} to={props.link}>
       <StyledTile>
         <h1>{props.title}</h1>
         <p>{props.subTitle}</p>

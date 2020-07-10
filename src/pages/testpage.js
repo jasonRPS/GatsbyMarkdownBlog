@@ -32,9 +32,14 @@ import MediaTile from "../components/individualProductPage/MediaTile"
 
 const MediaTilesContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto;
+
+  @media (max-width: 1245px) {
+    max-width: 650px;
+  }
 `
 
 const TestPage = props => {
@@ -73,12 +78,18 @@ const TestPage = props => {
           cleaning in a variety of sized applications with a reliable scrubber."
           mobileTitle="Mini-HD Walk Behind Floor Scrubber"
         />
-        {/* <MediaTilesContainer>
-          <MediaTile />
-          <MediaTile />
-          <MediaTile />
-          <MediaTile />
-        </MediaTilesContainer> */}
+        <MediaTilesContainer>
+          <MediaTile
+            title="You Be the Judge"
+            subTitle="Walk Behind Floor Scrubbers"
+          />
+          <MediaTile title="Videos" subTitle="Walk Behind Floor Scrubbers" />
+          <MediaTile title="Images" subTitle="Walk Behind Floor Scrubbers" />
+          <MediaTile
+            title="Applications"
+            subTitle="Walk Behind Floor Scrubbers"
+          />
+        </MediaTilesContainer>
       </Layout>
     </>
   )
