@@ -13,7 +13,8 @@ const StyledTile = styled.div`
 
   h1 {
     padding-top: 10%;
-    @media (max-width: 1030px) {
+    @media (max-width: 1235px) {
+      padding-top: 5%;
       font-size: 1.5em;
     }
     @media (max-width: 840px) {
@@ -23,7 +24,7 @@ const StyledTile = styled.div`
 
   p {
     margin: 0;
-    @media (max-width: 1030px) {
+    @media (max-width: 1235px) {
       font-size: 0.8em;
     }
     @media (max-width: 840px) {
@@ -31,7 +32,7 @@ const StyledTile = styled.div`
     }
   }
 
-  @media (max-width: 1030px) {
+  @media (max-width: 1235px) {
     width: 200px;
     height: 100px;
   }
