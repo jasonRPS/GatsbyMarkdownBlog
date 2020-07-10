@@ -14,10 +14,17 @@ const StyledTile = styled.div`
   h1 {
     padding-top: 10%;
     @media (max-width: 1235px) {
-      padding-top: 5%;
+      padding-top: 10%;
       font-size: 1.5em;
     }
     @media (max-width: 840px) {
+      font-size: 2em;
+    }
+    @media (max-width: 620px) {
+      padding-top: 10%;
+      font-size: 1.5em;
+    }
+    @media (max-width: 420px) {
       font-size: 2em;
     }
   }
@@ -30,6 +37,12 @@ const StyledTile = styled.div`
     @media (max-width: 840px) {
       font-size: 1em;
     }
+    @media (max-width: 620px) {
+      font-size: 0.8em;
+    }
+    @media (max-width: 420px) {
+      font-size: 1em;
+    }
   }
 
   @media (max-width: 1235px) {
@@ -37,6 +50,14 @@ const StyledTile = styled.div`
     height: 100px;
   }
   @media (max-width: 840px) {
+    width: 300px;
+    height: 150px;
+  }
+  @media (max-width: 620px) {
+    width: 200px;
+    height: 100px;
+  }
+  @media (max-width: 420px) {
     width: 300px;
     height: 150px;
   }
