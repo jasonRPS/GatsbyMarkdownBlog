@@ -5,7 +5,7 @@ const StyledSectionTitle = styled.div`
   position: relative;
 
   #background {
-    position: relative;
+    /* position: relative; */
     width: 300px;
     height: 80px;
     background-color: #ed2024;
