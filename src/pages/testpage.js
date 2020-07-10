@@ -30,6 +30,8 @@ import DiskMain5Image from "../components/individualProductPage/images/mini-hd-d
 import MediaTile from "../components/individualProductPage/MediaTile"
 import MainSpecBar from "../components/individualProductPage/FeaturedProduct/MainSpecBar"
 import MadeInUSA from "../components/individualProductPage/MadeInUSA"
+import SectionTitle from "../components/common/SectionTitle"
+import MachineOverview from "../components/individualProductPage/MachineOverview"
 //End Main Images
 
 const MediaTilesContainer = styled.div`
@@ -94,6 +96,8 @@ const TestPage = props => {
         </MediaTilesContainer>
         <MainSpecBar />
         <MadeInUSA />
+        <SectionTitle title="Machine Overview" />
+        <MachineOverview />
       </Layout>
     </>
   )
