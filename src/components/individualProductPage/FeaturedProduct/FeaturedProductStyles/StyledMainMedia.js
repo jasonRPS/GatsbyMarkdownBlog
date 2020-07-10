@@ -42,7 +42,7 @@ export const StyledMainMedia = styled.div`
         /* padding-top: 50px; */
       }
 
-      @media (max-width: 380px) {
+      @media (max-width: 450px) {
         width: 330px;
         height: 300px;
         padding: 0;
@@ -58,6 +58,12 @@ export const StyledMainMedia = styled.div`
     @media (max-width: 900px) {
       width: 450px;
       height: 450px;
+      margin: 0;
+    }
+
+    @media (max-width: 450px) {
+      width: 370px;
+      height: 370px;
       margin: 0;
     }
 
