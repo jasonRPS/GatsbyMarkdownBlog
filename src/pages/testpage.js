@@ -33,6 +33,7 @@ import MadeInUSA from "../components/individualProductPage/MadeInUSA"
 import SectionTitle from "../components/common/SectionTitle"
 import MachineOverview from "../components/individualProductPage/MachineOverview"
 import HeavyDuty from "../components/individualProductPage/HeavyDuty"
+import MachineDimensions from "../components/individualProductPage/MachineDimensions"
 //End Main Images
 
 const MediaTilesContainer = styled.div`
@@ -100,6 +101,7 @@ const TestPage = props => {
         <SectionTitle title="Machine Overview" />
         <MachineOverview />
         <HeavyDuty />
+        <MachineDimensions />
       </Layout>
     </>
   )

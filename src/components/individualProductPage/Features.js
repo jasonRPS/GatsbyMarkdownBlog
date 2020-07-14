@@ -262,7 +262,7 @@ const Features = props => {
               <li style={{ fontWeight: "bold", fontSize: "1.3em" }}>
                 Cleaning Path:
               </li>
-              <li style={{ fontSize: "1.5em" }}>20-29"</li>
+              <li style={{ fontSize: "1.5em" }}>25-29"</li>
               <li
                 style={{
                   fontStyle: "italic",
@@ -277,7 +277,7 @@ const Features = props => {
               <li style={{ fontWeight: "bold", fontSize: "1.3em" }}>
                 Run Time:
               </li>
-              <li style={{ fontSize: "1.5em" }}>2.5 Hours</li>
+              <li style={{ fontSize: "1.5em" }}>3.5 Hours</li>
               <li
                 style={{
                   fontStyle: "italic",

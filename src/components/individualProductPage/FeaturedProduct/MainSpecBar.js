@@ -103,12 +103,12 @@ const MainSpecBar = () => {
         <div className="specs-container">
           <div className="spec">
             <h3>Cleaning Path:</h3>
-            <h2>20-29"</h2>
+            <h2>25-29"</h2>
             <p className="spec-p">(51-73)</p>
           </div>
           <div className="spec">
             <h3>Run Time:</h3>
-            <h2>2.5 Hours</h2>
+            <h2>3.5 Hours</h2>
             <p className="spec-p">Battery Life</p>
           </div>
           <div className="spec">
