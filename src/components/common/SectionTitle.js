@@ -28,6 +28,8 @@ const StyledSectionTitle = styled.div`
     position: absolute;
     z-index: 2;
     top: 10%;
+    transform: perspective(300px) rotateX(30deg);
+    transform-origin: 0% 0%;
     /* margin-top: -25px; */
     left: 15px;
     color: white;
