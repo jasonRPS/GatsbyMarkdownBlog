@@ -32,6 +32,7 @@ import MainSpecBar from "../components/individualProductPage/FeaturedProduct/Mai
 import MadeInUSA from "../components/individualProductPage/MadeInUSA"
 import SectionTitle from "../components/common/SectionTitle"
 import MachineOverview from "../components/individualProductPage/MachineOverview"
+import HeavyDuty from "../components/individualProductPage/HeavyDuty"
 //End Main Images
 
 const MediaTilesContainer = styled.div`
@@ -98,6 +99,7 @@ const TestPage = props => {
         <MadeInUSA />
         <SectionTitle title="Machine Overview" />
         <MachineOverview />
+        <HeavyDuty />
       </Layout>
     </>
   )
