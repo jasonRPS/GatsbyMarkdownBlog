@@ -38,10 +38,8 @@ const SectionTitle = props => {
   return (
     <>
       <StyledSectionTitle>
-        <div id="container">
-          <div id="background"></div>
-          <h1>{props.title}</h1>
-        </div>
+        <div id="background"></div>
+        <h1>{props.title}</h1>
       </StyledSectionTitle>
     </>
   )
