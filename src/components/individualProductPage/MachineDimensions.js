@@ -21,9 +21,12 @@ const StyledListContainer = styled.div`
   margin: 1rem auto;
   font-size: 1.5em;
   @media (max-width: 1130px) {
-    font-size: 1em;
+    font-size: 1.3em;
     max-width: 800px;
     padding: 0 1rem;
+  }
+  @media (max-width: 780px) {
+    font-size: 1em;
   }
   @media (max-width: 640px) {
     max-width: 500px;
