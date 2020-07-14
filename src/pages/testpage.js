@@ -34,6 +34,7 @@ import SectionTitle from "../components/common/SectionTitle"
 import MachineOverview from "../components/individualProductPage/MachineOverview"
 import HeavyDuty from "../components/individualProductPage/HeavyDuty"
 import MachineDimensions from "../components/individualProductPage/MachineDimensions"
+import OptionsSections from "../components/individualProductPage/OptionsSections"
 //End Main Images
 
 const MediaTilesContainer = styled.div`
@@ -102,6 +103,7 @@ const TestPage = props => {
         <MachineOverview />
         <HeavyDuty />
         <MachineDimensions />
+        <OptionsSections />
       </Layout>
     </>
   )

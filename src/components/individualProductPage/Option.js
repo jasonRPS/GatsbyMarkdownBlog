@@ -9,18 +9,26 @@ const StyledContainer = styled.div`
   font-family: "Titillium Web", sans-serif;
 
   img {
-    border-radius: 50%;
-    width: 450px;
-    /* height: 150px; */
+    border-radius: 15px;
+    width: 160px;
+    height: 130px;
     margin: 0 0.5rem;
   }
 
   h3 {
     margin: 0;
     border-bottom: 2px solid red;
+    max-width: 200px;
   }
   p {
     margin: 0;
+    max-width: 250px;
+  }
+
+  .ms-placement {
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      width: 33.3%;
+    }
   }
 `
 
@@ -28,7 +36,7 @@ const Option = () => {
   return (
     <StyledContainer>
       <img src={PlaceHolderImage} alt="" />
-      <div>
+      <div className="ms-placement">
         <h3>Stainless Steel Deck</h3>
         <p>
           Give your machine the protection it deserves with a fully Stainless
