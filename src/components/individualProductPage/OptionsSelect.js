@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useRef } from "react"
 import styled from "styled-components"
 import Option from "./Option"
 
@@ -28,19 +28,20 @@ const StyledOptionsBody = styled.div`
   }
 
   .open-options {
-    height: 2400px;
     transition-duration: 0.5s;
   }
   .closed-options {
-    height: 350px;
     transition-duration: 0.5s;
   }
 `
 const OptionsSelect = () => {
+  const content = useRef(null)
+  // console.log(content.current.scrollHeight)
+
   const [toggle, setToggle] = useState({
     more: "View More",
     arrow: "fas fa-caret-down",
-    height: "closed-options",
+    height: "350px",
   })
 
   function handClick() {
@@ -48,13 +49,13 @@ const OptionsSelect = () => {
       setToggle({
         more: "View Less",
         arrow: "fas fa-caret-up",
-        height: "open-options",
+        height: `${content.current.scrollHeight}px`,
       })
     } else {
       setToggle({
         more: "View More",
         arrow: "fas fa-caret-down",
-        height: "closed-options",
+        height: "350px",
       })
     }
   }
@@ -62,7 +63,12 @@ const OptionsSelect = () => {
   return (
     <>
       <StyledOptionsBody>
-        <div id="body-set" className={toggle.height}>
+        <div
+          ref={content}
+          style={{ maxHeight: toggle.height, transitionDuration: ".5s" }}
+          id="body-set"
+          className={toggle.height}
+        >
           <Option />
           <Option />
           <Option />
