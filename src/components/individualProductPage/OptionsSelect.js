@@ -1,23 +1,19 @@
 import React, { useState, useRef } from "react"
 import styled from "styled-components"
 import Option from "./Option"
+import BatteryWetImage from "./images/mini-hd-options-wet-batteries-square-cropped-zoomed.png"
 
 const StyledOptionsBody = styled.div`
   #body-set {
     max-width: 1400px;
     margin: 1rem auto;
     display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-gap: 1.5rem;
+    grid-template-columns: 50% 50%;
+    grid-gap: 0.5rem;
     overflow: hidden;
 
-    @media (max-width: 1320px) {
-      grid-template-columns: 50% 50%;
-      width: 1100px;
-    }
-
-    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-      display: flex;
+    @media (max-width: 900px) {
+      grid-template-columns: 100%;
     }
   }
 
@@ -34,14 +30,14 @@ const StyledOptionsBody = styled.div`
     transition-duration: 0.5s;
   }
 `
-const OptionsSelect = () => {
+const OptionsSelect = props => {
   const content = useRef(null)
   // console.log(content.current.scrollHeight)
 
   const [toggle, setToggle] = useState({
     more: "View More",
     arrow: "fas fa-caret-down",
-    height: "350px",
+    height: "450px",
   })
 
   function handClick() {
@@ -55,7 +51,7 @@ const OptionsSelect = () => {
       setToggle({
         more: "View More",
         arrow: "fas fa-caret-down",
-        height: "350px",
+        height: "450px",
       })
     }
   }
@@ -69,12 +65,36 @@ const OptionsSelect = () => {
           id="body-set"
           className={toggle.height}
         >
-          <Option />
-          <Option />
-          <Option />
-          <Option />
-          <Option />
-          <Option />
+          <Option
+            image={props.image1}
+            title={props.title1}
+            description={props.description1}
+          />
+          <Option
+            image={props.image2}
+            title={props.title2}
+            description={props.description2}
+          />
+          <Option
+            image={props.image3}
+            title={props.title3}
+            description={props.description3}
+          />
+          <Option
+            image={props.image4}
+            title={props.title4}
+            description={props.description4}
+          />
+          <Option
+            image={props.image5}
+            title={props.title5}
+            description={props.description5}
+          />
+          <Option
+            image={props.image6}
+            title={props.title6}
+            description={props.description6}
+          />
           <Option />
           <Option />
           <Option />

@@ -35,7 +35,15 @@ import MachineOverview from "../components/individualProductPage/MachineOverview
 import HeavyDuty from "../components/individualProductPage/HeavyDuty"
 import MachineDimensions from "../components/individualProductPage/MachineDimensions"
 import OptionsSections from "../components/individualProductPage/OptionsSections"
+import OptionsSelect from "../components/individualProductPage/OptionsSelect"
+import { OptionsBar } from "../components/individualProductPage/FeaturedProduct/FeaturedProductStyles/OptionsBar"
 //End Main Images
+
+//Option Images
+import OptionImage1 from "../components/individualProductPage/images/mini-hd-options-wet-batteries-square-cropped-zoomed.png"
+import OptionImage2 from "../components/individualProductPage/images/mini-hd-options-agm-batteries.png"
+import OptionImage3 from "../components/individualProductPage/images/mini-hd-options-single-point-watering-system.png"
+import OptionImage4 from "../components/individualProductPage/images/mini-hd-options-antimicrobial-tank.png"
 
 const MediaTilesContainer = styled.div`
   display: flex;
@@ -103,7 +111,25 @@ const TestPage = props => {
         <MachineOverview />
         <HeavyDuty />
         <MachineDimensions />
-        <OptionsSections />
+        <OptionsBar>Options</OptionsBar>
+        <OptionsSelect
+          image1={OptionImage1}
+          title1="Battery - Lead Acid (WET)"
+          description1="The most economic battery on the market, tried and true. With proper maintenance the battery will perform as needed without fail."
+          image2={OptionImage2}
+          title2="Battery - Maintenance Free (AGM)"
+          description2="Spill proof, charge faster, no maintenance required. Simply plug and play.*Requires universal charger."
+          image3={OptionImage3}
+          title3="Single Point Watering System"
+          description3="Ensure proper Electrolyte levels with this system that connects all batteries to each other with hoses."
+          image4={OptionImage4}
+          title4="O3 + Package"
+          description4="Clean your way on the fly with the O3+ package. Seamlessly switch between chemical and Chemical free ZerO3 with just the flip of a switch. We provide a sample of chemical as well as the proper squeegee blades for the ZerO3 system."
+          title5="AGM 24V/27A, w/ Inhibit, CE & CEC"
+          description5="Onboard Universal charger for AGM battery setup"
+          title6="AGM 24V/27A, w/ Inhibit, CE & CEC"
+          description6="Onboard Universal charger for AGM battery setup"
+        />
       </Layout>
     </>
   )

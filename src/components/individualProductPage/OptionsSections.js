@@ -2,7 +2,9 @@ import React from "react"
 import styled from "styled-components"
 import OptionsSelect from "./OptionsSelect"
 
-const StyledOptionsContainer = styled.div``
+const StyledOptionsContainer = styled.div`
+  max-width: 1400px;
+`
 
 const OptionsBar = styled.div`
   width: 100%;

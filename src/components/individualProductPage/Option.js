@@ -1,48 +1,52 @@
 import React from "react"
 import styled from "styled-components"
-import PlaceHolderImage from "./images/mini-hd-25c-cylindrical-profile.75-n.png"
+import BatteryWetImage from "./images/mini-hd-options-single-point-watering-system.png"
 
 const StyledContainer = styled.div`
-  max-width: 600px;
   display: flex;
-  align-items: center;
-  font-family: "Titillium Web", sans-serif;
+  max-width: 650px;
+  height: 200px;
+  /* border: 2px solid blue; */
+  margin: 0.5rem auto;
 
-  img {
-    border-radius: 15px;
-    width: 160px;
-    height: 130px;
-    margin: 0 0.5rem;
+  .image-container {
+    width: 300px;
+    height: 200px;
+    /* border: 2px solid red; */
+    margin-right: 0.5rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
-  h3 {
-    margin: 0;
-    border-bottom: 2px solid red;
-    max-width: 200px;
-  }
-  p {
-    margin: 0;
-    max-width: 250px;
-  }
+  .content-container {
+    width: 300px;
+    height: 180px;
+    /* border: 2px solid green; */
 
-  .ms-placement {
-    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-      width: 33.3%;
+    h3 {
+      margin: 0;
+      border-bottom: 3px solid red;
+    }
+
+    p {
+      margin: 0;
     }
   }
 `
 
-const Option = () => {
+const Option = props => {
   return (
     <StyledContainer>
-      <img src={PlaceHolderImage} alt="" />
-      <div className="ms-placement">
-        <h3>Stainless Steel Deck</h3>
-        <p>
-          Give your machine the protection it deserves with a fully Stainless
-          Steel Deck. The stylish stainless metal prolongs the life of any deck
-          by guarding against moisture and chemical.
-        </p>
+      <div className="image-container">
+        <img src={props.image} alt="" />
+      </div>
+      <div className="content-container">
+        <h3>{props.title}</h3>
+        <p>{props.description}</p>
       </div>
     </StyledContainer>
   )
