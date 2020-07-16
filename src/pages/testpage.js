@@ -40,10 +40,10 @@ import { OptionsBar } from "../components/individualProductPage/FeaturedProduct/
 //End Main Images
 
 //Option Images
-import OptionImage1 from "../components/individualProductPage/images/mini-hd-options-wet-batteries-square-cropped-zoomed.png"
-import OptionImage2 from "../components/individualProductPage/images/mini-hd-options-agm-batteries.png"
-import OptionImage3 from "../components/individualProductPage/images/mini-hd-options-single-point-watering-system.png"
-import OptionImage4 from "../components/individualProductPage/images/mini-hd-options-antimicrobial-tank.png"
+import OptionImage1 from "../components/individualProductPage/images/battery.jpg"
+import OptionImage2 from "../components/individualProductPage/images/blue-battery.jpg"
+import OptionImage3 from "../components/individualProductPage/images/green-machine.jpg"
+import OptionImage4 from "../components/individualProductPage/images/red-water.jpg"
 
 const MediaTilesContainer = styled.div`
   display: flex;
@@ -112,7 +112,7 @@ const TestPage = props => {
         <HeavyDuty />
         <MachineDimensions />
         <OptionsBar>Options</OptionsBar>
-        <OptionsSelect
+        {/* <OptionsSelect
           image1={OptionImage1}
           title1="Battery - Lead Acid (WET)"
           description1="The most economic battery on the market, tried and true. With proper maintenance the battery will perform as needed without fail."
@@ -129,7 +129,7 @@ const TestPage = props => {
           description5="Onboard Universal charger for AGM battery setup"
           title6="AGM 24V/27A, w/ Inhibit, CE & CEC"
           description6="Onboard Universal charger for AGM battery setup"
-        />
+        /> */}
       </Layout>
     </>
   )

@@ -11,23 +11,14 @@ const StyledOptionsBody = styled.div`
     grid-template-columns: 50% 50%;
     grid-gap: 0.5rem;
     overflow: hidden;
-
-    @media (max-width: 900px) {
-      grid-template-columns: 100%;
-    }
+    justify-items: center;
+    border: 4px solid green;
   }
 
   h2 {
     text-align: center;
     font-family: "Titillium Web", sans-serif;
     cursor: pointer;
-  }
-
-  .open-options {
-    transition-duration: 0.5s;
-  }
-  .closed-options {
-    transition-duration: 0.5s;
   }
 `
 const OptionsSelect = props => {

@@ -14,33 +14,45 @@ const StyledMachineDimensions = styled.div`
 `
 
 const StyledListContainer = styled.div`
-  max-width: 1100px;
+  max-width: 1400px;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-gap: 30px;
   margin: 1rem auto;
   font-size: 1.5em;
-  @media (max-width: 1130px) {
+  border: 2px solid red;
+  @media (max-width: 1115px) {
     font-size: 1.3em;
-    max-width: 800px;
-    padding: 0 1rem;
   }
-  @media (max-width: 780px) {
+  @media (max-width: 1115px) {
+    font-size: 1.2em;
+  }
+  @media (max-width: 895px) {
+    font-size: 1.1em;
+  }
+  @media (max-width: 820px) {
     font-size: 1em;
   }
-  @media (max-width: 640px) {
-    max-width: 500px;
-    grid-template-columns: 100%;
-    /* margin: 0 auto; */
-    grid-gap: 0;
+  @media (max-width: 745px) {
+    font-size: 0.8em;
   }
+  @media (max-width: 745px) {
+    font-size: 1.3em;
+    grid-template-columns: 100%;
+  }
+  @media (max-width: 490px) {
+    font-size: 1.1em;
+  }
+  @media (max-width: 415px) {
+    font-size: 1em;
+  }
+
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     display: flex;
   }
 
   .list-content {
     display: grid;
-    grid-template-columns: 6% 55% 44%;
+    grid-template-columns: 5% 60% 35%;
     align-items: center;
     /* justify-items: right; */
 
@@ -56,15 +68,23 @@ const StyledListContainer = styled.div`
 
   i {
     color: #ed2024;
+    justify-self: center;
   }
 
   .left-list {
+    /* border: 2px solid green; */
+    justify-self: center;
+    width: 80%;
+
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
       width: 50%;
     }
   }
 
   .right-list {
+    /* border: 2px solid green; */
+    justify-self: center;
+    width: 80%;
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
       width: 50%;
     }
