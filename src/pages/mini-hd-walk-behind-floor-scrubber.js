@@ -125,8 +125,8 @@ const MiniHDProductPage = props => {
           title3="Onboard Charger"
           description3="Onboard Universal charger for AGM battery setup."
           image4={OptionImage4}
-          title4="Single Point Watering System"
-          description4="Ensure proper Electrolyte levels with this system that connects all batteries to each other with hoses."
+          title4="Spray Wand Tank"
+          description4="The Spray Wand Tank makes it easier than ever to clean hard to reach places. The 100-PSI handheld Spray Wand ensures desks, chairs, office supplies, doors, fridges, and other surfaces are affectively cleaned."
           image5={OptionImage5}
           title5="O3+ Package: Aqueous Ozone & Chemical Dilution"
           description5="Seamlessly switch between chemical and Chemical free ZerO3 with just the flip of a switch. We provide a sample of chemical as well as the proper squeegee blades for the ZerO3 system."
