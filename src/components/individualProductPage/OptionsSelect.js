@@ -12,7 +12,11 @@ const StyledOptionsBody = styled.div`
     grid-gap: 0.5rem;
     overflow: hidden;
     justify-items: center;
-    border: 4px solid green;
+    /* border: 4px solid green; */
+
+    @media (max-width: 965px) {
+      grid-template-columns: 100%;
+    }
   }
 
   h2 {

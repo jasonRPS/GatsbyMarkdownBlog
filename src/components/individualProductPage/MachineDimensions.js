@@ -27,7 +27,7 @@ const StyledListContainer = styled.div`
     font-size: 1.2em;
   }
   @media (max-width: 895px) {
-    font-size: 1.1em;
+    font-size: 1em;
   }
   @media (max-width: 820px) {
     font-size: 1em;
