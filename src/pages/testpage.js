@@ -40,10 +40,11 @@ import { OptionsBar } from "../components/individualProductPage/FeaturedProduct/
 //End Main Images
 
 //Option Images
-import OptionImage1 from "../components/individualProductPage/images/battery.jpg"
-import OptionImage2 from "../components/individualProductPage/images/blue-battery.jpg"
-import OptionImage3 from "../components/individualProductPage/images/green-machine.jpg"
+import OptionImage1 from "../components/individualProductPage/images/WET-battery-option.jpg"
+import OptionImage2 from "../components/individualProductPage/images/agm-battery-option.jpg"
+import OptionImage3 from "../components/individualProductPage/images/single-point-water-option.jpg"
 import OptionImage4 from "../components/individualProductPage/images/red-water.jpg"
+import RequestDemoForm from "../components/individualProductPage/RequestDemoForm"
 
 const MediaTilesContainer = styled.div`
   display: flex;
@@ -130,6 +131,8 @@ const TestPage = props => {
           title6="AGM 24V/27A, w/ Inhibit, CE & CEC"
           description6="Onboard Universal charger for AGM battery setup"
         />
+        <SectionTitle title="Request a Demo" />
+        <RequestDemoForm />
       </Layout>
     </>
   )
