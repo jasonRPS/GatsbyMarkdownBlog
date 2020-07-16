@@ -42,8 +42,8 @@ import { OptionsBar } from "../components/individualProductPage/FeaturedProduct/
 //Option Images
 import OptionImage1 from "../components/individualProductPage/images/WET-battery-option.jpg"
 import OptionImage2 from "../components/individualProductPage/images/agm-battery-option.jpg"
-import OptionImage3 from "../components/individualProductPage/images/single-point-water-option.jpg"
-import OptionImage4 from "../components/individualProductPage/images/red-water.jpg"
+import OptionImage3 from "../components/individualProductPage/images/mini-hd-option3-onboard-charger.jpg"
+import OptionImage4 from "../components/individualProductPage/images/single-point-water-option.jpg"
 import RequestDemoForm from "../components/individualProductPage/RequestDemoForm"
 
 const MediaTilesContainer = styled.div`
@@ -121,17 +121,18 @@ const TestPage = props => {
           title2="Battery - Maintenance Free (AGM)"
           description2="Spill proof, charge faster, no maintenance required. Simply plug and play.*Requires universal charger."
           image3={OptionImage3}
-          title3="Single Point Watering System"
-          description3="Ensure proper Electrolyte levels with this system that connects all batteries to each other with hoses."
+          title3="Onboard Charger"
+          description3="Onboard Universal charger for AGM battery setup."
           image4={OptionImage4}
-          title4="O3 + Package"
-          description4="Clean your way on the fly with the O3+ package. Seamlessly switch between chemical and Chemical free ZerO3 with just the flip of a switch. We provide a sample of chemical as well as the proper squeegee blades for the ZerO3 system."
+          title4="Single Point Watering System"
+          description4="Ensure proper Electrolyte levels with this system that connects all batteries to each other with hoses."
           title5="AGM 24V/27A, w/ Inhibit, CE & CEC"
           description5="Onboard Universal charger for AGM battery setup"
           title6="AGM 24V/27A, w/ Inhibit, CE & CEC"
           description6="Onboard Universal charger for AGM battery setup"
         />
         <SectionTitle title="Request a Demo" />
+        <div id="demo-form"></div>
         <RequestDemoForm />
       </Layout>
     </>

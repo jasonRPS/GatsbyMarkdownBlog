@@ -11,7 +11,9 @@ const FeaturedContent = props => {
     <StyledFeatureContent>
       <div className="title-container">
         <h1>{props.title}</h1>
-        <Button>Request a Demo</Button>
+        <a href="#demo-form">
+          <Button>Request a Demo</Button>
+        </a>
       </div>
       <p>{props.textContent}</p>
       <div className="download-share">
