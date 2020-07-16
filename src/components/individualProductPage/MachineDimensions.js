@@ -19,7 +19,7 @@ const StyledListContainer = styled.div`
   grid-template-columns: 50% 50%;
   margin: 1rem auto;
   font-size: 1.5em;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   @media (max-width: 1115px) {
     font-size: 1.3em;
   }
