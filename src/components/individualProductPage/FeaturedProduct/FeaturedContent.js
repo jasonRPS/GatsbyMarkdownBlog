@@ -17,7 +17,12 @@ const FeaturedContent = props => {
       </div>
       <p>{props.textContent}</p>
       <div className="download-share">
-        <DownloadsBar />
+        <DownloadsBar
+          brochureLink={props.brochureLink}
+          techLink={props.techLink}
+          partsLink={props.partsLink}
+          opLink={props.opLink}
+        />
         <SocialShare />
       </div>
       <h2>Choose from two scrub systems</h2>

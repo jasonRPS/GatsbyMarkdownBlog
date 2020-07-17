@@ -4,7 +4,9 @@ import Option from "./Option"
 import BatteryWetImage from "./images/mini-hd-options-wet-batteries-square-cropped-zoomed.png"
 
 const StyledOptionsBody = styled.div`
+  position: relative;
   #body-set {
+    position: relative;
     max-width: 1400px;
     margin: 1rem auto;
     display: grid;
@@ -25,10 +27,25 @@ const StyledOptionsBody = styled.div`
     cursor: pointer;
   }
 `
+
+const ViewButton = styled.button`
+  border-radius: 5px;
+  box-shadow: 5px 10px #888888;
+  position: sticky;
+  bottom: 100px;
+  left: 90%;
+  background-color: red;
+  border: 2px solid black;
+  padding: 1rem;
+  font-size: 1em;
+  color: white;
+  cursor: pointer;
+`
+
 const OptionsSelect = props => {
   const content = useRef(null)
   // console.log(content.current.scrollHeight)
-
+  const [showButton, setShowButton] = useState("none")
   const [toggle, setToggle] = useState({
     more: "View More",
     arrow: "fas fa-caret-down",
@@ -42,12 +59,14 @@ const OptionsSelect = props => {
         arrow: "fas fa-caret-up",
         height: `${content.current.scrollHeight}px`,
       })
+      setShowButton("block")
     } else {
       setToggle({
         more: "View More",
         arrow: "fas fa-caret-down",
         height: "450px",
       })
+      setShowButton("none")
     }
   }
 
@@ -122,6 +141,9 @@ const OptionsSelect = props => {
       >
         {toggle.more} <i className={toggle.arrow} />
       </h2>
+      <ViewButton onClick={handClick} style={{ display: showButton }}>
+        View Less <i className="fas fa-caret-up" />
+      </ViewButton>
     </>
   )
 }

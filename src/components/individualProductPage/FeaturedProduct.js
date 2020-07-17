@@ -238,10 +238,15 @@ const FeaturedProduct = props => {
         </a>
       </StyledMobilImageHeader>
       <MobileDownloads>
-        <DownloadsBar />
+        <DownloadsBar
+          brochureLink={props.brochureLink}
+          techLink={props.techLink}
+          partsLink={props.partsLink}
+          opLink={props.opLink}
+        />
       </MobileDownloads>
       <MobileParagraph>
-        Reduce the cost to clean with the Mini-HD Floor Scrubber. We’ve made
+        {/* Reduce the cost to clean with the Mini-HD Floor Scrubber. We’ve made */}
         consistent cleaning and being budget conscious our top priorities while
         delivering a durable floor scrubber that will last for years. Maintain
         cleanliness in Warehouses, Fitness Facilities, Fabrication Shops, and
@@ -285,6 +290,10 @@ const FeaturedProduct = props => {
           deckColor={deckColor}
           diskSelect={diskSelect}
           cylindricalSelect={cylindricalSelect}
+          brochureLink={props.brochureLink}
+          techLink={props.techLink}
+          partsLink={props.partsLink}
+          opLink={props.opLink}
         />
       </StyledFeaturedProducts>
       <ShareContainer>

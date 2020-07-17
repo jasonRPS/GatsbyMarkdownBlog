@@ -36,26 +36,22 @@ const StyledDownloadsBar = styled.div`
   }
 `
 
-const DownloadsBar = () => {
+const DownloadsBar = props => {
   return (
     <StyledDownloadsBar>
-      <a className="wrapper" href="#">
-        {/* <i className="fas fa-download"> </i> */}
+      <a className="wrapper" href={props.brochureLink} target="_blank">
         <img src={BrochureIcon} alt="download brochure" />
         <span style={{ marginLeft: ".5rem" }}>Brochure</span>
       </a>
-      <a className="wrapper" href="#">
-        {/* <i className="fas fa-download"> </i> */}
+      <a className="wrapper" href={props.techLink} target="_blank">
         <img src={TechIcon} alt="download technical specifications" />
         <span style={{ marginLeft: ".5rem" }}>Technical Specifications</span>
       </a>
-      <a className="wrapper" href="#">
-        {/* <i className="fas fa-download"> </i> */}
+      <a className="wrapper" href={props.partsLink} target="_blank">
         <img src={PartsIcon} alt="download parts manual" />
         <span style={{ marginLeft: ".5rem" }}>Parts Manual</span>
       </a>
-      <a className="wrapper" href="#">
-        {/* <i className="fas fa-download"> </i> */}
+      <a className="wrapper" href={props.opLink} target="_blank">
         <img src={OperatorIcon} alt="download operator manual" />
         <span style={{ marginLeft: ".5rem" }}>Operator Manual</span>
       </a>

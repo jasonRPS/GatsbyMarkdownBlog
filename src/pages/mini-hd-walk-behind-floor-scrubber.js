@@ -84,6 +84,10 @@ const MiniHDProductPage = props => {
           diskMain3={DiskMain3Image}
           diskMain4={DiskMain4Image}
           diskMain5={DiskMain5Image}
+          brochureLink="http://www.factorycat.com/docs/brochures/FC-MINI-HD-BROCHURE.pdf"
+          techLink="https://www.factorycat.com/docs/techSpecs/FC-MINI-HD-SALESSHEET.pdf"
+          partsLink="https://www.factorycat.com/docs/manualsParts/FC-MINI-HD-P-EN.pdf"
+          opLink="https://www.factorycat.com/docs/manualsOp/FC-MINI-HD-OP-EN.pdf"
           title="Mini-HD Walk Behind Floor Scrubber"
           textContent="Reduce the cost to clean with the Mini-HD Floor Scrubber. We’ve made
           consistent cleaning and being budget conscious our top priorities while
@@ -133,8 +137,9 @@ const MiniHDProductPage = props => {
           title6="AGM 24V/27A, w/ Inhibit, CE & CEC"
           description6="Onboard Universal charger for AGM battery setup"
         />
-        <SectionTitle title="Request a Demo" />
         <div id="demo-form"></div>
+        <SectionTitle title="Request a Demo" />
+
         <RequestDemoForm />
       </Layout>
     </>
