@@ -75,7 +75,7 @@ const MobileNavigation = () => {
             <option disabled selected value="0">
               Support
             </option>
-            <option value="/downloads">Manual Downloads</option>
+            <option value="/downloads">Downloads</option>
             <option value="/contact">Contact</option>
           </select>
         </li>

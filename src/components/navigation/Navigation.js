@@ -105,7 +105,7 @@ const Navigation = () => {
                       to="/downloads"
                     >
                       <li>
-                        <i className="fas fa-download" />
+                        <i className="fas fa-download media-icon" />
                         <span> Downloads</span>
                       </li>
                     </Link>
@@ -114,7 +114,7 @@ const Navigation = () => {
                       to="/contact"
                     >
                       <li>
-                        <i className="fas fa-phone" />
+                        <i className="fas fa-phone media-icon" />
                         <span> Contact Us</span>
                       </li>
                     </Link>
@@ -128,7 +128,7 @@ const Navigation = () => {
                 MEDIA{" "}
                 <i
                   style={{ color: "white" }}
-                  className="fas fa-sort-down down-arrow"
+                  className="fas fa-sort-down down-arrow "
                 ></i>
                 <div className="dropdown-content">
                   <ul>
@@ -137,7 +137,7 @@ const Navigation = () => {
                       to="/images"
                     >
                       <li>
-                        <i className="far fa-images" />
+                        <i className="far fa-images media-icon" />
                         <span> Images</span>
                       </li>
                     </Link>
@@ -146,7 +146,7 @@ const Navigation = () => {
                       to="/videos"
                     >
                       <li>
-                        <i className="fas fa-video" />
+                        <i className="fas fa-video media-icon" />
                         <span> Videos</span>
                       </li>
                     </Link>
@@ -155,7 +155,7 @@ const Navigation = () => {
                       to="/applications"
                     >
                       <li>
-                        <i className="fas fa-image" />
+                        <i className="fas fa-image media-icon" />
                         <span> Applications</span>
                       </li>
                     </Link>

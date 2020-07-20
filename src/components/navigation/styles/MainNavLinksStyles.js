@@ -41,10 +41,15 @@ export const MainNavLinksStyles = styled.div`
         i {
           margin: 0;
           padding: 0;
-          color: #ed2024;
-          font-size: 1.5em;
+
+          /* font-size: 1.5em; */
         }
       }
+    }
+
+    .media-icon {
+      font-size: 1.5em;
+      color: #ed2024;
     }
 
     #login {
