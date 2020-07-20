@@ -7,6 +7,9 @@ import { Link } from "gatsby"
 import Logo from "../../images/factory-cat-nav-logo.png"
 import { useState } from "react"
 import MobileNavigation from "./MobileNavigation"
+import WalkBehindIcon from "../../images/walkie-icon.jpg"
+import RiderIcon from "../../images/rider-icon.jpg"
+import { withTheme } from "styled-components"
 
 const Navigation = () => {
   const [toggleBtn, setToggleBtn] = useState("fas fa-bars")
@@ -42,14 +45,21 @@ const Navigation = () => {
                 <li className="dropdown">HOME</li>
               </Link>
               <li className="dropdown">
-                PRODUCTS <i className="fas fa-sort-down down-arrow"></i>
+                PRODUCTS{" "}
+                <i
+                  style={{ color: "white" }}
+                  className="fas fa-sort-down down-arrow"
+                ></i>
                 <div className="dropdown-content">
                   <ul>
                     <Link
                       style={{ color: "black", textDecoration: "none" }}
                       to="/walk-behind-floor-scrubbers"
                     >
-                      <li>Walk Behind Scrubbers</li>
+                      <li>
+                        <img src={WalkBehindIcon} alt="" width="25px" />
+                        <span> Walk Behind Scrubbers</span>
+                      </li>
                     </Link>
                     <Link
                       style={{ color: "black", textDecoration: "none" }}
@@ -61,7 +71,10 @@ const Navigation = () => {
                       style={{ color: "white", textDecoration: "none" }}
                       to="/ride-on-scrubbers"
                     >
-                      <li>Ride On Scrubbers</li>
+                      <li>
+                        <img src={RiderIcon} alt="" width="25px" />
+                        <span> Ride On Scrubbers</span>
+                      </li>
                     </Link>
                     <Link
                       style={{ color: "white", textDecoration: "none" }}
@@ -80,20 +93,30 @@ const Navigation = () => {
                 </div>
               </li>
               <li className="dropdown">
-                SUPPORT <i className="fas fa-sort-down down-arrow"></i>
+                SUPPORT{" "}
+                <i
+                  style={{ color: "white" }}
+                  className="fas fa-sort-down down-arrow"
+                ></i>
                 <div className="dropdown-content">
                   <ul>
                     <Link
                       style={{ color: "black", textDecoration: "none" }}
                       to="/downloads"
                     >
-                      <li>Download Manuals</li>
+                      <li>
+                        <i className="fas fa-download" />
+                        <span> Downloads</span>
+                      </li>
                     </Link>
                     <Link
                       style={{ color: "black", textDecoration: "none" }}
                       to="/contact"
                     >
-                      <li>Contact Us</li>
+                      <li>
+                        <i className="fas fa-phone" />
+                        <span> Contact Us</span>
+                      </li>
                     </Link>
                     {/* <li>Ride On Sweepers</li>
                     <li>Ride On Scrubbers</li>
@@ -102,26 +125,39 @@ const Navigation = () => {
                 </div>
               </li>
               <li className="dropdown">
-                MEDIA <i className="fas fa-sort-down down-arrow"></i>
+                MEDIA{" "}
+                <i
+                  style={{ color: "white" }}
+                  className="fas fa-sort-down down-arrow"
+                ></i>
                 <div className="dropdown-content">
                   <ul>
                     <Link
                       style={{ color: "black", textDecoration: "none" }}
                       to="/images"
                     >
-                      <li>Images</li>
+                      <li>
+                        <i className="far fa-images" />
+                        <span> Images</span>
+                      </li>
                     </Link>
                     <Link
                       style={{ color: "black", textDecoration: "none" }}
                       to="/videos"
                     >
-                      <li>Videos</li>
+                      <li>
+                        <i className="fas fa-video" />
+                        <span> Videos</span>
+                      </li>
                     </Link>
                     <Link
                       style={{ color: "white", textDecoration: "none" }}
                       to="/applications"
                     >
-                      <li>Applications</li>
+                      <li>
+                        <i className="fas fa-image" />
+                        <span> Applications</span>
+                      </li>
                     </Link>
                   </ul>
                 </div>

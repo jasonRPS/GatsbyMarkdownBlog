@@ -5,13 +5,14 @@ import { Link } from "gatsby"
 const MobileNavStyles = styled.div`
   width: 350px;
   background-color: rgba(0, 0, 0, 0.8);
-  /* border: 10px double #ed2024; */
+  /* border: 10px solid #ed2024; */
   height: 500px;
-  border-right-style: double;
-  border-bottom-style: double;
+  border-right-style: solid;
+  border-bottom-style: solid;
   border-color: #ed2024;
-  border-width: 10px;
-  border-bottom-right-radius: 90px;
+  /* border-color: black; */
+  border-width: 2px;
+  /* border-bottom-right-radius: 90px; */
   color: white;
   font-size: 1.5em;
 

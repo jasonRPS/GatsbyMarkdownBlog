@@ -41,6 +41,8 @@ export const MainNavLinksStyles = styled.div`
         i {
           margin: 0;
           padding: 0;
+          color: #ed2024;
+          font-size: 1.5em;
         }
       }
     }
@@ -113,7 +115,7 @@ export const MainNavLinksStyles = styled.div`
 export const MobileNavLayout = styled.div`
   position: fixed;
   z-index: 5;
-  margin-top: 56px;
+  /* margin-top: 56px; */
   transition-duration: 0.4s;
 
   .mobile-call-button {
