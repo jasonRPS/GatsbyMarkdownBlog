@@ -41,10 +41,10 @@ import { OptionsBar } from "../components/individualProductPage/FeaturedProduct/
 //End Main Images
 
 //Option Images
-import OptionImage1 from "../components/individualProductPage/images/WET-battery-option.jpg"
-import OptionImage2 from "../components/individualProductPage/images/agm-battery-option.jpg"
-import OptionImage3 from "../components/individualProductPage/images/mini-hd-option3-onboard-charger.jpg"
-import OptionImage4 from "../components/individualProductPage/images/single-point-water-option.jpg"
+import OptionImage1 from "../components/individualProductPage/images/mini-hd-option3-single-point-fill-darker.png"
+import OptionImage2 from "../components/individualProductPage/images/mini-hd-option3-AGM-batteries-darker.png"
+import OptionImage3 from "../components/individualProductPage/images/mini-hd-option3-onboard-charger-darker.png"
+import OptionImage4 from "../components/individualProductPage/images/mini-hd-option3-spray-wand-darker.png"
 import OptionImage5 from "../components/individualProductPage/images/mini-hd-option3-antimicrobial-tank.jpg"
 
 const MediaTilesContainer = styled.div`
