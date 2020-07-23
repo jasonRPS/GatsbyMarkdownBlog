@@ -46,10 +46,37 @@ const Slide = styled.div`
   }
 
   .text-content {
+    max-width: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 1rem;
     position: absolute;
     top: 120px;
-    color: blue;
     right: 50px;
+
+    h2 {
+      margin: 0;
+    }
+
+    /* p {
+      margin: 0;
+      line-height: 2rem;
+    } */
+
+    button {
+      background: red;
+      border: none;
+      color: white;
+      padding: 0.5rem;
+    }
+
+    @media (max-width: 460px) {
+      max-width: 100%;
+      top: 0;
+      right: auto;
+      left: auto;
+    }
   }
 `
 const DotsContainer = styled.div`
@@ -81,13 +108,12 @@ const DotsContainer = styled.div`
 
 const Slider = () => {
   const [slide, setSlide] = useState(0)
+  let slideIndex = 0
   useEffect(() => {
-    let slideIndex = slide
-    showSlides()
-    function showSlides(n) {
-      var i
-      var slides = document.getElementsByClassName("mySlides")
-      var dots = document.getElementsByClassName("dot")
+    function showSlides() {
+      let i
+      let slides = document.getElementsByClassName("mySlides")
+      let dots = document.getElementsByClassName("dot")
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none"
       }
@@ -100,8 +126,9 @@ const Slider = () => {
       }
       slides[slideIndex - 1].style.display = "block"
       dots[slideIndex - 1].className += " active"
-      setTimeout(showSlides, 7000) // Change image every 2 seconds
+      setTimeout(showSlides, 7000) // Change image every 7 seconds
     }
+    showSlides()
   }, [])
 
   return (
@@ -109,26 +136,55 @@ const Slider = () => {
       <SlideShowContainer>
         <Slide className="mySlides fade">
           <img src={SlideImage1} alt="" />
-          <div className="text-content">Here is Slide 1</div>
+          <div className="text-content">
+            <h2>Here is the slide Title 1</h2>
+            <p>
+              Here is some information about the slide. It should be information
+              that anyone could care about. And is there is more information the
+              box shouold grow with out too much issue.
+            </p>
+            <button>Learn More</button>
+          </div>
         </Slide>
         <Slide className="mySlides fade">
           <img src={SlideImage2} alt="" />
-          <div className="text-content">Here is Slide 2</div>
+          <div className="text-content">
+            <h2>Here is the slide Title 2</h2>
+            <p>
+              Here is some information about the slide. It should be information
+              that anyone could care about
+            </p>
+            <button>Learn More</button>
+          </div>
         </Slide>
         <Slide className="mySlides fade">
           <img src={SlideImage3} alt="" />
-          <div className="text-content">Here is Slide 3</div>
+          <div className="text-content">
+            <h2>Here is the slide Title 3</h2>
+            <p>
+              Here is some information about the slide. It should be information
+              that anyone could care about
+            </p>
+            <button>Learn More</button>
+          </div>
         </Slide>
         <Slide className="mySlides fade">
           <img src={SlideImage4} alt="" />
-          <div className="text-content">Here is Slide 4</div>
+          <div className="text-content">
+            <h2>Here is the slide Title 4</h2>
+            <p>
+              Here is some information about the slide. It should be information
+              that anyone could care about
+            </p>
+            <button>Learn More</button>
+          </div>
         </Slide>
       </SlideShowContainer>
       <DotsContainer>
-        <div onClick={() => setSlide(0)} className="dot"></div>
-        <div onClick={() => setSlide(1)} className="dot"></div>
-        <div onClick={() => setSlide(2)} className="dot"></div>
-        <div onClick={() => setSlide(3)} className="dot"></div>
+        <div onClick={() => (slideIndex = 0)} className="dot"></div>
+        <div onClick={() => (slideIndex = 1)} className="dot"></div>
+        <div onClick={() => (slideIndex = 2)} className="dot"></div>
+        <div onClick={() => (slideIndex = 3)} className="dot"></div>
       </DotsContainer>
     </>
   )

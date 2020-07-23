@@ -6,7 +6,7 @@ import { IndexStyles } from "../components/styles/IndexStyles"
 import CallToActionCard from "../components/CallToActionCard"
 import CategorySection from "../components/CategorySection"
 import StorySection from "../components/StorySection"
-import Slider from "../components/slider/Slider"
+import Slider from "../components/indexSlider/Slider"
 
 import Image1 from "../images/judge.jpg"
 import Image2 from "../images/charger.jpg"
