@@ -61,6 +61,12 @@ import HandGuardImage from "../components/individualProductPage/images/mini-hd-o
 import CylOptionSecImage from "../components/individualProductPage/images/mini-hd-option3-stainless-steel-cylindrical-deck.jpg"
 import HopperOnlyImage from "../components/individualProductPage/images/mini-hd-option3-stainless-hopper-only.jpg"
 import UndercoatImage from "../components/individualProductPage/images/mini-hd-option3-stainless-steel-frame-with-undercoat.jpg"
+import TouchScreenImage from "../components/individualProductPage/images/mini-hd-option3-touch-screen.jpg"
+import HoseExtImage from "../components/individualProductPage/images/mini-hd-option3-20-foot-hose-extension.jpg"
+import LockOutsImage from "../components/individualProductPage/images/mini-hd-option3-manager-lockouts.jpg"
+import AutoSqueegeeLiftImage from "../components/individualProductPage/images/mini-hd-option3-auto-squeegee-lift.jpg"
+import GreyDriveTireImage from "../components/individualProductPage/images/mini-hd-option3-grey-drive-tire.jpg"
+import CastersImage from "../components/individualProductPage/images/mini-hd-option3-casters-soft-grey.jpg"
 
 const MediaTilesContainer = styled.div`
   display: flex;
@@ -188,22 +194,19 @@ const MiniHDProductPage = props => {
           image18=""
           title18='Scrub Deck Shrouds 28"'
           description18="Replaces the jaws with an easily removable shroud."
-          image19=""
+          image19={CastersImage}
           title19="Casters, Rear, Non-Marking"
           description19="Strong tires don't have to mark up the ground, these are no exception."
-          image20=""
+          image20={GreyDriveTireImage}
           title20="Tires, Drive, Non-Marking"
           description20="Leave no trace with these soft grey non-marking tires."
-          image21={GreyTiresImage}
-          title21="Tires, Drive, Pneumatic"
-          description21="Keep rolling smoothly with these pneumatic grey tires."
           image21={GreyTiresImage}
           title21="Tires, Drive, Pneumatic, Grey"
           description21="Keep rolling smoothly with these pneumatic grey tires."
           image22={BlackTiresImage}
           title22="Tires, Drive, Pneumatic, Black"
           description22="Keep rolling smoothly with these pneumatic black tires."
-          image23=""
+          image23={AutoSqueegeeLiftImage}
           title23="Auto Squeegee Lift"
           description23="Vac switch engages both the vac motor and the squeegee lift assembly in tandem."
           image24={TapeSwitchDriveImage}
@@ -212,10 +215,10 @@ const MiniHDProductPage = props => {
           image25={EStopImage}
           title25="Switch, E-Stop"
           description25="A switch to immediately stop the machine and end all activity."
-          image26=""
+          image26={LockOutsImage}
           title26="Managers Lockout Control"
           description26="Set the preferred solution flow and brush pressure then lock them up into position with the manager lockout key."
-          image27=""
+          image27={TouchScreenImage}
           title27="Touch Screen System"
           description27="Swap out the toggle switches for a touch screen that does it all. Set up pre configured modes for cleaning and easily switch between them with the touch of a button."
           image28={FreezerImage}
@@ -227,7 +230,7 @@ const MiniHDProductPage = props => {
           image30=""
           title30="Oil Resistant Heavy Duty Hoses"
           description30="These hoses are suitable for the suction and discharge of black fuel oils, gas and other oils with a low aromatic content, kerosene, paraffin, diesel oil, nepheline oil, mineral-based hydraulic oils, greases and tall oils."
-          image31=""
+          image31={HoseExtImage}
           title31="Drain Hose Extension 20' "
           description31="Extend the reach on your machine drain hose with this option."
           // image32={MicronFilterImage}
