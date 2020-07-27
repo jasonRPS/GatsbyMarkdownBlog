@@ -41,11 +41,25 @@ import { OptionsBar } from "../components/individualProductPage/FeaturedProduct/
 //End Main Images
 
 //Option Images
-import OptionImage1 from "../components/individualProductPage/images/mini-hd-option3-single-point-fill-darker.png"
-import OptionImage2 from "../components/individualProductPage/images/mini-hd-option3-AGM-batteries-darker.png"
-import OptionImage3 from "../components/individualProductPage/images/mini-hd-option3-onboard-charger-darker.png"
+import BatteryWetImage from "../components/individualProductPage/images/battery-wet.jpg"
+import SinglePointFillImage from "../components/individualProductPage/images/mini-hd-option3-single-point-fill-darker.png"
+import BatteryAgmImage from "../components/individualProductPage/images/mini-hd-option3-AGM-batteries-darker.png"
+import OnboardChargerImage from "../components/individualProductPage/images/mini-hd-option3-onboard-charger-darker.png"
+import GreenTankImage from "../components/individualProductPage/images/green-antiTank.jpg"
 import OptionImage4 from "../components/individualProductPage/images/mini-hd-option3-spray-wand-darker.png"
 import OptionImage5 from "../components/individualProductPage/images/mini-hd-option3-antimicrobial-tank.jpg"
+import GreyTiresImage from "../components/individualProductPage/images/mini-hd-option3-grey-pneumatic-tires.jpg"
+import BlackTiresImage from "../components/individualProductPage/images/mini-hd-option3-pneumatic-tires-black.jpg"
+import TapeSwitchDriveImage from "../components/individualProductPage/images/mini-hd-option3-tape-switch-estop.jpg"
+import EStopImage from "../components/individualProductPage/images/mini-hd-option3-e-stop.jpg"
+import FreezerImage from "../components/individualProductPage/images/mini-hd-option3-freezer-package.jpg"
+import HandBrakesImage from "../components/individualProductPage/images/mini-hd-option3-manual-hand-brakes.jpg"
+import MicronFilterImage from "../components/individualProductPage/images/mini-hd-option3-02-micron-filter.jpg"
+import MetalLidImage from "../components/individualProductPage/images/mini-hd-option3-metal-lid.jpg"
+import HandGuardImage from "../components/individualProductPage/images/mini-hd-option3-hand-gaurds.jpg"
+import CylOptionSecImage from "../components/individualProductPage/images/mini-hd-option3-stainless-steel-cylindrical-deck.jpg"
+import HopperOnlyImage from "../components/individualProductPage/images/mini-hd-option3-stainless-hopper-only.jpg"
+import UndercoatImage from "../components/individualProductPage/images/mini-hd-option3-stainless-steel-frame-with-undercoat.jpg"
 
 const MediaTilesContainer = styled.div`
   display: flex;
@@ -119,23 +133,120 @@ const MiniHDProductPage = props => {
         <MachineDimensions />
         <OptionsBar>Options</OptionsBar>
         <OptionsSelect
-          image1={OptionImage1}
+          image1={BatteryWetImage}
           title1="Battery - Lead Acid (WET)"
           description1="The most economic battery on the market, tried and true. With proper maintenance the battery will perform as needed without fail."
-          image2={OptionImage2}
+          image2={BatteryAgmImage}
           title2="Battery - Maintenance Free (AGM)"
           description2="Spill proof, charge faster, no maintenance required. Simply plug and play.*Requires universal charger."
-          image3={OptionImage3}
+          image3={OnboardChargerImage}
           title3="Onboard Charger"
           description3="Onboard Universal charger for AGM battery setup."
-          image4={OptionImage4}
-          title4="Spray Wand Tank"
-          description4="The Spray Wand Tank makes it easier than ever to clean hard to reach places. The 100-PSI handheld Spray Wand ensures desks, chairs, office supplies, doors, fridges, and other surfaces are affectively cleaned."
-          image5={OptionImage5}
-          title5="O3+ Package: Aqueous Ozone & Chemical Dilution"
-          description5="Seamlessly switch between chemical and Chemical free ZerO3 with just the flip of a switch. We provide a sample of chemical as well as the proper squeegee blades for the ZerO3 system."
-          title6="AGM 24V/27A, w/ Inhibit, CE & CEC"
-          description6="Onboard Universal charger for AGM battery setup"
+          image4=""
+          title4="Delete Standard Charger"
+          description4="Export Machines have the option to remove the charger."
+          image5={SinglePointFillImage}
+          title5="Single Point Watering System"
+          description5="Ensure proper Electrolyte levels with this system that connects all batteries to each other with hoses."
+          image6=""
+          title6="O3 + Package"
+          description6="Clean your way on the fly with the O3+ package. Seamlessly switch between chemical and Chemical free ZerO3 with just the flip of a switch. We provide a sample of chemical as well as the proper squeegee blades for the ZerO3 system."
+          image7=""
+          title7="ZerO3 Onboard Aqueous"
+          description7="Replace your All-Purpose floor cleaners with one of Earth's powerful oxidizers- Aqueous Ozone. Easy to utilize in your daily cleaning regiment. Fill your machine with water straight from the tap and enjoy easy cleaning on the spot."
+          image8=""
+          title8="Suds Onboard Chemical Dilution"
+          description8="Add chemical to your machine without the need of pre diluting mixtures and measuring ratios. Drop in the suds reservoir, set ratio, and clean."
+          image9=""
+          title9="Sanitation Package"
+          description9="Make unlimited amounts of oxidizing solution with the Sanitation Package. Clean with chemical, clean with Aqueous Ozone, use the spray wand for hard to reach places and never worry about a moldy recovery tank due to the Antimicrobial molded plastic."
+          image10={GreenTankImage}
+          title10="Green Antimicrobial Tanks"
+          description10="Molded with Antimicrobial Plastic pellets to inhibit mold growth on tank exterior and interior."
+          image11=""
+          title11="3 gal remote Tanks & Spray Wand"
+          description11="The Spray Wand Tank makes it easier than ever to clean hard to reach places. The 100-PSI handheld Spray Wand ensures desks, chairs, office supplies, doors, fridges, and other surfaces are affectively cleaned."
+          image12=""
+          title12="Vacuum Filter 0.2 Micron"
+          description12="0.2 microns is the most difficult particle size to capture. All particles larger or smaller than 0.2 microns will be captured at an equal or greater efficiency than 0.2 microns."
+          image13=""
+          title13="Spray Jet - 45 psi / 3gpm"
+          description13="Hand held spray wand with light duty 45 psi."
+          image14=""
+          title14="Spray Wand - 100 psi / 1.5gpm"
+          description14="Hand held spray wand with heavy duty 100 psi."
+          image15=""
+          title15="Vacuum Wand"
+          description15="Remote hand held vacuum wand for spot cleaning."
+          image16=""
+          title16="Vac/Brush Flip Wand w/ Spray Jet"
+          description16="Spray down the floor, brush, and suck up the moisture with this all in one remote wand."
+          image17=""
+          title17='Scrub Deck Shrouds 26"'
+          description17="Replaces the jaws with an easily removable shroud."
+          image18=""
+          title18='Scrub Deck Shrouds 28"'
+          description18="Replaces the jaws with an easily removable shroud."
+          image19=""
+          title19="Casters, Rear, Non-Marking"
+          description19="Strong tires don't have to mark up the ground, these are no exception."
+          image20=""
+          title20="Tires, Drive, Non-Marking"
+          description20="Leave no trace with these soft grey non-marking tires."
+          image21={GreyTiresImage}
+          title21="Tires, Drive, Pneumatic"
+          description21="Keep rolling smoothly with these pneumatic grey tires."
+          image21={GreyTiresImage}
+          title21="Tires, Drive, Pneumatic, Grey"
+          description21="Keep rolling smoothly with these pneumatic grey tires."
+          image22={BlackTiresImage}
+          title22="Tires, Drive, Pneumatic, Black"
+          description22="Keep rolling smoothly with these pneumatic black tires."
+          image23=""
+          title23="Auto Squeegee Lift"
+          description23="Vac switch engages both the vac motor and the squeegee lift assembly in tandem."
+          image24={TapeSwitchDriveImage}
+          title24="Tape Switch Drive"
+          description24="A machined aluminum handle with switch handles for easy forward movement."
+          image25={EStopImage}
+          title25="Switch, E-Stop"
+          description25="A switch to immediately stop the machine and end all activity."
+          image26=""
+          title26="Managers Lockout Control"
+          description26="Set the preferred solution flow and brush pressure then lock them up into position with the manager lockout key."
+          image27=""
+          title27="Touch Screen System"
+          description27="Swap out the toggle switches for a touch screen that does it all. Set up pre configured modes for cleaning and easily switch between them with the touch of a button."
+          image28={FreezerImage}
+          title28="Freezer Package"
+          description28="A heater is added to the enclosed control panel with a fan to ensure no components lock up in cold conditions."
+          image29={HandBrakesImage}
+          title29="Parking Brake, Dual, Manual"
+          description29="Two manually activated levers lock the wheels in place to maintain machine position."
+          image30=""
+          title30="Oil Resistant Heavy Duty Hoses"
+          description30="These hoses are suitable for the suction and discharge of black fuel oils, gas and other oils with a low aromatic content, kerosene, paraffin, diesel oil, nepheline oil, mineral-based hydraulic oils, greases and tall oils."
+          image31=""
+          title31="Drain Hose Extension 20' "
+          description31="Extend the reach on your machine drain hose with this option."
+          image32={MicronFilterImage}
+          title32="Vacuum Filter 0.2 Micron"
+          description32="0.2 microns is the most difficult particle size to capture. All particles larger or smaller than 0.2 microns will be captured at an equal or greater efficiency than 0.2 microns."
+          image33={MetalLidImage}
+          title33="Metal Recovery Lid for XL Tank"
+          description33="Heavy duty stainless steel lid. "
+          image34={HandGuardImage}
+          title34="Hand Guards"
+          description34="Ensure operator hands are protected with these all metal hand guards."
+          image35={CylOptionSecImage}
+          title35="Stainless Steel Cylindrical Deck"
+          description35="Stylish stainless metal prolongs the life of any deck by guarding against moisture and chemical. Our stainless design gives you a finished look from all angles. Since these are 100% stainless they will last a lifetime."
+          image36={HopperOnlyImage}
+          title36="Stainless Steel Hopper Only"
+          description36="Extend the longevity of your hopper with this all stainless option."
+          image37={UndercoatImage}
+          title37="Stainless Frame & Undercoated"
+          description37="Stylish stainless metal prolongs the life of any deck by guarding against moisture and chemical. Our stainless design gives you a finished look from all angles. Since these are 100% stainless they will last a lifetime."
         />
         <div id="demo-form"></div>
         <SectionTitle title="Request a Demo" />

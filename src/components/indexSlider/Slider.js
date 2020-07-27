@@ -107,11 +107,12 @@ const DotsContainer = styled.div`
 `
 
 const Slider = () => {
-  const [slide, setSlide] = useState(0)
+  const [slide, setSlide] = useState({})
   let slideIndex = 0
   useEffect(() => {
     function showSlides() {
       let i
+
       let slides = document.getElementsByClassName("mySlides")
       let dots = document.getElementsByClassName("dot")
       for (i = 0; i < slides.length; i++) {
@@ -129,7 +130,7 @@ const Slider = () => {
       setTimeout(showSlides, 7000) // Change image every 7 seconds
     }
     showSlides()
-  }, [])
+  })
 
   return (
     <>
