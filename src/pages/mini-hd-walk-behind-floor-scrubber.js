@@ -46,8 +46,9 @@ import SinglePointFillImage from "../components/individualProductPage/images/min
 import BatteryAgmImage from "../components/individualProductPage/images/mini-hd-option3-AGM-batteries-darker.png"
 import OnboardChargerImage from "../components/individualProductPage/images/mini-hd-option3-onboard-charger-darker.png"
 import GreenTankImage from "../components/individualProductPage/images/green-antiTank.jpg"
-import OptionImage4 from "../components/individualProductPage/images/mini-hd-option3-spray-wand-darker.png"
-import OptionImage5 from "../components/individualProductPage/images/mini-hd-option3-antimicrobial-tank.jpg"
+import SprayWandLessImage from "../components/individualProductPage/images/mini-hd-option3-spray-wand-less-darker.jpg"
+import VacuumWandImage from "../components/individualProductPage/images/mini-hd-option3-vac-wand-less-dark.jpg"
+import VacuumWandFlipImage from "../components/individualProductPage/images/mini-hd-option3-flip-wand.jpg"
 import GreyTiresImage from "../components/individualProductPage/images/mini-hd-option3-grey-pneumatic-tires.jpg"
 import BlackTiresImage from "../components/individualProductPage/images/mini-hd-option3-pneumatic-tires-black.jpg"
 import TapeSwitchDriveImage from "../components/individualProductPage/images/mini-hd-option3-tape-switch-estop.jpg"
@@ -163,10 +164,10 @@ const MiniHDProductPage = props => {
           image10={GreenTankImage}
           title10="Green Antimicrobial Tanks"
           description10="Molded with Antimicrobial Plastic pellets to inhibit mold growth on tank exterior and interior."
-          image11=""
+          image11={SprayWandLessImage}
           title11="3 gal remote Tanks & Spray Wand"
           description11="The Spray Wand Tank makes it easier than ever to clean hard to reach places. The 100-PSI handheld Spray Wand ensures desks, chairs, office supplies, doors, fridges, and other surfaces are affectively cleaned."
-          image12=""
+          image12={MicronFilterImage}
           title12="Vacuum Filter 0.2 Micron"
           description12="0.2 microns is the most difficult particle size to capture. All particles larger or smaller than 0.2 microns will be captured at an equal or greater efficiency than 0.2 microns."
           image13=""
@@ -175,10 +176,10 @@ const MiniHDProductPage = props => {
           image14=""
           title14="Spray Wand - 100 psi / 1.5gpm"
           description14="Hand held spray wand with heavy duty 100 psi."
-          image15=""
+          image15={VacuumWandImage}
           title15="Vacuum Wand"
           description15="Remote hand held vacuum wand for spot cleaning."
-          image16=""
+          image16={VacuumWandFlipImage}
           title16="Vac/Brush Flip Wand w/ Spray Jet"
           description16="Spray down the floor, brush, and suck up the moisture with this all in one remote wand."
           image17=""
@@ -229,24 +230,24 @@ const MiniHDProductPage = props => {
           image31=""
           title31="Drain Hose Extension 20' "
           description31="Extend the reach on your machine drain hose with this option."
-          image32={MicronFilterImage}
-          title32="Vacuum Filter 0.2 Micron"
-          description32="0.2 microns is the most difficult particle size to capture. All particles larger or smaller than 0.2 microns will be captured at an equal or greater efficiency than 0.2 microns."
-          image33={MetalLidImage}
-          title33="Metal Recovery Lid for XL Tank"
-          description33="Heavy duty stainless steel lid. "
-          image34={HandGuardImage}
-          title34="Hand Guards"
-          description34="Ensure operator hands are protected with these all metal hand guards."
-          image35={CylOptionSecImage}
-          title35="Stainless Steel Cylindrical Deck"
-          description35="Stylish stainless metal prolongs the life of any deck by guarding against moisture and chemical. Our stainless design gives you a finished look from all angles. Since these are 100% stainless they will last a lifetime."
-          image36={HopperOnlyImage}
-          title36="Stainless Steel Hopper Only"
-          description36="Extend the longevity of your hopper with this all stainless option."
-          image37={UndercoatImage}
-          title37="Stainless Frame & Undercoated"
-          description37="Stylish stainless metal prolongs the life of any deck by guarding against moisture and chemical. Our stainless design gives you a finished look from all angles. Since these are 100% stainless they will last a lifetime."
+          // image32={MicronFilterImage}
+          // title32="Vacuum Filter 0.2 Micron"
+          // description32="0.2 microns is the most difficult particle size to capture. All particles larger or smaller than 0.2 microns will be captured at an equal or greater efficiency than 0.2 microns."
+          image32={MetalLidImage}
+          title32="Metal Recovery Lid for XL Tank"
+          description32="Heavy duty stainless steel lid. "
+          image33={HandGuardImage}
+          title33="Hand Guards"
+          description33="Ensure operator hands are protected with these all metal hand guards."
+          image34={CylOptionSecImage}
+          title34="Stainless Steel Cylindrical Deck"
+          description34="Stylish stainless metal prolongs the life of any deck by guarding against moisture and chemical. Our stainless design gives you a finished look from all angles. Since these are 100% stainless they will last a lifetime."
+          image35={HopperOnlyImage}
+          title35="Stainless Steel Hopper Only"
+          description35="Extend the longevity of your hopper with this all stainless option."
+          image36={UndercoatImage}
+          title36="Stainless Frame & Undercoated"
+          description36="Stylish stainless metal prolongs the life of any deck by guarding against moisture and chemical. Our stainless design gives you a finished look from all angles. Since these are 100% stainless they will last a lifetime."
         />
         <div id="demo-form"></div>
         <SectionTitle title="Request a Demo" />

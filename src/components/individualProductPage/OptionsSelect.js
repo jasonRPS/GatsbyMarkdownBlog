@@ -259,26 +259,6 @@ const OptionsSelect = props => {
             title={props.title36}
             description={props.description36}
           />
-          <Option
-            image={props.image37}
-            title={props.title37}
-            description={props.description37}
-          />
-          <Option
-            image={props.image38}
-            title={props.title38}
-            description={props.description38}
-          />
-          <Option
-            image={props.image39}
-            title={props.title39}
-            description={props.description39}
-          />
-          <Option
-            image={props.image40}
-            title={props.title40}
-            description={props.description40}
-          />
         </div>
       </StyledOptionsBody>
       <h2
