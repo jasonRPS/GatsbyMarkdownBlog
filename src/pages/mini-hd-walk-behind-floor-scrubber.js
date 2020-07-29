@@ -166,7 +166,7 @@ const MiniHDProductPage = props => {
           description5="Ensure proper Electrolyte levels with this system that connects all batteries to each other with hoses."
           image6={O3Image}
           title6="O3 + Package"
-          description6="Clean your way on the fly with the O3+ package. Seamlessly switch between chemical and Chemical free ZerO3 with just the flip of a switch. We provide a sample of chemical as well as the proper squeegee blades for the ZerO3 system."
+          description6="Seamlessly switch between chemical and Chemical free ZerO3 with just the flip of a switch. We provide a sample of chemical as well as the proper squeegee blades for the ZerO3 system."
           image7={Zero3Image}
           title7="ZerO3 Onboard Aqueous"
           description7="Replace your All-Purpose floor cleaners with one of Earth's powerful oxidizers- Aqueous Ozone. Easy to utilize in your daily cleaning regiment. Fill your machine with water straight from the tap and enjoy easy cleaning on the spot."
