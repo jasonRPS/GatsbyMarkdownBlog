@@ -1,9 +1,10 @@
 import React from "react"
 import Layout from "../components/Layout"
+import ImageGallery from "../components/imageGallary/ImageGallery"
 
 const ImagePage = () => (
   <Layout>
-    <p>Here is the Images page</p>
+    <ImageGallery />
   </Layout>
 )
 

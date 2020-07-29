@@ -69,6 +69,12 @@ import GreyDriveTireImage from "../components/individualProductPage/images/mini-
 import CastersImage from "../components/individualProductPage/images/mini-hd-option3-casters-soft-grey.jpg"
 import OilResistantHoseImage from "../components/individualProductPage/images/mini-hd-oil-resistant-heavy-duty-hoses.jpg"
 import DeleteChargerImage from "../components/individualProductPage/images/mini-hd-option3-delete-standard-charger.jpg"
+import O3Image from "../components/individualProductPage/images/mini-hd-option3-o3-plus.jpg"
+import Zero3Image from "../components/individualProductPage/images/mini-hd-zero-3.jpg"
+import Zero3SudsImage from "../components/individualProductPage/images/mini-hd-suds-option.jpg"
+import SanitationImage from "../components/individualProductPage/images/mini-hd-option3-sanitation.jpg"
+import ShroudImage from "../components/individualProductPage/images/mini-hd-option3-removable-shroud.jpg"
+import SprayJetImage from "../components/individualProductPage/images/mini-hd-option3-spray-jet.jpg"
 
 const MediaTilesContainer = styled.div`
   display: flex;
@@ -158,16 +164,16 @@ const MiniHDProductPage = props => {
           image5={SinglePointFillImage}
           title5="Single Point Watering System"
           description5="Ensure proper Electrolyte levels with this system that connects all batteries to each other with hoses."
-          image6=""
+          image6={O3Image}
           title6="O3 + Package"
           description6="Clean your way on the fly with the O3+ package. Seamlessly switch between chemical and Chemical free ZerO3 with just the flip of a switch. We provide a sample of chemical as well as the proper squeegee blades for the ZerO3 system."
-          image7=""
+          image7={Zero3Image}
           title7="ZerO3 Onboard Aqueous"
           description7="Replace your All-Purpose floor cleaners with one of Earth's powerful oxidizers- Aqueous Ozone. Easy to utilize in your daily cleaning regiment. Fill your machine with water straight from the tap and enjoy easy cleaning on the spot."
-          image8=""
+          image8={Zero3SudsImage}
           title8="Suds Onboard Chemical Dilution"
           description8="Add chemical to your machine without the need of pre diluting mixtures and measuring ratios. Drop in the suds reservoir, set ratio, and clean."
-          image9=""
+          image9={SanitationImage}
           title9="Sanitation Package"
           description9="Make unlimited amounts of oxidizing solution with the Sanitation Package. Clean with chemical, clean with Aqueous Ozone, use the spray wand for hard to reach places and never worry about a moldy recovery tank due to the Antimicrobial molded plastic."
           image10={GreenTankImage}
@@ -179,10 +185,10 @@ const MiniHDProductPage = props => {
           image12={MicronFilterImage}
           title12="Vacuum Filter 0.2 Micron"
           description12="0.2 microns is the most difficult particle size to capture. All particles larger or smaller than 0.2 microns will be captured at an equal or greater efficiency than 0.2 microns."
-          image13=""
+          image13={SprayJetImage}
           title13="Spray Jet - 45 psi / 3gpm"
           description13="Hand held spray wand with light duty 45 psi."
-          image14=""
+          image14={SprayJetImage}
           title14="Spray Wand - 100 psi / 1.5gpm"
           description14="Hand held spray wand with heavy duty 100 psi."
           image15={VacuumWandImage}
@@ -191,10 +197,10 @@ const MiniHDProductPage = props => {
           image16={VacuumWandFlipImage}
           title16="Vac/Brush Flip Wand w/ Spray Jet"
           description16="Spray down the floor, brush, and suck up the moisture with this all in one remote wand."
-          image17=""
+          image17={ShroudImage}
           title17='Scrub Deck Shrouds 26"'
           description17="Replaces the jaws with an easily removable shroud."
-          image18=""
+          image18={ShroudImage}
           title18='Scrub Deck Shrouds 28"'
           description18="Replaces the jaws with an easily removable shroud."
           image19={CastersImage}
