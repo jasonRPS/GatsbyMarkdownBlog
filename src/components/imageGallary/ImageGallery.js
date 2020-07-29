@@ -70,30 +70,30 @@ const ImageContainer = styled.div`
 `
 
 const ImageGallery = () => {
-  const [imgDisplay, setImageDisplay] = useState({
-    displayAll: "block",
-    displayWalkieScrubbers: "block",
-    displayWalkieSweepers: "block",
-    displayRideOnScrubbers: "block",
-    displayRideOnSweepers: "block",
-    displaySweeperScrubbers: "block",
-  })
+  // const [imgDisplay, setImageDisplay] = useState({
+  //   displayAll: "block",
+  //   displayWalkieScrubbers: "block",
+  //   displayWalkieSweepers: "block",
+  //   displayRideOnScrubbers: "block",
+  //   displayRideOnSweepers: "block",
+  //   displaySweeperScrubbers: "block",
+  // })
 
-  const [nav, setNav] = useState({
-    activeAll: "",
-    activeWalkieScrubbers: "",
-    activeWalkieSweepers: "",
-    activeRideOnScrubbers: "",
-    activeRideOnSweepers: "",
-    activeSweeperScrubbers: "",
-  })
-  const [subNav, setSubNav] = useState({
-    walkieScrubbers: "flex",
-    walkieSweepers: "none",
-    rideOnScrubbers: "none",
-    rideOnSweepers: "none",
-    sweeperScrubbers: "none",
-  })
+  // const [nav, setNav] = useState({
+  //   activeAll: "",
+  //   activeWalkieScrubbers: "",
+  //   activeWalkieSweepers: "",
+  //   activeRideOnScrubbers: "",
+  //   activeRideOnSweepers: "",
+  //   activeSweeperScrubbers: "",
+  // })
+  // const [subNav, setSubNav] = useState({
+  //   walkieScrubbers: "flex",
+  //   walkieSweepers: "none",
+  //   rideOnScrubbers: "none",
+  //   rideOnSweepers: "none",
+  //   sweeperScrubbers: "none",
+  // })
 
   //   function FilterWalkieScrubbers(e) {
   //     let scrubbers = dataSet.category
@@ -116,7 +116,7 @@ const ImageGallery = () => {
         <div
           className="sub-nav"
           id="walk-behind-scrubber-sub"
-          style={{ display: subNav.walkieScrubbers }}
+          //style={{ display: subNav.walkieScrubbers }}
         >
           <p>MicroMag</p>
           <p>MicroMini</p>
@@ -129,7 +129,7 @@ const ImageGallery = () => {
         <img
           data-category=""
           data-model=""
-          style={{ display: imgDisplay.displayAll }}
+          // style={{ display: imgDisplay.displayAll }}
           className="thumbnail"
           src={Image1}
           alt=""
@@ -137,7 +137,7 @@ const ImageGallery = () => {
         <img
           data-category="walk-behind-scrub"
           data-model="mini-hd"
-          style={{ display: imgDisplay.displayAll }}
+          // style={{ display: imgDisplay.displayAll }}
           className="thumbnail"
           src={MiniHD1Image}
           alt=""
@@ -145,7 +145,7 @@ const ImageGallery = () => {
         <img
           data-category="walk-behind-scrub"
           data-model="mini-hd"
-          style={{ display: imgDisplay.displayWalkieScrubbers }}
+          //style={{ display: imgDisplay.displayWalkieScrubbers }}
           className="thumbnail"
           src={Image2}
           alt=""
@@ -153,7 +153,7 @@ const ImageGallery = () => {
         <img
           data-category="walk-behind-scrub"
           data-model=""
-          style={{ display: imgDisplay.displayWalkieScrubbers }}
+          //style={{ display: imgDisplay.displayWalkieScrubbers }}
           className="thumbnail"
           src={Image3}
           alt=""
@@ -161,7 +161,7 @@ const ImageGallery = () => {
         <img
           data-category="walk-behind-scrub"
           data-model=""
-          style={{ display: imgDisplay.displayWalkieScrubbers }}
+          // style={{ display: imgDisplay.displayWalkieScrubbers }}
           className="thumbnail"
           src={MiniHD12mage}
           alt=""
@@ -169,7 +169,7 @@ const ImageGallery = () => {
         <img
           data-category=""
           data-model=""
-          style={{ display: imgDisplay.displayAll }}
+          //style={{ display: imgDisplay.displayAll }}
           className="thumbnail"
           src={Image4}
           alt=""
@@ -177,7 +177,7 @@ const ImageGallery = () => {
         <img
           data-category=""
           data-model=""
-          style={{ display: imgDisplay.displayAll }}
+          //style={{ display: imgDisplay.displayAll }}
           className="thumbnail"
           src={Image1}
           alt=""
@@ -185,7 +185,7 @@ const ImageGallery = () => {
         <img
           data-category="walk-behind-scrub"
           data-model=""
-          style={{ display: imgDisplay.displayWalkieScrubbers }}
+          //style={{ display: imgDisplay.displayWalkieScrubbers }}
           className="thumbnail"
           src={Image5}
           alt=""
@@ -193,7 +193,7 @@ const ImageGallery = () => {
         <img
           data-category="walk-behind-scrub"
           data-model=""
-          style={{ display: imgDisplay.displayWalkieScrubbers }}
+          //style={{ display: imgDisplay.displayWalkieScrubbers }}
           className="thumbnail"
           src={Image6}
           alt=""
@@ -201,7 +201,7 @@ const ImageGallery = () => {
         <img
           data-category=""
           data-model=""
-          style={{ display: imgDisplay.displayAll }}
+          //style={{ display: imgDisplay.displayAll }}
           className="thumbnail"
           src={Image7}
           alt=""
@@ -209,7 +209,7 @@ const ImageGallery = () => {
         <img
           data-category="walk-behind-scrub"
           data-model=""
-          style={{ display: imgDisplay.displayWalkieScrubbers }}
+          //style={{ display: imgDisplay.displayWalkieScrubbers }}
           className="thumbnail"
           src={MiniHD13mage}
           alt=""
@@ -217,7 +217,7 @@ const ImageGallery = () => {
         <img
           data-category=""
           data-model=""
-          style={{ display: imgDisplay.displayAll }}
+          //style={{ display: imgDisplay.displayAll }}
           className="thumbnail"
           src={Image8}
           alt=""
@@ -225,7 +225,7 @@ const ImageGallery = () => {
         <img
           data-category=""
           data-model=""
-          style={{ display: imgDisplay.displayAll }}
+          //style={{ display: imgDisplay.displayAll }}
           className="thumbnail"
           src={Image9}
           alt=""
@@ -233,7 +233,7 @@ const ImageGallery = () => {
         <img
           data-category=""
           data-model=""
-          style={{ display: imgDisplay.displayAll }}
+          //style={{ display: imgDisplay.displayAll }}
           className="thumbnail"
           src={Image10}
           alt=""
@@ -241,7 +241,7 @@ const ImageGallery = () => {
         <img
           data-category="walk-behind-scrub"
           data-model="mini-hd"
-          style={{ display: imgDisplay.displayWalkieScrubbers }}
+          //style={{ display: imgDisplay.displayWalkieScrubbers }}
           className="thumbnail"
           src={Image3}
           alt=""
