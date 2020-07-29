@@ -67,12 +67,8 @@ const ProductLayout = props => {
             {props.link} <i className="fas fa-download"></i>
           </a>
           <p>{props.content}</p>
-          <Link
-            style={{ textDecoration: "none", color: "black" }}
-            to="/mini-hd-floor-scrubber"
-          >
-            <button>Learn More</button>
-          </Link>
+
+          <button>Learn More</button>
         </div>
       </div>
     </ProductLayoutStyled>

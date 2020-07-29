@@ -67,6 +67,8 @@ import LockOutsImage from "../components/individualProductPage/images/mini-hd-op
 import AutoSqueegeeLiftImage from "../components/individualProductPage/images/mini-hd-option3-auto-squeegee-lift.jpg"
 import GreyDriveTireImage from "../components/individualProductPage/images/mini-hd-option3-grey-drive-tire.jpg"
 import CastersImage from "../components/individualProductPage/images/mini-hd-option3-casters-soft-grey.jpg"
+import OilResistantHoseImage from "../components/individualProductPage/images/mini-hd-oil-resistant-heavy-duty-hoses.jpg"
+import DeleteChargerImage from "../components/individualProductPage/images/mini-hd-option3-delete-standard-charger.jpg"
 
 const MediaTilesContainer = styled.div`
   display: flex;
@@ -119,6 +121,7 @@ const MiniHDProductPage = props => {
           squeegee blades can be rotated or flipped without tools. Ensure complete
           cleaning in a variety of sized applications with a reliable scrubber."
           mobileTitle="Mini-HD Walk Behind Floor Scrubber"
+          pageUrl=""
         />
         <MediaTilesContainer>
           <MediaTile
@@ -149,7 +152,7 @@ const MiniHDProductPage = props => {
           image3={OnboardChargerImage}
           title3="Onboard Charger"
           description3="Onboard Universal charger for AGM battery setup."
-          image4=""
+          image4={DeleteChargerImage}
           title4="Delete Standard Charger"
           description4="Export Machines have the option to remove the charger."
           image5={SinglePointFillImage}
@@ -227,7 +230,7 @@ const MiniHDProductPage = props => {
           image29={HandBrakesImage}
           title29="Parking Brake, Dual, Manual"
           description29="Two manually activated levers lock the wheels in place to maintain machine position."
-          image30=""
+          image30={OilResistantHoseImage}
           title30="Oil Resistant Heavy Duty Hoses"
           description30="These hoses are suitable for the suction and discharge of black fuel oils, gas and other oils with a low aromatic content, kerosene, paraffin, diesel oil, nepheline oil, mineral-based hydraulic oils, greases and tall oils."
           image31={HoseExtImage}
