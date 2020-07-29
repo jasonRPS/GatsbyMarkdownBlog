@@ -12,7 +12,7 @@ import Image6 from "./images/IMG_2736.jpg"
 import Image7 from "./images/IMG_2869.jpg"
 import Image8 from "./images/IMG_2995.jpg"
 import Image9 from "./images/IMG_2996.jpg"
-import Image10 from "./images/IMG_4223.jpg"
+import Image10 from "./images/IMG_2869.jpg"
 
 const ButtonsContainer = styled.div`
   display: flex;
