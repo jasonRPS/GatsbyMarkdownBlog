@@ -3,6 +3,12 @@ import FeaturedProduct from "../components/individualProductPage/FeaturedProduct
 import Layout from "../components/Layout"
 import styled from "styled-components"
 import RequestDemoForm from "../components/individualProductPage/RequestDemoForm"
+import StealBackground from "../components/individualProductPage/images/steal-background.jpg"
+import SpecBarMachineImage from "../components/individualProductPage/images/mini-hd-25c-cylindrical-profile.56.png"
+import UsaBackground from "../components/individualProductPage/images/made-in-usa.jpg"
+import MachineOverviewImage from "../components/individualProductPage/images/mini-hd-machine-overview.png"
+import HeavyDutyBackground from "../components/individualProductPage/images/heavy-duty-background.jpg"
+import MachineDimensionImage from "../components/individualProductPage/images/machine-spec-line-drawing.jpg"
 
 //Thumbnail Images
 import CylindricalThumb1Image from "../components/individualProductPage/images/mini-hd-cylindrical-thumb1.jpg"
@@ -128,11 +134,12 @@ const MiniHDProductPage = props => {
           cleaning in a variety of sized applications with a reliable scrubber."
           mobileTitle="Mini-HD Walk Behind Floor Scrubber"
           pageUrl=""
-          specifications="Cleaning Path: 25-29 | Run Time: 3.5 Hours | Tank Capacity: Sol: 21 Gal, Rec: 26 Gal"
+          specifications="Cleaning Path: 25-29 | Run Time: 3.5 Hours | Tank Capacity: Sol: 21 Gal, Rec: 23 Gal"
+          videoSource="https://www.youtube.com/embed/NaGoDJxcSGM"
         />
         <MediaTilesContainer>
           <MediaTile
-            title="You Be the Judge"
+            title="Why FactoryCat ?"
             subTitle="Walk Behind Floor Scrubbers"
           />
           <MediaTile title="Videos" subTitle="Walk Behind Floor Scrubbers" />
@@ -142,12 +149,33 @@ const MiniHDProductPage = props => {
             subTitle="Walk Behind Floor Scrubbers"
           />
         </MediaTilesContainer>
-        <MainSpecBar />
-        <MadeInUSA />
+        <MainSpecBar
+          bgImage={StealBackground}
+          machineImage={SpecBarMachineImage}
+          myColor="white"
+        />
+        <MadeInUSA bgImage={UsaBackground} />
         <SectionTitle title="Machine Overview" />
-        <MachineOverview />
-        <HeavyDuty />
-        <MachineDimensions />
+        <MachineOverview image={MachineOverviewImage} />
+        <HeavyDuty
+          bgImage={HeavyDutyBackground}
+          innerText="HEAVY DUTY CLEANING"
+        />
+        <MachineDimensions
+          image={MachineDimensionImage}
+          sizeTitle="Size (L x W x H):"
+          size='52" x 22" x 40'
+          weightTitle="Weight (w/o batteries):"
+          weight="393 - 443 lbs"
+          voltageTitle="System Voltage:"
+          voltage="24 VDC"
+          stdBatteryTitle="Standard Battery:"
+          battery="210 ah WET"
+          powerTitle="Power:"
+          power="0.75hp"
+          tankTitle="Tank Material:"
+          tank="Poly 3/8"
+        />
         <OptionsBar>Options</OptionsBar>
         <OptionsSelect
           image1={BatteryWetImage}

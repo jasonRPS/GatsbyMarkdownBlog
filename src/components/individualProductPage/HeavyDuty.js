@@ -1,13 +1,12 @@
 import React from "react"
 import styled from "styled-components"
-import HeavyDutyBackground from "./images/heavy-duty-background.jpg"
 
 const StyledHeavyDuty = styled.div`
   position: relative;
   max-width: 1400px;
   height: 270px;
   margin: 1rem auto;
-  background-image: url(${HeavyDutyBackground});
+  background-image: url(${props => props.bgImage});
   color: white;
 
   h2 {
@@ -56,10 +55,10 @@ const StyledHeavyDuty = styled.div`
   }
 `
 
-const HeavyDuty = () => {
+const HeavyDuty = props => {
   return (
-    <StyledHeavyDuty>
-      <h2>HEAVY DUTY CLEANING</h2>
+    <StyledHeavyDuty bgImage={props.bgImage}>
+      <h2>{props.innerText}</h2>
       <div className="heavy-layover"></div>
     </StyledHeavyDuty>
   )

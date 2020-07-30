@@ -7,7 +7,7 @@ const StyledUsaContainer = styled.div`
   max-width: 1400px;
   height: 270px;
   margin: 1rem auto;
-  background-image: url(${UsaBackground});
+  background-image: url(${props => props.bgImage});
   color: white;
 
   h2 {
@@ -43,9 +43,9 @@ const StyledUsaContainer = styled.div`
   }
 `
 
-const MadeInUSA = () => {
+const MadeInUSA = props => {
   return (
-    <StyledUsaContainer>
+    <StyledUsaContainer bgImage={props.bgImage}>
       <h2>Handmade In USA</h2>
     </StyledUsaContainer>
   )

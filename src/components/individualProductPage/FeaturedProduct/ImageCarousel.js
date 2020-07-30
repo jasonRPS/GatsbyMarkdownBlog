@@ -78,7 +78,7 @@ const ImageCarousel = props => {
               style={{
                 display: props.toggleMedia.displayVideo,
               }}
-              src="https://www.youtube.com/embed/nr0SX8xviSk"
+              src={props.videoSource}
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen

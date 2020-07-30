@@ -293,6 +293,7 @@ const FeaturedProduct = props => {
           toggleMedia={toggleMedia}
           handleClick={handleClick}
           handleVideoToggle={handleVideoToggle}
+          videoSource={props.videoSource}
         />
         <FeaturedContent
           title={props.title}

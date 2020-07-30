@@ -59,7 +59,7 @@ const DownloadsBar = props => {
       </a>
       <a className="wrapper" href={props.techLink} target="_blank">
         <img src={TechIcon} alt="download technical specifications" />
-        <span style={{ marginLeft: ".5rem" }}>Technical Specifications</span>
+        <span style={{ marginLeft: ".5rem" }}>Tech Specs</span>
       </a>
       <a className="wrapper" href={props.partsLink} target="_blank">
         <img src={PartsIcon} alt="download parts manual" />

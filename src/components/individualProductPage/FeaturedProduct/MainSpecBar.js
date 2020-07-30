@@ -9,7 +9,7 @@ const StyledMainSpecBar = styled.div`
 
   height: 270px;
   margin: 1rem auto;
-  background-image: url(${StealBackground});
+  background-image: url(${props => props.bgImage});
   color: white;
 
   justify-content: space-between;
@@ -94,9 +94,9 @@ const StyledMainSpecBar = styled.div`
   }
 `
 
-const MainSpecBar = () => {
+const MainSpecBar = props => {
   return (
-    <StyledMainSpecBar>
+    <StyledMainSpecBar bgImage={props.bgImage}>
       <div className="text-content background-layer">
         <h1>Mini-HD</h1>
         <p>Walk Behind Floor Scrubber</p>
@@ -114,18 +114,18 @@ const MainSpecBar = () => {
           <div className="spec">
             <h3>Tank Capacity:</h3>
             <h2>
-              Solution: 16 Gal{" "}
-              <span style={{ color: "gray", fontStyle: "italic" }}>(60L)</span>
+              Solution: 21 Gal{" "}
+              <span style={{ color: "gray", fontStyle: "italic" }}>(79L)</span>
             </h2>
             <h2>
-              Recovery: 16 Gal{" "}
-              <span style={{ color: "gray", fontStyle: "italic" }}>(60L)</span>
+              Recovery: 23 Gal{" "}
+              <span style={{ color: "gray", fontStyle: "italic" }}>(87L)</span>
             </h2>
           </div>
         </div>
       </div>
       <div className="image-container">
-        <img src={MachineImage} alt="" />
+        <img src={props.machineImage} alt="" />
       </div>
     </StyledMainSpecBar>
   )

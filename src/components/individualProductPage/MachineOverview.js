@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import MachineOverviewImage from "./images/mini-hd-machine-overview.png"
 
 const StyledMachineOverview = styled.div`
   max-width: 1000px;
@@ -16,10 +15,10 @@ const StyledMachineOverview = styled.div`
   }
 `
 
-const MachineOverview = () => {
+const MachineOverview = props => {
   return (
     <StyledMachineOverview>
-      <img src={MachineOverviewImage} alt="" />
+      <img src={props.image} alt="" />
     </StyledMachineOverview>
   )
 }

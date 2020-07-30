@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import MachineDimensionImage from "./images/machine-spec-line-drawing.jpg"
 
 const StyledMachineDimensions = styled.div`
   max-width: 1000px;
@@ -91,46 +90,46 @@ const StyledListContainer = styled.div`
   }
 `
 
-const MachineDimensions = () => {
+const MachineDimensions = props => {
   return (
     <>
       <StyledMachineDimensions>
-        <img src={MachineDimensionImage} alt="Machine Dimensions" />
+        <img src={props.image} alt="Machine Dimensions" />
       </StyledMachineDimensions>
       <StyledListContainer>
         <div className="left-list">
           <div className="list-content">
             <i className="far fa-check-circle" />
-            <span>Size (L x W x H):</span>
-            <span>52" × 22" × 40"</span>
+            <span>{props.sizeTitle}</span>
+            <span>{props.size}</span>
           </div>
           <div className="list-content">
             <i className="far fa-check-circle" />
-            <span>Weight (w/o batteries):</span>
-            <span>393 - 443 lbs</span>
+            <span>{props.weightTitle}</span>
+            <span>{props.weight}</span>
           </div>
           <div className="list-content">
             <i className="far fa-check-circle" />
-            <span>System Voltage:</span>
-            <span>24 VDC</span>
+            <span>{props.voltageTitle}</span>
+            <span>{props.voltage}</span>
           </div>
         </div>
         <div className="right-list">
           <div className="list-content">
             <i className="far fa-check-circle" />
-            <span>Standard Battery:</span>
-            <span>210 ah WET</span>
+            <span>{props.stdBatteryTitle}</span>
+            <span>{props.battery}</span>
           </div>
 
           <div className="list-content">
             <i className="far fa-check-circle" />
-            <span>Power:</span>
-            <span>0.75hp</span>
+            <span>{props.powerTitle}</span>
+            <span>{props.power}</span>
           </div>
           <div className="list-content">
             <i className="far fa-check-circle" />
-            <span>Tank Material:</span>
-            <span>Poly 3/8"</span>
+            <span>{props.tankTitle}</span>
+            <span>{props.tank}</span>
           </div>
         </div>
       </StyledListContainer>
