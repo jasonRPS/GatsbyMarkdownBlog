@@ -1,12 +1,13 @@
 import React from "react"
 import styled from "styled-components"
-import BrochureIcon from "./individualProductPage/images/brochure-icon-xh30.jpg"
-import TechIcon from "./individualProductPage/images/tech-spec-icon-xh30.jpg"
-import PartsIcon from "./individualProductPage/images/parts-manual-icon-xh30.jpg"
-import OperatorIcon from "./individualProductPage/images/operator-manual-xh30.jpg"
+import BrochureIcon from "./individualProductPage/images/brochure-icon-40h.jpg"
+import TechIcon from "./individualProductPage/images/tech-specs-icon-40h.jpg"
+import PartsIcon from "./individualProductPage/images/parts-manual-40h.jpg"
+import OperatorIcon from "./individualProductPage/images/operator-manual-40h.jpg"
 
 const StyledDownloadsBar = styled.div`
   width: 600px;
+  height: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -30,8 +31,21 @@ const StyledDownloadsBar = styled.div`
     align-items: center;
     text-decoration: none;
     color: #ed2024;
+    transition-duration: 0.5s;
     @media (max-width: 1350px) {
       margin-bottom: 5px;
+    }
+
+    img {
+      height: 30px;
+      width: auto;
+      transition: transform 0.2s;
+    }
+    &:hover {
+      img {
+        /* height: 40px; */
+        transform: scale(1.5);
+      }
     }
   }
 `
