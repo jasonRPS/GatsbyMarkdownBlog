@@ -128,6 +128,7 @@ const MiniHDProductPage = props => {
           cleaning in a variety of sized applications with a reliable scrubber."
           mobileTitle="Mini-HD Walk Behind Floor Scrubber"
           pageUrl=""
+          specifications="Cleaning Path: 25-29 | Run Time: 3.5 Hours | Tank Capacity: Sol: 21 Gal, Rec: 26 Gal"
         />
         <MediaTilesContainer>
           <MediaTile

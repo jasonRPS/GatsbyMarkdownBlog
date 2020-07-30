@@ -108,13 +108,13 @@ const FeaturedProduct = props => {
   const MobileHeader = styled.div`
     max-width: 700px;
     margin: 0 auto;
-    /* display: flex; */
     justify-content: center;
     align-items: center;
     text-align: center;
     display: none;
     @media (max-width: 1200px) {
       display: flex;
+      flex-wrap: wrap;
     }
 
     h1 {
@@ -123,6 +123,10 @@ const FeaturedProduct = props => {
       @media (max-width: 650px) {
         margin-bottom: 0;
       }
+    }
+
+    h3 {
+      margin: 0 0 20px 0;
     }
 
     button {
@@ -225,6 +229,7 @@ const FeaturedProduct = props => {
         <a style={{ textDecoration: "none", color: "white" }} href="#demo-form">
           <button>Request a Demo</button>
         </a>
+        <h3>{props.specifications}</h3>
       </MobileHeader>
       <StyledMobilImageHeader>
         <div className="image-header-container">
@@ -233,6 +238,11 @@ const FeaturedProduct = props => {
           </div>
           <h1>{props.mobileTitle}</h1>
         </div>
+        <h3
+          style={{ fontSize: "1em", textAlign: "center", margin: "0 0 20px 0" }}
+        >
+          {props.specifications}
+        </h3>
         <a style={{ textDecoration: "none", color: "white" }} href="#demo-form">
           <button>Request a Demo</button>
         </a>
@@ -294,6 +304,7 @@ const FeaturedProduct = props => {
           techLink={props.techLink}
           partsLink={props.partsLink}
           opLink={props.opLink}
+          specifications={props.specifications}
         />
       </StyledFeaturedProducts>
       <ShareContainer>

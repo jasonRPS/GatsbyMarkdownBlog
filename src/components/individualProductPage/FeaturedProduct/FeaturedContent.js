@@ -15,6 +15,7 @@ const FeaturedContent = props => {
           <Button>Request a Demo</Button>
         </a>
       </div>
+      <h3>{props.specifications}</h3>
       <p>{props.textContent}</p>
       <div className="download-share">
         <DownloadsBar

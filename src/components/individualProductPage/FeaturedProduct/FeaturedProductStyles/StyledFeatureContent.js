@@ -36,6 +36,13 @@ export const StyledFeatureContent = styled.div`
     }
   }
 
+  h3 {
+    margin: 0;
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+
   .deck-container {
     display: flex;
     @media (max-width: 380px) {
