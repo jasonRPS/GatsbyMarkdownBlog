@@ -85,7 +85,7 @@ const WbfsPageStyles = styled.div`
   }
 `
 
-const WalkBehindFloorScrubbers = () => {
+const RideOnFloorScrubbers = () => {
   return (
     <>
       <SEO title="Walk Behind Floor Scrubbers" />
@@ -102,7 +102,7 @@ const WalkBehindFloorScrubbers = () => {
             <img src={HeroImage} alt="" />
           </div>
           <div className="heading">
-            <h1>Walk Behind Floor Scrubbers</h1>
+            <h1>Ride On Floor Scrubbers</h1>
             <p style={{ margin: "0", fontSize: ".6em", padding: ".5rem" }}>
               Providing outstanding quality and durability to last years.
             </p>
@@ -125,39 +125,39 @@ const WalkBehindFloorScrubbers = () => {
           >
             <ProductLayout
               image={MicroMagImage}
-              title="MicroMag"
-              link="Download MicroMag Brochure"
+              title="Pilot"
+              link="Download Pilot Brochure"
               content="MicroMag Walk Behind Floor Scrubber Dryer was designed based on our already well known Magnum and MiniMag. Our goal is to have the smallest Walk Behind available without sacrificing on solution tank space or productivity in terms of scrubbing performance."
             />
             <ProductLayout
               image={MiniHDImage}
-              title="MicroMini"
-              link="Download MicroMini Brochure"
+              title="GTX"
+              link="Download GTX Brochure"
               content="MicroMini Floor Scrubber Dryer is known for its simple design and durable construction, offering unmatched value for the customer. It comes equipped with a Traction drive which includes a powerful all-gear transaxle for climbing ramps and max operator ease or a Pad Assist version."
             />
-            <ProductLayout
-              image={MiniHDImage}
-              title="Micro-HD"
-              link="Download Micro-HD Brochure"
-              content="Micro-HD Floor Scrubber Dryer is known for its simple design and durable construction, offering unmatched value for the customer. Comes equipped with a Traction drive which includes a powerful all-gear transaxle for climbing ramps and max operator ease or a Pad Assist version."
-            />
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              to="/ride-on-floor-scrubbers/gtr"
+            >
+              <ProductLayout
+                image={MiniHDImage}
+                title="GTR"
+                link="Download GTR Brochure"
+                content="Micro-HD Floor Scrubber Dryer is known for its simple design and durable construction, offering unmatched value for the customer. Comes equipped with a Traction drive which includes a powerful all-gear transaxle for climbing ramps and max operator ease or a Pad Assist version."
+              />
+            </Link>
             <Link
               style={{ textDecoration: "none", color: "black" }}
               to="/walk-behind-floor-scrubbers/mini-hd"
             >
               <ProductLayout
                 image={MiniHDImage}
-                title="Mini-HD"
-                link="Download Mini-HD Brochure"
+                title="XR"
+                link="Download XR Brochure"
                 content="Mini-HD Floor Scrubber is known for its simple design and durable construction, offering unmatched value for the customer. The Mini-HD comes equipped with a Traction drive which includes a powerful all-gear transaxle for climbing ramps and max operator ease."
               />
             </Link>
-            <ProductLayout
-              image={MiniHDImage}
-              title="Mag-HD"
-              link="Download Mag-HD Brochure"
-              content="Mag-HD Floor Scrubber Dryer is known for its simple design and durable construction, offering unmatched value for the customer. Comes equipped with a Traction drive which includes a powerful all-gear transaxle for climbing ramps and max operator ease."
-            />
+
             <button>Download FactoryCat's Full Line Brochure</button>
             {/* <ProductLayout />
             <ProductLayout />
@@ -171,4 +171,4 @@ const WalkBehindFloorScrubbers = () => {
   )
 }
 
-export default WalkBehindFloorScrubbers
+export default RideOnFloorScrubbers
