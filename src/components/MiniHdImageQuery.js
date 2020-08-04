@@ -99,13 +99,6 @@ const MiniHdImageQuery = props => {
       allContentfulMachineImage {
         edges {
           node {
-            description {
-              content {
-                content {
-                  value
-                }
-              }
-            }
             model
             application
             image {
