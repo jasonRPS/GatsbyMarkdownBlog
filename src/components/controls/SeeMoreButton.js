@@ -32,7 +32,9 @@ const SeeMoreButton = props => {
   return (
     <SeeMoreStyles>
       <a style={{ color: "white" }} href={props.goTo}>
-        <div id="chevron">{props.title}</div>
+        <div id="chevron">
+          <span style={{ fontSize: props.fontSize }}>{props.title}</span>
+        </div>
       </a>
     </SeeMoreStyles>
   )

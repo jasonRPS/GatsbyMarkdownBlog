@@ -88,10 +88,12 @@ const StyledOverlay = styled.div`
 const MiniHdImageQuery = props => {
   const [modal, setModal] = useState("none")
   const [image, setImage] = useState({})
+  const [link, setLink] = useState({})
 
   function openModal(e) {
     setModal("block")
     setImage(e.target.src)
+    setLink(e.target.dataset.link)
   }
 
   const data = useStaticQuery(graphql`
@@ -99,6 +101,7 @@ const MiniHdImageQuery = props => {
       allContentfulMachineImage {
         edges {
           node {
+            link
             model
             application
             image {
@@ -124,6 +127,7 @@ const MiniHdImageQuery = props => {
                 <img
                   onClick={openModal}
                   src={edge.node.image.file.url}
+                  data-link={edge.node.link}
                   alt=""
                 />
 
@@ -138,9 +142,11 @@ const MiniHdImageQuery = props => {
         })}
         <div className="large-container" style={{ display: modal }}>
           <i onClick={() => setModal("none")} className="far fa-times-circle" />
-          <Link to="/walk-behind-floor-scrubbers/mini-hd">
+
+          <Link to={link}>
             <button>Click Here for more Info</button>
           </Link>
+
           <img src={image} alt="" />
         </div>
       </StyledImages>

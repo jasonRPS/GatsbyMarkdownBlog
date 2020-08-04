@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const StyledMachineOverview = styled.div`
-  max-width: 1000px;
+  max-width: 1400px;
   padding: 0.3rem;
   /* height: 700px; */
   /* border: 2px solid black; */

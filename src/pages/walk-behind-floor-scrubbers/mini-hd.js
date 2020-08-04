@@ -6,7 +6,7 @@ import RequestDemoForm from "../../components/individualProductPage/RequestDemoF
 import StealBackground from "../../components/individualProductPage/images/steal-background.jpg"
 import SpecBarMachineImage from "../../components/individualProductPage/images/mini-hd-25c-cylindrical-profile.56.png"
 import UsaBackground from "../../components/individualProductPage/images/made-in-usa.jpg"
-import MachineOverviewImage from "../../components/individualProductPage/images/mini-hd-machine-overview.png"
+import MachineOverviewImage from "../../components/individualProductPage/images/mini-hd-machineoverview-2-test.jpg"
 import HeavyDutyBackground from "../../components/individualProductPage/images/heavy-duty-background.jpg"
 import MachineDimensionImage from "../../components/individualProductPage/images/machine-spec-line-drawing.jpg"
 
