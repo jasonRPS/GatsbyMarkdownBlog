@@ -7,8 +7,11 @@ import styled from "styled-components"
 import DownloadsBar from "../DownloadsBar"
 import SocialShare from "../SocialShare"
 import HeaderImage from "./images/mini-hd-cylindrical-thumb1.jpg"
+import DiskDeck from "./images/disk-deck-first-frame.jpg"
+import DiskDeckAnimate from "./images/disk-deck-loop.gif"
 
 const FeaturedProduct = props => {
+  const [diskImage, setDiskImage] = useState(DiskDeck)
   const [thumbnail, setThumbnail] = useState({
     thumb1: props.cylindricalThumb1,
     thumb2: props.cylindricalThumb2,
@@ -54,6 +57,7 @@ const FeaturedProduct = props => {
   }
 
   function cylindricalSelect() {
+    setDiskImage(DiskDeck)
     setDeckColor({
       cylindrical: "",
       disk: "grayscale(100%)",
@@ -84,6 +88,7 @@ const FeaturedProduct = props => {
       cylindrical: "grayscale(100%)",
       disk: "",
     })
+    setDiskImage(DiskDeckAnimate)
     setMainImageRender(props.diskMain1)
     setToggleMedia({
       displayImages: "block",
@@ -306,6 +311,7 @@ const FeaturedProduct = props => {
           partsLink={props.partsLink}
           opLink={props.opLink}
           specifications={props.specifications}
+          diskImage={diskImage}
         />
       </StyledFeaturedProducts>
       <ShareContainer>

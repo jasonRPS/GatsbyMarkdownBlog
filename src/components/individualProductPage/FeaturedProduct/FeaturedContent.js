@@ -1,12 +1,12 @@
-import React from "react"
+import React, { useState } from "react"
 import { StyledFeatureContent } from "./FeaturedProductStyles/StyledFeatureContent"
 import { Button } from "../../common"
 import DownloadsBar from "../../DownloadsBar"
 import SocialShare from "../../SocialShare"
 import CylindricalDeck from "../images/cylindrical-deck.png"
-import DiskDeck from "../images/disk-deck.png"
 
 const FeaturedContent = props => {
+  // const [diskImage, setDiskImage] = useState(DiskDeck)
   return (
     <StyledFeatureContent>
       <div className="title-container">
@@ -41,7 +41,7 @@ const FeaturedContent = props => {
           <img
             style={{ filter: props.deckColor.disk }}
             onClick={props.diskSelect}
-            src={DiskDeck}
+            src={props.diskImage}
             alt=""
           />
           <h3 style={{ textAlign: "center", margin: "0" }}>Disk</h3>

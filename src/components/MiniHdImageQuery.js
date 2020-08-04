@@ -43,7 +43,7 @@ const StyledImages = styled.div`
   .large-container {
     position: absolute;
     border: 2px solid black;
-    width: 750px;
+    width: 1000px;
     height: 750px;
     background-color: white;
     box-shadow: 15px 10px 20px 10px;
@@ -73,6 +73,7 @@ const StyledImages = styled.div`
     color: white;
     background: red;
     border: none;
+    cursor: pointer;
   }
 `
 
