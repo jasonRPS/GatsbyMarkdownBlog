@@ -81,6 +81,7 @@ import Zero3SudsImage from "../../components/individualProductPage/images/mini-h
 import SanitationImage from "../../components/individualProductPage/images/mini-hd-option3-sanitation.jpg"
 import ShroudImage from "../../components/individualProductPage/images/mini-hd-option3-removable-shroud.jpg"
 import SprayJetImage from "../../components/individualProductPage/images/mini-hd-option3-spray-jet.jpg"
+import MiniHdOptions from "../../components/individualProductPage/MiniHdOptions"
 
 const MediaTilesContainer = styled.div`
   display: flex;
@@ -177,7 +178,8 @@ const MiniHDProductPage = props => {
           tank="Poly 3/8"
         />
         <OptionsBar>Options</OptionsBar>
-        <OptionsSelect
+        <MiniHdOptions />
+        {/* <OptionsSelect
           image1={BatteryWetImage}
           title1="Battery - Lead Acid (WET)"
           description1="The most economic battery on the market, tried and true. With proper maintenance the battery will perform as needed without fail."
@@ -289,7 +291,7 @@ const MiniHDProductPage = props => {
           image36={UndercoatImage}
           title36="Stainless Frame & Undercoated"
           description36="Stylish stainless metal prolongs the life of any deck by guarding against moisture and chemical. Our stainless design gives you a finished look from all angles. Since these are 100% stainless they will last a lifetime."
-        />
+        /> */}
         <div id="demo-form"></div>
         <SectionTitle title="Request a Demo" />
 
