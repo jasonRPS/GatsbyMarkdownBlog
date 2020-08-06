@@ -39,7 +39,7 @@ module.exports = {
             resolve: "gatsby-remark-images-contentful",
             options: {
               maxWidth: 900,
-              linkImagesToOriginal: false,
+              linkImagesToOriginal: true,
             },
           },
         ],
