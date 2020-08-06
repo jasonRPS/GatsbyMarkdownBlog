@@ -214,8 +214,8 @@ const MiniHdOptions = () => {
             model
             image {
               description
-              file {
-                url
+              fluid {
+                src
               }
             }
           }
@@ -231,7 +231,10 @@ const MiniHdOptions = () => {
         {data.allContentfulMachineOptions.edges.map(edge => {
           return (
             <OptionsContent>
-              <ThumbNail onClick={handleClick} src={edge.node.image.file.url} />
+              <ThumbNail
+                onClick={handleClick}
+                src={edge.node.image.fluid.src}
+              />
               <div className="options-text">
                 <h3>{edge.node.title}</h3>
                 <p>{edge.node.image.description}</p>
