@@ -62,7 +62,7 @@ const ThumbNail = styled.img`
 
   @media (max-width: 1200px) {
     width: 280px;
-    height: 180px;
+    height: 187px;
   }
 
   @media (max-width: 1023px) {
@@ -72,7 +72,7 @@ const ThumbNail = styled.img`
 
   @media (max-width: 580px) {
     width: 280px;
-    height: 180px;
+    height: 187px;
   }
 
   @media (max-width: 500px) {
@@ -83,10 +83,10 @@ const ThumbNail = styled.img`
 const Modal = styled.div`
   position: fixed;
   width: 900px;
-  height: 650px;
+  height: 600px;
   bottom: 50%;
   left: 50%;
-  margin-bottom: -325px;
+  margin-bottom: -300px;
   margin-left: -450px;
   z-index: 2;
   border: 2px solid black;
@@ -94,24 +94,31 @@ const Modal = styled.div`
   box-shadow: 10px 10px 15px #000;
 
   @media (max-width: 900px) {
-    width: 90%;
-    height: 60%;
-    margin-bottom: -30%;
-    margin-left: -45%;
+    width: 700px;
+    height: 467px;
+    margin-bottom: -233.5px;
+    margin-left: -350px;
   }
 
-  @media (max-width: 720px) {
-    width: 90%;
-    height: 60%;
-    margin-bottom: -30%;
-    margin-left: -45%;
+  @media (max-width: 700px) {
+    width: 550px;
+    height: 367px;
+    margin-bottom: -183.5px;
+    margin-left: -275px;
   }
 
-  @media (max-width: 620px) {
-    width: 90%;
-    height: 50%;
-    margin-bottom: -25%;
-    margin-left: -45%;
+  @media (max-width: 600px) {
+    width: 480px;
+    height: 320px;
+    margin-bottom: -160px;
+    margin-left: -240px;
+  }
+
+  @media (max-width: 540px) {
+    width: 400px;
+    height: 267px;
+    margin-bottom: -133.5px;
+    margin-left: -200px;
   }
 
   @keyframes fadeIn {
@@ -214,8 +221,11 @@ const MiniHdOptions = () => {
             model
             image {
               description
-              fluid {
+              fixed(width: 900, height: 600) {
+                width
+                height
                 src
+                srcSet
               }
             }
           }
@@ -233,7 +243,7 @@ const MiniHdOptions = () => {
             <OptionsContent>
               <ThumbNail
                 onClick={handleClick}
-                src={edge.node.image.fluid.src}
+                src={edge.node.image.fixed.src}
               />
               <div className="options-text">
                 <h3>{edge.node.title}</h3>
