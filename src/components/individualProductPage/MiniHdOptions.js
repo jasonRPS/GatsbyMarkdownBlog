@@ -31,18 +31,15 @@ const OptionsContainer = styled.div`
 const OptionsContent = styled.div`
   display: flex;
   padding-right: 10px;
-  /* display: grid;
-  grid-template-columns: 50% 50%;
-  grid-gap: 10px;
-  max-width: 650px;
-  height: 200px;
-  margin: 0.5rem auto; */
 
   h3 {
     margin: 0;
     border-bottom: 3px solid red;
     @media (max-width: 580px) {
       font-size: 1em;
+    }
+    @media (max-width: 580px) {
+      font-size: 1.1em;
     }
   }
   p {
@@ -51,6 +48,9 @@ const OptionsContent = styled.div`
     @media (max-width: 1200px) {
       font-size: 0.8em;
     }
+    /* @media (max-width: 1200px) {
+      font-size: 1em;
+    } */
   }
 `
 
@@ -76,8 +76,8 @@ const ThumbNail = styled.img`
   }
 
   @media (max-width: 500px) {
-    width: 150px;
-    height: 100px;
+    width: 160px;
+    height: 107px;
   }
 `
 const Modal = styled.div`
@@ -179,7 +179,7 @@ const MiniHdOptions = () => {
     text: "View More",
     arrow: "fas fa-caret-down",
   })
-  const [openOptions, setOpenOptions] = useState("430px")
+  const [openOptions, setOpenOptions] = useState("450px")
   const [displayLayOver, setLayOver] = useState("none")
   const [displayButton, setDisplayButton] = useState("none")
 
@@ -237,7 +237,7 @@ const MiniHdOptions = () => {
   return (
     <>
       <LayOver style={{ display: displayLayOver }} />
-      <OptionsContainer style={{ height: openOptions }}>
+      <OptionsContainer id="option-start" style={{ height: openOptions }}>
         {data.allContentfulMachineOptions.edges.map(edge => {
           return (
             <OptionsContent>
@@ -255,25 +255,36 @@ const MiniHdOptions = () => {
       </OptionsContainer>
       <Modal style={{ display: modal }}>
         <i onClick={handleImage} className="far fa-times-circle" />
+
         <img src={optionImage} />
       </Modal>
 
       <ViewMoreLess>
-        <p onClick={handleOptionsOpen}>
-          {viewMore.text} <i className={viewMore.arrow} />
-        </p>
+        <a
+          style={{ color: "black", textDecoration: "none" }}
+          href="#option-start"
+        >
+          <p onClick={handleOptionsOpen}>
+            {viewMore.text} <i className={viewMore.arrow} />
+          </p>
+        </a>
       </ViewMoreLess>
-      <ButtonCollapse
-        onClick={handleOptionsOpen}
-        style={{ display: displayButton }}
+      <a
+        style={{ color: "black", textDecoration: "none" }}
+        href="#option-start"
       >
-        View Less
-        <i
-          style={{ marginLeft: "5px" }}
-          onClick={handleImage}
-          className={viewMore.arrow}
-        />
-      </ButtonCollapse>
+        <ButtonCollapse
+          onClick={handleOptionsOpen}
+          style={{ display: displayButton }}
+        >
+          View Less
+          <i
+            style={{ marginLeft: "5px" }}
+            onClick={handleImage}
+            className={viewMore.arrow}
+          />
+        </ButtonCollapse>
+      </a>
     </>
   )
 }
