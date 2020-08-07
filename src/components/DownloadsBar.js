@@ -6,7 +6,7 @@ import PartsIcon from "./individualProductPage/images/parts-manual-40h.jpg"
 import OperatorIcon from "./individualProductPage/images/operator-manual-40h.jpg"
 
 const StyledDownloadsBar = styled.div`
-  width: 600px;
+  /* width: 600px; */
   height: 50px;
   display: flex;
   flex-wrap: wrap;
@@ -23,7 +23,7 @@ const StyledDownloadsBar = styled.div`
 
   @media (max-width: 650px) {
     width: 300px;
-    margin: 0 auto;
+    margin: 0.8rem auto;
   }
 
   a {
