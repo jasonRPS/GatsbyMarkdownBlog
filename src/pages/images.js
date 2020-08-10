@@ -3,8 +3,8 @@ import Layout from "../components/Layout"
 import styled from "styled-components"
 import MiniHdImageQuery from "../components/MiniHdImageQuery"
 import HeroImage from "../images/mini-hd-walk-behind-header.jpg"
-import SeeMoreButton from "../components/controls/SeeMoreButton"
 import HeroHeader from "../components/HeroHeader"
+import WalkieScrubberImages from "../components/WalkieScrubbersImages"
 
 const StyledNavContainer = styled.div`
   max-width: 1400px;
@@ -38,7 +38,7 @@ const ImagePage = () => (
       <Button>Ride On Floor Scrubbers</Button>
       <Button>Ride On Floor Sweepers</Button>
     </StyledNavContainer>
-    <MiniHdImageQuery />
+    <WalkieScrubberImages />
   </Layout>
 )
 

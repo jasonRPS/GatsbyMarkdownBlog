@@ -8,7 +8,7 @@ import SpecBarMachineImage from "../../components/individualProductPage/images/m
 import UsaBackground from "../../components/individualProductPage/images/made-in-usa.jpg"
 import MachineOverviewImage from "../../components/individualProductPage/images/mini-hd-machineoverview-2-test.jpg"
 import HeavyDutyBackground from "../../components/individualProductPage/images/heavy-duty-background.jpg"
-import MachineDimensionImage from "../../components/individualProductPage/images/machine-spec-line-drawing.jpg"
+import MachineDimensionImage from "../../components/individualProductPage/images/mini-hd-machine-cad-drawings-size-top.jpg"
 
 //Thumbnail Images
 import CylindricalThumb1Image from "../../components/individualProductPage/images/mini-hd-cylindrical-thumb1.jpg"
