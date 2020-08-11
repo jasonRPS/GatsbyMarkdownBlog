@@ -43,7 +43,7 @@ const HeroHeader = props => {
         <SeeMoreButton
           title={props.buttonTitle}
           fontSize="2em"
-          goTo="#walk-behind-floor-scrubber-products"
+          goTo={props.goTo}
         />
       </div>
     </HeroContainer>

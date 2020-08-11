@@ -13,6 +13,7 @@ const SeeMoreStyles = styled.div`
     width: 200px;
     padding: 1rem;
     font-size: 0.7em;
+    cursor: pointer;
   }
   #chevron:before {
     border-bottom: 10px solid red;

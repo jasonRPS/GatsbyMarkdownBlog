@@ -8,7 +8,7 @@ import WalkieScrubberImages from "../components/WalkieScrubbersImages"
 
 const StyledNavContainer = styled.div`
   max-width: 1400px;
-  margin: 2rem auto;
+  margin: 4rem auto;
   display: flex;
   justify-content: space-evenly;
 `
@@ -31,13 +31,16 @@ const ImagePage = () => (
       title="FactoryCat Image Gallery"
       subHeading="Browse our gallery of images"
       buttonTitle="See Images"
+      goTo="#page-scroll"
     />
+    <div id="page-scroll"></div>
     <StyledNavContainer>
       <Button>Walk Behind Floor Scrubbers</Button>
       <Button>Walk Behind Floor Sweepers</Button>
       <Button>Ride On Floor Scrubbers</Button>
       <Button>Ride On Floor Sweepers</Button>
     </StyledNavContainer>
+
     <WalkieScrubberImages />
   </Layout>
 )
