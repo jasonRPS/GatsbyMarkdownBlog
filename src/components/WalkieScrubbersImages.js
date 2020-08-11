@@ -34,6 +34,14 @@ const Thumbnail = styled.div`
     object-fit: cover;
   }
 
+  a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+      color: red;
+    }
+  }
+
   .overlay {
     display: none;
     position: absolute;
@@ -122,14 +130,29 @@ const Modal = styled.div`
   }
 
   button {
+    background-color: transparent;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+
+    &:hover {
+      background-color: red;
+      color: white;
+    }
+  }
+
+  #machine-btn {
     position: absolute;
     bottom: 30px;
     left: 30px;
-    color: white;
-    background-color: red;
-    padding: 0.5rem;
-    border: none;
-    cursor: pointer;
+  }
+
+  #application-btn {
+    position: absolute;
+    bottom: 30px;
+    left: 180px;
   }
 `
 
@@ -149,6 +172,12 @@ const WalkieScrubberImages = () => {
     carrot: "fas fa-sort-down",
   })
   const [machineImage, setMachineImage] = useState({})
+  const [model, setModel] = useState({
+    name: "",
+    application: "",
+  })
+
+  const [appLink, setAppLink] = useState({})
   const [machineLink, setMachineLink] = useState({})
   const [modal, setModal] = useState({
     display: "none",
@@ -174,6 +203,11 @@ const WalkieScrubberImages = () => {
     setModal("block")
     setMachineImage(e.target.src)
     setMachineLink(e.target.dataset.link)
+    setAppLink(`/applications/${e.target.dataset.applink.toLowerCase()}`)
+    setModel({
+      name: e.target.dataset.model,
+      application: e.target.dataset.applink,
+    })
   }
   const data = useStaticQuery(graphql`
     query {
@@ -208,7 +242,10 @@ const WalkieScrubberImages = () => {
           className="far fa-times-circle"
         />
         <a style={{ textDecoration: "none" }} href={machineLink}>
-          <button>Learn More</button>
+          <button id="machine-btn">View {model.name} Page</button>
+        </a>
+        <a style={{ textDecoration: "none" }} href={appLink}>
+          <button id="application-btn">View {model.application} Page</button>
         </a>
       </Modal>
       <StyledContainer style={{ height: showMore.height }}>
@@ -224,18 +261,24 @@ const WalkieScrubberImages = () => {
                     onClick={handleImageClick}
                     src={edge.node.image.fixed.src}
                     data-link={edge.node.link}
+                    data-applink={edge.node.application}
+                    data-model={edge.node.model}
                   />
                   <div className="overlay">
                     <h4>
                       Model:{" "}
                       <span style={{ fontWeight: "normal" }}>
-                        {edge.node.model}
+                        <a href={edge.node.link}>{edge.node.model}</a>
                       </span>
                     </h4>
                     <h4>
                       Application:{" "}
                       <span style={{ fontWeight: "normal" }}>
-                        {edge.node.application}
+                        <a
+                          href={`/applications/${edge.node.application.toLowerCase()}`}
+                        >
+                          {edge.node.application}
+                        </a>
                       </span>
                     </h4>
                   </div>
