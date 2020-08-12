@@ -13,7 +13,6 @@ import MiniHDImage from "../images/mini-hd-26D-1.jpg"
 const WbfsPageStyles = styled.div`
   .hero-container {
     position: relative;
-
     width: 100%;
     height: 600px;
     img {

@@ -9,7 +9,7 @@ const StyledContainer = styled.div`
   overflow: hidden;
 
   .image-header {
-    width: 1400px;
+    max-width: 1400px;
     height: 150px;
     background-color: green;
   }
