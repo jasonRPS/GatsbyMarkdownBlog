@@ -108,7 +108,11 @@ const MiniHDProductPage = props => {
             subTitle="Walk Behind Floor Scrubbers"
           />
           <MediaTile title="Videos" subTitle="Walk Behind Floor Scrubbers" />
-          <MediaTile title="Images" subTitle="Walk Behind Floor Scrubbers" />
+          <MediaTile
+            link="/images#walkie-scrubbers"
+            title="Images"
+            subTitle="Walk Behind Floor Scrubbers"
+          />
           <MediaTile
             title="Applications"
             subTitle="Walk Behind Floor Scrubbers"
@@ -129,7 +133,7 @@ const MiniHDProductPage = props => {
         <MachineDimensions
           image={MachineDimensionImage}
           sizeTitle="Size (L x W x H):"
-          size='52" x 22" x 40'
+          size='52" x 37" x 40'
           weightTitle="Weight (w/o batteries):"
           weight="393 - 443 lbs"
           voltageTitle="System Voltage:"

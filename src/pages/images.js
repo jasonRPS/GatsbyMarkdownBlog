@@ -5,6 +5,9 @@ import MiniHdImageQuery from "../components/MiniHdImageQuery"
 import HeroImage from "../images/mini-hd-walk-behind-header.jpg"
 import HeroHeader from "../components/HeroHeader"
 import WalkieScrubberImages from "../components/WalkieScrubbersImages"
+import WalkieSweepersImages from "../components/WalkieSweepersImages"
+import RideOnFloorScrubberImages from "../components/RideOnFloorScrubberImages"
+import RideOnFloorSweeperImages from "../components/RideOnFloorSweeperImages"
 
 const StyledNavContainer = styled.div`
   max-width: 1400px;
@@ -16,6 +19,7 @@ const Button = styled.button`
   padding: 0.5rem;
   background: transparent;
   border: 2px solid black;
+  border-radius: 10px;
   cursor: pointer;
   &:hover {
     background: red;
@@ -35,13 +39,28 @@ const ImagePage = () => (
     />
     <div id="page-scroll"></div>
     <StyledNavContainer>
-      <Button>Walk Behind Floor Scrubbers</Button>
-      <Button>Walk Behind Floor Sweepers</Button>
-      <Button>Ride On Floor Scrubbers</Button>
-      <Button>Ride On Floor Sweepers</Button>
+      <a href="#walkie-scrubbers">
+        <Button>Walk Behind Floor Scrubbers</Button>
+      </a>
+      <a href="#walkie-sweepers">
+        <Button>Walk Behind Floor Sweepers</Button>
+      </a>
+      <a href="#ride-on-scrubbers">
+        <Button>Ride On Floor Scrubbers</Button>
+      </a>
+      <a href="#ride-on-sweepers">
+        <Button>Ride On Floor Sweepers</Button>
+      </a>
     </StyledNavContainer>
 
+    <div id="walkie-scrubbers"></div>
     <WalkieScrubberImages />
+    <div id="walkie-sweepers"></div>
+    <WalkieSweepersImages />
+    <div id="ride-on-scrubbers"></div>
+    <RideOnFloorScrubberImages />
+    <div id="ride-on-sweepers"></div>
+    <RideOnFloorSweeperImages />
   </Layout>
 )
 
