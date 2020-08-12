@@ -37,6 +37,7 @@ const Thumbnail = styled.div`
   a {
     text-decoration: none;
     color: white;
+    pointer-events: auto;
     &:hover {
       color: red;
     }
@@ -51,6 +52,7 @@ const Thumbnail = styled.div`
     width: 100%;
     padding: 1rem 0;
     animation: slideIn ease 0.5s;
+    pointer-events: none;
 
     @keyframes slideIn {
       0% {
@@ -64,6 +66,7 @@ const Thumbnail = styled.div`
     h4 {
       margin: 0;
       padding-left: 1rem;
+      /* pointer-events: auto; */
     }
   }
 
@@ -162,7 +165,7 @@ const Modal = styled.div`
   #application-btn {
     position: absolute;
     bottom: 30px;
-    left: 180px;
+    left: 145px;
   }
 `
 
@@ -252,10 +255,12 @@ const WalkieScrubberImages = () => {
           className="far fa-times-circle"
         />
         <a style={{ textDecoration: "none" }} href={machineLink}>
-          <button id="machine-btn">View {model.name} Page</button>
+          <button id="machine-btn">{model.name} Page</button>
         </a>
         <a style={{ textDecoration: "none" }} href={appLink}>
-          <button id="application-btn">View {model.application} Page</button>
+          <button id="application-btn">
+            {model.application} Application Page
+          </button>
         </a>
       </Modal>
       <StyledContainer style={{ height: showMore.height }}>

@@ -5,11 +5,11 @@ import styled from "styled-components"
 const StyledContainer = styled.div`
   max-width: 1400px;
   margin: 1.5rem auto;
-  height: 700px;
+  height: 400px;
   overflow: hidden;
 
   .image-header {
-    width: 1400px;
+    max-width: 1400px;
     height: 150px;
     background-color: green;
   }
@@ -23,8 +23,8 @@ const ThumbnailContainer = styled.div`
 const Thumbnail = styled.div`
   position: relative;
   overflow: hidden;
-  width: 250px;
-  height: 250px;
+  max-width: 250px;
+  max-height: 250px;
   margin: 10px 10px;
   cursor: pointer;
 
@@ -74,30 +74,6 @@ const Thumbnail = styled.div`
   }
 `
 
-const ThumbOverlay = styled.div`
-  position: absolute;
-  color: white;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  padding: 1rem 0;
-  animation: slideIn ease 0.5s;
-
-  @keyframes slideIn {
-    0% {
-      margin-bottom: -150px;
-    }
-    100% {
-      margin-bottom: 0;
-    }
-  }
-
-  h4 {
-    margin: 0;
-    padding-left: 1rem;
-  }
-`
-
 const Modal = styled.div`
   position: fixed;
   width: 900px;
@@ -109,6 +85,40 @@ const Modal = styled.div`
   background-color: green;
   animation: fadeIn ease 0.5s;
   z-index: 3;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 910px) {
+    width: 750px;
+    height: 500px;
+    margin-bottom: -250px;
+    margin-left: -375px;
+  }
+
+  @media (max-width: 775px) {
+    width: 600px;
+    height: 400px;
+    margin-bottom: -200px;
+    margin-left: -300px;
+  }
+
+  @media (max-width: 625px) {
+    width: 450px;
+    height: 300px;
+    margin-bottom: -150px;
+    margin-left: -225px;
+  }
+
+  @media (max-width: 475px) {
+    width: 350px;
+    height: 233px;
+    margin-bottom: -116.5px;
+    margin-left: -175px;
+  }
 
   @keyframes fadeIn {
     0% {
@@ -167,7 +177,7 @@ const ToggleImages = styled.p`
 
 const WalkieSweepersImages = () => {
   const [showMore, setShowMore] = useState({
-    height: "700px",
+    height: "550px",
     title: "Show More",
     carrot: "fas fa-sort-down",
   })
@@ -184,7 +194,7 @@ const WalkieSweepersImages = () => {
   })
 
   function showMoreClick() {
-    if (showMore.height === "700px") {
+    if (showMore.height === "550px") {
       setShowMore({
         height: "100%",
         title: "Show Less",
@@ -192,7 +202,7 @@ const WalkieSweepersImages = () => {
       })
     } else {
       setShowMore({
-        height: "700px",
+        height: "550px",
         title: "Show More",
         carrot: "fas fa-sort-down",
       })

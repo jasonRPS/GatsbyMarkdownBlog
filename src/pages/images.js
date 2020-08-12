@@ -35,7 +35,8 @@ const ImagePage = () => (
       title="FactoryCat Image Gallery"
       subHeading="Browse our gallery of images"
       buttonTitle="See Images"
-      goTo="#page-scroll"
+      goTo="#walkie-scrubbers"
+      fontSize="2em"
     />
 
     <div id="page-scroll"></div>
@@ -56,12 +57,12 @@ const ImagePage = () => (
 
     <div id="walkie-scrubbers"></div>
     <WalkieScrubberImages />
-    {/* <div id="walkie-sweepers"></div>
+    <div id="walkie-sweepers"></div>
     <WalkieSweepersImages />
     <div id="ride-on-scrubbers"></div>
     <RideOnFloorScrubberImages />
     <div id="ride-on-sweepers"></div>
-    <RideOnFloorSweeperImages /> */}
+    <RideOnFloorSweeperImages />
   </Layout>
 )
 

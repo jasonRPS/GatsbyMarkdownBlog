@@ -5,46 +5,63 @@ import SeeMoreButton from "./controls/SeeMoreButton"
 const HeroContainer = styled.div`
   position: relative;
   width: 100%;
-  height: 600px;
-
+  height: 65vh;
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  .header-content {
-    position: absolute;
+  .hero-content {
     /* max-width: 1400px; */
+    position: absolute;
     text-align: center;
-    bottom: 50%;
-    left: 50%;
     font-size: 2em;
-    margin-left: -346.2665px;
-    margin-bottom: -131.8835px;
     color: white;
+    bottom: 50%;
+    margin-bottom: -72.5px;
+    left: 50%;
+    margin-left: -346px;
 
-    @media (max-width: 720px) {
+    h1 {
+      margin: 0;
+    }
+    p {
+      margin: 0;
+    }
+    @media (max-width: 670px) {
       font-size: 1.5em;
-      margin-left: -259.7165px;
-      margin-bottom: -98.6665px;
+      margin-bottom: -54.5px;
+      margin-left: -260px;
     }
 
-    @media (max-width: 515px) {
+    @media (max-width: 500px) {
       font-size: 1em;
-      margin-left: -173.1085px;
-      margin-bottom: -65.4335px;
+      margin-bottom: -36px;
+      margin-left: -173px;
     }
+  }
+
+  .see-more {
+    text-align: center;
+    font-size: 2em;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    margin-left: -135px;
   }
 `
 
 const HeroHeader = props => {
   return (
     <HeroContainer>
-      <img src={props.heroImage} alt="" />
-      <div className="header-content">
-        <h1>FactoryCat Image Gallery</h1>
-        <p>View our gallery of images</p>
+      <img src={props.heroImage} />
+      <div className="hero-content">
+        <h1>{props.title}</h1>
+        <p>{props.subHeading}</p>
+      </div>
+      <div className="see-more">
+        <SeeMoreButton title={props.buttonTitle} />
       </div>
     </HeroContainer>
   )
