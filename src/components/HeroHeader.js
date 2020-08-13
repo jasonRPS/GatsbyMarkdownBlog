@@ -61,7 +61,11 @@ const HeroHeader = props => {
         <p>{props.subHeading}</p>
       </div>
       <div className="see-more">
-        <SeeMoreButton title={props.buttonTitle} />
+        <SeeMoreButton
+          title={props.buttonTitle}
+          showButton={props.showButton}
+          goTo={props.goTo}
+        />
       </div>
     </HeroContainer>
   )

@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/Layout"
 import HeroHeader from "../components/HeroHeader"
@@ -25,11 +26,17 @@ const ApplicationContainer = styled.div`
       object-fit: cover;
     }
   }
+
+  h2 {
+    margin: 0;
+    border-bottom: 3px solid red;
+  }
   button {
     background-color: red;
     padding: 0.5rem;
     color: white;
     border: none;
+    cursor: pointer;
   }
 `
 
@@ -55,14 +62,16 @@ const ApplicationsPage = () => {
             <img src={WarehouseImage} alt="aerospace" />
           </div>
           <div className="img-content">
-            <h2 style={{ margin: "0" }}>Warehouse</h2>
+            <h2>Warehouse</h2>
             <p style={{ maxWidth: "400px" }}>
               Cold storage warehousing poses a unique challenge for scrubbers,
               as the clean solution used must be able to accommodate the
               temperatures without freezing - For which we have our "Freezer
               Package" option.
             </p>
-            <button>View More</button>
+            <Link to="/applications/warehouse">
+              <button>View More</button>
+            </Link>
           </div>
         </ApplicationContainer>
       </BodyContainer>
