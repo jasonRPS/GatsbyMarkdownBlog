@@ -115,17 +115,18 @@ const StyledImageGalleryHeader = styled.h2`
 const StyledImageGallery = styled.div`
   max-width: 1400px;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   margin: 1rem auto;
-  justify-content: space-evenly;
+  justify-content: space-between;
 `
 
 const Thumbnail = styled.div`
   position: relative;
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 330px;
+  max-height: 330px;
   overflow: hidden;
   cursor: pointer;
+  margin: 10px 0;
 
   img {
     width: 100%;
