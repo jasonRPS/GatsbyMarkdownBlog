@@ -69,7 +69,7 @@ const Navigation = () => {
                     </Link>
                     <Link
                       style={{ color: "white", textDecoration: "none" }}
-                      to="/ride-on-scrubbers"
+                      to="/ride-on-floor-scrubbers"
                     >
                       <li>
                         <img src={RiderIcon} alt="" width="25px" />

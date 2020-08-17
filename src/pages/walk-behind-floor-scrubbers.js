@@ -122,24 +122,39 @@ const WalkBehindFloorScrubbers = () => {
             className="product-layout"
             id="walk-behind-floor-scrubber-products"
           >
-            <ProductLayout
-              image={MicroMagImage}
-              title="MicroMag"
-              link="Download MicroMag Brochure"
-              content="MicroMag Walk Behind Floor Scrubber Dryer was designed based on our already well known Magnum and MiniMag. Our goal is to have the smallest Walk Behind available without sacrificing on solution tank space or productivity in terms of scrubbing performance."
-            />
-            <ProductLayout
-              image={MiniHDImage}
-              title="MicroMini"
-              link="Download MicroMini Brochure"
-              content="MicroMini Floor Scrubber Dryer is known for its simple design and durable construction, offering unmatched value for the customer. It comes equipped with a Traction drive which includes a powerful all-gear transaxle for climbing ramps and max operator ease or a Pad Assist version."
-            />
-            <ProductLayout
-              image={MiniHDImage}
-              title="Micro-HD"
-              link="Download Micro-HD Brochure"
-              content="Micro-HD Floor Scrubber Dryer is known for its simple design and durable construction, offering unmatched value for the customer. Comes equipped with a Traction drive which includes a powerful all-gear transaxle for climbing ramps and max operator ease or a Pad Assist version."
-            />
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              to="/walk-behind-floor-scrubbers/micromag"
+            >
+              <ProductLayout
+                image={MicroMagImage}
+                title="MicroMag"
+                link="Download MicroMag Brochure"
+                content="MicroMag Walk Behind Floor Scrubber Dryer was designed based on our already well known Magnum and MiniMag. Our goal is to have the smallest Walk Behind available without sacrificing on solution tank space or productivity in terms of scrubbing performance."
+              />
+            </Link>
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              to="/walk-behind-floor-scrubbers/micromini"
+            >
+              <ProductLayout
+                image={MiniHDImage}
+                title="MicroMini"
+                link="Download MicroMini Brochure"
+                content="MicroMini Floor Scrubber Dryer is known for its simple design and durable construction, offering unmatched value for the customer. It comes equipped with a Traction drive which includes a powerful all-gear transaxle for climbing ramps and max operator ease or a Pad Assist version."
+              />
+            </Link>
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              to="/walk-behind-floor-scrubbers/micro-hd"
+            >
+              <ProductLayout
+                image={MiniHDImage}
+                title="Micro-HD"
+                link="Download Micro-HD Brochure"
+                content="Micro-HD Floor Scrubber Dryer is known for its simple design and durable construction, offering unmatched value for the customer. Comes equipped with a Traction drive which includes a powerful all-gear transaxle for climbing ramps and max operator ease or a Pad Assist version."
+              />
+            </Link>
             <Link
               style={{ textDecoration: "none", color: "black" }}
               to="/walk-behind-floor-scrubbers/mini-hd"
@@ -151,12 +166,17 @@ const WalkBehindFloorScrubbers = () => {
                 content="Mini-HD Floor Scrubber is known for its simple design and durable construction, offering unmatched value for the customer. The Mini-HD comes equipped with a Traction drive which includes a powerful all-gear transaxle for climbing ramps and max operator ease."
               />
             </Link>
-            <ProductLayout
-              image={MiniHDImage}
-              title="Mag-HD"
-              link="Download Mag-HD Brochure"
-              content="Mag-HD Floor Scrubber Dryer is known for its simple design and durable construction, offering unmatched value for the customer. Comes equipped with a Traction drive which includes a powerful all-gear transaxle for climbing ramps and max operator ease."
-            />
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              to="/walk-behind-floor-scrubbers/mag-hd"
+            >
+              <ProductLayout
+                image={MiniHDImage}
+                title="Mag-HD"
+                link="Download Mag-HD Brochure"
+                content="Mag-HD Floor Scrubber Dryer is known for its simple design and durable construction, offering unmatched value for the customer. Comes equipped with a Traction drive which includes a powerful all-gear transaxle for climbing ramps and max operator ease."
+              />
+            </Link>
             <button>Download FactoryCat's Full Line Brochure</button>
             {/* <ProductLayout />
             <ProductLayout />

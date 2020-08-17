@@ -123,7 +123,7 @@ const GTRProductPage = props => {
           techLink="https://www.factorycat.com/docs/techSpecs/FC-MINI-HD-SALESSHEET.pdf"
           partsLink="https://www.factorycat.com/docs/manualsParts/FC-MINI-HD-P-EN.pdf"
           opLink="https://www.factorycat.com/docs/manualsOp/FC-MINI-HD-OP-EN.pdf"
-          title="Mini-HD Walk Behind Floor Scrubber"
+          title="GTR Ride On Floor Scrubber"
           textContent="Reduce the cost to clean with the Mini-HD Floor Scrubber. We’ve made
           consistent cleaning and being budget conscious our top priorities while
           delivering a durable floor scrubber that will last for years. Maintain
