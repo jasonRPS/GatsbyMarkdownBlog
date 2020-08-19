@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { StyledThumbs, StyledMainMedia } from "./FeaturedProductStyles"
 import { Button } from "../../common"
+import SocialShare from "../../SocialShare"
 
 const ImageContainer = styled.div`
   display: flex;
@@ -67,6 +68,7 @@ const ImageCarousel = props => {
             <i className="fab fa-youtube"></i>
           </div>
         </StyledThumbs>
+
         <StyledMainMedia>
           <div className="main-media-container">
             <img

@@ -50,21 +50,34 @@ export const StyledFeatureContent = styled.div`
     }
 
     .deck-image-container {
-      width: 150px;
-      height: 150px;
+      width: 230px;
+      height: 230px;
       margin-top: 1rem;
       margin-right: 2rem;
       cursor: pointer;
+      @media (max-width: 1230px) {
+        width: 150px;
+        height: 150px;
+      }
       @media (max-width: 380px) {
         margin-top: 10px;
       }
 
       img {
-        width: 180px;
+        width: 230px;
+        @media (max-width: 1230px) {
+          width: 180px;
+        }
         @media (max-width: 380px) {
           width: 130px;
         }
       }
     }
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
 `

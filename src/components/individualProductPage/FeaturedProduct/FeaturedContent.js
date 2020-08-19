@@ -24,7 +24,7 @@ const FeaturedContent = props => {
           partsLink={props.partsLink}
           opLink={props.opLink}
         />
-        <SocialShare />
+        {/* <SocialShare /> */}
       </div>
       <h2>Choose from two scrub systems</h2>
       <div className="deck-container">
