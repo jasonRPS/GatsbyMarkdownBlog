@@ -16,8 +16,22 @@ const path = require("path")
 
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
+  const podTemplate = path.resolve("./src/templates/pod.js")
+  const podRes = await graphql(`
+    query {
+      allContentfulTestUrl {
+        edges {
+          node {
+            slug
+            feed
+            title
+          }
+        }
+      }
+    }
+  `)
   const blogTemplate = path.resolve("./src/templates/blog.js")
-  const res = await graphql(`
+  const blogRes = await graphql(`
     query {
       allContentfulBlogPost {
         edges {
@@ -29,7 +43,16 @@ module.exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  res.data.allContentfulBlogPost.edges.forEach(edge => {
+  podRes.data.allContentfulTestUrl.edges.forEach(edge => {
+    createPage({
+      component: podTemplate,
+      path: `/pod/${edge.node.slug}`,
+      context: {
+        slug: edge.node.slug,
+      },
+    })
+  })
+  blogRes.data.allContentfulBlogPost.edges.forEach(edge => {
     createPage({
       component: blogTemplate,
       path: `/blog/${edge.node.slug}`,
@@ -39,3 +62,29 @@ module.exports.createPages = async ({ graphql, actions }) => {
     })
   })
 }
+
+// module.exports.createPages = async ({ graphql, actions }) => {
+//   const { createPage } = actions
+//   const blogTemplate = path.resolve("./src/templates/blog.js")
+//   const res = await graphql(`
+//     query {
+//       allContentfulBlogPost {
+//         edges {
+//           node {
+//             slug
+//           }
+//         }
+//       }
+//     }
+//   `)
+
+//   res.data.allContentfulBlogPost.edges.forEach(edge => {
+//     createPage({
+//       component: blogTemplate,
+//       path: `/blog/${edge.node.slug}`,
+//       context: {
+//         slug: edge.node.slug,
+//       },
+//     })
+//   })
+// }

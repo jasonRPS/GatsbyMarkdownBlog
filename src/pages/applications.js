@@ -44,7 +44,6 @@ const ApplicationsPage = () => {
             applicationDescription="High-performance cleaning capabilities offered is unparalleled in the floor machine market and ideal for the Aerospace market.  "
             link="/applications/aerospace"
           />
-
           <ApplicationSummary
             image={WarehouseImage}
             applicationName="Aviation"
@@ -85,6 +84,24 @@ const ApplicationsPage = () => {
             image={WarehouseImage}
             applicationName="Food & Beverage"
             applicationDescription="Offering delicate maintenance cleaning daily with the use of the brush pressure lockout but can also be switched into a high performance top scrubbing unit to save labor and remove finish quickly with their five down pressure settings.  "
+            link="/applications/food-and-beverage"
+          />
+          <ApplicationSummary
+            image={WarehouseImage}
+            applicationName="Government"
+            applicationDescription="As a taxpayer I really like to see that our government and their contractors spend the money we have entrusted them with buying Made in the USA products from domestic businesses. Factory Cat offers the government some of the most effective, most affordable, best built floor .  "
+            link="/applications/food-and-beverage"
+          />
+          <ApplicationSummary
+            image={WarehouseImage}
+            applicationName="Health Care"
+            applicationDescription="As a taxpayer I really like to see that our government and their contractors spend the money we have entrusted them with buying Made in the USA products from domestic businesses. Factory Cat offers the government some of the most effective, most affordable, best built floor .  "
+            link="/applications/food-and-beverage"
+          />
+          <ApplicationSummary
+            image={WarehouseImage}
+            applicationName="Hospitality"
+            applicationDescription="As a taxpayer I really like to see that our government and their contractors spend the money we have entrusted them with buying Made in the USA products from domestic businesses. Factory Cat offers the government some of the most effective, most affordable, best built floor .  "
             link="/applications/food-and-beverage"
           />
           {/* <div className="img-container">

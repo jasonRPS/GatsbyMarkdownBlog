@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react"
+import RSSParser from "rss-parser"
+import { Link, graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/Layout"
 import Slider from "../components/slider/Slider"
 import Animation from "../images/Comp1.gif"
@@ -7,26 +9,29 @@ import styled from "styled-components"
 import MiniHdOptions from "../components/individualProductPage/MiniHdOptions"
 
 const TestPage = () => {
-  const FEED_URL = "https://feed.podbean.com/rememberthegame/feed.xml"
-
-  useEffect(() => {
-    fetch(FEED_URL)
-      .then(res => {
-        res.text().then(htmlTxt => {
-          var domParser = new DOMParser()
-          let doc = domParser.parseFromString(htmlTxt, "text/html")
-          var feedUrl = doc.querySelector('link[type="application/rss+xml"]')
-            .href
-        })
-      })
-      .catch(() => console.error("Error in fetching the website"))
-  })
+  const data = useStaticQuery(graphql`
+    query {
+      allContentfulTestUrl {
+        edges {
+          node {
+            slug
+            feed
+            title
+          }
+        }
+      }
+    }
+  `)
 
   return (
     <Layout>
-      <MiniHdOptions />
+      {data.allContentfulTestUrl.edges.map(edge => {
+        return <Link to={`/pod/${edge.node.slug}`}>{edge.node.title}</Link>
+      })}
     </Layout>
   )
 }
 
 export default TestPage
+
+//https://feed.podbean.com/rememberthegame/feed.xml
