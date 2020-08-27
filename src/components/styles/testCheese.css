@@ -562,54 +562,38 @@ ul.icons-ul > li .icon-li {
   text-decoration: none !important;
 }
 #rj-player .player-v3 {
+  display: flex;
   background: #f0edeb;
-  height: 210px;
+  height: 150px;
 }
 #rj-player .player-v3 .rjp-label {
   color: green;
 }
 #rj-player .player-v3 #rj-cover {
-  float: left;
-  width: 210px;
-  height: 210px;
+  background-color: blue;
+  width: 150px;
+  height: 150px;
   overflow: hidden;
-  background: #eae4e0;
+  /* background: #eae4e0; */
   background-clip: content-box;
   text-align: center;
 }
 #rj-player .player-v3 #rj-cover a {
-  display: inline;
-  line-height: 210px;
-  text-align: center;
 }
 #rj-player .player-v3 #rj-cover a img {
-  display: inline;
-  width: 210px;
-  height: 210px;
-  vertical-align: middle;
 }
 #rj-player .player-v3 .info {
-  position: relative;
-  height: 210px;
 }
 #rj-player .player-v3 .rjp-player-container {
-  bottom: 0;
-  left: 210px;
-  position: absolute;
-  height: 80px;
-  width: 710px;
 }
 #rj-player .player-v3.player-medium {
-  width: 650px;
-  height: 210px;
 }
 #rj-player .player-v3.player-medium .rjp-player-container {
   left: 0;
 }
 #rj-player .player-v3.player-medium #rj-cover {
-  width: 210px;
-  height: 210px;
-  float: left;
+  width: 150px;
+  height: 150px;
 }
 #rj-player .player-v3.player-medium .info {
   position: relative;
