@@ -24,10 +24,10 @@ const testComponent = () => {
   return (
     <>
       <Helmet>
-        {/* <link
+        <link
           rel="stylesheet"
           href="//www.radiojar.com/wrappers/api-plugins/v1/css/player.css"
-        ></link> */}
+        ></link>
       </Helmet>
 
       <TestStyleSheet>
