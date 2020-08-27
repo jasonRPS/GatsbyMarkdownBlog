@@ -1,8 +1,5 @@
 import React from "react"
-export const onRenderBody = (
-  { setHeadComponents, setPostBodyComponents },
-  pluginOptions
-) => {
+export const onRenderBody = ({ setPostBodyComponents }, pluginOptions) => {
   setPostBodyComponents([
     <script
       type="text/javascript"
@@ -14,7 +11,7 @@ export const onRenderBody = (
       dangerouslySetInnerHTML={{
         __html: `
         rjq('#rjp-radiojar-player').radiojar('player', {
-            "streamName": "uf6x8w5f81ac",
+            "streamName": "4qe8m62pa8zuv",
             "enableUpdates": true,
             "defaultImage": "//www.radiojar.com/img/sample_images/Radio_Stations_Avatar_BLUE.png",
             "autoplay":false
