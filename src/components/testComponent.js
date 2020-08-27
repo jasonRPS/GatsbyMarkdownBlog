@@ -46,16 +46,16 @@ const testComponent = () => {
             class="player-v3 player-medium"
           >
             <div
+              id="rj-cover"
               style={{
                 backgroundColor: "transparent",
                 width: "150px",
                 height: "150px",
               }}
-              id="rj-cover"
             >
               <a href="#">
                 <img
-                  // style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
                   src=""
                 />
               </a>
