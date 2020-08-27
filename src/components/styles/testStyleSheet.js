@@ -569,7 +569,7 @@ export const TestStyleSheet = styled.div`
     height: 210px;
   }
   #rj-player .player-v3 .rjp-label {
-    color: #b74525;
+    color: green;
   }
   #rj-player .player-v3 #rj-cover {
     float: left;
