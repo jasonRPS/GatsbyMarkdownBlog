@@ -108,6 +108,7 @@ const testComponent = () => {
             <img src="" />
           </a>
         </div>
+        <p id="trackInfo" class="rjp-info"></p>
         <audio controls>
           <source src="http://stream.radiojar.com/4qe8m62pa8zuv" />
         </audio>
