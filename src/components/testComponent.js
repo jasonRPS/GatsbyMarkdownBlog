@@ -31,11 +31,33 @@ const testComponent = () => {
       </Helmet>
 
       <TestStyleSheet>
-        <div id="rj-player">
-          <div class="player-v3 player-medium">
-            <div id="rj-cover">
+        <div
+          style={{
+            width: "100%",
+            height: "150px",
+            backgroundColor: "rgba(0,0,0, 0.5)",
+            display: "flex",
+            justifyContent: "space-between",
+          }}
+          id="rj-player"
+        >
+          <div
+            style={{ backgroundColor: "transparent" }}
+            class="player-v3 player-medium"
+          >
+            <div
+              style={{
+                backgroundColor: "transparent",
+                width: "150px",
+                height: "150px",
+              }}
+              id="rj-cover"
+            >
               <a href="#">
-                <img src="" />
+                <img
+                  // style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  src=""
+                />
               </a>
             </div>
             <div class="info">
@@ -102,7 +124,7 @@ const testComponent = () => {
           </div>
         </div>
       </TestStyleSheet>
-      <StyledThing>
+      {/* <StyledThing>
         <div id="rj-player">
           <div class="player-v3 player-medium">
             <div id="rj-cover">
@@ -176,7 +198,7 @@ const testComponent = () => {
         <audio controls>
           <source src="http://stream.radiojar.com/4qe8m62pa8zuv" />
         </audio>
-      </StyledThing>
+      </StyledThing> */}
     </>
   )
 }
