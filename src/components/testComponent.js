@@ -24,40 +24,18 @@ const testComponent = () => {
   return (
     <>
       <Helmet>
-        <link
+        {/* <link
           rel="stylesheet"
           href="//www.radiojar.com/wrappers/api-plugins/v1/css/player.css"
-        ></link>
+        ></link> */}
       </Helmet>
 
       <TestStyleSheet>
-        <div
-          style={{
-            width: "100%",
-            height: "150px",
-            backgroundColor: "rgba(0,0,0, 0.5)",
-            display: "flex",
-            justifyContent: "space-between",
-          }}
-          id="rj-player"
-        >
-          <div
-            style={{ backgroundColor: "transparent" }}
-            class="player-v3 player-medium"
-          >
-            <div
-              id="rj-cover"
-              style={{
-                backgroundColor: "transparent",
-                width: "150px",
-                height: "150px",
-              }}
-            >
+        <div id="rj-player">
+          <div class="player-v3 player-medium">
+            <div id="rj-cover">
               <a href="#">
-                <img
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                  src=""
-                />
+                <img src="" />
               </a>
             </div>
             <div class="info">
