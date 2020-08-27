@@ -1,30 +1,43 @@
 import React, { useEffect } from "react"
 import styled from "styled-components"
 import { Helmet } from "react-helmet"
+import { TestStyleSheet } from "../components/styles/testStyleSheet"
 
 const StyledThing = styled.div`
-  width: 500px;
-  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  margin-top: 100px;
+  background-color: gray;
   border: 2px solid black;
+
+  #rj-cover {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+  }
 `
 
 const testComponent = () => {
   return (
     <>
       <Helmet>
-        <link
+        {/* <link
           rel="stylesheet"
           href="//www.radiojar.com/wrappers/api-plugins/v1/css/player.css"
-        ></link>
+        ></link> */}
       </Helmet>
-      <StyledThing>
-        <div style={{ width: "100%" }} id="rj-player">
+
+      <TestStyleSheet>
+        <div id="rj-player">
           <div class="player-v3 player-medium">
-            <div id="rj-cover">
+            {/* <div id="rj-cover">
               <a href="#">
                 <img src="" />
               </a>
-            </div>
+            </div> */}
             <div class="info">
               <div class="rjp-trackinfo-container">
                 <h4 class="rjp-label">Now playing:</h4>
@@ -88,6 +101,16 @@ const testComponent = () => {
             </div>
           </div>
         </div>
+      </TestStyleSheet>
+      <StyledThing>
+        <div id="rj-cover">
+          <a href="#">
+            <img src="" />
+          </a>
+        </div>
+        <audio controls>
+          <source src="http://stream.radiojar.com/4qe8m62pa8zuv" />
+        </audio>
       </StyledThing>
     </>
   )
