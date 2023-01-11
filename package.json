@@ -33,7 +33,7 @@
     "gatsby-source-filesystem": "^2.1.40",
     "gatsby-source-podcast-rss-feed": "^0.1.2",
     "gatsby-source-rss-feed": "^1.2.0",
-    "gatsby-transformer-remark": "^2.6.39",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.3.6",
     "node-sass": "^4.13.1",
     "rc-if-else": "^1.1.0",
